@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://farabolaza.github.io/C1-661/index.html</loc>
-    <lastmod>2025-03-25T12:46:24.137Z</lastmod>
+    <loc>https://farabolaza.github.io/C1-661/programa.html</loc>
+    <lastmod>2025-03-25T13:22:14.746Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661/cursada.html</loc>
+    <lastmod>2025-03-25T13:20:58.539Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661/calendario.html</loc>
+    <lastmod>2025-03-25T13:21:37.043Z</lastmod>
   </url>
   <url>
     <loc>https://farabolaza.github.io/C1-661/about.html</loc>
     <lastmod>2025-03-25T12:40:25.376Z</lastmod>
   </url>
   <url>
-    <loc>https://farabolaza.github.io/C1-661/clase-01.html</loc>
+    <loc>https://farabolaza.github.io/C1-661/bibliografia.html</loc>
+    <lastmod>2025-03-25T13:22:43.622Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661/clases/clase-01.html</loc>
     <lastmod>2025-03-25T12:39:10.472Z</lastmod>
+  </url>
+  <url>
+    <loc>https://farabolaza.github.io/C1-661/index.html</loc>
+    <lastmod>2025-03-25T13:25:57.396Z</lastmod>
   </url>
 </urlset>
