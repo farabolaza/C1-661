@@ -72,18 +72,106 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">C1-661</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./assets/C1.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://help.libreoffice.org/latest/es/text/shared/05/new_help.html" title="ayuda libre office" class="quarto-navigation-tool px-1" aria-label="ayuda libre office"><i class="bi bi-file-word"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Info Cursada</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cursada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Información de cursada</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./calendario.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Calendario de clases</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./programa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programa de la materia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bibliografia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliografía</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Clases</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./clases/clase-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">clase 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -93,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -108,13 +196,9 @@ ul.task-list li input[type="checkbox"] {
 <div>
 
 </div>
-<div class="quarto-layout-panel" data-layout-ncol="4">
+<div class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
-<section id="section" class="level2 quarto-layout-cell" style="flex-basis: 25.0%;justify-content: center;">
-<h2 class="anchored" data-anchor-id="section"></h2>
-<p><img src="assets/C1-filete.png" class="img-fluid"></p>
-</section>
-<section id="profesor" class="level2 quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<section id="profesor" class="level2 quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <h2 class="anchored" data-anchor-id="profesor">Profesor</h2>
 <ul>
 <li><i class="fa-solid fa-user" aria-label="user"></i> Prof.&nbsp;Federico Arabolaza</li>
@@ -122,14 +206,14 @@ ul.task-list li input[type="checkbox"] {
 <li><i class="fa-solid fa-building-columns" aria-label="building-columns"></i> INSPT UTN</li>
 </ul>
 </section>
-<section id="cursada" class="level2 quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<section id="cursada" class="level2 quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <h2 class="anchored" data-anchor-id="cursada">Cursada</h2>
 <ul>
 <li><i class="fa-solid fa-location-dot" aria-label="location-dot"></i> Triunvirato 3174</li>
 <li><i class="fa-solid fa-clock" aria-label="clock"></i> Miércoles de 21:10 a 22:30</li>
 </ul>
 </section>
-<section id="secciones" class="level2 quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<section id="secciones" class="level2 quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <h2 class="anchored" data-anchor-id="secciones">Secciones</h2>
 <ul>
 <li><i class="fa-solid fa-calendar-check" aria-label="calendar-check"></i> Programa de la materia</li>
