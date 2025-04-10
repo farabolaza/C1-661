@@ -4,7 +4,7 @@
     "href": "trabajos practicos/tp 01.html",
     "title": "TP 01",
     "section": "",
-    "text": "Consignas\nEn la medida que se vayan viendo los contenidos necesarios, se deberán aplicar a la reproducción del trabajo de J.J Thomson sobre los rayos catódicos mencionado en la clase 01 los conocimientos de Writer a:\n\nTipografía. Estilos, tipo y tamaño (Clase 01)\nEstilos de párrafo: Titulos, subtítulos, niveles (Clase 01)\nFiguras: Leyendas y remisiones (Clase 02)\nEcuaciones: Numeración y estructura. TexMaths (Clase 02 y Clase 03)\nEstilo de página: Tamaño, márgenes, encabezados y pies de página (Clase 04)\nPortadas y numeración (Clase 04)\nImágenes, gráficos y tablas(Clase 05)\nSumarios e índices: Lista de figuras, tablas, ecuaciones, índice, bibliografía. (Clase 05)",
+    "text": "Consignas\nEn la medida que se vayan viendo los contenidos necesarios, se deberán aplicar a la reproducción del trabajo de J.J Thomson sobre los rayos catódicos mencionado en la clase 01 los conocimientos de Writer a:\n\nTipografía. Estilos, tipo y tamaño (Clase 01)\nEstilos de párrafo: Titulos, subtítulos, niveles (Clase 01)\nFiguras: Leyendas y remisiones (Clase 02)\nEcuaciones: Numeración y estructura. TexMaths (Clase 02 y Clase 03)\nEstilo de página: Tamaño, márgenes, encabezados y pies de página (Clase 04)\nPortadas y numeración (Clase 04)\nImágenes, gráficos y tablas(Clase 05)\nSumarios e índices: Lista de figuras, tablas, ecuaciones, índice, bibliografía. (Clase 05)\n\n\n\nModalidad y fecha de entrega\nVerán aquí la modalidad y fecha de entrega de este trabajo.",
     "crumbs": [
       "trabajos practicos",
       "TP 01"
@@ -16,6 +16,310 @@
     "title": "C1-661",
     "section": "",
     "text": "Profesor\n\n Prof. Federico Arabolaza\n federico.arabolaza@inspt.utn.edu.ar\n INSPT UTN\n\n\n\nCursada\n\n Triunvirato 3174\n Miércoles de 21:10 a 22:30\n\n\n\nSecciones\n\n Programa de la materia\n Calendario de clases\n Trabajos prácticos\n Clases\n Bibliografía\n Descargas"
+  },
+  {
+    "objectID": "clases/clase-10.html#uso-de-solver",
+    "href": "clases/clase-10.html#uso-de-solver",
+    "title": "Clase 10",
+    "section": "Uso de solver",
+    "text": "Uso de solver",
+    "crumbs": [
+      "Clases",
+      "Clase 10"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#series-de-datos",
+    "href": "clases/clase-08.html#series-de-datos",
+    "title": "Clase 08",
+    "section": "Series de datos",
+    "text": "Series de datos",
+    "crumbs": [
+      "Clases",
+      "Clase 08"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#otras-gráficas",
+    "href": "clases/clase-08.html#otras-gráficas",
+    "title": "Clase 08",
+    "section": "Otras gráficas",
+    "text": "Otras gráficas",
+    "crumbs": [
+      "Clases",
+      "Clase 08"
+    ]
+  },
+  {
+    "objectID": "clases/clase-06.html",
+    "href": "clases/clase-06.html",
+    "title": "Clase 06",
+    "section": "",
+    "text": "Ayuda de libre office calc\nUna planilla de cálculo es una estructura reglada de celdas cuyo contenido puede ser o bien texto, o bien resultado de un cálculo. Los cálculos pueden ser los aritméticos usuales o resultado de la aplicación de una función o secuencia de comandos específica.\nDicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
+    ]
+  },
+  {
+    "objectID": "clases/clase-06.html#introducción-a-calc",
+    "href": "clases/clase-06.html#introducción-a-calc",
+    "title": "Clase 06",
+    "section": "",
+    "text": "Ayuda de libre office calc\nUna planilla de cálculo es una estructura reglada de celdas cuyo contenido puede ser o bien texto, o bien resultado de un cálculo. Los cálculos pueden ser los aritméticos usuales o resultado de la aplicación de una función o secuencia de comandos específica.\nDicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
+    ]
+  },
+  {
+    "objectID": "clases/clase-06.html#lista-de-reproducción",
+    "href": "clases/clase-06.html#lista-de-reproducción",
+    "title": "Clase 06",
+    "section": " Lista de reproducción",
+    "text": "Lista de reproducción\nEn este link accederán a una lista de reproducción de videos sobre Libre Office Calc\n\nCeldas\nLas celdas están referidas en un formato letra-número que indican su pertenencia a el par columna-fila. La celda A4 es la cuarta fila de la primera columna.\n\n\nReferencias\nLas celdas se pueden referir usando el par columna-fila y es posible “anclar” ya sea la fila o la columna usando el signo “\\(\" delante del a indicación. Ejemplo: \"\\)A$1” es una referncia absoluta a la celda A1 y no se verá modificada por acciones que hagamos al arrastrar selecciones. Volveremos sobre esto más adelante.",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
+    ]
+  },
+  {
+    "objectID": "clases/clase-06.html#funciones",
+    "href": "clases/clase-06.html#funciones",
+    "title": "Clase 06",
+    "section": "Funciones",
+    "text": "Funciones\nLas funciones en una planilla de cálculo ejecutan tareas sobre una celda o un rango de celdas de acuerdo a la sintaxis de cada una. En analogía con funciones del ámbito matemático, a un valor (o varios) de entrada, ofrece un valor (o varios) de salida. Lo que llamamos valores de entrada, en Calc pueden ser ingresados manualmente o ser referencias a valores existentes en otras celdas.",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
+    ]
+  },
+  {
+    "objectID": "clases/clase-06.html#formato-de-número",
+    "href": "clases/clase-06.html#formato-de-número",
+    "title": "Clase 06",
+    "section": "Formato de número",
+    "text": "Formato de número\n\nDecimales, redondeo y notación científica",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
+    ]
+  },
+  {
+    "objectID": "clases/clase-04.html",
+    "href": "clases/clase-04.html",
+    "title": "Clase 04",
+    "section": "",
+    "text": "En la ayuda de libre office podemos acceder a la personalización de los estilos de página, pero, ¿Por qué querríamos cambiar los estilos de página?\n\nTener una portada o primera página diferente (y controlar su numeración en relación al resto del texto)\nTener encabezados y pies de página diferente entre páginas izquierda y derechas (o alternadas)\nTener alguna hoja horizontal (por ejemplo una tabla a página completa) dentro de un documento vertical\nNumerar secciones de forma diferente (apéndices, texto principal, prefacios, etc.)\nDejar márgenes diferentes entre páginas izquierda y derecha (necesario si usamos los márgenes y se imprime doble faz)",
+    "crumbs": [
+      "Clases",
+      "Clase 04"
+    ]
+  },
+  {
+    "objectID": "clases/clase-04.html#personalización-de-la-página",
+    "href": "clases/clase-04.html#personalización-de-la-página",
+    "title": "Clase 04",
+    "section": "",
+    "text": "En la ayuda de libre office podemos acceder a la personalización de los estilos de página, pero, ¿Por qué querríamos cambiar los estilos de página?\n\nTener una portada o primera página diferente (y controlar su numeración en relación al resto del texto)\nTener encabezados y pies de página diferente entre páginas izquierda y derechas (o alternadas)\nTener alguna hoja horizontal (por ejemplo una tabla a página completa) dentro de un documento vertical\nNumerar secciones de forma diferente (apéndices, texto principal, prefacios, etc.)\nDejar márgenes diferentes entre páginas izquierda y derecha (necesario si usamos los márgenes y se imprime doble faz)",
+    "crumbs": [
+      "Clases",
+      "Clase 04"
+    ]
+  },
+  {
+    "objectID": "clases/clase-04.html#portadas-y-numeración-de-páginas",
+    "href": "clases/clase-04.html#portadas-y-numeración-de-páginas",
+    "title": "Clase 04",
+    "section": "Portadas y numeración de páginas",
+    "text": "Portadas y numeración de páginas\nPara insertar una portada debemos seleciconar formato -&gt; portada donde accedemos al siguiente menú\n\n\n\nMenù de portada\n\n\nLas opciones para ajustar la numeración de página son interesantes ya que en el uso más común, no deseamos que la portada tenga un número sino que la numeración comience luego de ella.\nEl resto de las opciones considero que se auto explican y se dejan como ejercicio al lector.",
+    "crumbs": [
+      "Clases",
+      "Clase 04"
+    ]
+  },
+  {
+    "objectID": "clases/clase-04.html#cabeceras-y-pies-de-página",
+    "href": "clases/clase-04.html#cabeceras-y-pies-de-página",
+    "title": "Clase 04",
+    "section": "Cabeceras y pies de página",
+    "text": "Cabeceras y pies de página\nLas cabeceras y pies de página están accesbles de varias formas. Una de ellases simplemente haciendo doble click en la zona correspondiente, aunque también puede accederse a las propiedades generales de los pies y cabeceras haciendo formato -&gt; estilo de página y también desde insertar -&gt; cabecera y pie . Lo que debe tenerse en cuenta en que los pies de página son dependientes del estilo de la página en sí, es decir, si la pagina actual está definida como “pagina izquierda” o “estilo de página predeterminado” o “pimera página” la configuración de los pies y cabeceras será la del estilo correspondiente. Claro está que podremos unificar o diferenciar los estilos tanto como queramos.\n\n\n\ncabeceras y pies\n\n\nEn los pies y cabeceras podremos escribir a gusto y se repetirán en todas las páginas que tengan el mismo estilo. Un uso común es la personalización de los campos que se muestran, para ello podemos ir a insertar -&gt; número de página o insertar -&gt; campo para insertar en el pie o cabecera la información que consideremos conveniente.",
+    "crumbs": [
+      "Clases",
+      "Clase 04"
+    ]
+  },
+  {
+    "objectID": "clases/clase-04.html#saltos-manuales-de-página",
+    "href": "clases/clase-04.html#saltos-manuales-de-página",
+    "title": "Clase 04",
+    "section": "Saltos manuales de página",
+    "text": "Saltos manuales de página\nSi deseamos cambiar el estilo de página y por ejemplo, pasar de una columna a varias, o de una página vertical a otra horizontal, debemos primero introducir un salto manual para ello, vamos a insertar -&gt; mas saltos-&gt; salto manual y elegimos el estilo al que queremos cambiar. Por ejemplo, podríamos tener un estilo de página a una columna, y otro estilo a dos columnas y alternar entre ellos a lo largo de un documento, o como se dijo más arriba, una tabla a página completa usando un formato horizontal.",
+    "crumbs": [
+      "Clases",
+      "Clase 04"
+    ]
+  },
+  {
+    "objectID": "clases/clase-04.html#columnas",
+    "href": "clases/clase-04.html#columnas",
+    "title": "Clase 04",
+    "section": "Columnas",
+    "text": "Columnas\nPara seleccionar columnas tenemos dos opciones: si es solo una sección mínmia, un recuadro, usaremos el cuadro de texto: insertar -&gt; cuadro de texto y luego haciendo click derecho, seleccionaremos atributos del texto en donde podremos elegir la cantidad de columnas.\nSi por el contrario vamos a aplicar el estilo a la hoja entera o al documento, editaremos el estilo de la página como ya hemos visto antes: click derecho + estilo de página. Tener en cuenta que las ediciones hechas sobre el estilo vigente de esta manera se aplican a todo el documento, en otras palabras si editamos el esitlo de página predeterminado, todas las páginas con ese estilo tomarán los cambios que hayamos hecho. En el menú de estilo de página en la solapa columnas podremos configurar las opciones como mejor nos venga.\n\n\n\nEstilos de página\n\n\nPodemos crear un estilo a partir de uno existente si nos colocamos en la barra de estilos y hacemos click derecho -&gt; nuevo y modificamos lo que necesitemos para luego guadarlo con otro nombre.",
+    "crumbs": [
+      "Clases",
+      "Clase 04"
+    ]
+  },
+  {
+    "objectID": "clases/clase-04.html#videos-de-referencia",
+    "href": "clases/clase-04.html#videos-de-referencia",
+    "title": "Clase 04",
+    "section": " videos de referencia",
+    "text": "videos de referencia\n\n video 1\n video 2",
+    "crumbs": [
+      "Clases",
+      "Clase 04"
+    ]
+  },
+  {
+    "objectID": "clases/clase-04.html#plantillas",
+    "href": "clases/clase-04.html#plantillas",
+    "title": "Clase 04",
+    "section": "Plantillas",
+    "text": "Plantillas\nSi hemos hecho creación y modificaciones a los estilos de writer, hemos agegado una portada, etc y quisiéramos reutilizar esto, podemos guardar nuestro documento como una plantilla (template) para usarlo como base en el futuro. Para ello vamos a\narchivo -&gt; plantillas -&gt; guardar como plantilla\nluego podremos al crear un documento ir a archivo -&gt; nuevo-&gt; plantillas para comenzar con un documento que se basa en la plantilla seleccoinada.",
+    "crumbs": [
+      "Clases",
+      "Clase 04"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html",
+    "href": "clases/clase-02.html",
+    "title": "Clase 02",
+    "section": "",
+    "text": "En un documento de writer podemos agregar imágenes, gráficos, cuadros, tablas etc. con diferentes categorías de rotulos: es decir, podemos tener por un lado las imágenes, y por otro las tablas o cuadros e identificarlos con una numeración correlativa y de actualización secuencial automática para cada grupo.\nPara distinguir entre objetos se utilizan las leyendas y para mencionar dichos objetos se usan las remisiones. Veamos como\n\n\nPodemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.\n\n\n\nPara obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.\n\n\n\nSi se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda\n\n\n\n\n\nUna vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión\n\n\n\n\n\nLos estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#insertar-figuras-y-leyendas",
+    "href": "clases/clase-02.html#insertar-figuras-y-leyendas",
+    "title": "Clase 02",
+    "section": "",
+    "text": "Podemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#posicionamiento",
+    "href": "clases/clase-02.html#posicionamiento",
+    "title": "Clase 02",
+    "section": "",
+    "text": "Para obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#leyenda",
+    "href": "clases/clase-02.html#leyenda",
+    "title": "Clase 02",
+    "section": "",
+    "text": "Si se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#remisiones",
+    "href": "clases/clase-02.html#remisiones",
+    "title": "Clase 02",
+    "section": "",
+    "text": "Una vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#estilos",
+    "href": "clases/clase-02.html#estilos",
+    "title": "Clase 02",
+    "section": "",
+    "text": "Los estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Computación 1-661",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "clases/clase-01.html",
+    "href": "clases/clase-01.html",
+    "title": "Clase 01",
+    "section": "",
+    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "crumbs": [
+      "Clases",
+      "Clase 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#formulario-de-bienvenida",
+    "href": "clases/clase-01.html#formulario-de-bienvenida",
+    "title": "Clase 01",
+    "section": "",
+    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "crumbs": [
+      "Clases",
+      "Clase 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#libre-office",
+    "href": "clases/clase-01.html#libre-office",
+    "title": "Clase 01",
+    "section": "Libre office",
+    "text": "Libre office\n\n¿Qué es libre office?\nLibre office es una suite de ofimática (herramientas de software para producción en entornos de trabajo) libre y de código abierto mantenida por sus propios usuarios. Es gratuita y en casi todos los casos igual o mejor que sus contrapartes no gratuitas.\n\n\n¿Para qué libre office?\nTodo trabajo, incluso aquellos que son la manufactura de algún producto requieren piezas de comunicación visual y escrita: manuales, tutoriales, folletos, informes, etc. La comunicación del quehacer de la ciencia no es la excepción: bitácoras e informes de laboratorio, artículos para revistas e instituciones científicas, libros de texto, de divulgación o material de estudio de caracter académico. Estos textos tienen cada uno su propio estilo de escritura y estructura según su función y algunos soportes preferidos por conveniencia, uso, costumbre en algunos casos y millones bien invertidos en otros.\nExisten formatos que son preferidos en ciertos ámbitos, como Latex para publicaciones científicas y parte del mundo editorial o softwares como in-design o illustrator para los mismos fines para otras publicaciones.\n\nNostoros usaremos libre office como soporte por su unviersalidad (todos podemos conseguirlo) y sabemos que siempre contaremos con el sofware: no dejaremos de tener acceso a lo que hicimos porque la nueva versión no es compatible (y la vieja ya no está disponible) y al tener una gran red de usuarios que pueden extender la funcionalidad del paquete: es posible encontrar extensiones que se vayan adaptando a nuestras necesidades.\nPor último pero no menos importante, siendo que Latex es el formato de-facto para publicaciones académicas o científicas ¿por qué no lo usamos? Sencillamente porque latex no es un procesador de texto. Es un lenguaje de programación completo y aprenderlo nos llevaría mucho mas tiempo del que tenemos en este curso, además de que para los fines de escribir informes de laboratorio el costo inversión de tiempo vs resultados obtenidos está bastante corrido a favor de lo primero: se requiere poner mucho en latex para obtener algo decente. Sin embargo como el tratamiento de las expresiones matemáticas que latex ofrece es superior a lo que cualquier procesador de texto traiga por defecto, lo incluiiremos en nuestro flujo de trabajo a través de la extensión tex maths\n\n\nInstalando libre office\nEn su web oficial podemos acceder a la sección descarga y desde allí bajar la versión que necesitemos. La útima disponible en general funciona con casi todos los dispositivos pero si tenemos probelmas en la instalación podemos buscar en la página alguna versión anterior.\n\nInstalando tex-maths\nEn este enlace se puede descargar la última versión. Una vez descargado se ejecuta e instala siguiendo los pasos que el instalador ofrece.\n\n\n\nAyuda en línea y manuales\nLa ayuda de libre office está en casi todos los idiomas, aunque a veces la traducción automática falla un poco (se “olvida” de traducir algún que otro párrafo) es bastante completa. Además podemos descargar manuales (los más actualizados están en inglés) en pdf para quienes prefieran buscar en un documento y no en la web o para cuando no se tenga acceso a internet.",
+    "crumbs": [
+      "Clases",
+      "Clase 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#libre-office-writer",
+    "href": "clases/clase-01.html#libre-office-writer",
+    "title": "Clase 01",
+    "section": "Libre Office-Writer",
+    "text": "Libre Office-Writer\n\nLista de videos \nEn esta lista de reproducción podrán ver una serie de videos que cubren bastatante de la funcionalidad de libre office Writer.\n\n\nEstilos en Writer\nHemos visto que desde el menú ver -&gt; barra de estilos accedemos a los estilos que vienen predefinidos para las diferentes secciones de writer: párrafo, página, listas, etc.\nA continuación les comparto algunos videos que resumen un poco lo que vimos en esta clase:\n\n\nEn versiones anteriores de libre office si bien los menús se ven diferentes, la dinámica es idéntica\n\n\n\n\nNiveles de jearquía numerados\nPor ejemplo, los niveles de titulo se pueden auto numerar yendo a herramientas -&gt; numeración de títulos\nEsta configuración no está disponible como un estilo predeterminado sino que se aplica a los estilos existentes o a aquellos creados que sean niveles de jerárquicos.\nEn la ayuda de libre office podemos ver una explicación un poco más detallada.",
+    "crumbs": [
+      "Clases",
+      "Clase 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#actividad-inicial",
+    "href": "clases/clase-01.html#actividad-inicial",
+    "title": "Clase 01",
+    "section": "Actividad inicial",
+    "text": "Actividad inicial\n\nArqueología de publicaciones\nEn este link J. J. Thomson 1897 (lemoyne.edu) se encuentra una versión web de la publicación de Thomson en la que refuerza la idea del electrón como partícula elemental, y en este otro link de la Philosophical Magazine se ve la publicación en la revista original. Una breve reseña de divulgación del trabajo de Thomson la pueden leer acá: Cuantización de la carga eléctrica\nInstrucciones Deberán presentar una versión del trabajo de Thomson tomando como origen la versión web y como guía para el estilo visual la publicación original. Pueden traducir el texto para ir leyéndolo si así lo prefieren (el inglés original es un poco barroco)\nLos elementos a tener en cuenta para este documento serán\n\nTipografía: tamaño y tipo de letra (encontrar alguna o algunas tipografías que puedan servir)\nEncabezados y pies de página\nTexto: interlineado, orientación, sangría\nTablas\nEcuaciones\n\nIremos trabajando los detalles de cada elemento en las primeras dos clases mientras exploramos las funciones elementales de Writer",
+    "crumbs": [
+      "Clases",
+      "Clase 01"
+    ]
   },
   {
     "objectID": "clases/clase-03.html",
@@ -95,120 +399,80 @@
     ]
   },
   {
-    "objectID": "clases/clase-01.html",
-    "href": "clases/clase-01.html",
-    "title": "Clase 01",
+    "objectID": "clases/clase-05.html",
+    "href": "clases/clase-05.html",
+    "title": "Clase 05",
     "section": "",
-    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "text": "Elimina estilos de tabla",
     "crumbs": [
       "Clases",
-      "Clase 01"
+      "Clase 05"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#formulario-de-bienvenida",
-    "href": "clases/clase-01.html#formulario-de-bienvenida",
-    "title": "Clase 01",
+    "objectID": "clases/clase-05.html#tablas",
+    "href": "clases/clase-05.html#tablas",
+    "title": "Clase 05",
     "section": "",
-    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "text": "Elimina estilos de tabla",
     "crumbs": [
       "Clases",
-      "Clase 01"
+      "Clase 05"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#libre-office",
-    "href": "clases/clase-01.html#libre-office",
-    "title": "Clase 01",
-    "section": "Libre office",
-    "text": "Libre office\n\n¿Qué es libre office?\nLibre office es una suite de ofimática (herramientas de software para producción en entornos de trabajo) libre y de código abierto mantenida por sus propios usuarios. Es gratuita y en casi todos los casos igual o mejor que sus contrapartes no gratuitas.\n\n\n¿Para qué libre office?\nTodo trabajo, incluso aquellos que son la manufactura de algún producto requieren piezas de comunicación visual y escrita: manuales, tutoriales, folletos, informes, etc. La comunicación del quehacer de la ciencia no es la excepción: bitácoras e informes de laboratorio, artículos para revistas e instituciones científicas, libros de texto, de divulgación o material de estudio de caracter académico. Estos textos tienen cada uno su propio estilo de escritura y estructura según su función y algunos soportes preferidos por conveniencia, uso, costumbre en algunos casos y millones bien invertidos en otros.\nExisten formatos que son preferidos en ciertos ámbitos, como Latex para publicaciones científicas y parte del mundo editorial o softwares como in-design o illustrator para los mismos fines para otras publicaciones.\nNostoros usaremos libre office como soporte por su unviersalidad (todos podemos conseguirlo) y sabemos que siempre contaremos con el sofware: no dejaremos de tener acceso a lo que hicimos porque la nueva versión no es compatible (y la vieja ya no está disponible) y al tener una gran red de usuarios que pueden extender la funcionalidad del paquete: es posible encontrar extensiones que se vayan adaptando a nuestras necesidades.\nPor último pero no menos importante, siendo que Latex es el formato de-facto para publicaciones académicas o científicas ¿por qué no lo usamos? Sencillamente porque latex no es un procesador de texto. Es un lenguaje de programación completo y aprenderlo nos llevaría mucho mas tiempo del que tenemos en este curso, además de que para los fines de escribir informes de laboratorio el costo inversión de tiempo vs resultados obtenidos está bastante corrido a favor de lo primero: se requiere poner mucho en latex para obtener algo decente. Sin embargo como el tratamiento de las expresiones matemáticas que latex ofrece es superior a lo que cualquier procesador de texto traiga por defecto, lo incluiiremos en nuestro flujo de trabajo a través de la extensión tex maths\n\n\nInstalando libre office\nEn su web oficial podemos acceder a la sección descarga y desde allí bajar la versión que necesitemos. La útima disponible en general funciona con casi todos los dispositivos pero si tenemos probelmas en la instalación podemos buscar en la página alguna versión anterior.\n\nInstalando tex-maths\nEn este enlace se puede descargar la última versión. Una vez descargado se ejecuta e instala siguiendo los pasos que el instalador ofrece.\n\n\n\nAyuda en línea y manuales\nLa ayuda de libre office está en casi todos los idiomas, aunque a veces la traducción automática falla un poco (se “olvida” de traducir algún que otro párrafo) es bastante completa. Además podemos descargar manuales (los más actualizados están en inglés) en pdf para quienes prefieran buscar en un documento y no en la web o para cuando no se tenga acceso a internet.",
+    "objectID": "clases/clase-05.html#gráficos-y-figuras",
+    "href": "clases/clase-05.html#gráficos-y-figuras",
+    "title": "Clase 05",
+    "section": "Gráficos y figuras",
+    "text": "Gráficos y figuras",
     "crumbs": [
       "Clases",
-      "Clase 01"
+      "Clase 05"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#actividad-inicial",
-    "href": "clases/clase-01.html#actividad-inicial",
-    "title": "Clase 01",
-    "section": "Actividad inicial",
-    "text": "Actividad inicial\n\nArqueología de publicaciones\nEn este link J. J. Thomson 1897 (lemoyne.edu) se encuentra una versión web de la publicación de Thomson en la que refuerza la idea del electrón como partícula elemental, y en este otro link de la Philosophical Magazine se ve la publicación en la revista original. Una breve reseña de divulgación del trabajo de Thomson la pueden leer acá: Cuantización de la carga eléctrica\nInstrucciones Deberán presentar una versión del trabajo de Thomson tomando como origen la versión web y como guía para el estilo visual la publicación original. Pueden traducir el texto para ir leyéndolo si así lo prefieren (el inglés original es un poco barroco)\nLos elementos a tener en cuenta para este documento serán\n\nTipografía: tamaño y tipo de letra (encontrar alguna o algunas tipografías que puedan servir)\nEncabezados y pies de página\nTexto: interlineado, orientación, sangría\nTablas\nEcuaciones\n\nIremos trabajando los detalles de cada elemento en las primeras dos clases mientras exploramos las funciones elementales de Writer",
+    "objectID": "clases/clase-05.html#sumarios-e-índices",
+    "href": "clases/clase-05.html#sumarios-e-índices",
+    "title": "Clase 05",
+    "section": "Sumarios e índices",
+    "text": "Sumarios e índices",
     "crumbs": [
       "Clases",
-      "Clase 01"
+      "Clase 05"
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Computación 1-661",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "clases/clase-02.html",
-    "href": "clases/clase-02.html",
-    "title": "Clase 02",
-    "section": "",
-    "text": "En un documento de writer podemos agregar imágenes, gráficos, cuadros, tablas etc. con diferentes categorías de rotulos: es decir, podemos tener por un lado las imágenes, y por otro las tablas o cuadros e identificarlos con una numeración correlativa y de actualización secuencial automática para cada grupo.\nPara distinguir entre objetos se utilizan las leyendas y para mencionar dichos objetos se usan las remisiones. Veamos como\n\n\nPodemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.\n\n\n\nPara obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.\n\n\n\nSi se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda\n\n\n\n\n\nUna vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión\n\n\n\n\n\nLos estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "objectID": "clases/clase-07.html#desviación-estándar",
+    "href": "clases/clase-07.html#desviación-estándar",
+    "title": "Clase 07",
+    "section": "Desviación estándar",
+    "text": "Desviación estándar",
     "crumbs": [
       "Clases",
-      "Clase 02"
+      "Clase 07"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#insertar-figuras-y-leyendas",
-    "href": "clases/clase-02.html#insertar-figuras-y-leyendas",
-    "title": "Clase 02",
-    "section": "",
-    "text": "Podemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.",
+    "objectID": "clases/clase-07.html#cuadrados-mínimos",
+    "href": "clases/clase-07.html#cuadrados-mínimos",
+    "title": "Clase 07",
+    "section": "Cuadrados mínimos",
+    "text": "Cuadrados mínimos",
     "crumbs": [
       "Clases",
-      "Clase 02"
+      "Clase 07"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#posicionamiento",
-    "href": "clases/clase-02.html#posicionamiento",
-    "title": "Clase 02",
-    "section": "",
-    "text": "Para obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.",
+    "objectID": "clases/clase-09.html#gráficas-lineal-vs-log",
+    "href": "clases/clase-09.html#gráficas-lineal-vs-log",
+    "title": "Clase 09",
+    "section": "Gráficas lineal vs log",
+    "text": "Gráficas lineal vs log\n\nDemostración\n\n\nEjemplos",
     "crumbs": [
       "Clases",
-      "Clase 02"
-    ]
-  },
-  {
-    "objectID": "clases/clase-02.html#leyenda",
-    "href": "clases/clase-02.html#leyenda",
-    "title": "Clase 02",
-    "section": "",
-    "text": "Si se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda",
-    "crumbs": [
-      "Clases",
-      "Clase 02"
-    ]
-  },
-  {
-    "objectID": "clases/clase-02.html#remisiones",
-    "href": "clases/clase-02.html#remisiones",
-    "title": "Clase 02",
-    "section": "",
-    "text": "Una vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión",
-    "crumbs": [
-      "Clases",
-      "Clase 02"
-    ]
-  },
-  {
-    "objectID": "clases/clase-02.html#estilos",
-    "href": "clases/clase-02.html#estilos",
-    "title": "Clase 02",
-    "section": "",
-    "text": "Los estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
-    "crumbs": [
-      "Clases",
-      "Clase 02"
+      "Clase 09"
     ]
   }
 ]
