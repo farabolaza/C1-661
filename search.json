@@ -143,7 +143,7 @@
     "href": "clases/clase-04.html#cabeceras-y-pies-de-página",
     "title": "Clase 04",
     "section": "Cabeceras y pies de página",
-    "text": "Cabeceras y pies de página\nLas cabeceras y pies de página están accesbles de varias formas. Una de ellases simplemente haciendo doble click en la zona correspondiente, aunque también puede accederse a las propiedades generales de los pies y cabeceras haciendo formato -&gt; estilo de página y también desde insertar -&gt; cabecera y pie . Lo que debe tenerse en cuenta en que los pies de página son dependientes del estilo de la página en sí, es decir, si la pagina actual está definida como “pagina izquierda” o “estilo de página predeterminado” o “pimera página” la configuración de los pies y cabeceras será la del estilo correspondiente. Claro está que podremos unificar o diferenciar los estilos tanto como queramos.\n\n\n\ncabeceras y pies\n\n\nEn los pies y cabeceras podremos escribir a gusto y se repetirán en todas las páginas que tengan el mismo estilo. Un uso común es la personalización de los campos que se muestran, para ello podemos ir a insertar -&gt; número de página o insertar -&gt; campo para insertar en el pie o cabecera la información que consideremos conveniente.",
+    "text": "Cabeceras y pies de página\nLas cabeceras y pies de página están accesbles de varias formas. Una de ellas es simplemente haciendo doble click en la zona correspondiente, aunque también puede accederse a las propiedades generales de los pies y cabeceras haciendo formato &gt; estilo de página y también desde insertar &gt; cabecera y pie . Lo que debe tenerse en cuenta en que los pies de página son dependientes del estilo de la página en sí, es decir, si la pagina actual está definida como “pagina izquierda” o “estilo de página predeterminado” o “pimera página” la configuración de los pies y cabeceras será la del estilo correspondiente. Claro está que podremos unificar o diferenciar los estilos tanto como queramos.\n\n\n\ncabeceras y pies\n\n\nEn los pies y cabeceras podremos escribir a gusto y se repetirán en todas las páginas que tengan el mismo estilo. Un uso común es la personalización de los campos que se muestran, para ello podemos ir a insertar -&gt; número de página o insertar -&gt; campo para insertar en el pie o cabecera la información que consideremos conveniente.",
     "crumbs": [
       "Clases",
       "Clase 04"
@@ -154,7 +154,7 @@
     "href": "clases/clase-04.html#saltos-manuales-de-página",
     "title": "Clase 04",
     "section": "Saltos manuales de página",
-    "text": "Saltos manuales de página\nSi deseamos cambiar el estilo de página y por ejemplo, pasar de una columna a varias, o de una página vertical a otra horizontal, debemos primero introducir un salto manual para ello, vamos a insertar -&gt; mas saltos-&gt; salto manual y elegimos el estilo al que queremos cambiar. Por ejemplo, podríamos tener un estilo de página a una columna, y otro estilo a dos columnas y alternar entre ellos a lo largo de un documento, o como se dijo más arriba, una tabla a página completa usando un formato horizontal.",
+    "text": "Saltos manuales de página\nSi deseamos cambiar el estilo de página y por ejemplo, pasar de una columna a varias, o de una página vertical a otra horizontal, debemos primero introducir un salto manual para ello, vamos a insertar &gt; mas saltos&gt; salto manual y elegimos el estilo al que queremos cambiar. Por ejemplo, podríamos tener un estilo de página a una columna, y otro estilo a dos columnas y alternar entre ellos a lo largo de un documento, o como se dijo más arriba, una tabla a página completa usando un formato horizontal.",
     "crumbs": [
       "Clases",
       "Clase 04"
@@ -165,7 +165,7 @@
     "href": "clases/clase-04.html#columnas",
     "title": "Clase 04",
     "section": "Columnas",
-    "text": "Columnas\nPara seleccionar columnas tenemos dos opciones: si es solo una sección mínmia, un recuadro, usaremos el cuadro de texto: insertar -&gt; cuadro de texto y luego haciendo click derecho, seleccionaremos atributos del texto en donde podremos elegir la cantidad de columnas.\nSi por el contrario vamos a aplicar el estilo a la hoja entera o al documento, editaremos el estilo de la página como ya hemos visto antes: click derecho + estilo de página. Tener en cuenta que las ediciones hechas sobre el estilo vigente de esta manera se aplican a todo el documento, en otras palabras si editamos el esitlo de página predeterminado, todas las páginas con ese estilo tomarán los cambios que hayamos hecho. En el menú de estilo de página en la solapa columnas podremos configurar las opciones como mejor nos venga.\n\n\n\nEstilos de página\n\n\nPodemos crear un estilo a partir de uno existente si nos colocamos en la barra de estilos y hacemos click derecho -&gt; nuevo y modificamos lo que necesitemos para luego guadarlo con otro nombre.",
+    "text": "Columnas\nPara seleccionar columnas tenemos dos opciones: si es solo una sección mínmia, un recuadro, usaremos el cuadro de texto: insertar &gt; cuadro de texto y luego haciendo click derecho, seleccionaremos atributos del texto en donde podremos elegir la cantidad de columnas.\nSi por el contrario vamos a aplicar el estilo a la hoja entera o al documento, editaremos el estilo de la página como ya hemos visto antes: click derecho + estilo de página. Tener en cuenta que las ediciones hechas sobre el estilo vigente de esta manera se aplican a todo el documento, en otras palabras si editamos el esitlo de página predeterminado, todas las páginas con ese estilo tomarán los cambios que hayamos hecho. En el menú de estilo de página en la solapa columnas podremos configurar las opciones como mejor nos venga.\n\n\n\nEstilos de página\n\n\nPodemos crear un estilo a partir de uno existente si nos colocamos en la barra de estilos y hacemos click derecho -&gt; nuevo y modificamos lo que necesitemos para luego guadarlo con otro nombre.",
     "crumbs": [
       "Clases",
       "Clase 04"
@@ -403,7 +403,7 @@
     "href": "clases/clase-05.html",
     "title": "Clase 05",
     "section": "",
-    "text": "Elimina estilos de tabla",
+    "text": "Las tablas son una forma de disposición de la información cuya justificación se basa en la naturaleza de los datos que contienen. No toda información se presenta bien en una tabla. En ocasiones la decisión sobre crear una tabla es obvia, como por ejemplo en los datos numéricos de una medición, pero en otras no lo es tanto: comparar resultados obtenidos a través de métodos diferentes o para resumir información dada previamente en el texto o en otras tablas.\n\n\nPara es aconsejable seguir algunos lineamientos para que las tablas en nuestros documentos sean un soporte y apoyo a la narrativa del mismo y no un obstáculo para el lector. Podemos ver en la siguiente imagen algunas ideas\n\n\n\nIdeas generales sobre tablas\n\n\nAlgunas guías generales para las tablas que contienen información científica:\n\nTítulos: Cortos y descriptivos en columnas o filas (abreviar si fuera necesario). Se recomienda usar negrita en títulos de columnas.\n\nSiempre inlcuir las unidades, incertidumbres, número de muestras u otroa información relevante para los datos que se muestran.\n\nTabla: Debe tener referencia numerada (o nombre) para su posterior mención en el texto.\n\n\n\n\nSimpliicar los estilos\n\n\n\n\n\nFormato general\n\n\n\nTipografía: Se recomienda usar tipografías sin serifs (sans-serif) para generar una lectura más ágil y diferenciarla del cuerpo del texto.\nLos valores calculados que dependen de valores de una columna es mejor colocarlos a la derecha del valor del cual dependen.\nAlineación del texto: Para primera columna o fila de descripción se prefiere la alineación izquierda.\n\n\n\n\nTablas largas y separación visual entre filas\n\n\n\nAlineación de los títulos: de las columnas debe concordar con el de los datos que esas columna contiene.\nPara datos numéricos, dependiendo de las posiciones decimales de los datos y su unidad de medida se aconsejan diferentes alineaciones según puede verse en la figura. La regla general es que debe permitir una rápida identificación del orden de magnitud del número.\nPosiciones decimales: restringirse a la cantidad de posiciones decimales significativas de la apreciación del origen de los datos reportados. Redondear a estos valores los datos calculados.\n\n\n\n\nAlineación de datos y columnas\n\n\n\nEspacio entre columnas: Debe ser el mínimo indispensable para permitir delimitación visual entre columnas sin necesidad de agregar lineas verticales.\nAlineación vertical del contenido de una celda: Depende de si el contenido entre columnas tiene una extensión similar o no. Si la extensión es similar, alinearlo al centro deja un mejor margen visual. En cambio, si la extensión varía entre columnas se prefiere una alineación que se ajuste a la última línea (para títulos) o a la primera (para datos).\n\n\n\n\nAlineación vertical\n\n\n\n\n\nTabla de datos y tabla resumen",
     "crumbs": [
       "Clases",
       "Clase 05"
@@ -414,18 +414,18 @@
     "href": "clases/clase-05.html#tablas",
     "title": "Clase 05",
     "section": "",
-    "text": "Elimina estilos de tabla",
+    "text": "Las tablas son una forma de disposición de la información cuya justificación se basa en la naturaleza de los datos que contienen. No toda información se presenta bien en una tabla. En ocasiones la decisión sobre crear una tabla es obvia, como por ejemplo en los datos numéricos de una medición, pero en otras no lo es tanto: comparar resultados obtenidos a través de métodos diferentes o para resumir información dada previamente en el texto o en otras tablas.\n\n\nPara es aconsejable seguir algunos lineamientos para que las tablas en nuestros documentos sean un soporte y apoyo a la narrativa del mismo y no un obstáculo para el lector. Podemos ver en la siguiente imagen algunas ideas\n\n\n\nIdeas generales sobre tablas\n\n\nAlgunas guías generales para las tablas que contienen información científica:\n\nTítulos: Cortos y descriptivos en columnas o filas (abreviar si fuera necesario). Se recomienda usar negrita en títulos de columnas.\n\nSiempre inlcuir las unidades, incertidumbres, número de muestras u otroa información relevante para los datos que se muestran.\n\nTabla: Debe tener referencia numerada (o nombre) para su posterior mención en el texto.\n\n\n\n\nSimpliicar los estilos\n\n\n\n\n\nFormato general\n\n\n\nTipografía: Se recomienda usar tipografías sin serifs (sans-serif) para generar una lectura más ágil y diferenciarla del cuerpo del texto.\nLos valores calculados que dependen de valores de una columna es mejor colocarlos a la derecha del valor del cual dependen.\nAlineación del texto: Para primera columna o fila de descripción se prefiere la alineación izquierda.\n\n\n\n\nTablas largas y separación visual entre filas\n\n\n\nAlineación de los títulos: de las columnas debe concordar con el de los datos que esas columna contiene.\nPara datos numéricos, dependiendo de las posiciones decimales de los datos y su unidad de medida se aconsejan diferentes alineaciones según puede verse en la figura. La regla general es que debe permitir una rápida identificación del orden de magnitud del número.\nPosiciones decimales: restringirse a la cantidad de posiciones decimales significativas de la apreciación del origen de los datos reportados. Redondear a estos valores los datos calculados.\n\n\n\n\nAlineación de datos y columnas\n\n\n\nEspacio entre columnas: Debe ser el mínimo indispensable para permitir delimitación visual entre columnas sin necesidad de agregar lineas verticales.\nAlineación vertical del contenido de una celda: Depende de si el contenido entre columnas tiene una extensión similar o no. Si la extensión es similar, alinearlo al centro deja un mejor margen visual. En cambio, si la extensión varía entre columnas se prefiere una alineación que se ajuste a la última línea (para títulos) o a la primera (para datos).\n\n\n\n\nAlineación vertical\n\n\n\n\n\nTabla de datos y tabla resumen",
     "crumbs": [
       "Clases",
       "Clase 05"
     ]
   },
   {
-    "objectID": "clases/clase-05.html#gráficos-y-figuras",
-    "href": "clases/clase-05.html#gráficos-y-figuras",
+    "objectID": "clases/clase-05.html#en-writer",
+    "href": "clases/clase-05.html#en-writer",
     "title": "Clase 05",
-    "section": "Gráficos y figuras",
-    "text": "Gráficos y figuras",
+    "section": "En Writer",
+    "text": "En Writer\nLas tablas en libre office writer son un poco más amigables que las de otros procesadores de texto aunque no son tan potentes como las que veremos en libre office calc (la planilla de cálculo). Aún así, cuando usemos datos que provengan de otros orígenes (sistemas de adquisición de datos como sensores o equipos de laboratorio) o una planilla de calc, deberemos saber como formatear la tabla para su posterior uso en un documento de texto.\n\nInsertar una tabla\nPara agregar una tabla:\n\nmenú Tabla &gt; Insertar &gt; Tabla.\nEspecifica el número de filas y columnas.\nAjusta las propiedades básicas (ej. nombre, bordes). clic en Aceptar.\n\nMétodo rápido:\nel atajo Ctrl + F12 o clic en el icono de tabla en la barra estándar.\n\n\nModificar la estructura\n\nAñadir o eliminar filas/columnas\n\nAñadir: Clic derecho en una celda &gt; Insertar &gt; Filas/Columnas.\nEliminar: Seleccionar las celdas &gt; clic derecho &gt; Eliminar celdas.\n\n\n\nCombinar celdas\n\nSelecciona las celdas a combinar.\nClic derecho &gt; Combinar celdas.\n\n\n\nPropiedades de tablas\nSi hacemos click derecho &gt; propiedades de tabla accedemos las propiedades generales de la tabla como su alineación en relación a la página, tamaño de filas y columnas, etc.\n\n\n\nOpciones generales\n\n\n\n\n\nEstilos de tabla\nEn writer contamos con diferentes tipos de estilos para tablas\n\nPredeterminados: Estilos como “Tabla Clásica” o “Tabla Sin Bordes”.\nPersonalizados: Estilos creados por el usuario.\n\nA diferencia de los estilos de página, párrafo, texto, etc. que vimos hasta ahora no es posible editar los estilos de tabla existentes desde la barra de estilo en las últimas versiones de libe office. El estilo de tabla académico es un buen punto de partida para personalizarlo según las necesidades de nuestros documentos. Para crear un estilo de tabla hacemos lo siguiente: tabla &gt; estilos de formato automático (con el cursor en una celda de la tabla). Allí podremos crear desde cero un estilo de tabla o modificar los existentes. Más detalles acá.\n\n\nCrear un estilo desde tabla existente\nAunque como vimos con los estilos de párrafo muchas veces es más comodo crear la tabla, formatearla como nos guste y luego crear el estilo a partir de la selecicón.\nHacemos una tabla y la formateamos como nos guste, por ejemplo la que se ve a continuación\n\n\n\nEjemplo de tabla en writer\n\n\nLa seleccionamos y vamos a tabla &gt; estilos de formato automático y luego hacemos añadir damos un nombre al estilo y ya podremos utilizarlo en nuestros documentos.\n\n\n\nTablas desde origen externo\nAl usar datos de otro origen, como una planilla de cálculo es importante que se preserve tanto la integridad y legibilidad de los datos como que el formato de la tabla sea acorde y concuerde con el documento de destino.\nCopiar y pegar los datos desde una hoja de cáculo no es aconsejable salvo que no hayamos dado formato alguno a los datos en la planilla, en tal caso tendremos una tabla que podremos formatear a gusto o aplicar el estilo de nuestro interés.\nSi usamos las opciones de pegado especial tenemos\nHoja de cálculo: Inserta los datos como una planilla de calc que podremos editar con todas las funcione sde la planilla, pero también con las dificultades para formatearla que esto nos trae. No se aconseja salvo que no se puedan tener los datos en una planilla externa.\nMetarchivo (GDI): No permite opciones de formato. Es util sólo cuando tenemos una tabla cuyo tamaño, contenido y formato esté listo para ser incluido en nuestro documento.\nImagen mapa de bits: Mismo que el caso anterior pero con pérdida de calidad si se amplía la imagen.\nLenguaje HTML: Conserva propiedades del formato de origen pero permite su edición en writer y sólo pega los datos visibles (útil si tenemos una tabla con columnas ocultas en calc)\nIntercambio dinámico de datos: Crea un vínculo a la planilla y los cambios hechos ahí son reflejados en el documento de Writer. Pueden aplicársele los formatos de Writer pero incluye columnas ocultas si las hubiere.\nTexto sin formato: Copia el texto tabulado pero sin formar parte de una tabla\nFormato de texto enriquecido: Copia el contenido junto al formato numérico pero no el específico de la tabla y permite su posterior edición en Writer",
     "crumbs": [
       "Clases",
       "Clase 05"
@@ -436,7 +436,18 @@
     "href": "clases/clase-05.html#sumarios-e-índices",
     "title": "Clase 05",
     "section": "Sumarios e índices",
-    "text": "Sumarios e índices",
+    "text": "Sumarios e índices\nLos índices y sumarios permiten crear automáticamente listados a partir de contenido de cierta tipología dentro del documento:\n\nTítulos, subtítulos, etc: índice\nTablas\nFiguras\nEcuaciones (u otros objetos personalizados)\n\nPara crear uno vamos a insertar &gt; sumario e indice y veremos el siguiente menú\n\n\n\nMenú sumario e índices\n\n\nEste menú nos ofrece la opción para crear diferentes tipos de índices seleccionando desde tipo pudiendo cambiar el nombre en titulo\nSi elegimos como tipo índice de figuras podremos elegir qué tipo de elemento el índice colecciona para mostrar\n\n\n\nÍndices de figuras\n\n\n\níndice alfabético\nPara crear un índice alfabético debemos primero crear las entradas que indizaremos haciendo insertar &gt; sumario e índice &gt; entrada de índice\n\n\n\nMenú entrada de índice\n\n\nSi estamos incluyendo ítems debemos primero marcarlos como entrada princpal para que aparezcan al momento de generar el índice alfabético desde el menú indicado más arriba.",
+    "crumbs": [
+      "Clases",
+      "Clase 05"
+    ]
+  },
+  {
+    "objectID": "clases/clase-05.html#referencias",
+    "href": "clases/clase-05.html#referencias",
+    "title": "Clase 05",
+    "section": "Referencias",
+    "text": "Referencias\n\nTablas según science editor\nResearcher’s Guide for the Preparation of Tables\nASA-CSSA-SSSA Style Manual",
     "crumbs": [
       "Clases",
       "Clase 05"
@@ -458,7 +469,62 @@
     "href": "clases/clase-07.html#cuadrados-mínimos",
     "title": "Clase 07",
     "section": "Cuadrados mínimos",
-    "text": "Cuadrados mínimos",
+    "text": "Cuadrados mínimos\nLa regresión por mínimos cuadrados es una técnica estadística utilizada para ajustar una línea recta a un conjunto de datos experimentales. Esta línea recta se define por la ecuación:\n\\[ y = a + b x \\]\ndonde \\(a\\) es la intersección con el eje \\(y\\) (ordenada al origen) y \\(b\\) es la pendiente de la línea. El objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen la suma de los cuadrados de las diferencias entre los valores observados \\(y_i\\) y los valores predichos por el modelo \\(a + b x_i\\). Estas diferencias se conocen como residuos.\nEn este documento, deduciremos las fórmulas para \\(a\\) y \\(b\\) y discutiremos cómo estimar sus incertidumbres, siguiendo los métodos presentados en “Data Analysis for Physical Scientists” de L. Kirkup.",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#planteamiento-del-problema",
+    "href": "clases/clase-07.html#planteamiento-del-problema",
+    "title": "Clase 07",
+    "section": "Planteamiento del problema",
+    "text": "Planteamiento del problema\nSupongamos que tenemos un conjunto de \\(n\\) puntos experimentales, cada uno con coordenadas \\((x_i, y_i)\\), donde \\(x_i\\) es la variable independiente y \\(y_i\\) es la variable dependiente. Queremos encontrar la línea recta que mejor se ajuste a estos datos en el sentido de mínimos cuadrados.\nLa suma de los cuadrados de los residuos, denotada como \\(S\\), se define como:\n\\[\nS = \\sum_{i=1}^{n} [y_i - (a + b x_i)]^2\n\\]\nNuestro objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen \\(S\\).",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#minimización-de-la-suma-de-cuadrados",
+    "href": "clases/clase-07.html#minimización-de-la-suma-de-cuadrados",
+    "title": "Clase 07",
+    "section": "Minimización de la suma de cuadrados",
+    "text": "Minimización de la suma de cuadrados\nPara minimizar \\(S\\), calculamos las derivadas parciales de \\(S\\) con respecto a \\(a\\) y \\(b\\), y las igualamos a cero.\n\nDerivada con respecto a \\(a\\):\n\n\\[\n\\frac{\\partial S}{\\partial a} = -2 \\sum_{i=1}^{n} [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} y_i - n a - b \\sum_{i=1}^{n} x_i = 0 \\quad (1)\n\\]\n\nDerivada con respecto a \\(b\\):\n\n\\[\n\\frac{\\partial S}{\\partial b} = -2 \\sum_{i=1}^{n} x_i [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} x_i y_i - a \\sum_{i=1}^{n} x_i - b \\sum_{i=1}^{n} x_i^2 = 0 \\quad (2)\n\\]\nLas ecuaciones (1) y (2) son conocidas como las ecuaciones normales de la regresión lineal.",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#resolución-de-las-ecuaciones-normales",
+    "href": "clases/clase-07.html#resolución-de-las-ecuaciones-normales",
+    "title": "Clase 07",
+    "section": "Resolución de las ecuaciones normales",
+    "text": "Resolución de las ecuaciones normales\nReorganizamos las ecuaciones (1) y (2) para resolver el sistema:\n\\[ n a + b \\sum_{i=1}^{n} x_i = \\sum_{i=1}^{n} y_i \\quad (1) \\]\n\\[ a \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\quad (2) \\]\n\nPaso 1: Resolver para \\(a\\) en función de \\(b\\)\nDe la ecuación (1):\n\\[ a = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\quad (3) \\]\n\n\nPaso 2: Sustituir \\(a\\) en la ecuación (2)\nSustituyendo (3) en (2):\n\\[ \\left( \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\right) \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\]\nMultiplicamos ambos lados por \\(n\\) para eliminar el denominador:\n\\[ \\left( \\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i \\right) \\sum_{i=1}^{n} x_i + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i \\]\nExpandimos:\n\\[ \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i - b \\left( \\sum_{i=1}^{n} x_i \\right)^2 + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i \\]\nAgrupamos los términos con \\(b\\):\n\\[ b \\left[ n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2 \\right] = n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i \\]\n\n\nPaso 3: Calcular \\(b\\)\nDespejamos \\(b\\):\n\\[ b = \\frac{n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} x_i \\sum_{i=1}^{n} y_i}{n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2} \\quad (4) \\]\n\n\nPaso 4: Calcular \\(a\\)\nSustituimos \\(b\\) de (4) en (3):\n\\[ a = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\]\nEstas expresiones para \\(a\\) y \\(b\\) son las fórmulas estándar de la regresión por mínimos cuadrados.",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#estimación-de-incertidumbres",
+    "href": "clases/clase-07.html#estimación-de-incertidumbres",
+    "title": "Clase 07",
+    "section": "Estimación de incertidumbres",
+    "text": "Estimación de incertidumbres\nEn el análisis de datos experimentales, es crucial evaluar las incertidumbres de los parámetros estimados. Suponemos que los errores en \\(y_i\\) son gaussianos y tienen la misma varianza \\(\\sigma^2\\) (homocedasticidad).\n\nVarianza de los parámetros\nLa varianza de \\(b\\) es:\n\\[ \\text{Var}(b) = \\frac{\\sigma^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\]\ndonde \\(\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\) es la media de los \\(x_i\\).\nLa varianza de \\(a\\) es:\n\\[ \\text{Var}(a) = \\sigma^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right] \\]\n\n\nEstimación de \\(\\sigma^2\\)\nEn la práctica, \\(\\sigma^2\\) no se conoce y se estima a partir de los residuos:\n\\[ s^2 = \\frac{\\sum_{i=1}^{n} [y_i - (a + b x_i)]^2}{n - 2} \\]\ndonde \\(n - 2\\) refleja los grados de libertad, ya que hemos estimado dos parámetros (\\(a\\) y \\(b\\)).\n\n\nIncertidumbres estándar\nLas incertidumbres estándar de \\(a\\) y \\(b\\) son las raíces cuadradas de sus varianzas, utilizando \\(s^2\\) como estimación de \\(\\sigma^2\\):\n\\[ \\sigma_b \\approx \\sqrt{\\frac{s^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}} \\]\n\\[ \\sigma_a \\approx \\sqrt{s^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right]} \\]",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#resumen",
+    "href": "clases/clase-07.html#resumen",
+    "title": "Clase 07",
+    "section": "Resumen",
+    "text": "Resumen\nLa regresión por mínimos cuadrados permite ajustar una línea recta a datos experimentales minimizando la suma de los cuadrados de los residuos. Las fórmulas clave son:\n\nPendiente \\(b\\):\n\n\\[ b = \\frac{n \\sum x_i y_i - \\sum x_i \\sum y_i}{n \\sum x_i^2 - (\\sum x_i)^2} \\]\n\nOrdenada al origen \\(a\\):\n\n\\[ a = \\frac{\\sum y_i - b \\sum x_i}{n} \\]\nAdemás, las incertidumbres de estos parámetros se estiman utilizando la varianza residual \\(s^2\\), lo que es esencial para evaluar la precisión del ajuste en contextos experimentales.\nEsta deducción sigue los métodos presentados en “Data Analysis for Physical Scientists” de L. Kirkup y proporciona una base sólida para el análisis de datos en física y otras ciencias. Si necesitas aplicar esto a un conjunto de datos específico, no dudes en pedírmelo. ¡Espero que esta explicación te sea útil!",
     "crumbs": [
       "Clases",
       "Clase 07"
