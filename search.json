@@ -447,6 +447,28 @@
     ]
   },
   {
+    "objectID": "clases/clase-05-b.html",
+    "href": "clases/clase-05-b.html",
+    "title": "Clase 05-bis",
+    "section": "",
+    "text": "Para agregar la bibliografía a un documento de Writer debemos primero tener una base de datos de bibliografía creada\n\n\n\n\n\nIr a zotero.org/download.\nDescargar el instalador para tu sistema operativo (Windows/macOS/Linux).\nEjecutar el instalador y sigue las instrucciones.\n\n\n\n\n\n\n\nAbre Zotero.\nVe a Herramientas &gt; Complementos y asegúrate de que el complemento LibreOffice Integration esté instalado y activado.\nSi no está instalado:\n\nDescarga la extensión desde Zotero - LibreOffice.\nArrastra el archivo .xpi a la ventana de Zotero.\n\n\n\n\n\n\nAbre LibreOffice Writer.\nVe a Herramientas &gt; Complementos &gt; Administrador de extensiones.\nConfirma que Zotero LibreOffice Integration aparezca en la lista.",
+    "crumbs": [
+      "Clases",
+      "Clase 05-bis"
+    ]
+  },
+  {
+    "objectID": "clases/clase-05-b.html#integración-con-zotero",
+    "href": "clases/clase-05-b.html#integración-con-zotero",
+    "title": "Clase 05-bis",
+    "section": "",
+    "text": "Ir a zotero.org/download.\nDescargar el instalador para tu sistema operativo (Windows/macOS/Linux).\nEjecutar el instalador y sigue las instrucciones.\n\n\n\n\n\n\n\nAbre Zotero.\nVe a Herramientas &gt; Complementos y asegúrate de que el complemento LibreOffice Integration esté instalado y activado.\nSi no está instalado:\n\nDescarga la extensión desde Zotero - LibreOffice.\nArrastra el archivo .xpi a la ventana de Zotero.\n\n\n\n\n\n\nAbre LibreOffice Writer.\nVe a Herramientas &gt; Complementos &gt; Administrador de extensiones.\nConfirma que Zotero LibreOffice Integration aparezca en la lista.",
+    "crumbs": [
+      "Clases",
+      "Clase 05-bis"
+    ]
+  },
+  {
     "objectID": "clases/clase-06.html",
     "href": "clases/clase-06.html",
     "title": "Clase 06",
