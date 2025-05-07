@@ -11,135 +11,307 @@
     ]
   },
   {
-    "objectID": "clases/clase-09.html#gráficas-lineal-vs-log",
-    "href": "clases/clase-09.html#gráficas-lineal-vs-log",
-    "title": "Clase 09",
-    "section": "Gráficas lineal vs log",
-    "text": "Gráficas lineal vs log\n\nDemostración\n\n\nEjemplos",
+    "objectID": "clases/clase-10.html#uso-de-solver",
+    "href": "clases/clase-10.html#uso-de-solver",
+    "title": "Clase 10",
+    "section": "Uso de solver",
+    "text": "Uso de solver",
     "crumbs": [
       "Clases",
-      "Clase 09"
+      "Clase 10"
     ]
   },
   {
-    "objectID": "clases/clase-07.html#desviación-estándar",
-    "href": "clases/clase-07.html#desviación-estándar",
-    "title": "Clase 07",
-    "section": "Desviación estándar",
-    "text": "Desviación estándar",
+    "objectID": "clases/clase-08.html#series-de-datos",
+    "href": "clases/clase-08.html#series-de-datos",
+    "title": "Clase 08",
+    "section": "Series de datos",
+    "text": "Series de datos",
     "crumbs": [
       "Clases",
-      "Clase 07"
+      "Clase 08"
     ]
   },
   {
-    "objectID": "clases/clase-07.html#cuadrados-mínimos",
-    "href": "clases/clase-07.html#cuadrados-mínimos",
-    "title": "Clase 07",
-    "section": "Cuadrados mínimos",
-    "text": "Cuadrados mínimos\nLa regresión por mínimos cuadrados es una técnica estadística utilizada para ajustar una línea recta a un conjunto de datos experimentales. Esta línea recta se define por la ecuación:\n\\[ y = a + b x \\]\ndonde \\(a\\) es la intersección con el eje \\(y\\) (ordenada al origen) y \\(b\\) es la pendiente de la línea. El objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen la suma de los cuadrados de las diferencias entre los valores observados \\(y_i\\) y los valores predichos por el modelo \\(a + b x_i\\). Estas diferencias se conocen como residuos.\nEn este documento, deduciremos las fórmulas para \\(a\\) y \\(b\\) y discutiremos cómo estimar sus incertidumbres, siguiendo los métodos presentados en “Data Analysis for Physical Scientists” de L. Kirkup.",
+    "objectID": "clases/clase-08.html#otras-gráficas",
+    "href": "clases/clase-08.html#otras-gráficas",
+    "title": "Clase 08",
+    "section": "Otras gráficas",
+    "text": "Otras gráficas",
     "crumbs": [
       "Clases",
-      "Clase 07"
+      "Clase 08"
     ]
   },
   {
-    "objectID": "clases/clase-07.html#planteamiento-del-problema",
-    "href": "clases/clase-07.html#planteamiento-del-problema",
-    "title": "Clase 07",
-    "section": "Planteamiento del problema",
-    "text": "Planteamiento del problema\nSupongamos que tenemos un conjunto de \\(n\\) puntos experimentales, cada uno con coordenadas \\((x_i, y_i)\\), donde \\(x_i\\) es la variable independiente y \\(y_i\\) es la variable dependiente. Queremos encontrar la línea recta que mejor se ajuste a estos datos en el sentido de mínimos cuadrados.\nLa suma de los cuadrados de los residuos, denotada como \\(S\\), se define como:\n\\[\nS = \\sum_{i=1}^{n} [y_i - (a + b x_i)]^2\n\\]\nNuestro objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen \\(S\\).",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-07.html#minimización-de-la-suma-de-cuadrados",
-    "href": "clases/clase-07.html#minimización-de-la-suma-de-cuadrados",
-    "title": "Clase 07",
-    "section": "Minimización de la suma de cuadrados",
-    "text": "Minimización de la suma de cuadrados\nPara minimizar \\(S\\), calculamos las derivadas parciales de \\(S\\) con respecto a \\(a\\) y \\(b\\), y las igualamos a cero.\n\nDerivada con respecto a \\(a\\):\n\n\\[\n\\frac{\\partial S}{\\partial a} = -2 \\sum_{i=1}^{n} [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} y_i - n a - b \\sum_{i=1}^{n} x_i = 0 \\quad (1)\n\\]\n\nDerivada con respecto a \\(b\\):\n\n\\[\n\\frac{\\partial S}{\\partial b} = -2 \\sum_{i=1}^{n} x_i [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} x_i y_i - a \\sum_{i=1}^{n} x_i - b \\sum_{i=1}^{n} x_i^2 = 0 \\quad (2)\n\\]\nLas ecuaciones (1) y (2) son conocidas como las ecuaciones normales de la regresión lineal.",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-07.html#resolución-de-las-ecuaciones-normales",
-    "href": "clases/clase-07.html#resolución-de-las-ecuaciones-normales",
-    "title": "Clase 07",
-    "section": "Resolución de las ecuaciones normales",
-    "text": "Resolución de las ecuaciones normales\nReorganizamos las ecuaciones (1) y (2) para resolver el sistema:\n\\[ n a + b \\sum_{i=1}^{n} x_i = \\sum_{i=1}^{n} y_i \\quad (1) \\]\n\\[ a \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\quad (2) \\]\n\nPaso 1: Resolver para \\(a\\) en función de \\(b\\)\nDe la ecuación (1):\n\\[ a = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\quad (3) \\]\n\n\nPaso 2: Sustituir \\(a\\) en la ecuación (2)\nSustituyendo (3) en (2):\n\\[ \\left( \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\right) \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\]\nMultiplicamos ambos lados por \\(n\\) para eliminar el denominador:\n\\[ \\left( \\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i \\right) \\sum_{i=1}^{n} x_i + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i \\]\nExpandimos:\n\\[ \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i - b \\left( \\sum_{i=1}^{n} x_i \\right)^2 + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i \\]\nAgrupamos los términos con \\(b\\):\n\\[ b \\left[ n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2 \\right] = n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i \\]\n\n\nPaso 3: Calcular \\(b\\)\nDespejamos \\(b\\):\n\\[ b = \\frac{n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} x_i \\sum_{i=1}^{n} y_i}{n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2} \\quad (4) \\]\n\n\nPaso 4: Calcular \\(a\\)\nSustituimos \\(b\\) de (4) en (3):\n\\[ a = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\]\nEstas expresiones para \\(a\\) y \\(b\\) son las fórmulas estándar de la regresión por mínimos cuadrados.",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-07.html#estimación-de-incertidumbres",
-    "href": "clases/clase-07.html#estimación-de-incertidumbres",
-    "title": "Clase 07",
-    "section": "Estimación de incertidumbres",
-    "text": "Estimación de incertidumbres\nEn el análisis de datos experimentales, es crucial evaluar las incertidumbres de los parámetros estimados. Suponemos que los errores en \\(y_i\\) son gaussianos y tienen la misma varianza \\(\\sigma^2\\) (homocedasticidad).\n\nVarianza de los parámetros\nLa varianza de \\(b\\) es:\n\\[ \\text{Var}(b) = \\frac{\\sigma^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\]\ndonde \\(\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\) es la media de los \\(x_i\\).\nLa varianza de \\(a\\) es:\n\\[ \\text{Var}(a) = \\sigma^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right] \\]\n\n\nEstimación de \\(\\sigma^2\\)\nEn la práctica, \\(\\sigma^2\\) no se conoce y se estima a partir de los residuos:\n\\[ s^2 = \\frac{\\sum_{i=1}^{n} [y_i - (a + b x_i)]^2}{n - 2} \\]\ndonde \\(n - 2\\) refleja los grados de libertad, ya que hemos estimado dos parámetros (\\(a\\) y \\(b\\)).\n\n\nIncertidumbres estándar\nLas incertidumbres estándar de \\(a\\) y \\(b\\) son las raíces cuadradas de sus varianzas, utilizando \\(s^2\\) como estimación de \\(\\sigma^2\\):\n\\[ \\sigma_b \\approx \\sqrt{\\frac{s^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}} \\]\n\\[ \\sigma_a \\approx \\sqrt{s^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right]} \\]",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-07.html#resumen",
-    "href": "clases/clase-07.html#resumen",
-    "title": "Clase 07",
-    "section": "Resumen",
-    "text": "Resumen\nLa regresión por mínimos cuadrados permite ajustar una línea recta a datos experimentales minimizando la suma de los cuadrados de los residuos. Las fórmulas clave son:\n\nPendiente \\(b\\):\n\n\\[ b = \\frac{n \\sum x_i y_i - \\sum x_i \\sum y_i}{n \\sum x_i^2 - (\\sum x_i)^2} \\]\n\nOrdenada al origen \\(a\\):\n\n\\[ a = \\frac{\\sum y_i - b \\sum x_i}{n} \\]\nAdemás, las incertidumbres de estos parámetros se estiman utilizando la varianza residual \\(s^2\\), lo que es esencial para evaluar la precisión del ajuste en contextos experimentales.\nEsta deducción sigue los métodos presentados en “Data Analysis for Physical Scientists” de L. Kirkup y proporciona una base sólida para el análisis de datos en física y otras ciencias. Si necesitas aplicar esto a un conjunto de datos específico, no dudes en pedírmelo. ¡Espero que esta explicación te sea útil!",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-05.html",
-    "href": "clases/clase-05.html",
-    "title": "Clase 05",
+    "objectID": "clases/clase-06.html",
+    "href": "clases/clase-06.html",
+    "title": "Clase 06",
     "section": "",
-    "text": "Las tablas son una forma de disposición de la información cuya justificación se basa en la naturaleza de los datos que contienen. No toda información se presenta bien en una tabla. En ocasiones la decisión sobre crear una tabla es obvia, como por ejemplo en los datos numéricos de una medición, pero en otras no lo es tanto: comparar resultados obtenidos a través de métodos diferentes o para resumir información dada previamente en el texto o en otras tablas.\n\n\nPara es aconsejable seguir algunos lineamientos para que las tablas en nuestros documentos sean un soporte y apoyo a la narrativa del mismo y no un obstáculo para el lector. Podemos ver en la siguiente imagen algunas ideas\n\n\n\nIdeas generales sobre tablas\n\n\nAlgunas guías generales para las tablas que contienen información científica:\n\nTítulos: Cortos y descriptivos en columnas o filas (abreviar si fuera necesario). Se recomienda usar negrita en títulos de columnas.\n\nSiempre inlcuir las unidades, incertidumbres, número de muestras u otroa información relevante para los datos que se muestran.\n\nTabla: Debe tener referencia numerada (o nombre) para su posterior mención en el texto.\n\n\n\n\nSimpliicar los estilos\n\n\n\n\n\nFormato general\n\n\n\nTipografía: Se recomienda usar tipografías sin serifs (sans-serif) para generar una lectura más ágil y diferenciarla del cuerpo del texto.\nLos valores calculados que dependen de valores de una columna es mejor colocarlos a la derecha del valor del cual dependen.\nAlineación del texto: Para primera columna o fila de descripción se prefiere la alineación izquierda.\n\n\n\n\nTablas largas y separación visual entre filas\n\n\n\nAlineación de los títulos: de las columnas debe concordar con el de los datos que esas columna contiene.\nPara datos numéricos, dependiendo de las posiciones decimales de los datos y su unidad de medida se aconsejan diferentes alineaciones según puede verse en la figura. La regla general es que debe permitir una rápida identificación del orden de magnitud del número.\nPosiciones decimales: restringirse a la cantidad de posiciones decimales significativas de la apreciación del origen de los datos reportados. Redondear a estos valores los datos calculados.\n\n\n\n\nAlineación de datos y columnas\n\n\n\nEspacio entre columnas: Debe ser el mínimo indispensable para permitir delimitación visual entre columnas sin necesidad de agregar lineas verticales.\nAlineación vertical del contenido de una celda: Depende de si el contenido entre columnas tiene una extensión similar o no. Si la extensión es similar, alinearlo al centro deja un mejor margen visual. En cambio, si la extensión varía entre columnas se prefiere una alineación que se ajuste a la última línea (para títulos) o a la primera (para datos).\n\n\n\n\nAlineación vertical\n\n\n\n\n\nTabla de datos y tabla resumen\n\n\n\n\n\nLas tablas en libre office writer son un poco más amigables que las de otros procesadores de texto aunque no son tan potentes como las que veremos en libre office calc (la planilla de cálculo). Aún así, cuando usemos datos que provengan de otros orígenes (sistemas de adquisición de datos como sensores o equipos de laboratorio) o una planilla de calc, deberemos saber como formatear la tabla para su posterior uso en un documento de texto.\n\n\n\nPara agregar una tabla:\n\nmenú Tabla &gt; Insertar &gt; Tabla.\nEspecifica el número de filas y columnas.\nAjusta las propiedades básicas (ej. nombre, bordes). clic en Aceptar.\n\nMétodo rápido:\nel atajo Ctrl + F12 o clic en el icono de tabla en la barra estándar.\n\n\n\n\n\n\nAñadir: Clic derecho en una celda &gt; Insertar &gt; Filas/Columnas.\nEliminar: Seleccionar las celdas &gt; clic derecho &gt; Eliminar celdas.\n\n\n\n\n\nSelecciona las celdas a combinar.\nClic derecho &gt; Combinar celdas.\n\n\n\n\nSi hacemos click derecho &gt; propiedades de tabla accedemos las propiedades generales de la tabla como su alineación en relación a la página, tamaño de filas y columnas, etc.\n\n\n\nOpciones generales\n\n\n\n\n\n\nEn writer contamos con diferentes tipos de estilos para tablas\n\nPredeterminados: Estilos como “Tabla Clásica” o “Tabla Sin Bordes”.\nPersonalizados: Estilos creados por el usuario.\n\nA diferencia de los estilos de página, párrafo, texto, etc. que vimos hasta ahora no es posible editar los estilos de tabla existentes desde la barra de estilo en las últimas versiones de libe office. El estilo de tabla académico es un buen punto de partida para personalizarlo según las necesidades de nuestros documentos. Para crear un estilo de tabla hacemos lo siguiente: tabla &gt; estilos de formato automático (con el cursor en una celda de la tabla). Allí podremos crear desde cero un estilo de tabla o modificar los existentes. Más detalles acá.\n\n\n\nAunque como vimos con los estilos de párrafo muchas veces es más comodo crear la tabla, formatearla como nos guste y luego crear el estilo a partir de la selecicón.\nHacemos una tabla y la formateamos como nos guste, por ejemplo la que se ve a continuación\n\n\n\nEjemplo de tabla en writer\n\n\nLa seleccionamos y vamos a tabla &gt; estilos de formato automático y luego hacemos añadir damos un nombre al estilo y ya podremos utilizarlo en nuestros documentos.\n\n\n\n\nAl usar datos de otro origen, como una planilla de cálculo es importante que se preserve tanto la integridad y legibilidad de los datos como que el formato de la tabla sea acorde y concuerde con el documento de destino.\nCopiar y pegar los datos desde una hoja de cáculo no es aconsejable salvo que no hayamos dado formato alguno a los datos en la planilla, en tal caso tendremos una tabla que podremos formatear a gusto o aplicar el estilo de nuestro interés.\nSi usamos las opciones de pegado especial tenemos\nHoja de cálculo: Inserta los datos como una planilla de calc que podremos editar con todas las funcione sde la planilla, pero también con las dificultades para formatearla que esto nos trae. No se aconseja salvo que no se puedan tener los datos en una planilla externa.\nMetarchivo (GDI): No permite opciones de formato. Es util sólo cuando tenemos una tabla cuyo tamaño, contenido y formato esté listo para ser incluido en nuestro documento.\nImagen mapa de bits: Mismo que el caso anterior pero con pérdida de calidad si se amplía la imagen.\nLenguaje HTML: Conserva propiedades del formato de origen pero permite su edición en writer y sólo pega los datos visibles (útil si tenemos una tabla con columnas ocultas en calc)\nIntercambio dinámico de datos: Crea un vínculo a la planilla y los cambios hechos ahí son reflejados en el documento de Writer. Pueden aplicársele los formatos de Writer pero incluye columnas ocultas si las hubiere.\nTexto sin formato: Copia el texto tabulado pero sin formar parte de una tabla\nFormato de texto enriquecido: Copia el contenido junto al formato numérico pero no el específico de la tabla y permite su posterior edición en Writer",
+    "text": "Ayuda de libre office calc\nUna planilla de cálculo es una estructura reglada de celdas cuyo contenido puede ser o bien texto, o bien resultado de un cálculo. Los cálculos pueden ser los aritméticos usuales o resultado de la aplicación de una función o secuencia de comandos específica.\nDicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.",
     "crumbs": [
       "Clases",
-      "Clase 05"
+      "Clase 06"
     ]
   },
   {
-    "objectID": "clases/clase-05.html#tablas",
-    "href": "clases/clase-05.html#tablas",
-    "title": "Clase 05",
+    "objectID": "clases/clase-06.html#introducción-a-calc",
+    "href": "clases/clase-06.html#introducción-a-calc",
+    "title": "Clase 06",
     "section": "",
-    "text": "Las tablas son una forma de disposición de la información cuya justificación se basa en la naturaleza de los datos que contienen. No toda información se presenta bien en una tabla. En ocasiones la decisión sobre crear una tabla es obvia, como por ejemplo en los datos numéricos de una medición, pero en otras no lo es tanto: comparar resultados obtenidos a través de métodos diferentes o para resumir información dada previamente en el texto o en otras tablas.\n\n\nPara es aconsejable seguir algunos lineamientos para que las tablas en nuestros documentos sean un soporte y apoyo a la narrativa del mismo y no un obstáculo para el lector. Podemos ver en la siguiente imagen algunas ideas\n\n\n\nIdeas generales sobre tablas\n\n\nAlgunas guías generales para las tablas que contienen información científica:\n\nTítulos: Cortos y descriptivos en columnas o filas (abreviar si fuera necesario). Se recomienda usar negrita en títulos de columnas.\n\nSiempre inlcuir las unidades, incertidumbres, número de muestras u otroa información relevante para los datos que se muestran.\n\nTabla: Debe tener referencia numerada (o nombre) para su posterior mención en el texto.\n\n\n\n\nSimpliicar los estilos\n\n\n\n\n\nFormato general\n\n\n\nTipografía: Se recomienda usar tipografías sin serifs (sans-serif) para generar una lectura más ágil y diferenciarla del cuerpo del texto.\nLos valores calculados que dependen de valores de una columna es mejor colocarlos a la derecha del valor del cual dependen.\nAlineación del texto: Para primera columna o fila de descripción se prefiere la alineación izquierda.\n\n\n\n\nTablas largas y separación visual entre filas\n\n\n\nAlineación de los títulos: de las columnas debe concordar con el de los datos que esas columna contiene.\nPara datos numéricos, dependiendo de las posiciones decimales de los datos y su unidad de medida se aconsejan diferentes alineaciones según puede verse en la figura. La regla general es que debe permitir una rápida identificación del orden de magnitud del número.\nPosiciones decimales: restringirse a la cantidad de posiciones decimales significativas de la apreciación del origen de los datos reportados. Redondear a estos valores los datos calculados.\n\n\n\n\nAlineación de datos y columnas\n\n\n\nEspacio entre columnas: Debe ser el mínimo indispensable para permitir delimitación visual entre columnas sin necesidad de agregar lineas verticales.\nAlineación vertical del contenido de una celda: Depende de si el contenido entre columnas tiene una extensión similar o no. Si la extensión es similar, alinearlo al centro deja un mejor margen visual. En cambio, si la extensión varía entre columnas se prefiere una alineación que se ajuste a la última línea (para títulos) o a la primera (para datos).\n\n\n\n\nAlineación vertical\n\n\n\n\n\nTabla de datos y tabla resumen\n\n\n\n\n\nLas tablas en libre office writer son un poco más amigables que las de otros procesadores de texto aunque no son tan potentes como las que veremos en libre office calc (la planilla de cálculo). Aún así, cuando usemos datos que provengan de otros orígenes (sistemas de adquisición de datos como sensores o equipos de laboratorio) o una planilla de calc, deberemos saber como formatear la tabla para su posterior uso en un documento de texto.\n\n\n\nPara agregar una tabla:\n\nmenú Tabla &gt; Insertar &gt; Tabla.\nEspecifica el número de filas y columnas.\nAjusta las propiedades básicas (ej. nombre, bordes). clic en Aceptar.\n\nMétodo rápido:\nel atajo Ctrl + F12 o clic en el icono de tabla en la barra estándar.\n\n\n\n\n\n\nAñadir: Clic derecho en una celda &gt; Insertar &gt; Filas/Columnas.\nEliminar: Seleccionar las celdas &gt; clic derecho &gt; Eliminar celdas.\n\n\n\n\n\nSelecciona las celdas a combinar.\nClic derecho &gt; Combinar celdas.\n\n\n\n\nSi hacemos click derecho &gt; propiedades de tabla accedemos las propiedades generales de la tabla como su alineación en relación a la página, tamaño de filas y columnas, etc.\n\n\n\nOpciones generales\n\n\n\n\n\n\nEn writer contamos con diferentes tipos de estilos para tablas\n\nPredeterminados: Estilos como “Tabla Clásica” o “Tabla Sin Bordes”.\nPersonalizados: Estilos creados por el usuario.\n\nA diferencia de los estilos de página, párrafo, texto, etc. que vimos hasta ahora no es posible editar los estilos de tabla existentes desde la barra de estilo en las últimas versiones de libe office. El estilo de tabla académico es un buen punto de partida para personalizarlo según las necesidades de nuestros documentos. Para crear un estilo de tabla hacemos lo siguiente: tabla &gt; estilos de formato automático (con el cursor en una celda de la tabla). Allí podremos crear desde cero un estilo de tabla o modificar los existentes. Más detalles acá.\n\n\n\nAunque como vimos con los estilos de párrafo muchas veces es más comodo crear la tabla, formatearla como nos guste y luego crear el estilo a partir de la selecicón.\nHacemos una tabla y la formateamos como nos guste, por ejemplo la que se ve a continuación\n\n\n\nEjemplo de tabla en writer\n\n\nLa seleccionamos y vamos a tabla &gt; estilos de formato automático y luego hacemos añadir damos un nombre al estilo y ya podremos utilizarlo en nuestros documentos.\n\n\n\n\nAl usar datos de otro origen, como una planilla de cálculo es importante que se preserve tanto la integridad y legibilidad de los datos como que el formato de la tabla sea acorde y concuerde con el documento de destino.\nCopiar y pegar los datos desde una hoja de cáculo no es aconsejable salvo que no hayamos dado formato alguno a los datos en la planilla, en tal caso tendremos una tabla que podremos formatear a gusto o aplicar el estilo de nuestro interés.\nSi usamos las opciones de pegado especial tenemos\nHoja de cálculo: Inserta los datos como una planilla de calc que podremos editar con todas las funcione sde la planilla, pero también con las dificultades para formatearla que esto nos trae. No se aconseja salvo que no se puedan tener los datos en una planilla externa.\nMetarchivo (GDI): No permite opciones de formato. Es util sólo cuando tenemos una tabla cuyo tamaño, contenido y formato esté listo para ser incluido en nuestro documento.\nImagen mapa de bits: Mismo que el caso anterior pero con pérdida de calidad si se amplía la imagen.\nLenguaje HTML: Conserva propiedades del formato de origen pero permite su edición en writer y sólo pega los datos visibles (útil si tenemos una tabla con columnas ocultas en calc)\nIntercambio dinámico de datos: Crea un vínculo a la planilla y los cambios hechos ahí son reflejados en el documento de Writer. Pueden aplicársele los formatos de Writer pero incluye columnas ocultas si las hubiere.\nTexto sin formato: Copia el texto tabulado pero sin formar parte de una tabla\nFormato de texto enriquecido: Copia el contenido junto al formato numérico pero no el específico de la tabla y permite su posterior edición en Writer",
+    "text": "Ayuda de libre office calc\nUna planilla de cálculo es una estructura reglada de celdas cuyo contenido puede ser o bien texto, o bien resultado de un cálculo. Los cálculos pueden ser los aritméticos usuales o resultado de la aplicación de una función o secuencia de comandos específica.\nDicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.",
     "crumbs": [
       "Clases",
-      "Clase 05"
+      "Clase 06"
     ]
   },
   {
-    "objectID": "clases/clase-05.html#sumarios-e-índices",
-    "href": "clases/clase-05.html#sumarios-e-índices",
-    "title": "Clase 05",
-    "section": "Sumarios e índices",
-    "text": "Sumarios e índices\nLos índices y sumarios permiten crear automáticamente listados a partir de contenido de cierta tipología dentro del documento:\n\nTítulos, subtítulos, etc: índice\nTablas\nFiguras\nEcuaciones (u otros objetos personalizados)\n\nPara crear uno vamos a insertar &gt; sumario e indice y veremos el siguiente menú\n\n\n\nMenú sumario e índices\n\n\nEste menú nos ofrece la opción para crear diferentes tipos de índices seleccionando desde tipo pudiendo cambiar el nombre en titulo\nSi elegimos como tipo índice de figuras podremos elegir qué tipo de elemento el índice colecciona para mostrar\n\n\n\nÍndices de figuras\n\n\n\níndice alfabético\nPara crear un índice alfabético debemos primero crear las entradas que indizaremos haciendo insertar &gt; sumario e índice &gt; entrada de índice\n\n\n\nMenú entrada de índice\n\n\nSi estamos incluyendo ítems debemos primero marcarlos como entrada princpal para que aparezcan al momento de generar el índice alfabético desde el menú indicado más arriba.",
+    "objectID": "clases/clase-06.html#lista-de-reproducción",
+    "href": "clases/clase-06.html#lista-de-reproducción",
+    "title": "Clase 06",
+    "section": " Lista de reproducción",
+    "text": "Lista de reproducción\nEn este link accederán a una lista de reproducción de videos sobre Libre Office Calc\n\nCeldas\nLas celdas están referidas en un formato letra-número que indican su pertenencia a el par columna-fila. La celda A4 es la cuarta fila de la primera columna.\n\n\nReferencias\nLas celdas se pueden referir usando el par columna-fila y es posible “anclar” ya sea la fila o la columna usando el signo “\\(\" delante del a indicación. Ejemplo: \"\\)A$1” es una referncia absoluta a la celda A1 y no se verá modificada por acciones que hagamos al arrastrar selecciones. Volveremos sobre esto más adelante.",
     "crumbs": [
       "Clases",
-      "Clase 05"
+      "Clase 06"
     ]
   },
   {
-    "objectID": "clases/clase-05.html#referencias",
-    "href": "clases/clase-05.html#referencias",
-    "title": "Clase 05",
-    "section": "Referencias",
-    "text": "Referencias\n\nTablas según science editor\nResearcher’s Guide for the Preparation of Tables\nASA-CSSA-SSSA Style Manual",
+    "objectID": "clases/clase-06.html#funciones",
+    "href": "clases/clase-06.html#funciones",
+    "title": "Clase 06",
+    "section": "Funciones",
+    "text": "Funciones\nLas funciones en una planilla de cálculo ejecutan tareas sobre una celda o un rango de celdas de acuerdo a la sintaxis de cada una. En analogía con funciones del ámbito matemático, a un valor (o varios) de entrada, ofrece un valor (o varios) de salida. Lo que llamamos valores de entrada, en Calc pueden ser ingresados manualmente o ser referencias a valores existentes en otras celdas.",
     "crumbs": [
       "Clases",
-      "Clase 05"
+      "Clase 06"
+    ]
+  },
+  {
+    "objectID": "clases/clase-06.html#formato-de-número",
+    "href": "clases/clase-06.html#formato-de-número",
+    "title": "Clase 06",
+    "section": "Formato de número",
+    "text": "Formato de número\n\nDecimales, redondeo y notación científica",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
+    ]
+  },
+  {
+    "objectID": "clases/clase-03.html",
+    "href": "clases/clase-03.html",
+    "title": "Clase 03",
+    "section": "",
+    "text": "Libre office trae incorporado un editor de ecuaciones bastante aceptable, al nivel de Word u otros procesadores de texto. En comparativa, las versiones on-line tanto de Microsoft como de Google son bastante deficientes en cuanto al manejo de ecuaciones en relación a sus contrapartes que se instalan localmente.",
+    "crumbs": [
+      "Clases",
+      "Clase 03"
+    ]
+  },
+  {
+    "objectID": "clases/clase-03.html#edición-de-ecuaciones-en-libre-office",
+    "href": "clases/clase-03.html#edición-de-ecuaciones-en-libre-office",
+    "title": "Clase 03",
+    "section": "",
+    "text": "Libre office trae incorporado un editor de ecuaciones bastante aceptable, al nivel de Word u otros procesadores de texto. En comparativa, las versiones on-line tanto de Microsoft como de Google son bastante deficientes en cuanto al manejo de ecuaciones en relación a sus contrapartes que se instalan localmente.",
+    "crumbs": [
+      "Clases",
+      "Clase 03"
+    ]
+  },
+  {
+    "objectID": "clases/clase-03.html#latex",
+    "href": "clases/clase-03.html#latex",
+    "title": "Clase 03",
+    "section": "Latex",
+    "text": "Latex\nLatex es un lenguaje de programación completo que ha sido y es actualmente usado como herramienta de diseño editorial. Muchos libros que compramos, en especial aquellos libros de texto de ciencias suelen escribirse usando Latex como lenguaje.\nLa relación entre resultados vs esfuerzo que Latex requiere no lo hace viable para nuestra materia aunque usaremos algo de sus funciones cuando editemos ecuaciones en nuestros documentos.\nUn breve manualcito de algunas cosas de latex que usaremos lo pueden consultar aca",
+    "crumbs": [
+      "Clases",
+      "Clase 03"
+    ]
+  },
+  {
+    "objectID": "clases/clase-03.html#como-introducir-latex-en-libre-office",
+    "href": "clases/clase-03.html#como-introducir-latex-en-libre-office",
+    "title": "Clase 03",
+    "section": "Como introducir Latex en Libre-Office",
+    "text": "Como introducir Latex en Libre-Office\nUsaremos la extensión TexMaths para poder aprovechar la potencia de Latex desde la comodidad de un editor de texto tradicional, dejando de lado su costado mas complejo que es justamente todo lo relacionado al formato de un documento.\nPara que esta extensión funcione se requiere tener latex instalado en la computadora. En Windows, MikTex es una opción popular (que también se puede instalar en Linux), mientras que en Linu se suele usar TexLive. Las instrucciones detalladas se pueden consultar acá. Es conveniente instalar Latex antes de TexMaths.\nPara descargar TexMaths ingresamos acá o desde la web citada más arriba. El archivo descargado se puede ejecutar al hacer doble click, guiándonos paso a paso en su instalación.\nEn las computadoras del instituto, deberíamos contar ya tanto con Latex como con TexMaths si iniciamos con Linux.",
+    "crumbs": [
+      "Clases",
+      "Clase 03"
+    ]
+  },
+  {
+    "objectID": "clases/clase-03.html#uso-básico-de-texmaths",
+    "href": "clases/clase-03.html#uso-básico-de-texmaths",
+    "title": "Clase 03",
+    "section": "Uso básico de TexMaths",
+    "text": "Uso básico de TexMaths\nLa barra de herramientas es esta\n\n\n\n\n\n\nBarra de herramientas\n\n\n\n\nFigura 1: Barra de herramientas de TexMaths\n\n\n\nSi Latex está instalado, con hacer click en la barra de herramientas en cualquiera de los dos primeros íconos de izquierda a derecha debería llevarnos a este menú\n\n\n\nMenú TexMaths\n\n\nAllí podemos escribir la ecuación que queramos que se insertará en la posición en que se encuentre el cursor",
+    "crumbs": [
+      "Clases",
+      "Clase 03"
+    ]
+  },
+  {
+    "objectID": "clases/clase-03.html#configuraión-de-texmaths",
+    "href": "clases/clase-03.html#configuraión-de-texmaths",
+    "title": "Clase 03",
+    "section": "Configuraión de TexMaths",
+    "text": "Configuraión de TexMaths\nSi accedemos al ícono que contiene una llave y un destornillador podremos acceder a la configuración. En este menú entremos Rutas, Opciones, Interface, Atajos.\n\nRutas: Podremos verificar que TexMaths haya encontrado todo lo necesario para ejecutarse\nOpciones: En la parte de ecuaciones numeradas podremos elegir el rótulo y su configuración para ecuaciones numeradas\nInterface: Elegimos la tipogrfía y el tamaño por defecto\nAtajos: Podremos configurar un atajo de teclado para insertar una ecuación (bastante recomendable si hacemos uso instensivo de las mismas)",
+    "crumbs": [
+      "Clases",
+      "Clase 03"
+    ]
+  },
+  {
+    "objectID": "clases/clase-03.html#tipos-de-ecuación",
+    "href": "clases/clase-03.html#tipos-de-ecuación",
+    "title": "Clase 03",
+    "section": "Tipos de ecuación",
+    "text": "Tipos de ecuación\nEn el modo LaTeX, TexMaths puede generar tres tipos de ecuaciones LaTeX:\nEcuaciones de visualización (Display) Ecuaciones de visualización en línea (Inline) Ecuaciones de LaTeX\nPara seleccionar un tipo de ecuación, simplemente use el botón de opción ubicado dentro del marco Tipo de ecuación.\nPara generar ecuaciones de visualización o ecuaciones de visualización en línea, todo lo que hay que hacer es seleccionar el tipo de ecuación apropiado y luego escribir el código de la ecuación en el campo de texto del cuadro de diálogo Ecuaciones de TexMaths.\nEj: Para generar el símbolo alfa griego, simplemente escriba \\alpha. Se puede acceder al código Latex de cada símbolo si se deja el mouse sobre cada uno. No es necesario memorizarlos, pero con el uso se van recordando los más usados y agilizan la creación de ecuaciones.\nLas ecuaciones de visualización en línea (inline) se obtienen de la misma manera, pero la diferencia es el estilo de la ecuación generada, que se integra mejor dentro de un párrafo en Writer. Por ejemplo, el índice de suma y el exponente se muestran junto al signo de suma y no por debajo ni por encima.\nAmbos tipos de ecuaciones son ideales para ecuaciones simples de una línea y la alineación vertical dentro del texto es correcta, pero no pueden manejar ecuaciones multilínea o entornos LaTeX más generales. Para ese tipo de ecuaciones, seleccione el tipo de ecuación LaTeX y escriba su ecuación dentro de las instrucciones \\begin{}y\\end{}. Puede utilizar cualquier instrucción del entorno LaTeX.\nEj: Escriba las siguientes líneas para mostrar una ecuación de tres líneas, alineadas en el signo igual.\n\\begin{alinear*}\nx &= 1 \\\\\ny &= 2x+1\\\\\n&= 3\\\\\n\\end{alinear*}\nEn resumen, para ecuaciones de 1 Línea, tanto Display como Inline suelen funcionar bien. En Cambio, si tenemos ecuaciones de varios pasos, seleccionamos la opción Latex.\nSi seleccionamos preferencias accedemos a la coniguración por defecto para poder dejar tanto el tamaño de la tipografía como el tipo de ecuación que aparece seleecionado cuando abrimos el editor.\nLa opción de preámbulo nos permiterá ingresar a Latex paquetes específicos para algunas funciones, como por ejemplo, simbología químia específica, gráficos u otras cosas que latex permite hacer, pero que no veremos en detalle en este curso.\nPueden ver una descripción de esto mismo en la página del desarrollador de la extensión\n\nEscritura de latex directamente en el texto\nEs posible escribir Latex directamente en el texto, seleccionarlo y al apretar el ícono de TexMaths, se convertirá al formato de ecuación.\n\n\nEditar una ecuación previamente insertada\nDentro de un documento de LibreOffice, seleccione una imagen de ecuación (ya generada con TexMaths) y haga clic en el icono de Ecuaciones de TexMaths en la barra de herramientas de TexMaths. Lo que nos lleva al menú de edición de ecuaciones con el que la creamos en primer lugar.\nPodemos además ver las ecuaciones anteriores y navegar entre ellas con los símbolos &lt;&gt; &lt;&lt; &gt;&gt; que aparecen en la parte inferior del menú de edición de ecuaciones.\nA continuación tenemos un breve video que muestra la aplicación de TexMaths en un contexto de ecuaciones químicas, agregando paquetes al preámbulo con sus pecualiridades, que de momento a nosotros no nos importan.",
+    "crumbs": [
+      "Clases",
+      "Clase 03"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html",
+    "href": "clases/clase-01.html",
+    "title": "Clase 01",
+    "section": "",
+    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "crumbs": [
+      "Clases",
+      "Clase 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#formulario-de-bienvenida",
+    "href": "clases/clase-01.html#formulario-de-bienvenida",
+    "title": "Clase 01",
+    "section": "",
+    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "crumbs": [
+      "Clases",
+      "Clase 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#libre-office",
+    "href": "clases/clase-01.html#libre-office",
+    "title": "Clase 01",
+    "section": "Libre office",
+    "text": "Libre office\n\n¿Qué es libre office?\nLibre office es una suite de ofimática (herramientas de software para producción en entornos de trabajo) libre y de código abierto mantenida por sus propios usuarios. Es gratuita y en casi todos los casos igual o mejor que sus contrapartes no gratuitas.\n\n\n¿Para qué libre office?\nTodo trabajo, incluso aquellos que son la manufactura de algún producto requieren piezas de comunicación visual y escrita: manuales, tutoriales, folletos, informes, etc. La comunicación del quehacer de la ciencia no es la excepción: bitácoras e informes de laboratorio, artículos para revistas e instituciones científicas, libros de texto, de divulgación o material de estudio de caracter académico. Estos textos tienen cada uno su propio estilo de escritura y estructura según su función y algunos soportes preferidos por conveniencia, uso, costumbre en algunos casos y millones bien invertidos en otros.\nExisten formatos que son preferidos en ciertos ámbitos, como Latex para publicaciones científicas y parte del mundo editorial o softwares como in-design o illustrator para los mismos fines para otras publicaciones.\n\nNostoros usaremos libre office como soporte por su unviersalidad (todos podemos conseguirlo) y sabemos que siempre contaremos con el sofware: no dejaremos de tener acceso a lo que hicimos porque la nueva versión no es compatible (y la vieja ya no está disponible) y al tener una gran red de usuarios que pueden extender la funcionalidad del paquete: es posible encontrar extensiones que se vayan adaptando a nuestras necesidades.\nPor último pero no menos importante, siendo que Latex es el formato de-facto para publicaciones académicas o científicas ¿por qué no lo usamos? Sencillamente porque latex no es un procesador de texto. Es un lenguaje de programación completo y aprenderlo nos llevaría mucho mas tiempo del que tenemos en este curso, además de que para los fines de escribir informes de laboratorio el costo inversión de tiempo vs resultados obtenidos está bastante corrido a favor de lo primero: se requiere poner mucho en latex para obtener algo decente. Sin embargo como el tratamiento de las expresiones matemáticas que latex ofrece es superior a lo que cualquier procesador de texto traiga por defecto, lo incluiiremos en nuestro flujo de trabajo a través de la extensión tex maths\n\n\nInstalando libre office\nEn su web oficial podemos acceder a la sección descarga y desde allí bajar la versión que necesitemos. La útima disponible en general funciona con casi todos los dispositivos pero si tenemos probelmas en la instalación podemos buscar en la página alguna versión anterior.\n\nInstalando tex-maths\nEn este enlace se puede descargar la última versión. Una vez descargado se ejecuta e instala siguiendo los pasos que el instalador ofrece.\n\n\n\nAyuda en línea y manuales\nLa ayuda de libre office está en casi todos los idiomas, aunque a veces la traducción automática falla un poco (se “olvida” de traducir algún que otro párrafo) es bastante completa. Además podemos descargar manuales (los más actualizados están en inglés) en pdf para quienes prefieran buscar en un documento y no en la web o para cuando no se tenga acceso a internet.",
+    "crumbs": [
+      "Clases",
+      "Clase 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#libre-office-writer",
+    "href": "clases/clase-01.html#libre-office-writer",
+    "title": "Clase 01",
+    "section": "Libre Office-Writer",
+    "text": "Libre Office-Writer\n\nLista de videos \nEn esta lista de reproducción podrán ver una serie de videos que cubren bastatante de la funcionalidad de libre office Writer.\n\n\nEstilos en Writer\nHemos visto que desde el menú ver -&gt; barra de estilos accedemos a los estilos que vienen predefinidos para las diferentes secciones de writer: párrafo, página, listas, etc.\nA continuación les comparto algunos videos que resumen un poco lo que vimos en esta clase:\n\n\nEn versiones anteriores de libre office si bien los menús se ven diferentes, la dinámica es idéntica\n\n\n\n\nNiveles de jearquía numerados\nPor ejemplo, los niveles de titulo se pueden auto numerar yendo a herramientas -&gt; numeración de títulos\nEsta configuración no está disponible como un estilo predeterminado sino que se aplica a los estilos existentes o a aquellos creados que sean niveles de jerárquicos.\nEn la ayuda de libre office podemos ver una explicación un poco más detallada.",
+    "crumbs": [
+      "Clases",
+      "Clase 01"
+    ]
+  },
+  {
+    "objectID": "clases/clase-01.html#actividad-inicial",
+    "href": "clases/clase-01.html#actividad-inicial",
+    "title": "Clase 01",
+    "section": "Actividad inicial",
+    "text": "Actividad inicial\n\nArqueología de publicaciones\nEn este link J. J. Thomson 1897 (lemoyne.edu) se encuentra una versión web de la publicación de Thomson en la que refuerza la idea del electrón como partícula elemental, y en este otro link de la Philosophical Magazine se ve la publicación en la revista original. Una breve reseña de divulgación del trabajo de Thomson la pueden leer acá: Cuantización de la carga eléctrica\nInstrucciones Deberán presentar una versión del trabajo de Thomson tomando como origen la versión web y como guía para el estilo visual la publicación original. Pueden traducir el texto para ir leyéndolo si así lo prefieren (el inglés original es un poco barroco)\nLos elementos a tener en cuenta para este documento serán\n\nTipografía: tamaño y tipo de letra (encontrar alguna o algunas tipografías que puedan servir)\nEncabezados y pies de página\nTexto: interlineado, orientación, sangría\nTablas\nEcuaciones\n\nIremos trabajando los detalles de cada elemento en las primeras dos clases mientras exploramos las funciones elementales de Writer",
+    "crumbs": [
+      "Clases",
+      "Clase 01"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Computación 1-661",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "calendario.html",
+    "href": "calendario.html",
+    "title": "Calendario de clases",
+    "section": "",
+    "text": "Clase\nDía\nFecha\nContenido\nApuntes\nDiapos\nTp\nExamen\nProyecto\n\n\n\n\n1\nMiércoles\n26/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n\n\n\n\n\n\n\n\nMiércoles\n02/04/25\nDía del Veterano y de los Caídos en la Guerra de Malvinas\n\n\n\n\n\n\n\n2\nMiércoles\n09/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n\n\n\n\n\n\n\n3\nMiércoles\n16/04/25\nLibre Office Writer. Latex vía TexMaths.\n\n\n\n\n\n\n\n4\nMiércoles\n23/04/25\nLibre Office Writer. Personalización de página\n\n\n\n\n\n\n\n5\nMiércoles\n30/04/25\nLibre Office Writer. Tablas, sumarios e índices\n\n\n\n\n\n\n\n6\nMiércoles\n07/05/25\nLibre Office Writer. Bibliografía. Integración con Zotero\n\n\n\n\n\n\n\n7\nMiércoles\n14/05/25\nLibre Office Calc. Funciones elementales\n\n\n\n\n\n\n\n8\nMiércoles\n21/05/25\nLibre Office Calc. Funciones de estadística\n\n\n\n\n\n\n\n9\nMiércoles\n28/05/25\nLibre Office Calc. Gráficas\n\n\n\n\n\n\n\n10\nMiércoles\n04/06/25\nLibre Office Calc. Gráficas: Linealización de datos\n\n\n\n\n\n\n\n11\nMiércoles\n11/06/25\nLibre Office Calc. Solver\n\n\n\n\n\n\n\n12\nMiércoles\n18/06/25\nLibre Office Calc + Writer. Integración\n\n\n\n\n\n\n\n13\nMiércoles\n25/06/25\nCONSULTAS PRIMER PARCIAL\n\n\n\n\n\n\n\n14\nMiércoles\n02/07/25\nPRIMER PARCIAL\n\n\n\n\n\n\n\n\nMiércoles\n09/07/25\nDía de la Independencia\n\n\n\n\n\n\n\n15\nMiércoles\n16/07/25\nRECUPERATORIO PRIMER PARCIAL\n\n\n\n\n\n\n\n16\nMiércoles\n13/08/25\nUNIDAD 5\n\n\n\n\n\n\n\n17\nMiércoles\n20/08/25\nUNIDAD 5\n\n\n\n\n\n\n\n18\nMiércoles\n27/08/25\nUNIDAD 5\n\n\n\n\n\n\n\n19\nMiércoles\n03/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n20\nMiércoles\n10/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n21\nMiércoles\n17/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n22\nMiércoles\n24/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n\nMiércoles\n01/10/25\nLlamado a finales (sin clases)\n\n\n\n\n\n\n\n23\nMiércoles\n08/10/25\nUNIDAD 5\n\n\n\n\n\n\n\n24\nMiércoles\n15/10/25\nUNIDAD 5\n\n\n\n\n\n\n\n25\nMiércoles\n22/10/25\nUNIDAD 5\n\n\n\n\n\n\n\n26\nMiércoles\n29/10/25\nCONSULTAS SEGUNDO PARCIAL\n\n\n\n\n\n\n\n27\nMiércoles\n05/11/25\nSEGUNDO PARCIAL\n\n\n\n\n\n\n\n28\nMiércoles\n12/11/25\nRECUPERATORIO SEGUNDO PARCIAL\n\n\n\n\n\n\n\n29\nMiércoles\n19/11/25\nRECUPERATORIOS Y CONSULTAS PARA FINAL",
+    "crumbs": [
+      "Info Cursada",
+      "Calendario de clases"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html",
+    "href": "clases/clase-02.html",
+    "title": "Clase 02",
+    "section": "",
+    "text": "En un documento de writer podemos agregar imágenes, gráficos, cuadros, tablas etc. con diferentes categorías de rotulos: es decir, podemos tener por un lado las imágenes, y por otro las tablas o cuadros e identificarlos con una numeración correlativa y de actualización secuencial automática para cada grupo.\nPara distinguir entre objetos se utilizan las leyendas y para mencionar dichos objetos se usan las remisiones. Veamos como\n\n\nPodemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.\n\n\n\nPara obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.\n\n\n\nSi se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda\n\n\n\n\n\nUna vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión\n\n\n\n\n\nLos estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#insertar-figuras-y-leyendas",
+    "href": "clases/clase-02.html#insertar-figuras-y-leyendas",
+    "title": "Clase 02",
+    "section": "",
+    "text": "Podemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#posicionamiento",
+    "href": "clases/clase-02.html#posicionamiento",
+    "title": "Clase 02",
+    "section": "",
+    "text": "Para obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#leyenda",
+    "href": "clases/clase-02.html#leyenda",
+    "title": "Clase 02",
+    "section": "",
+    "text": "Si se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#remisiones",
+    "href": "clases/clase-02.html#remisiones",
+    "title": "Clase 02",
+    "section": "",
+    "text": "Una vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
+    ]
+  },
+  {
+    "objectID": "clases/clase-02.html#estilos",
+    "href": "clases/clase-02.html#estilos",
+    "title": "Clase 02",
+    "section": "",
+    "text": "Los estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "crumbs": [
+      "Clases",
+      "Clase 02"
     ]
   },
   {
@@ -231,296 +403,234 @@
     ]
   },
   {
-    "objectID": "clases/clase-02.html",
-    "href": "clases/clase-02.html",
-    "title": "Clase 02",
+    "objectID": "clases/clase-05.html",
+    "href": "clases/clase-05.html",
+    "title": "Clase 05",
     "section": "",
-    "text": "En un documento de writer podemos agregar imágenes, gráficos, cuadros, tablas etc. con diferentes categorías de rotulos: es decir, podemos tener por un lado las imágenes, y por otro las tablas o cuadros e identificarlos con una numeración correlativa y de actualización secuencial automática para cada grupo.\nPara distinguir entre objetos se utilizan las leyendas y para mencionar dichos objetos se usan las remisiones. Veamos como\n\n\nPodemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.\n\n\n\nPara obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.\n\n\n\nSi se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda\n\n\n\n\n\nUna vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión\n\n\n\n\n\nLos estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "text": "Las tablas son una forma de disposición de la información cuya justificación se basa en la naturaleza de los datos que contienen. No toda información se presenta bien en una tabla. En ocasiones la decisión sobre crear una tabla es obvia, como por ejemplo en los datos numéricos de una medición, pero en otras no lo es tanto: comparar resultados obtenidos a través de métodos diferentes o para resumir información dada previamente en el texto o en otras tablas.\n\n\nPara es aconsejable seguir algunos lineamientos para que las tablas en nuestros documentos sean un soporte y apoyo a la narrativa del mismo y no un obstáculo para el lector. Podemos ver en la siguiente imagen algunas ideas\n\n\n\nIdeas generales sobre tablas\n\n\nAlgunas guías generales para las tablas que contienen información científica:\n\nTítulos: Cortos y descriptivos en columnas o filas (abreviar si fuera necesario). Se recomienda usar negrita en títulos de columnas.\n\nSiempre inlcuir las unidades, incertidumbres, número de muestras u otroa información relevante para los datos que se muestran.\n\nTabla: Debe tener referencia numerada (o nombre) para su posterior mención en el texto.\n\n\n\n\nSimpliicar los estilos\n\n\n\n\n\nFormato general\n\n\n\nTipografía: Se recomienda usar tipografías sin serifs (sans-serif) para generar una lectura más ágil y diferenciarla del cuerpo del texto.\nLos valores calculados que dependen de valores de una columna es mejor colocarlos a la derecha del valor del cual dependen.\nAlineación del texto: Para primera columna o fila de descripción se prefiere la alineación izquierda.\n\n\n\n\nTablas largas y separación visual entre filas\n\n\n\nAlineación de los títulos: de las columnas debe concordar con el de los datos que esas columna contiene.\nPara datos numéricos, dependiendo de las posiciones decimales de los datos y su unidad de medida se aconsejan diferentes alineaciones según puede verse en la figura. La regla general es que debe permitir una rápida identificación del orden de magnitud del número.\nPosiciones decimales: restringirse a la cantidad de posiciones decimales significativas de la apreciación del origen de los datos reportados. Redondear a estos valores los datos calculados.\n\n\n\n\nAlineación de datos y columnas\n\n\n\nEspacio entre columnas: Debe ser el mínimo indispensable para permitir delimitación visual entre columnas sin necesidad de agregar lineas verticales.\nAlineación vertical del contenido de una celda: Depende de si el contenido entre columnas tiene una extensión similar o no. Si la extensión es similar, alinearlo al centro deja un mejor margen visual. En cambio, si la extensión varía entre columnas se prefiere una alineación que se ajuste a la última línea (para títulos) o a la primera (para datos).\n\n\n\n\nAlineación vertical\n\n\n\n\n\nTabla de datos y tabla resumen\n\n\n\n\n\nLas tablas en libre office writer son un poco más amigables que las de otros procesadores de texto aunque no son tan potentes como las que veremos en libre office calc (la planilla de cálculo). Aún así, cuando usemos datos que provengan de otros orígenes (sistemas de adquisición de datos como sensores o equipos de laboratorio) o una planilla de calc, deberemos saber como formatear la tabla para su posterior uso en un documento de texto.\n\n\n\nPara agregar una tabla:\n\nmenú Tabla &gt; Insertar &gt; Tabla.\nEspecifica el número de filas y columnas.\nAjusta las propiedades básicas (ej. nombre, bordes). clic en Aceptar.\n\nMétodo rápido:\nel atajo Ctrl + F12 o clic en el icono de tabla en la barra estándar.\n\n\n\n\n\n\nAñadir: Clic derecho en una celda &gt; Insertar &gt; Filas/Columnas.\nEliminar: Seleccionar las celdas &gt; clic derecho &gt; Eliminar celdas.\n\n\n\n\n\nSelecciona las celdas a combinar.\nClic derecho &gt; Combinar celdas.\n\n\n\n\nSi hacemos click derecho &gt; propiedades de tabla accedemos las propiedades generales de la tabla como su alineación en relación a la página, tamaño de filas y columnas, etc.\n\n\n\nOpciones generales\n\n\n\n\n\n\nEn writer contamos con diferentes tipos de estilos para tablas\n\nPredeterminados: Estilos como “Tabla Clásica” o “Tabla Sin Bordes”.\nPersonalizados: Estilos creados por el usuario.\n\nA diferencia de los estilos de página, párrafo, texto, etc. que vimos hasta ahora no es posible editar los estilos de tabla existentes desde la barra de estilo en las últimas versiones de libe office. El estilo de tabla académico es un buen punto de partida para personalizarlo según las necesidades de nuestros documentos. Para crear un estilo de tabla hacemos lo siguiente: tabla &gt; estilos de formato automático (con el cursor en una celda de la tabla). Allí podremos crear desde cero un estilo de tabla o modificar los existentes. Más detalles acá.\n\n\n\nAunque como vimos con los estilos de párrafo muchas veces es más comodo crear la tabla, formatearla como nos guste y luego crear el estilo a partir de la selecicón.\nHacemos una tabla y la formateamos como nos guste, por ejemplo la que se ve a continuación\n\n\n\nEjemplo de tabla en writer\n\n\nLa seleccionamos y vamos a tabla &gt; estilos de formato automático y luego hacemos añadir damos un nombre al estilo y ya podremos utilizarlo en nuestros documentos.\n\n\n\n\nAl usar datos de otro origen, como una planilla de cálculo es importante que se preserve tanto la integridad y legibilidad de los datos como que el formato de la tabla sea acorde y concuerde con el documento de destino.\nCopiar y pegar los datos desde una hoja de cáculo no es aconsejable salvo que no hayamos dado formato alguno a los datos en la planilla, en tal caso tendremos una tabla que podremos formatear a gusto o aplicar el estilo de nuestro interés.\nSi usamos las opciones de pegado especial tenemos\nHoja de cálculo: Inserta los datos como una planilla de calc que podremos editar con todas las funcione sde la planilla, pero también con las dificultades para formatearla que esto nos trae. No se aconseja salvo que no se puedan tener los datos en una planilla externa.\nMetarchivo (GDI): No permite opciones de formato. Es util sólo cuando tenemos una tabla cuyo tamaño, contenido y formato esté listo para ser incluido en nuestro documento.\nImagen mapa de bits: Mismo que el caso anterior pero con pérdida de calidad si se amplía la imagen.\nLenguaje HTML: Conserva propiedades del formato de origen pero permite su edición en writer y sólo pega los datos visibles (útil si tenemos una tabla con columnas ocultas en calc)\nIntercambio dinámico de datos: Crea un vínculo a la planilla y los cambios hechos ahí son reflejados en el documento de Writer. Pueden aplicársele los formatos de Writer pero incluye columnas ocultas si las hubiere.\nTexto sin formato: Copia el texto tabulado pero sin formar parte de una tabla\nFormato de texto enriquecido: Copia el contenido junto al formato numérico pero no el específico de la tabla y permite su posterior edición en Writer",
     "crumbs": [
       "Clases",
-      "Clase 02"
+      "Clase 05"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#insertar-figuras-y-leyendas",
-    "href": "clases/clase-02.html#insertar-figuras-y-leyendas",
-    "title": "Clase 02",
+    "objectID": "clases/clase-05.html#tablas",
+    "href": "clases/clase-05.html#tablas",
+    "title": "Clase 05",
     "section": "",
-    "text": "Podemos insertar gráficos e imagenes desde el menu insertar o pegando el elemento en el cuerpo del texto.",
+    "text": "Las tablas son una forma de disposición de la información cuya justificación se basa en la naturaleza de los datos que contienen. No toda información se presenta bien en una tabla. En ocasiones la decisión sobre crear una tabla es obvia, como por ejemplo en los datos numéricos de una medición, pero en otras no lo es tanto: comparar resultados obtenidos a través de métodos diferentes o para resumir información dada previamente en el texto o en otras tablas.\n\n\nPara es aconsejable seguir algunos lineamientos para que las tablas en nuestros documentos sean un soporte y apoyo a la narrativa del mismo y no un obstáculo para el lector. Podemos ver en la siguiente imagen algunas ideas\n\n\n\nIdeas generales sobre tablas\n\n\nAlgunas guías generales para las tablas que contienen información científica:\n\nTítulos: Cortos y descriptivos en columnas o filas (abreviar si fuera necesario). Se recomienda usar negrita en títulos de columnas.\n\nSiempre inlcuir las unidades, incertidumbres, número de muestras u otroa información relevante para los datos que se muestran.\n\nTabla: Debe tener referencia numerada (o nombre) para su posterior mención en el texto.\n\n\n\n\nSimpliicar los estilos\n\n\n\n\n\nFormato general\n\n\n\nTipografía: Se recomienda usar tipografías sin serifs (sans-serif) para generar una lectura más ágil y diferenciarla del cuerpo del texto.\nLos valores calculados que dependen de valores de una columna es mejor colocarlos a la derecha del valor del cual dependen.\nAlineación del texto: Para primera columna o fila de descripción se prefiere la alineación izquierda.\n\n\n\n\nTablas largas y separación visual entre filas\n\n\n\nAlineación de los títulos: de las columnas debe concordar con el de los datos que esas columna contiene.\nPara datos numéricos, dependiendo de las posiciones decimales de los datos y su unidad de medida se aconsejan diferentes alineaciones según puede verse en la figura. La regla general es que debe permitir una rápida identificación del orden de magnitud del número.\nPosiciones decimales: restringirse a la cantidad de posiciones decimales significativas de la apreciación del origen de los datos reportados. Redondear a estos valores los datos calculados.\n\n\n\n\nAlineación de datos y columnas\n\n\n\nEspacio entre columnas: Debe ser el mínimo indispensable para permitir delimitación visual entre columnas sin necesidad de agregar lineas verticales.\nAlineación vertical del contenido de una celda: Depende de si el contenido entre columnas tiene una extensión similar o no. Si la extensión es similar, alinearlo al centro deja un mejor margen visual. En cambio, si la extensión varía entre columnas se prefiere una alineación que se ajuste a la última línea (para títulos) o a la primera (para datos).\n\n\n\n\nAlineación vertical\n\n\n\n\n\nTabla de datos y tabla resumen\n\n\n\n\n\nLas tablas en libre office writer son un poco más amigables que las de otros procesadores de texto aunque no son tan potentes como las que veremos en libre office calc (la planilla de cálculo). Aún así, cuando usemos datos que provengan de otros orígenes (sistemas de adquisición de datos como sensores o equipos de laboratorio) o una planilla de calc, deberemos saber como formatear la tabla para su posterior uso en un documento de texto.\n\n\n\nPara agregar una tabla:\n\nmenú Tabla &gt; Insertar &gt; Tabla.\nEspecifica el número de filas y columnas.\nAjusta las propiedades básicas (ej. nombre, bordes). clic en Aceptar.\n\nMétodo rápido:\nel atajo Ctrl + F12 o clic en el icono de tabla en la barra estándar.\n\n\n\n\n\n\nAñadir: Clic derecho en una celda &gt; Insertar &gt; Filas/Columnas.\nEliminar: Seleccionar las celdas &gt; clic derecho &gt; Eliminar celdas.\n\n\n\n\n\nSelecciona las celdas a combinar.\nClic derecho &gt; Combinar celdas.\n\n\n\n\nSi hacemos click derecho &gt; propiedades de tabla accedemos las propiedades generales de la tabla como su alineación en relación a la página, tamaño de filas y columnas, etc.\n\n\n\nOpciones generales\n\n\n\n\n\n\nEn writer contamos con diferentes tipos de estilos para tablas\n\nPredeterminados: Estilos como “Tabla Clásica” o “Tabla Sin Bordes”.\nPersonalizados: Estilos creados por el usuario.\n\nA diferencia de los estilos de página, párrafo, texto, etc. que vimos hasta ahora no es posible editar los estilos de tabla existentes desde la barra de estilo en las últimas versiones de libe office. El estilo de tabla académico es un buen punto de partida para personalizarlo según las necesidades de nuestros documentos. Para crear un estilo de tabla hacemos lo siguiente: tabla &gt; estilos de formato automático (con el cursor en una celda de la tabla). Allí podremos crear desde cero un estilo de tabla o modificar los existentes. Más detalles acá.\n\n\n\nAunque como vimos con los estilos de párrafo muchas veces es más comodo crear la tabla, formatearla como nos guste y luego crear el estilo a partir de la selecicón.\nHacemos una tabla y la formateamos como nos guste, por ejemplo la que se ve a continuación\n\n\n\nEjemplo de tabla en writer\n\n\nLa seleccionamos y vamos a tabla &gt; estilos de formato automático y luego hacemos añadir damos un nombre al estilo y ya podremos utilizarlo en nuestros documentos.\n\n\n\n\nAl usar datos de otro origen, como una planilla de cálculo es importante que se preserve tanto la integridad y legibilidad de los datos como que el formato de la tabla sea acorde y concuerde con el documento de destino.\nCopiar y pegar los datos desde una hoja de cáculo no es aconsejable salvo que no hayamos dado formato alguno a los datos en la planilla, en tal caso tendremos una tabla que podremos formatear a gusto o aplicar el estilo de nuestro interés.\nSi usamos las opciones de pegado especial tenemos\nHoja de cálculo: Inserta los datos como una planilla de calc que podremos editar con todas las funcione sde la planilla, pero también con las dificultades para formatearla que esto nos trae. No se aconseja salvo que no se puedan tener los datos en una planilla externa.\nMetarchivo (GDI): No permite opciones de formato. Es util sólo cuando tenemos una tabla cuyo tamaño, contenido y formato esté listo para ser incluido en nuestro documento.\nImagen mapa de bits: Mismo que el caso anterior pero con pérdida de calidad si se amplía la imagen.\nLenguaje HTML: Conserva propiedades del formato de origen pero permite su edición en writer y sólo pega los datos visibles (útil si tenemos una tabla con columnas ocultas en calc)\nIntercambio dinámico de datos: Crea un vínculo a la planilla y los cambios hechos ahí son reflejados en el documento de Writer. Pueden aplicársele los formatos de Writer pero incluye columnas ocultas si las hubiere.\nTexto sin formato: Copia el texto tabulado pero sin formar parte de una tabla\nFormato de texto enriquecido: Copia el contenido junto al formato numérico pero no el específico de la tabla y permite su posterior edición en Writer",
     "crumbs": [
       "Clases",
-      "Clase 02"
+      "Clase 05"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#posicionamiento",
-    "href": "clases/clase-02.html#posicionamiento",
-    "title": "Clase 02",
+    "objectID": "clases/clase-05.html#sumarios-e-índices",
+    "href": "clases/clase-05.html#sumarios-e-índices",
+    "title": "Clase 05",
+    "section": "Sumarios e índices",
+    "text": "Sumarios e índices\nLos índices y sumarios permiten crear automáticamente listados a partir de contenido de cierta tipología dentro del documento:\n\nTítulos, subtítulos, etc: índice\nTablas\nFiguras\nEcuaciones (u otros objetos personalizados)\n\nPara crear uno vamos a insertar &gt; sumario e indice y veremos el siguiente menú\n\n\n\nMenú sumario e índices\n\n\nEste menú nos ofrece la opción para crear diferentes tipos de índices seleccionando desde tipo pudiendo cambiar el nombre en titulo\nSi elegimos como tipo índice de figuras podremos elegir qué tipo de elemento el índice colecciona para mostrar\n\n\n\nÍndices de figuras\n\n\n\níndice alfabético\nPara crear un índice alfabético debemos primero crear las entradas que indizaremos haciendo insertar &gt; sumario e índice &gt; entrada de índice\n\n\n\nMenú entrada de índice\n\n\nSi estamos incluyendo ítems debemos primero marcarlos como entrada princpal para que aparezcan al momento de generar el índice alfabético desde el menú indicado más arriba.",
+    "crumbs": [
+      "Clases",
+      "Clase 05"
+    ]
+  },
+  {
+    "objectID": "clases/clase-05.html#referencias",
+    "href": "clases/clase-05.html#referencias",
+    "title": "Clase 05",
+    "section": "Referencias",
+    "text": "Referencias\n\nTablas según science editor\nResearcher’s Guide for the Preparation of Tables\nASA-CSSA-SSSA Style Manual",
+    "crumbs": [
+      "Clases",
+      "Clase 05"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#desviación-estándar",
+    "href": "clases/clase-07.html#desviación-estándar",
+    "title": "Clase 07",
+    "section": "Desviación estándar",
+    "text": "Desviación estándar",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#cuadrados-mínimos",
+    "href": "clases/clase-07.html#cuadrados-mínimos",
+    "title": "Clase 07",
+    "section": "Cuadrados mínimos",
+    "text": "Cuadrados mínimos\nLa regresión por mínimos cuadrados es una técnica estadística utilizada para ajustar una línea recta a un conjunto de datos experimentales. Esta línea recta se define por la ecuación:\n\\[ y = a + b x \\]\ndonde \\(a\\) es la intersección con el eje \\(y\\) (ordenada al origen) y \\(b\\) es la pendiente de la línea. El objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen la suma de los cuadrados de las diferencias entre los valores observados \\(y_i\\) y los valores predichos por el modelo \\(a + b x_i\\). Estas diferencias se conocen como residuos.\nEn este documento, deduciremos las fórmulas para \\(a\\) y \\(b\\) y discutiremos cómo estimar sus incertidumbres, siguiendo los métodos presentados en “Data Analysis for Physical Scientists” de L. Kirkup.",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#planteamiento-del-problema",
+    "href": "clases/clase-07.html#planteamiento-del-problema",
+    "title": "Clase 07",
+    "section": "Planteamiento del problema",
+    "text": "Planteamiento del problema\nSupongamos que tenemos un conjunto de \\(n\\) puntos experimentales, cada uno con coordenadas \\((x_i, y_i)\\), donde \\(x_i\\) es la variable independiente y \\(y_i\\) es la variable dependiente. Queremos encontrar la línea recta que mejor se ajuste a estos datos en el sentido de mínimos cuadrados.\nLa suma de los cuadrados de los residuos, denotada como \\(S\\), se define como:\n\\[\nS = \\sum_{i=1}^{n} [y_i - (a + b x_i)]^2\n\\]\nNuestro objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen \\(S\\).",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#minimización-de-la-suma-de-cuadrados",
+    "href": "clases/clase-07.html#minimización-de-la-suma-de-cuadrados",
+    "title": "Clase 07",
+    "section": "Minimización de la suma de cuadrados",
+    "text": "Minimización de la suma de cuadrados\nPara minimizar \\(S\\), calculamos las derivadas parciales de \\(S\\) con respecto a \\(a\\) y \\(b\\), y las igualamos a cero.\n\nDerivada con respecto a \\(a\\):\n\n\\[\n\\frac{\\partial S}{\\partial a} = -2 \\sum_{i=1}^{n} [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} y_i - n a - b \\sum_{i=1}^{n} x_i = 0 \\quad (1)\n\\]\n\nDerivada con respecto a \\(b\\):\n\n\\[\n\\frac{\\partial S}{\\partial b} = -2 \\sum_{i=1}^{n} x_i [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} x_i y_i - a \\sum_{i=1}^{n} x_i - b \\sum_{i=1}^{n} x_i^2 = 0 \\quad (2)\n\\]\nLas ecuaciones (1) y (2) son conocidas como las ecuaciones normales de la regresión lineal.",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#resolución-de-las-ecuaciones-normales",
+    "href": "clases/clase-07.html#resolución-de-las-ecuaciones-normales",
+    "title": "Clase 07",
+    "section": "Resolución de las ecuaciones normales",
+    "text": "Resolución de las ecuaciones normales\nReorganizamos las ecuaciones (1) y (2) para resolver el sistema:\n\\[ n a + b \\sum_{i=1}^{n} x_i = \\sum_{i=1}^{n} y_i \\quad (1) \\]\n\\[ a \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\quad (2) \\]\n\nPaso 1: Resolver para \\(a\\) en función de \\(b\\)\nDe la ecuación (1):\n\\[ a = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\quad (3) \\]\n\n\nPaso 2: Sustituir \\(a\\) en la ecuación (2)\nSustituyendo (3) en (2):\n\\[ \\left( \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\right) \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\]\nMultiplicamos ambos lados por \\(n\\) para eliminar el denominador:\n\\[ \\left( \\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i \\right) \\sum_{i=1}^{n} x_i + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i \\]\nExpandimos:\n\\[ \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i - b \\left( \\sum_{i=1}^{n} x_i \\right)^2 + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i \\]\nAgrupamos los términos con \\(b\\):\n\\[ b \\left[ n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2 \\right] = n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i \\]\n\n\nPaso 3: Calcular \\(b\\)\nDespejamos \\(b\\):\n\\[ b = \\frac{n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} x_i \\sum_{i=1}^{n} y_i}{n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2} \\quad (4) \\]\n\n\nPaso 4: Calcular \\(a\\)\nSustituimos \\(b\\) de (4) en (3):\n\\[ a = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\]\nEstas expresiones para \\(a\\) y \\(b\\) son las fórmulas estándar de la regresión por mínimos cuadrados.",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#estimación-de-incertidumbres",
+    "href": "clases/clase-07.html#estimación-de-incertidumbres",
+    "title": "Clase 07",
+    "section": "Estimación de incertidumbres",
+    "text": "Estimación de incertidumbres\nEn el análisis de datos experimentales, es crucial evaluar las incertidumbres de los parámetros estimados. Suponemos que los errores en \\(y_i\\) son gaussianos y tienen la misma varianza \\(\\sigma^2\\) (homocedasticidad).\n\nVarianza de los parámetros\nLa varianza de \\(b\\) es:\n\\[ \\text{Var}(b) = \\frac{\\sigma^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\]\ndonde \\(\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\) es la media de los \\(x_i\\).\nLa varianza de \\(a\\) es:\n\\[ \\text{Var}(a) = \\sigma^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right] \\]\n\n\nEstimación de \\(\\sigma^2\\)\nEn la práctica, \\(\\sigma^2\\) no se conoce y se estima a partir de los residuos:\n\\[ s^2 = \\frac{\\sum_{i=1}^{n} [y_i - (a + b x_i)]^2}{n - 2} \\]\ndonde \\(n - 2\\) refleja los grados de libertad, ya que hemos estimado dos parámetros (\\(a\\) y \\(b\\)).\n\n\nIncertidumbres estándar\nLas incertidumbres estándar de \\(a\\) y \\(b\\) son las raíces cuadradas de sus varianzas, utilizando \\(s^2\\) como estimación de \\(\\sigma^2\\):\n\\[ \\sigma_b \\approx \\sqrt{\\frac{s^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}} \\]\n\\[ \\sigma_a \\approx \\sqrt{s^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right]} \\]",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#resumen",
+    "href": "clases/clase-07.html#resumen",
+    "title": "Clase 07",
+    "section": "Resumen",
+    "text": "Resumen\nLa regresión por mínimos cuadrados permite ajustar una línea recta a datos experimentales minimizando la suma de los cuadrados de los residuos. Las fórmulas clave son:\n\nPendiente \\(b\\):\n\n\\[ b = \\frac{n \\sum x_i y_i - \\sum x_i \\sum y_i}{n \\sum x_i^2 - (\\sum x_i)^2} \\]\n\nOrdenada al origen \\(a\\):\n\n\\[ a = \\frac{\\sum y_i - b \\sum x_i}{n} \\]\nAdemás, las incertidumbres de estos parámetros se estiman utilizando la varianza residual \\(s^2\\), lo que es esencial para evaluar la precisión del ajuste en contextos experimentales.\nEsta deducción sigue los métodos presentados en “Data Analysis for Physical Scientists” de L. Kirkup y proporciona una base sólida para el análisis de datos en física y otras ciencias. Si necesitas aplicar esto a un conjunto de datos específico, no dudes en pedírmelo. ¡Espero que esta explicación te sea útil!",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#gráficas-lineal-vs-log",
+    "href": "clases/clase-09.html#gráficas-lineal-vs-log",
+    "title": "Clase 09",
+    "section": "Gráficas lineal vs log",
+    "text": "Gráficas lineal vs log\n\nDemostración\n\n\nEjemplos",
+    "crumbs": [
+      "Clases",
+      "Clase 09"
+    ]
+  },
+  {
+    "objectID": "clases/zotero.html",
+    "href": "clases/zotero.html",
+    "title": "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados",
     "section": "",
-    "text": "Para obtener un resultado acorde a nuestras expectativas hay que comprender que una figura posee tanto una alineación respecto al párrafo al que integra y puede ser cambiada desde la barra de herramientas correspondiente.\n\n\n\nbarra de herramientas de imagen\n\n\nToda figura insertada posee un borde externo invisible que delimita su tamaño efectivo y que puede hacerse visible si se lo pinta de algún color. Las opciones de anclaje del objeto pueden ser diferentes para la figura en sí y para el marco que la contiene, lo que es una fuente de comportamientos no deseados cuando no se comporende a qué objeto se le ha cambiado el anclaje.\nPara poder continuar escribiendo debajo de la figura, toda ella, junto al cuadro que la contiene debe estar anclado como caracter, donde el cursos se posiciona al final de la figura, y así, cuando se oprime la tecla enter se crea una nueva línea y la figura queda donde está. En todos los otros casos, el comportamiento es diferente y debemos seleccionar el que mejor se ajuste a nuestro propósito, por ejemplo: si queremos que una imagen quede siempre debajo de un párrafo que hace referencia a ella, el anclaje debe ser al párrafo y en tal caso, cuando vamos escribiendo la imagen se irá moviendo para quedar siempre junto al párrafo precedente.",
+    "text": "Zotero es un gestor de referencias gratuito que se integra perfectamente con LibreOffice Writer, facilitando la inserción de citas y la creación automática de bibliografías. Este artículo explica cómo configurarlo y añadir elementos a la bibliografía sin citarlos en el texto.",
     "crumbs": [
       "Clases",
-      "Clase 02"
+      "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#leyenda",
-    "href": "clases/clase-02.html#leyenda",
-    "title": "Clase 02",
+    "objectID": "clases/zotero.html#introducción",
+    "href": "clases/zotero.html#introducción",
+    "title": "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados",
     "section": "",
-    "text": "Si se selecciona la figura insertada y se va al menu insertar  leyenda se acceden a las opciones para la leyenda del elemento individual\n\n\n\ncuadro de diálogo de leyenda",
+    "text": "Zotero es un gestor de referencias gratuito que se integra perfectamente con LibreOffice Writer, facilitando la inserción de citas y la creación automática de bibliografías. Este artículo explica cómo configurarlo y añadir elementos a la bibliografía sin citarlos en el texto.",
     "crumbs": [
       "Clases",
-      "Clase 02"
+      "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#remisiones",
-    "href": "clases/clase-02.html#remisiones",
-    "title": "Clase 02",
-    "section": "",
-    "text": "Una vez que tenemos un elemento con su leyenda, podemos hacer mención a el con las remisiones para ello vamos al menú insertar  remisión\n\n\n\ncuadro de diálogo remisio\n\n\nSi elegimos insertar se pueden agregar cuantas remisiones queramos con estilos diferentes. Cada vez que la figura y su leyenda se actualicen éstas se irán actualizando en todas las menciones que se hayan hecho a lo largo del texto, hecho favorable y que nos ahorra tiempo, pero que hay que tener en cuenta si eliminamos una figura a la que se hace referencia en algún lugar del texto.\n\n\n\ncuadro de diálogo remisión",
+    "objectID": "clases/zotero.html#instalación-de-zotero",
+    "href": "clases/zotero.html#instalación-de-zotero",
+    "title": "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados",
+    "section": "1. Instalación de Zotero",
+    "text": "1. Instalación de Zotero\n\nPaso 1: Descargar e instalar\n\nVe a zotero.org/download.\nDescarga el instalador para tu sistema operativo (Windows/macOS/Linux).\nEjecuta el instalador y sigue las instrucciones.\n\n\n\nPaso 2: Instalar el conector para navegadores\n\nInstala la extensión Zotero Connector para Chrome, Firefox o Edge desde el mismo sitio. Esto permite capturar fuentes directamente desde la web.",
     "crumbs": [
       "Clases",
-      "Clase 02"
+      "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados"
     ]
   },
   {
-    "objectID": "clases/clase-02.html#estilos",
-    "href": "clases/clase-02.html#estilos",
-    "title": "Clase 02",
-    "section": "",
-    "text": "Los estilos para las leyendas y remisiones pueden ser personalizados desde la barar de estilos a la que podemos acceder desde ver  barra de estilos y luego haciendo doble click en el estilo que nos interese para acceder a sus propiedades.\n\n\n\nestilos para las leyendas",
+    "objectID": "clases/zotero.html#vincular-zotero-con-libreoffice-writer",
+    "href": "clases/zotero.html#vincular-zotero-con-libreoffice-writer",
+    "title": "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados",
+    "section": "2. Vincular Zotero con LibreOffice Writer",
+    "text": "2. Vincular Zotero con LibreOffice Writer\n\nPaso 1: Habilitar la integración\n\nAbre Zotero.\nVe a Herramientas &gt; Complementos y asegúrate de que el complemento LibreOffice Integration esté instalado y activado.\nSi no está instalado:\n\nDescarga la extensión desde Zotero - LibreOffice.\nArrastra el archivo .xpi a la ventana de Zotero.\n\n\n\n\nPaso 2: Configurar LibreOffice\n\nAbre LibreOffice Writer.\nVe a Herramientas &gt; Complementos &gt; Administrador de extensiones.\nConfirma que Zotero LibreOffice Integration aparezca en la lista.",
     "crumbs": [
       "Clases",
-      "Clase 02"
+      "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados"
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Computación 1-661",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "clases/clase-01.html",
-    "href": "clases/clase-01.html",
-    "title": "Clase 01",
-    "section": "",
-    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "objectID": "clases/zotero.html#insertar-citas-y-bibliografía",
+    "href": "clases/zotero.html#insertar-citas-y-bibliografía",
+    "title": "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados",
+    "section": "3. Insertar citas y bibliografía",
+    "text": "3. Insertar citas y bibliografía\n\nPaso 1: Añadir una cita\n\nColoca el cursor donde quieras la cita.\nHaz clic en el icono de Zotero en la barra de LibreOffice (Insertar cita).\nBusca la referencia en tu biblioteca de Zotero y haz clic en Aceptar.\n\n\n\n\nInsertar cita en LibreOffice\n\n\n\n\nPaso 2: Generar la bibliografía\n\nColoca el cursor al final del documento.\nHaz clic en el icono Insertar bibliografía de Zotero.\nLa bibliografía se generará automáticamente con todas las citas insertadas.",
     "crumbs": [
       "Clases",
-      "Clase 01"
+      "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#formulario-de-bienvenida",
-    "href": "clases/clase-01.html#formulario-de-bienvenida",
-    "title": "Clase 01",
-    "section": "",
-    "text": "Código qr del formulario\n\n\n\n\nFigura 1: Código para llenar formulario",
+    "objectID": "clases/zotero.html#añadir-elementos-no-citados-a-la-bibliografía",
+    "href": "clases/zotero.html#añadir-elementos-no-citados-a-la-bibliografía",
+    "title": "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados",
+    "section": "4. Añadir elementos no citados a la bibliografía",
+    "text": "4. Añadir elementos no citados a la bibliografía\n\nMétodo 1: Usar “Elementos no utilizados” de Zotero\n\nEn Zotero, crea una colección específica (ej. “Bibliografía adicional”).\nAñade las referencias no citadas a esta colección.\nEn LibreOffice:\n\nHaz clic en Insertar bibliografía.\nEn la ventana emergente, selecciona Incluir elementos no citados.\nElige la colección creada.\n\n\n\n\nMétodo 2: Forzar la inclusión\n\nAñade una cita “fantasma”:\n\nInserta una cita normal y luego elimina el texto de la cita en el documento, pero mantén el campo de Zotero.\n\nActualiza la bibliografía (clic derecho &gt; Actualizar).",
     "crumbs": [
       "Clases",
-      "Clase 01"
+      "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#libre-office",
-    "href": "clases/clase-01.html#libre-office",
-    "title": "Clase 01",
-    "section": "Libre office",
-    "text": "Libre office\n\n¿Qué es libre office?\nLibre office es una suite de ofimática (herramientas de software para producción en entornos de trabajo) libre y de código abierto mantenida por sus propios usuarios. Es gratuita y en casi todos los casos igual o mejor que sus contrapartes no gratuitas.\n\n\n¿Para qué libre office?\nTodo trabajo, incluso aquellos que son la manufactura de algún producto requieren piezas de comunicación visual y escrita: manuales, tutoriales, folletos, informes, etc. La comunicación del quehacer de la ciencia no es la excepción: bitácoras e informes de laboratorio, artículos para revistas e instituciones científicas, libros de texto, de divulgación o material de estudio de caracter académico. Estos textos tienen cada uno su propio estilo de escritura y estructura según su función y algunos soportes preferidos por conveniencia, uso, costumbre en algunos casos y millones bien invertidos en otros.\nExisten formatos que son preferidos en ciertos ámbitos, como Latex para publicaciones científicas y parte del mundo editorial o softwares como in-design o illustrator para los mismos fines para otras publicaciones.\n\nNostoros usaremos libre office como soporte por su unviersalidad (todos podemos conseguirlo) y sabemos que siempre contaremos con el sofware: no dejaremos de tener acceso a lo que hicimos porque la nueva versión no es compatible (y la vieja ya no está disponible) y al tener una gran red de usuarios que pueden extender la funcionalidad del paquete: es posible encontrar extensiones que se vayan adaptando a nuestras necesidades.\nPor último pero no menos importante, siendo que Latex es el formato de-facto para publicaciones académicas o científicas ¿por qué no lo usamos? Sencillamente porque latex no es un procesador de texto. Es un lenguaje de programación completo y aprenderlo nos llevaría mucho mas tiempo del que tenemos en este curso, además de que para los fines de escribir informes de laboratorio el costo inversión de tiempo vs resultados obtenidos está bastante corrido a favor de lo primero: se requiere poner mucho en latex para obtener algo decente. Sin embargo como el tratamiento de las expresiones matemáticas que latex ofrece es superior a lo que cualquier procesador de texto traiga por defecto, lo incluiiremos en nuestro flujo de trabajo a través de la extensión tex maths\n\n\nInstalando libre office\nEn su web oficial podemos acceder a la sección descarga y desde allí bajar la versión que necesitemos. La útima disponible en general funciona con casi todos los dispositivos pero si tenemos probelmas en la instalación podemos buscar en la página alguna versión anterior.\n\nInstalando tex-maths\nEn este enlace se puede descargar la última versión. Una vez descargado se ejecuta e instala siguiendo los pasos que el instalador ofrece.\n\n\n\nAyuda en línea y manuales\nLa ayuda de libre office está en casi todos los idiomas, aunque a veces la traducción automática falla un poco (se “olvida” de traducir algún que otro párrafo) es bastante completa. Además podemos descargar manuales (los más actualizados están en inglés) en pdf para quienes prefieran buscar en un documento y no en la web o para cuando no se tenga acceso a internet.",
+    "objectID": "clases/zotero.html#actualizar-y-personalizar",
+    "href": "clases/zotero.html#actualizar-y-personalizar",
+    "title": "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados",
+    "section": "5. Actualizar y personalizar",
+    "text": "5. Actualizar y personalizar\n\nActualizar referencias\n\nSi modificas tu biblioteca en Zotero, haz clic en Actualizar bibliografía en LibreOffice.\n\n\n\nCambiar el estilo de citación\n\nEn Zotero, ve a Herramientas &gt; Preferencias &gt; Exportar.\nSelecciona el estilo deseado (APA, MLA, Chicago, etc.).",
     "crumbs": [
       "Clases",
-      "Clase 01"
+      "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#libre-office-writer",
-    "href": "clases/clase-01.html#libre-office-writer",
-    "title": "Clase 01",
-    "section": "Libre Office-Writer",
-    "text": "Libre Office-Writer\n\nLista de videos \nEn esta lista de reproducción podrán ver una serie de videos que cubren bastatante de la funcionalidad de libre office Writer.\n\n\nEstilos en Writer\nHemos visto que desde el menú ver -&gt; barra de estilos accedemos a los estilos que vienen predefinidos para las diferentes secciones de writer: párrafo, página, listas, etc.\nA continuación les comparto algunos videos que resumen un poco lo que vimos en esta clase:\n\n\nEn versiones anteriores de libre office si bien los menús se ven diferentes, la dinámica es idéntica\n\n\n\n\nNiveles de jearquía numerados\nPor ejemplo, los niveles de titulo se pueden auto numerar yendo a herramientas -&gt; numeración de títulos\nEsta configuración no está disponible como un estilo predeterminado sino que se aplica a los estilos existentes o a aquellos creados que sean niveles de jerárquicos.\nEn la ayuda de libre office podemos ver una explicación un poco más detallada.",
+    "objectID": "clases/zotero.html#solución-de-problemas-comunes",
+    "href": "clases/zotero.html#solución-de-problemas-comunes",
+    "title": "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados",
+    "section": "Solución de problemas comunes",
+    "text": "Solución de problemas comunes\n\nEl menú de Zotero no aparece en LibreOffice:\n\nReinicia LibreOffice y Zotero.\nReinstala el complemento de integración.\n\nElementos no citados no se muestran:\n\nVerifica que estén en la misma colección que las citas usadas.\nUsa el método de “Incluir elementos no utilizados”.",
     "crumbs": [
       "Clases",
-      "Clase 01"
+      "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados"
     ]
   },
   {
-    "objectID": "clases/clase-01.html#actividad-inicial",
-    "href": "clases/clase-01.html#actividad-inicial",
-    "title": "Clase 01",
-    "section": "Actividad inicial",
-    "text": "Actividad inicial\n\nArqueología de publicaciones\nEn este link J. J. Thomson 1897 (lemoyne.edu) se encuentra una versión web de la publicación de Thomson en la que refuerza la idea del electrón como partícula elemental, y en este otro link de la Philosophical Magazine se ve la publicación en la revista original. Una breve reseña de divulgación del trabajo de Thomson la pueden leer acá: Cuantización de la carga eléctrica\nInstrucciones Deberán presentar una versión del trabajo de Thomson tomando como origen la versión web y como guía para el estilo visual la publicación original. Pueden traducir el texto para ir leyéndolo si así lo prefieren (el inglés original es un poco barroco)\nLos elementos a tener en cuenta para este documento serán\n\nTipografía: tamaño y tipo de letra (encontrar alguna o algunas tipografías que puedan servir)\nEncabezados y pies de página\nTexto: interlineado, orientación, sangría\nTablas\nEcuaciones\n\nIremos trabajando los detalles de cada elemento en las primeras dos clases mientras exploramos las funciones elementales de Writer",
+    "objectID": "clases/zotero.html#conclusión",
+    "href": "clases/zotero.html#conclusión",
+    "title": "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados",
+    "section": "Conclusión",
+    "text": "Conclusión\nCon Zotero y LibreOffice Writer, gestionar citas y bibliografías (incluso con referencias no citadas) se vuelve eficiente. Ideal para tesis, artículos académicos o informes técnicos.\n\nDescarga recursos:\n- Guía oficial de Zotero\n- Estilos de citación",
     "crumbs": [
       "Clases",
-      "Clase 01"
-    ]
-  },
-  {
-    "objectID": "clases/clase-03.html",
-    "href": "clases/clase-03.html",
-    "title": "Clase 03",
-    "section": "",
-    "text": "Libre office trae incorporado un editor de ecuaciones bastante aceptable, al nivel de Word u otros procesadores de texto. En comparativa, las versiones on-line tanto de Microsoft como de Google son bastante deficientes en cuanto al manejo de ecuaciones en relación a sus contrapartes que se instalan localmente.",
-    "crumbs": [
-      "Clases",
-      "Clase 03"
-    ]
-  },
-  {
-    "objectID": "clases/clase-03.html#edición-de-ecuaciones-en-libre-office",
-    "href": "clases/clase-03.html#edición-de-ecuaciones-en-libre-office",
-    "title": "Clase 03",
-    "section": "",
-    "text": "Libre office trae incorporado un editor de ecuaciones bastante aceptable, al nivel de Word u otros procesadores de texto. En comparativa, las versiones on-line tanto de Microsoft como de Google son bastante deficientes en cuanto al manejo de ecuaciones en relación a sus contrapartes que se instalan localmente.",
-    "crumbs": [
-      "Clases",
-      "Clase 03"
-    ]
-  },
-  {
-    "objectID": "clases/clase-03.html#latex",
-    "href": "clases/clase-03.html#latex",
-    "title": "Clase 03",
-    "section": "Latex",
-    "text": "Latex\nLatex es un lenguaje de programación completo que ha sido y es actualmente usado como herramienta de diseño editorial. Muchos libros que compramos, en especial aquellos libros de texto de ciencias suelen escribirse usando Latex como lenguaje.\nLa relación entre resultados vs esfuerzo que Latex requiere no lo hace viable para nuestra materia aunque usaremos algo de sus funciones cuando editemos ecuaciones en nuestros documentos.\nUn breve manualcito de algunas cosas de latex que usaremos lo pueden consultar aca",
-    "crumbs": [
-      "Clases",
-      "Clase 03"
-    ]
-  },
-  {
-    "objectID": "clases/clase-03.html#como-introducir-latex-en-libre-office",
-    "href": "clases/clase-03.html#como-introducir-latex-en-libre-office",
-    "title": "Clase 03",
-    "section": "Como introducir Latex en Libre-Office",
-    "text": "Como introducir Latex en Libre-Office\nUsaremos la extensión TexMaths para poder aprovechar la potencia de Latex desde la comodidad de un editor de texto tradicional, dejando de lado su costado mas complejo que es justamente todo lo relacionado al formato de un documento.\nPara que esta extensión funcione se requiere tener latex instalado en la computadora. En Windows, MikTex es una opción popular (que también se puede instalar en Linux), mientras que en Linu se suele usar TexLive. Las instrucciones detalladas se pueden consultar acá. Es conveniente instalar Latex antes de TexMaths.\nPara descargar TexMaths ingresamos acá o desde la web citada más arriba. El archivo descargado se puede ejecutar al hacer doble click, guiándonos paso a paso en su instalación.\nEn las computadoras del instituto, deberíamos contar ya tanto con Latex como con TexMaths si iniciamos con Linux.",
-    "crumbs": [
-      "Clases",
-      "Clase 03"
-    ]
-  },
-  {
-    "objectID": "clases/clase-03.html#uso-básico-de-texmaths",
-    "href": "clases/clase-03.html#uso-básico-de-texmaths",
-    "title": "Clase 03",
-    "section": "Uso básico de TexMaths",
-    "text": "Uso básico de TexMaths\nLa barra de herramientas es esta\n\n\n\n\n\n\nBarra de herramientas\n\n\n\n\nFigura 1: Barra de herramientas de TexMaths\n\n\n\nSi Latex está instalado, con hacer click en la barra de herramientas en cualquiera de los dos primeros íconos de izquierda a derecha debería llevarnos a este menú\n\n\n\nMenú TexMaths\n\n\nAllí podemos escribir la ecuación que queramos que se insertará en la posición en que se encuentre el cursor",
-    "crumbs": [
-      "Clases",
-      "Clase 03"
-    ]
-  },
-  {
-    "objectID": "clases/clase-03.html#configuraión-de-texmaths",
-    "href": "clases/clase-03.html#configuraión-de-texmaths",
-    "title": "Clase 03",
-    "section": "Configuraión de TexMaths",
-    "text": "Configuraión de TexMaths\nSi accedemos al ícono que contiene una llave y un destornillador podremos acceder a la configuración. En este menú entremos Rutas, Opciones, Interface, Atajos.\n\nRutas: Podremos verificar que TexMaths haya encontrado todo lo necesario para ejecutarse\nOpciones: En la parte de ecuaciones numeradas podremos elegir el rótulo y su configuración para ecuaciones numeradas\nInterface: Elegimos la tipogrfía y el tamaño por defecto\nAtajos: Podremos configurar un atajo de teclado para insertar una ecuación (bastante recomendable si hacemos uso instensivo de las mismas)",
-    "crumbs": [
-      "Clases",
-      "Clase 03"
-    ]
-  },
-  {
-    "objectID": "clases/clase-03.html#tipos-de-ecuación",
-    "href": "clases/clase-03.html#tipos-de-ecuación",
-    "title": "Clase 03",
-    "section": "Tipos de ecuación",
-    "text": "Tipos de ecuación\nEn el modo LaTeX, TexMaths puede generar tres tipos de ecuaciones LaTeX:\nEcuaciones de visualización (Display) Ecuaciones de visualización en línea (Inline) Ecuaciones de LaTeX\nPara seleccionar un tipo de ecuación, simplemente use el botón de opción ubicado dentro del marco Tipo de ecuación.\nPara generar ecuaciones de visualización o ecuaciones de visualización en línea, todo lo que hay que hacer es seleccionar el tipo de ecuación apropiado y luego escribir el código de la ecuación en el campo de texto del cuadro de diálogo Ecuaciones de TexMaths.\nEj: Para generar el símbolo alfa griego, simplemente escriba \\alpha. Se puede acceder al código Latex de cada símbolo si se deja el mouse sobre cada uno. No es necesario memorizarlos, pero con el uso se van recordando los más usados y agilizan la creación de ecuaciones.\nLas ecuaciones de visualización en línea (inline) se obtienen de la misma manera, pero la diferencia es el estilo de la ecuación generada, que se integra mejor dentro de un párrafo en Writer. Por ejemplo, el índice de suma y el exponente se muestran junto al signo de suma y no por debajo ni por encima.\nAmbos tipos de ecuaciones son ideales para ecuaciones simples de una línea y la alineación vertical dentro del texto es correcta, pero no pueden manejar ecuaciones multilínea o entornos LaTeX más generales. Para ese tipo de ecuaciones, seleccione el tipo de ecuación LaTeX y escriba su ecuación dentro de las instrucciones \\begin{}y\\end{}. Puede utilizar cualquier instrucción del entorno LaTeX.\nEj: Escriba las siguientes líneas para mostrar una ecuación de tres líneas, alineadas en el signo igual.\n\\begin{alinear*}\nx &= 1 \\\\\ny &= 2x+1\\\\\n&= 3\\\\\n\\end{alinear*}\nEn resumen, para ecuaciones de 1 Línea, tanto Display como Inline suelen funcionar bien. En Cambio, si tenemos ecuaciones de varios pasos, seleccionamos la opción Latex.\nSi seleccionamos preferencias accedemos a la coniguración por defecto para poder dejar tanto el tamaño de la tipografía como el tipo de ecuación que aparece seleecionado cuando abrimos el editor.\nLa opción de preámbulo nos permiterá ingresar a Latex paquetes específicos para algunas funciones, como por ejemplo, simbología químia específica, gráficos u otras cosas que latex permite hacer, pero que no veremos en detalle en este curso.\nPueden ver una descripción de esto mismo en la página del desarrollador de la extensión\n\nEscritura de latex directamente en el texto\nEs posible escribir Latex directamente en el texto, seleccionarlo y al apretar el ícono de TexMaths, se convertirá al formato de ecuación.\n\n\nEditar una ecuación previamente insertada\nDentro de un documento de LibreOffice, seleccione una imagen de ecuación (ya generada con TexMaths) y haga clic en el icono de Ecuaciones de TexMaths en la barra de herramientas de TexMaths. Lo que nos lleva al menú de edición de ecuaciones con el que la creamos en primer lugar.\nPodemos además ver las ecuaciones anteriores y navegar entre ellas con los símbolos &lt;&gt; &lt;&lt; &gt;&gt; que aparecen en la parte inferior del menú de edición de ecuaciones.\nA continuación tenemos un breve video que muestra la aplicación de TexMaths en un contexto de ecuaciones químicas, agregando paquetes al preámbulo con sus pecualiridades, que de momento a nosotros no nos importan.",
-    "crumbs": [
-      "Clases",
-      "Clase 03"
-    ]
-  },
-  {
-    "objectID": "clases/clase-06.html",
-    "href": "clases/clase-06.html",
-    "title": "Clase 06",
-    "section": "",
-    "text": "Ayuda de libre office calc\nUna planilla de cálculo es una estructura reglada de celdas cuyo contenido puede ser o bien texto, o bien resultado de un cálculo. Los cálculos pueden ser los aritméticos usuales o resultado de la aplicación de una función o secuencia de comandos específica.\nDicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.",
-    "crumbs": [
-      "Clases",
-      "Clase 06"
-    ]
-  },
-  {
-    "objectID": "clases/clase-06.html#introducción-a-calc",
-    "href": "clases/clase-06.html#introducción-a-calc",
-    "title": "Clase 06",
-    "section": "",
-    "text": "Ayuda de libre office calc\nUna planilla de cálculo es una estructura reglada de celdas cuyo contenido puede ser o bien texto, o bien resultado de un cálculo. Los cálculos pueden ser los aritméticos usuales o resultado de la aplicación de una función o secuencia de comandos específica.\nDicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.",
-    "crumbs": [
-      "Clases",
-      "Clase 06"
-    ]
-  },
-  {
-    "objectID": "clases/clase-06.html#lista-de-reproducción",
-    "href": "clases/clase-06.html#lista-de-reproducción",
-    "title": "Clase 06",
-    "section": " Lista de reproducción",
-    "text": "Lista de reproducción\nEn este link accederán a una lista de reproducción de videos sobre Libre Office Calc\n\nCeldas\nLas celdas están referidas en un formato letra-número que indican su pertenencia a el par columna-fila. La celda A4 es la cuarta fila de la primera columna.\n\n\nReferencias\nLas celdas se pueden referir usando el par columna-fila y es posible “anclar” ya sea la fila o la columna usando el signo “\\(\" delante del a indicación. Ejemplo: \"\\)A$1” es una referncia absoluta a la celda A1 y no se verá modificada por acciones que hagamos al arrastrar selecciones. Volveremos sobre esto más adelante.",
-    "crumbs": [
-      "Clases",
-      "Clase 06"
-    ]
-  },
-  {
-    "objectID": "clases/clase-06.html#funciones",
-    "href": "clases/clase-06.html#funciones",
-    "title": "Clase 06",
-    "section": "Funciones",
-    "text": "Funciones\nLas funciones en una planilla de cálculo ejecutan tareas sobre una celda o un rango de celdas de acuerdo a la sintaxis de cada una. En analogía con funciones del ámbito matemático, a un valor (o varios) de entrada, ofrece un valor (o varios) de salida. Lo que llamamos valores de entrada, en Calc pueden ser ingresados manualmente o ser referencias a valores existentes en otras celdas.",
-    "crumbs": [
-      "Clases",
-      "Clase 06"
-    ]
-  },
-  {
-    "objectID": "clases/clase-06.html#formato-de-número",
-    "href": "clases/clase-06.html#formato-de-número",
-    "title": "Clase 06",
-    "section": "Formato de número",
-    "text": "Formato de número\n\nDecimales, redondeo y notación científica",
-    "crumbs": [
-      "Clases",
-      "Clase 06"
-    ]
-  },
-  {
-    "objectID": "clases/clase-08.html#series-de-datos",
-    "href": "clases/clase-08.html#series-de-datos",
-    "title": "Clase 08",
-    "section": "Series de datos",
-    "text": "Series de datos",
-    "crumbs": [
-      "Clases",
-      "Clase 08"
-    ]
-  },
-  {
-    "objectID": "clases/clase-08.html#otras-gráficas",
-    "href": "clases/clase-08.html#otras-gráficas",
-    "title": "Clase 08",
-    "section": "Otras gráficas",
-    "text": "Otras gráficas",
-    "crumbs": [
-      "Clases",
-      "Clase 08"
-    ]
-  },
-  {
-    "objectID": "clases/clase-10.html#uso-de-solver",
-    "href": "clases/clase-10.html#uso-de-solver",
-    "title": "Clase 10",
-    "section": "Uso de solver",
-    "text": "Uso de solver",
-    "crumbs": [
-      "Clases",
-      "Clase 10"
+      "Integración de Zotero con LibreOffice Writer: Citas y Bibliografía con Elementos no Citados"
     ]
   },
   {
