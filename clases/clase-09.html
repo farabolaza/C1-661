@@ -99,7 +99,7 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Clase 09 – C1-661 2025">
-<meta property="og:description" content="Funciones estadísitcas en Calc">
+<meta property="og:description" content="Funciones estadísitcas e Histogramas">
 <meta property="og:site_name" content="C1-661 2025">
 </head>
 
@@ -291,6 +291,12 @@ window.Quarto = {
  <span class="menu-text">TP 02</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../trabajos practicos/tp 03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TP 03</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -304,24 +310,20 @@ window.Quarto = {
    
   <ul>
   <li><a href="#promedio-moda-y-mediana" id="toc-promedio-moda-y-mediana" class="nav-link active" data-scroll-target="#promedio-moda-y-mediana">Promedio, moda y mediana</a></li>
-  <li><a href="#desviación-estándar" id="toc-desviación-estándar" class="nav-link" data-scroll-target="#desviación-estándar">Desviación estándar</a></li>
-  <li><a href="#cuadrados-mínimos" id="toc-cuadrados-mínimos" class="nav-link" data-scroll-target="#cuadrados-mínimos">Cuadrados mínimos</a></li>
-  <li><a href="#planteamiento-del-problema" id="toc-planteamiento-del-problema" class="nav-link" data-scroll-target="#planteamiento-del-problema">Planteamiento del problema</a></li>
+  <li><a href="#varianza-y-desviación-estándar" id="toc-varianza-y-desviación-estándar" class="nav-link" data-scroll-target="#varianza-y-desviación-estándar">Varianza y Desviación Estándar</a>
+  <ul class="collapse">
+  <li><a href="#deducción" id="toc-deducción" class="nav-link" data-scroll-target="#deducción">Deducción</a></li>
+  <li><a href="#interpretación" id="toc-interpretación" class="nav-link" data-scroll-target="#interpretación">Interpretación</a></li>
+  </ul></li>
+  <li><a href="#cuadrados-mínimos" id="toc-cuadrados-mínimos" class="nav-link" data-scroll-target="#cuadrados-mínimos">Cuadrados mínimos</a>
+  <ul class="collapse">
+  <li><a href="#planteo" id="toc-planteo" class="nav-link" data-scroll-target="#planteo">Planteo</a></li>
   <li><a href="#minimización-de-la-suma-de-cuadrados" id="toc-minimización-de-la-suma-de-cuadrados" class="nav-link" data-scroll-target="#minimización-de-la-suma-de-cuadrados">Minimización de la suma de cuadrados</a></li>
-  <li><a href="#resolución-de-las-ecuaciones-normales" id="toc-resolución-de-las-ecuaciones-normales" class="nav-link" data-scroll-target="#resolución-de-las-ecuaciones-normales">Resolución de las ecuaciones normales</a>
-  <ul class="collapse">
-  <li><a href="#paso-1-resolver-para-a-en-función-de-b" id="toc-paso-1-resolver-para-a-en-función-de-b" class="nav-link" data-scroll-target="#paso-1-resolver-para-a-en-función-de-b">Paso 1: Resolver para <span class="math inline">\(a\)</span> en función de <span class="math inline">\(b\)</span></a></li>
-  <li><a href="#paso-2-sustituir-a-en-la-ecuación-2" id="toc-paso-2-sustituir-a-en-la-ecuación-2" class="nav-link" data-scroll-target="#paso-2-sustituir-a-en-la-ecuación-2">Paso 2: Sustituir <span class="math inline">\(a\)</span> en la ecuación (2)</a></li>
-  <li><a href="#paso-3-calcular-b" id="toc-paso-3-calcular-b" class="nav-link" data-scroll-target="#paso-3-calcular-b">Paso 3: Calcular <span class="math inline">\(b\)</span></a></li>
-  <li><a href="#paso-4-calcular-a" id="toc-paso-4-calcular-a" class="nav-link" data-scroll-target="#paso-4-calcular-a">Paso 4: Calcular <span class="math inline">\(a\)</span></a></li>
-  </ul></li>
-  <li><a href="#estimación-de-incertidumbres" id="toc-estimación-de-incertidumbres" class="nav-link" data-scroll-target="#estimación-de-incertidumbres">Estimación de incertidumbres</a>
-  <ul class="collapse">
-  <li><a href="#varianza-de-los-parámetros" id="toc-varianza-de-los-parámetros" class="nav-link" data-scroll-target="#varianza-de-los-parámetros">Varianza de los parámetros</a></li>
-  <li><a href="#estimación-de-sigma2" id="toc-estimación-de-sigma2" class="nav-link" data-scroll-target="#estimación-de-sigma2">Estimación de <span class="math inline">\(\sigma^2\)</span></a></li>
-  <li><a href="#incertidumbres-estándar" id="toc-incertidumbres-estándar" class="nav-link" data-scroll-target="#incertidumbres-estándar">Incertidumbres estándar</a></li>
-  </ul></li>
+  <li><a href="#resolución-de-las-ecuaciones-normales" id="toc-resolución-de-las-ecuaciones-normales" class="nav-link" data-scroll-target="#resolución-de-las-ecuaciones-normales">Resolución de las ecuaciones normales</a></li>
+  <li><a href="#estimación-de-incertidumbres" id="toc-estimación-de-incertidumbres" class="nav-link" data-scroll-target="#estimación-de-incertidumbres">Estimación de incertidumbres</a></li>
   <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen">Resumen</a></li>
+  </ul></li>
+  <li><a href="#histogramas" id="toc-histogramas" class="nav-link" data-scroll-target="#histogramas">Histogramas</a></li>
   </ul>
 </nav>
     </div>
@@ -331,7 +333,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-09.html">Clase 09</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Clase 09</h1>
-<p class="subtitle lead">Funciones estadísitcas en Calc</p>
+<p class="subtitle lead">Funciones estadísitcas e Histogramas</p>
 </div>
 
 
@@ -350,19 +352,79 @@ window.Quarto = {
 
 <section id="promedio-moda-y-mediana" class="level2">
 <h2 class="anchored" data-anchor-id="promedio-moda-y-mediana">Promedio, moda y mediana</h2>
+<p>Dentro de los indicadores denominados medidas de tendencia central, que permiten cuantificar valores representativos de un conjunto encontramos al promedio, la moda y la mediana.</p>
+<p>El cálculo matemático para cada uno de ellos es;</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Promedio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Moda</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Mediana</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>El promedio representa la media aritmética de los valores de un conjunto <span class="math display">\[
+\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}
+\]</span></p>
+<p>En calc la función <code>PROMEDIO(datos)</code> devuelve el promedio del conjunto de datos dado como argumento (las referencias pueden ser vectores o matrices, es decir conjuntos de filas, columnas o filas y columnas).</p>
+<p>Promedio no es representativo de un conjunto de datos cuando éstos poseen valores cuya distribución contiene extremos poco frecuentes pero muy alejados del resto de los demás.</p>
+<p>El ejemplo típico: hay dos personas, una gana tiene diez millones de pesos, la otra tiene cero, pero en promedio, tienen ambos cinco millones. El valor 5 representa el “medio” entre ambos valores pero no es representativo del capital de ninguna de las dos personas: sobreestima en un caso y subestima en el otro.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>La moda representa el valor que más se repite en un conjunto de datos</p>
+<p><span class="math display">\[
+\text{Moda} = \{x_i \mid \max \text{frecuencia}(x_i)\}
+\]</span></p>
+<p>En calc, las funciones <code>MODA.UNO()</code> y <code>MODA.VARIOS()</code> nos dan en cada caso, el valor más repetido (UNO) o los valores más repetidos (VARIOS). La función MODA.VARIOS() es una función matricial y debe ser ingresada apretando <code>ctrl+shift+enter</code> al finalizar la escritura en la celda.</p>
+<p>Para más información acerca de las funciones matriciales podés ver la <a href="https://help.libreoffice.org/latest/es/text/scalc/01/04060107.html">ayuda oficial</a> sobre el tema. Para extender los resultados de una función matricial cuado ésta no se expande automáticamente se debe extender la selección desde la esquina inferior derercha de la celda de la fórmula.</p>
+<p>La moda es representativa de un conjunto de datos cuando el criterio de igualdad es fácil de establecer, por ejemplo cuando se trata de variables ordinales o cuantitativas enteras, como los años o las posiciones ocupadas en un listado. Para variables que no son números enteros, la apreciación del instrumento usado para obtenerlas puede servir para igualar los valores antes de calcular la moda. Por ejemplo, si se mide con una regla que aprecia al milímetro, 23,2 y 23,1 pueden ser considerados el mismo valor ya que sus incertezas se solapan.</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>La mediana representa el valor centra de un conjunto de datos ordenado. <span class="math display">\[
+\tilde{x} =
+\begin{cases}
+x_{\frac{n+1}{2}}, &amp; \text{si } n \text{ es impar} \\
+\frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}, &amp; \text{si } n \text{ es par}
+\end{cases}
+\]</span></p>
+</div>
+</div>
+</div>
 </section>
-<section id="desviación-estándar" class="level2">
-<h2 class="anchored" data-anchor-id="desviación-estándar">Desviación estándar</h2>
+<section id="varianza-y-desviación-estándar" class="level2">
+<h2 class="anchored" data-anchor-id="varianza-y-desviación-estándar">Varianza y Desviación Estándar</h2>
+<p>La <strong>varianza</strong> y la <strong>desviación estándar</strong> son medidas de dispersión que nos indican cuán dispersos están los datos respecto a la media.</p>
+<p>La <strong>varianza</strong> (<span class="math inline">\(\sigma^2\)</span>) se define como el promedio de los cuadrados de las diferencias entre cada dato y la media:</p>
+<p><span class="math display">\[\sigma^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}\]</span></p>
+<p>La <strong>desviación estándar</strong> (<span class="math inline">\(\sigma\)</span>) es simplemente la raíz cuadrada de la varianza:</p>
+<p><span class="math display">\[\sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}}\]</span></p>
+<section id="deducción" class="level3">
+<h3 class="anchored" data-anchor-id="deducción">Deducción</h3>
+<p>La varianza surge al considerar cómo se dispersan los datos alrededor de la media. Primero, calculamos la distancia de cada dato respecto a la media <span class="math inline">\(\bar{x}\)</span>:</p>
+<p><span class="math display">\[
+d_i = x_i - \bar{x}
+\]</span></p>
+<p>Si sumamos estas distancias, obtenemos cero (ya que la media balancea los datos). Para evitar esto, usamos los cuadrados de las diferencias:</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} (x_i - \bar{x})^2
+\]</span></p>
+<p>Dividiendo por <span class="math inline">\(n\)</span>, obtenemos la varianza, que mide la dispersión promedio de los datos. La <strong>desviación estándar</strong> es su raíz cuadrada, proporcionando una medida en las mismas unidades que los datos originales.</p>
+</section>
+<section id="interpretación" class="level3">
+<h3 class="anchored" data-anchor-id="interpretación">Interpretación</h3>
+<ul>
+<li><strong>Valores pequeños</strong> de <span class="math inline">\(\sigma\)</span> indican poca variabilidad en los datos.</li>
+<li><strong>Valores grandes</strong> de <span class="math inline">\(\sigma\)</span> muestran que los datos están más dispersos respecto a la media.</li>
+</ul>
+<p><span class="math display">\[
+\sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}}
+\]</span></p>
+</section>
 </section>
 <section id="cuadrados-mínimos" class="level2">
 <h2 class="anchored" data-anchor-id="cuadrados-mínimos">Cuadrados mínimos</h2>
 <p>La regresión por mínimos cuadrados es una técnica estadística utilizada para ajustar una línea recta a un conjunto de datos experimentales. Esta línea recta se define por la ecuación:</p>
-<p><span class="math display">\[ y = a + b x \]</span></p>
+<p><span class="math display">\[
+y = a + b x
+\]</span></p>
 <p>donde <span class="math inline">\(a\)</span> es la intersección con el eje <span class="math inline">\(y\)</span> (ordenada al origen) y <span class="math inline">\(b\)</span> es la pendiente de la línea. El objetivo es encontrar los valores de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> que minimicen la suma de los cuadrados de las diferencias entre los valores observados <span class="math inline">\(y_i\)</span> y los valores predichos por el modelo <span class="math inline">\(a + b x_i\)</span>. Estas diferencias se conocen como residuos.</p>
-<p>En este documento, deduciremos las fórmulas para <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> y discutiremos cómo estimar sus incertidumbres, siguiendo los métodos presentados en <em>“Data Analysis for Physical Scientists”</em> de L. Kirkup.</p>
-</section>
-<section id="planteamiento-del-problema" class="level2">
-<h2 class="anchored" data-anchor-id="planteamiento-del-problema">Planteamiento del problema</h2>
+<section id="planteo" class="level3">
+<h3 class="anchored" data-anchor-id="planteo">Planteo</h3>
 <p>Supongamos que tenemos un conjunto de <span class="math inline">\(n\)</span> puntos experimentales, cada uno con coordenadas <span class="math inline">\((x_i, y_i)\)</span>, donde <span class="math inline">\(x_i\)</span> es la variable independiente y <span class="math inline">\(y_i\)</span> es la variable dependiente. Queremos encontrar la línea recta que mejor se ajuste a estos datos en el sentido de mínimos cuadrados.</p>
 <p>La suma de los cuadrados de los residuos, denotada como <span class="math inline">\(S\)</span>, se define como:</p>
 <p><span class="math display">\[
@@ -370,8 +432,8 @@ S = \sum_{i=1}^{n} [y_i - (a + b x_i)]^2
 \]</span></p>
 <p>Nuestro objetivo es encontrar los valores de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> que minimicen <span class="math inline">\(S\)</span>.</p>
 </section>
-<section id="minimización-de-la-suma-de-cuadrados" class="level2">
-<h2 class="anchored" data-anchor-id="minimización-de-la-suma-de-cuadrados">Minimización de la suma de cuadrados</h2>
+<section id="minimización-de-la-suma-de-cuadrados" class="level3">
+<h3 class="anchored" data-anchor-id="minimización-de-la-suma-de-cuadrados">Minimización de la suma de cuadrados</h3>
 <p>Para minimizar <span class="math inline">\(S\)</span>, calculamos las derivadas parciales de <span class="math inline">\(S\)</span> con respecto a <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, y las igualamos a cero.</p>
 <ol type="1">
 <li><strong>Derivada con respecto a <span class="math inline">\(a\)</span></strong>:</li>
@@ -395,65 +457,83 @@ S = \sum_{i=1}^{n} [y_i - (a + b x_i)]^2
 \]</span></p>
 <p>Las ecuaciones (1) y (2) son conocidas como las <strong>ecuaciones normales</strong> de la regresión lineal.</p>
 </section>
-<section id="resolución-de-las-ecuaciones-normales" class="level2">
-<h2 class="anchored" data-anchor-id="resolución-de-las-ecuaciones-normales">Resolución de las ecuaciones normales</h2>
+<section id="resolución-de-las-ecuaciones-normales" class="level3">
+<h3 class="anchored" data-anchor-id="resolución-de-las-ecuaciones-normales">Resolución de las ecuaciones normales</h3>
 <p>Reorganizamos las ecuaciones (1) y (2) para resolver el sistema:</p>
-<p><span class="math display">\[ n a + b \sum_{i=1}^{n} x_i = \sum_{i=1}^{n} y_i \quad (1) \]</span></p>
-<p><span class="math display">\[ a \sum_{i=1}^{n} x_i + b \sum_{i=1}^{n} x_i^2 = \sum_{i=1}^{n} x_i y_i \quad (2) \]</span></p>
-<section id="paso-1-resolver-para-a-en-función-de-b" class="level3">
-<h3 class="anchored" data-anchor-id="paso-1-resolver-para-a-en-función-de-b">Paso 1: Resolver para <span class="math inline">\(a\)</span> en función de <span class="math inline">\(b\)</span></h3>
+<p><span class="math display">\[
+n a + b \sum_{i=1}^{n} x_i = \sum_{i=1}^{n} y_i \quad (1)
+\]</span></p>
+<p><span class="math display">\[
+a \sum_{i=1}^{n} x_i + b \sum_{i=1}^{n} x_i^2 = \sum_{i=1}^{n} x_i y_i \quad (2)
+\]</span></p>
+<section id="paso-1-resolver-para-a-en-función-de-b" class="level4">
+<h4 class="anchored" data-anchor-id="paso-1-resolver-para-a-en-función-de-b">Paso 1: Resolver para <span class="math inline">\(a\)</span> en función de <span class="math inline">\(b\)</span></h4>
 <p>De la ecuación (1):</p>
-<p><span class="math display">\[ a = \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n} \quad (3) \]</span></p>
+<p><span class="math display">\[
+a = \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n} \quad (3)
+\]</span></p>
 </section>
-<section id="paso-2-sustituir-a-en-la-ecuación-2" class="level3">
-<h3 class="anchored" data-anchor-id="paso-2-sustituir-a-en-la-ecuación-2">Paso 2: Sustituir <span class="math inline">\(a\)</span> en la ecuación (2)</h3>
+<section id="paso-2-sustituir-a-en-la-ecuación-2" class="level4">
+<h4 class="anchored" data-anchor-id="paso-2-sustituir-a-en-la-ecuación-2">Paso 2: Sustituir <span class="math inline">\(a\)</span> en la ecuación (2)</h4>
 <p>Sustituyendo (3) en (2):</p>
-<p><span class="math display">\[ \left( \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n} \right) \sum_{i=1}^{n} x_i + b \sum_{i=1}^{n} x_i^2 = \sum_{i=1}^{n} x_i y_i \]</span></p>
+<p><span class="math display">\[
+\left( \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n} \right) \sum_{i=1}^{n} x_i + b \sum_{i=1}^{n} x_i^2 = \sum_{i=1}^{n} x_i y_i
+\]</span></p>
 <p>Multiplicamos ambos lados por <span class="math inline">\(n\)</span> para eliminar el denominador:</p>
-<p><span class="math display">\[ \left( \sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i \right) \sum_{i=1}^{n} x_i + b n \sum_{i=1}^{n} x_i^2 = n \sum_{i=1}^{n} x_i y_i \]</span></p>
+<p><span class="math display">\[
+\left( \sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i \right) \sum_{i=1}^{n} x_i + b n \sum_{i=1}^{n} x_i^2 = n \sum_{i=1}^{n} x_i y_i
+\]</span></p>
 <p>Expandimos:</p>
-<p><span class="math display">\[ \sum_{i=1}^{n} y_i \sum_{i=1}^{n} x_i - b \left( \sum_{i=1}^{n} x_i \right)^2 + b n \sum_{i=1}^{n} x_i^2 = n \sum_{i=1}^{n} x_i y_i \]</span></p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} y_i \sum_{i=1}^{n} x_i - b \left( \sum_{i=1}^{n} x_i \right)^2 + b n \sum_{i=1}^{n} x_i^2 = n \sum_{i=1}^{n} x_i y_i
+\]</span></p>
 <p>Agrupamos los términos con <span class="math inline">\(b\)</span>:</p>
-<p><span class="math display">\[ b \left[ n \sum_{i=1}^{n} x_i^2 - \left( \sum_{i=1}^{n} x_i \right)^2 \right] = n \sum_{i=1}^{n} x_i y_i - \sum_{i=1}^{n} y_i \sum_{i=1}^{n} x_i \]</span></p>
+<p><span class="math display">\[
+b \left[ n \sum_{i=1}^{n} x_i^2 - \left( \sum_{i=1}^{n} x_i \right)^2 \right] = n \sum_{i=1}^{n} x_i y_i - \sum_{i=1}^{n} y_i \sum_{i=1}^{n} x_i
+\]</span></p>
 </section>
-<section id="paso-3-calcular-b" class="level3">
-<h3 class="anchored" data-anchor-id="paso-3-calcular-b">Paso 3: Calcular <span class="math inline">\(b\)</span></h3>
+<section id="paso-3-calcular-b" class="level4">
+<h4 class="anchored" data-anchor-id="paso-3-calcular-b">Paso 3: Calcular <span class="math inline">\(b\)</span></h4>
 <p>Despejamos <span class="math inline">\(b\)</span>:</p>
-<p><span class="math display">\[ b = \frac{n \sum_{i=1}^{n} x_i y_i - \sum_{i=1}^{n} x_i \sum_{i=1}^{n} y_i}{n \sum_{i=1}^{n} x_i^2 - \left( \sum_{i=1}^{n} x_i \right)^2} \quad (4) \]</span></p>
+<p><span class="math display">\[
+b = \frac{n \sum_{i=1}^{n} x_i y_i - \sum_{i=1}^{n} x_i \sum_{i=1}^{n} y_i}{n \sum_{i=1}^{n} x_i^2 - \left( \sum_{i=1}^{n} x_i \right)^2} \quad (4)
+\]</span></p>
 </section>
-<section id="paso-4-calcular-a" class="level3">
-<h3 class="anchored" data-anchor-id="paso-4-calcular-a">Paso 4: Calcular <span class="math inline">\(a\)</span></h3>
+<section id="paso-4-calcular-a" class="level4">
+<h4 class="anchored" data-anchor-id="paso-4-calcular-a">Paso 4: Calcular <span class="math inline">\(a\)</span></h4>
 <p>Sustituimos <span class="math inline">\(b\)</span> de (4) en (3):</p>
-<p><span class="math display">\[ a = \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n} \]</span></p>
+<p><span class="math display">\[
+a = \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n}
+\]</span></p>
 <p>Estas expresiones para <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> son las fórmulas estándar de la regresión por mínimos cuadrados.</p>
 </section>
 </section>
-<section id="estimación-de-incertidumbres" class="level2">
-<h2 class="anchored" data-anchor-id="estimación-de-incertidumbres">Estimación de incertidumbres</h2>
+<section id="estimación-de-incertidumbres" class="level3">
+<h3 class="anchored" data-anchor-id="estimación-de-incertidumbres">Estimación de incertidumbres</h3>
 <p>En el análisis de datos experimentales, es crucial evaluar las incertidumbres de los parámetros estimados. Suponemos que los errores en <span class="math inline">\(y_i\)</span> son gaussianos y tienen la misma varianza <span class="math inline">\(\sigma^2\)</span> (homocedasticidad).</p>
-<section id="varianza-de-los-parámetros" class="level3">
-<h3 class="anchored" data-anchor-id="varianza-de-los-parámetros">Varianza de los parámetros</h3>
+<section id="varianza-de-los-parámetros" class="level4">
+<h4 class="anchored" data-anchor-id="varianza-de-los-parámetros">Varianza de los parámetros</h4>
 <p>La varianza de <span class="math inline">\(b\)</span> es:</p>
 <p><span class="math display">\[ \text{Var}(b) = \frac{\sigma^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2} \]</span></p>
 <p>donde <span class="math inline">\(\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}\)</span> es la media de los <span class="math inline">\(x_i\)</span>.</p>
 <p>La varianza de <span class="math inline">\(a\)</span> es:</p>
 <p><span class="math display">\[ \text{Var}(a) = \sigma^2 \left[ \frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2} \right] \]</span></p>
 </section>
-<section id="estimación-de-sigma2" class="level3">
-<h3 class="anchored" data-anchor-id="estimación-de-sigma2">Estimación de <span class="math inline">\(\sigma^2\)</span></h3>
+<section id="estimación-de-sigma2" class="level4">
+<h4 class="anchored" data-anchor-id="estimación-de-sigma2">Estimación de <span class="math inline">\(\sigma^2\)</span></h4>
 <p>En la práctica, <span class="math inline">\(\sigma^2\)</span> no se conoce y se estima a partir de los residuos:</p>
 <p><span class="math display">\[ s^2 = \frac{\sum_{i=1}^{n} [y_i - (a + b x_i)]^2}{n - 2} \]</span></p>
 <p>donde <span class="math inline">\(n - 2\)</span> refleja los grados de libertad, ya que hemos estimado dos parámetros (<span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>).</p>
 </section>
-<section id="incertidumbres-estándar" class="level3">
-<h3 class="anchored" data-anchor-id="incertidumbres-estándar">Incertidumbres estándar</h3>
+<section id="incertidumbres-estándar" class="level4">
+<h4 class="anchored" data-anchor-id="incertidumbres-estándar">Incertidumbres estándar</h4>
 <p>Las incertidumbres estándar de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> son las raíces cuadradas de sus varianzas, utilizando <span class="math inline">\(s^2\)</span> como estimación de <span class="math inline">\(\sigma^2\)</span>:</p>
 <p><span class="math display">\[ \sigma_b \approx \sqrt{\frac{s^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2}} \]</span></p>
 <p><span class="math display">\[ \sigma_a \approx \sqrt{s^2 \left[ \frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2} \right]} \]</span></p>
 </section>
 </section>
-<section id="resumen" class="level2">
-<h2 class="anchored" data-anchor-id="resumen">Resumen</h2>
+<section id="resumen" class="level3">
+<h3 class="anchored" data-anchor-id="resumen">Resumen</h3>
 <p>La regresión por mínimos cuadrados permite ajustar una línea recta a datos experimentales minimizando la suma de los cuadrados de los residuos. Las fórmulas clave son:</p>
 <ul>
 <li>Pendiente <span class="math inline">\(b\)</span>:</li>
@@ -464,7 +544,10 @@ S = \sum_{i=1}^{n} [y_i - (a + b x_i)]^2
 </ul>
 <p><span class="math display">\[ a = \frac{\sum y_i - b \sum x_i}{n} \]</span></p>
 <p>Además, las incertidumbres de estos parámetros se estiman utilizando la varianza residual <span class="math inline">\(s^2\)</span>, lo que es esencial para evaluar la precisión del ajuste en contextos experimentales.</p>
-<p>Esta deducción sigue los métodos presentados en <em>“Data Analysis for Physical Scientists”</em> de L. Kirkup y proporciona una base sólida para el análisis de datos en física y otras ciencias. Si necesitas aplicar esto a un conjunto de datos específico, no dudes en pedírmelo. ¡Espero que esta explicación te sea útil!</p>
+</section>
+</section>
+<section id="histogramas" class="level2">
+<h2 class="anchored" data-anchor-id="histogramas">Histogramas</h2>
 
 
 </section>

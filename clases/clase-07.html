@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Clase 07 – C1-661 2025">
@@ -262,6 +291,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">TP 02</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../trabajos practicos/tp 03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TP 03</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -283,7 +318,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#formato-de-número" id="toc-formato-de-número" class="nav-link" data-scroll-target="#formato-de-número">Formato de número</a>
   <ul class="collapse">
   <li><a href="#decimales-redondeo-y-notación-científica" id="toc-decimales-redondeo-y-notación-científica" class="nav-link" data-scroll-target="#decimales-redondeo-y-notación-científica">Decimales, redondeo y notación científica</a></li>
+  <li><a href="#correción-automática-y-reemplazos" id="toc-correción-automática-y-reemplazos" class="nav-link" data-scroll-target="#correción-automática-y-reemplazos">Correción automática y reemplazos</a></li>
   </ul></li>
+  <li><a href="#operaciones-y-precedencia" id="toc-operaciones-y-precedencia" class="nav-link" data-scroll-target="#operaciones-y-precedencia">Operaciones y precedencia</a></li>
+  <li><a href="#ejercitación" id="toc-ejercitación" class="nav-link" data-scroll-target="#ejercitación">Ejercitación</a></li>
   </ul>
 </nav>
     </div>
@@ -315,10 +353,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Dicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.</p>
 <section id="lista-de-reproducción" class="level2">
 <h2 class="anchored" data-anchor-id="lista-de-reproducción"><span class="emoji" data-emoji="video_camera">📹</span> Lista de reproducción</h2>
-<p><a href="https://youtube.com/playlist?list=PLLLaU95AMQPrMifyMRgiwhqKA64g7Kiea&amp;si=KiQ03OhSUwdt7C3W">En este link</a> accederán a una lista de reproducción de videos sobre Libre Office Calc</p>
+<p><a href="https://youtube.com/playlist?list=PLLLaU95AMQPrMifyMRgiwhqKA64g7Kiea&amp;si=KiQ03OhSUwdt7C3W">En este link</a> accederán a una lista de reproducción de videos sobre Libre Office Calc que cubre casi todos los elementos de manejo básico de la planilla.</p>
 <section id="celdas" class="level3">
 <h3 class="anchored" data-anchor-id="celdas">Celdas</h3>
 <p>Las celdas están referidas en un formato letra-número que indican su pertenencia a el par columna-fila. La celda A4 es la cuarta fila de la primera columna.</p>
+<p>Dos atajos de telcado muy útiles son: <code>shift</code> + <code>espacio</code> y <code>ctrl</code> + <code>espacio</code> que seleccionan una fila o una columna entera respectivamente.</p>
 </section>
 <section id="referencias" class="level3">
 <h3 class="anchored" data-anchor-id="referencias">Referencias</h3>
@@ -328,6 +367,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="funciones" class="level2">
 <h2 class="anchored" data-anchor-id="funciones">Funciones</h2>
 <p>Las funciones en una planilla de cálculo ejecutan tareas sobre una celda o un rango de celdas de acuerdo a la sintaxis de cada una. En analogía con funciones del ámbito matemático, a un valor (o varios) de entrada, ofrece un valor (o varios) de salida. Lo que llamamos valores de entrada, en Calc pueden ser ingresados manualmente o ser referencias a valores existentes en otras celdas.</p>
+<p>Las funciones tiene una sintaxis similar a la matemática: <code>NOMBRE_FUNCION(argumentos, argumentos)</code></p>
 </section>
 <section id="formato-de-número" class="level2">
 <h2 class="anchored" data-anchor-id="formato-de-número">Formato de número</h2>
@@ -348,9 +388,24 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Posiciones decimales y formato de número</figcaption>
 </figure>
 </div>
-
-
+<p>Para ingresar valores con notación científica la letra mayúsucla <code>E</code> reemplaza a <span class="math inline">\(\times 10^{\text{algo}}\)</span>. Si escribimos <code>4E-2</code> estaremos escribiendo <span class="math inline">\(4\cdot 10^{-2}\)</span>. Lo que resulta útil a la hora de ingresar valores de constantes físicas o valores que sean mejor expresados usando la notación científica. Si por error escribimos la letra minúscula <code>e</code> LO nos corregirá automáticamente.</p>
 </section>
+<section id="correción-automática-y-reemplazos" class="level3">
+<h3 class="anchored" data-anchor-id="correción-automática-y-reemplazos">Correción automática y reemplazos</h3>
+<p>Si vamos a <code>herramientas</code> &gt; <code>opciones de correción automática</code> veremos los reemplazos automaticos que LO ofice ejecuta en calc. Estos reemplazos nos permiten escribir sin tener que usar menús específicos letras griegas, subíndices y superíndices comunes, emojis, flechas, etc. <img src="..\assets/writer-correccion-auto.png" class="img-fluid" alt="Herramientas de corrección automática"></p>
+<p>Para escribir <span class="math inline">\(m_a\)</span> hacemos <code>m:_a:</code> y para esribir la letra <span class="math inline">\(\beta\)</span> :beta:. Los subíndices y superíndices numéricos se escriben con los símbolos <code>_</code> y <code>^</code> a continuación de la letra o número al que refieren, por ejemplo <span class="math inline">\(l_1\)</span> se escribe <code>l_1</code> y <span class="math inline">\(m^2\)</span> <code>m^2</code>.</p>
+</section>
+</section>
+<section id="operaciones-y-precedencia" class="level2">
+<h2 class="anchored" data-anchor-id="operaciones-y-precedencia">Operaciones y precedencia</h2>
+<p>El orden de operaciones es como el de una calculadora, es decir, opera de izquierda a derecha resolviendo primero paréntesis, luego multiplicaciones y divisiones,<br>
+y por último sumas y restas.</p>
+<p>Hay que tener en cuenta esto a la hora de ingresar las fórmulas y usar paréntesis cada vez que queramos indicar un orden de operación en particular.</p>
+</section>
+<section id="ejercitación" class="level2">
+<h2 class="anchored" data-anchor-id="ejercitación">Ejercitación</h2>
+
+
 </section>
 
 </main> <!-- /main -->
