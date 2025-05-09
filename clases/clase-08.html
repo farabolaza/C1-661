@@ -193,12 +193,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-05-b.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 05-bis</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../clases/clase-06.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Clase 06</span></a>
   </div>
@@ -239,6 +233,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Clase 12</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/clase-13-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clase 13</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -274,12 +274,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#gráficas-de-dispersión" id="toc-gráficas-de-dispersión" class="nav-link active" data-scroll-target="#gráficas-de-dispersión">Gráficas de dispersión</a>
-  <ul class="collapse">
-  <li><a href="#ejes-leyendas-y-rótulos" id="toc-ejes-leyendas-y-rótulos" class="nav-link" data-scroll-target="#ejes-leyendas-y-rótulos">Ejes, leyendas y rótulos</a></li>
-  </ul></li>
+  <li><a href="#gráficas-en-calc" id="toc-gráficas-en-calc" class="nav-link active" data-scroll-target="#gráficas-en-calc">Gráficas en calc</a></li>
   <li><a href="#series-de-datos" id="toc-series-de-datos" class="nav-link" data-scroll-target="#series-de-datos">Series de datos</a></li>
-  <li><a href="#otras-gráficas" id="toc-otras-gráficas" class="nav-link" data-scroll-target="#otras-gráficas">Otras gráficas</a></li>
+  <li><a href="#formato-del-gráfico" id="toc-formato-del-gráfico" class="nav-link" data-scroll-target="#formato-del-gráfico">Formato del gráfico</a>
+  <ul class="collapse">
+  <li><a href="#líneas-de-cuadrícula" id="toc-líneas-de-cuadrícula" class="nav-link" data-scroll-target="#líneas-de-cuadrícula">Líneas de cuadrícula</a></li>
+  <li><a href="#ejes-leyendas-y-rótulos" id="toc-ejes-leyendas-y-rótulos" class="nav-link" data-scroll-target="#ejes-leyendas-y-rótulos">Ejes, leyendas y rótulos</a></li>
+  <li><a href="#barras-de-error" id="toc-barras-de-error" class="nav-link" data-scroll-target="#barras-de-error">Barras de error</a></li>
+  </ul></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
 </nav>
     </div>
@@ -306,17 +309,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="gráficas-de-dispersión" class="level2">
-<h2 class="anchored" data-anchor-id="gráficas-de-dispersión">Gráficas de dispersión</h2>
-<section id="ejes-leyendas-y-rótulos" class="level3">
-<h3 class="anchored" data-anchor-id="ejes-leyendas-y-rótulos">Ejes, leyendas y rótulos</h3>
-</section>
+<section id="gráficas-en-calc" class="level2">
+<h2 class="anchored" data-anchor-id="gráficas-en-calc">Gráficas en calc</h2>
+<p>los datos obtenidos desde cualquier origen son discretos, es decir, representan el estado de un sistema (cualquiera sea) en algún instante, la relación entre dos variables para algunas condiciones, la cantidad de algún objeto,etc.</p>
+<p>Para representaciones de tipo estadístico donde se intenta contar o cuantificar la cantidad de eventos los gráficos más utilizados son los de barras, histogramas, de torta y sus variantes.</p>
+<p>Para representaciones dependientes del tiempo o que expresen la relación entre variables los gráficos más representativos son los de de dispersión en donde cada dato, si suponemos un arreglo bidimensional, posee dos coordenadas específicas, que usualmente representamos en el eje horizontal y vertical de una gráfica respectivamente.</p>
+<p>Para insertar un gráfico de disperisón en Libre Office Calc, hacemos lo siguiente</p>
+<p><code>insertar</code> &gt; <code>gráfico</code>&gt; <code>tipo de gráfico</code> &gt; <code>xy dispersión</code></p>
+<p><a href="..\assets/calc-grafica-dispersion.png">Insertar gráfica</a></p>
 </section>
 <section id="series-de-datos" class="level2">
 <h2 class="anchored" data-anchor-id="series-de-datos">Series de datos</h2>
+<p>Para hacer más facil nuestro trabajo conviene que los datos deben estar estructurados en columnas donde la primera columna contiene los datos que irán al eje horizontal y la segunda los del eje vertical.</p>
+<p>Esto puede cambiarse luego desde el menú inserción de gráfico, pero es más sencillo tener los datos bien organizados desde el comienzo.</p>
+<p><a href="..\assets/calc-serie-datos.png">Series de datos</a></p>
 </section>
-<section id="otras-gráficas" class="level2">
-<h2 class="anchored" data-anchor-id="otras-gráficas">Otras gráficas</h2>
+<section id="formato-del-gráfico" class="level2">
+<h2 class="anchored" data-anchor-id="formato-del-gráfico">Formato del gráfico</h2>
+<p>La correcta disposición de los elementos en el lienzo del gráfico no sólo hace posible una lectura más amena sino que pone en juego la comprensión misma de los datos indicados en la gráfica.</p>
+<p>Se deben colocar títulos, subtítulos y nombres de ejes indicando las unidades correctas, así tambien como respetar los estilos tipográficos del documento en el cual se va a insertar el gráfico. Se puede optar por un estilo que se integre o que se destaque dependiendo de los requerimientos específicos, pero esta decisión debe ser a conciencia.</p>
+<section id="líneas-de-cuadrícula" class="level3">
+<h3 class="anchored" data-anchor-id="líneas-de-cuadrícula">Líneas de cuadrícula</h3>
+<p>Si se hace doble click en cualquiera de los dos ejes y luego click derecho se ofrece la posibilidad de agregar o quitar líneas de cuadrícula principal y secundarias. La cantidad de elementos entre la cuadrícula principal y la secundaria se encuentra manejado por la opción de</p>
+<p><a href="..\assets/calc-cuadricula.png">Ejes y cuadrículas</a></p>
+<p>También con el gráfico seleccionado a través del menú <code>insertar</code> &gt; <code>cuadrículas</code></p>
+</section>
+<section id="ejes-leyendas-y-rótulos" class="level3">
+<h3 class="anchored" data-anchor-id="ejes-leyendas-y-rótulos">Ejes, leyendas y rótulos</h3>
+<p>La información contextual del gráfico: ejes y rótulos disponibles se pueden elegir al momento de crear la gráfica o haciendo doble click sobre la misma y eligiendo de la barra los elementos que necesitemos o con el grafico seleccionado a través del menú <code>insertar</code></p>
+<p><a href="..\assets/calc-elementos-grafico.png">Elementos del gráfico</a></p>
+</section>
+<section id="barras-de-error" class="level3">
+<h3 class="anchored" data-anchor-id="barras-de-error">Barras de error</h3>
+<p>Con el gráfico seleccionado hacemos <code>insertar</code> &gt; <code>barras de error</code> ahi podremos elegir las diferentes variantes que contamos para las barras de error</p>
+<p><a href="..\assets/calc-barras-error.png">Barras de error</a></p>
+</section>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p><a href="https://documentation.libreoffice.org/assets/Uploads/Documentation/es/CG62/PDF/CG6205-UsarGraficosEnCalc.pdf">:link: Ayuda oficial de Libre Office</a> <a href="https://www.youtube.com/watch?v=z-9B0ce9vqU">:movie_camera: Gráficas de dispersión</a> <a href="https://help.libreoffice.org/latest/es/text/schart/01/04050000.html">:link: Barras de error en Libre Office</a></p>
 
 
 </section>

@@ -11,135 +11,102 @@
     ]
   },
   {
-    "objectID": "clases/clase-09.html#gráficas-lineal-vs-log",
-    "href": "clases/clase-09.html#gráficas-lineal-vs-log",
-    "title": "Clase 09",
+    "objectID": "clases/clase-10.html#gráficas-lineal-vs-log",
+    "href": "clases/clase-10.html#gráficas-lineal-vs-log",
+    "title": "Clase 10",
     "section": "Gráficas lineal vs log",
     "text": "Gráficas lineal vs log\n\nDemostración\n\n\nEjemplos",
     "crumbs": [
       "Clases",
-      "Clase 09"
+      "Clase 10"
     ]
   },
   {
-    "objectID": "clases/clase-07.html#desviación-estándar",
-    "href": "clases/clase-07.html#desviación-estándar",
-    "title": "Clase 07",
-    "section": "Desviación estándar",
-    "text": "Desviación estándar",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-07.html#cuadrados-mínimos",
-    "href": "clases/clase-07.html#cuadrados-mínimos",
-    "title": "Clase 07",
-    "section": "Cuadrados mínimos",
-    "text": "Cuadrados mínimos\nLa regresión por mínimos cuadrados es una técnica estadística utilizada para ajustar una línea recta a un conjunto de datos experimentales. Esta línea recta se define por la ecuación:\n\\[ y = a + b x \\]\ndonde \\(a\\) es la intersección con el eje \\(y\\) (ordenada al origen) y \\(b\\) es la pendiente de la línea. El objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen la suma de los cuadrados de las diferencias entre los valores observados \\(y_i\\) y los valores predichos por el modelo \\(a + b x_i\\). Estas diferencias se conocen como residuos.\nEn este documento, deduciremos las fórmulas para \\(a\\) y \\(b\\) y discutiremos cómo estimar sus incertidumbres, siguiendo los métodos presentados en “Data Analysis for Physical Scientists” de L. Kirkup.",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-07.html#planteamiento-del-problema",
-    "href": "clases/clase-07.html#planteamiento-del-problema",
-    "title": "Clase 07",
-    "section": "Planteamiento del problema",
-    "text": "Planteamiento del problema\nSupongamos que tenemos un conjunto de \\(n\\) puntos experimentales, cada uno con coordenadas \\((x_i, y_i)\\), donde \\(x_i\\) es la variable independiente y \\(y_i\\) es la variable dependiente. Queremos encontrar la línea recta que mejor se ajuste a estos datos en el sentido de mínimos cuadrados.\nLa suma de los cuadrados de los residuos, denotada como \\(S\\), se define como:\n\\[\nS = \\sum_{i=1}^{n} [y_i - (a + b x_i)]^2\n\\]\nNuestro objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen \\(S\\).",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-07.html#minimización-de-la-suma-de-cuadrados",
-    "href": "clases/clase-07.html#minimización-de-la-suma-de-cuadrados",
-    "title": "Clase 07",
-    "section": "Minimización de la suma de cuadrados",
-    "text": "Minimización de la suma de cuadrados\nPara minimizar \\(S\\), calculamos las derivadas parciales de \\(S\\) con respecto a \\(a\\) y \\(b\\), y las igualamos a cero.\n\nDerivada con respecto a \\(a\\):\n\n\\[\n\\frac{\\partial S}{\\partial a} = -2 \\sum_{i=1}^{n} [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} y_i - n a - b \\sum_{i=1}^{n} x_i = 0 \\quad (1)\n\\]\n\nDerivada con respecto a \\(b\\):\n\n\\[\n\\frac{\\partial S}{\\partial b} = -2 \\sum_{i=1}^{n} x_i [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} x_i y_i - a \\sum_{i=1}^{n} x_i - b \\sum_{i=1}^{n} x_i^2 = 0 \\quad (2)\n\\]\nLas ecuaciones (1) y (2) son conocidas como las ecuaciones normales de la regresión lineal.",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-07.html#resolución-de-las-ecuaciones-normales",
-    "href": "clases/clase-07.html#resolución-de-las-ecuaciones-normales",
-    "title": "Clase 07",
-    "section": "Resolución de las ecuaciones normales",
-    "text": "Resolución de las ecuaciones normales\nReorganizamos las ecuaciones (1) y (2) para resolver el sistema:\n\\[ n a + b \\sum_{i=1}^{n} x_i = \\sum_{i=1}^{n} y_i \\quad (1) \\]\n\\[ a \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\quad (2) \\]\n\nPaso 1: Resolver para \\(a\\) en función de \\(b\\)\nDe la ecuación (1):\n\\[ a = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\quad (3) \\]\n\n\nPaso 2: Sustituir \\(a\\) en la ecuación (2)\nSustituyendo (3) en (2):\n\\[ \\left( \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\right) \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\]\nMultiplicamos ambos lados por \\(n\\) para eliminar el denominador:\n\\[ \\left( \\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i \\right) \\sum_{i=1}^{n} x_i + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i \\]\nExpandimos:\n\\[ \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i - b \\left( \\sum_{i=1}^{n} x_i \\right)^2 + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i \\]\nAgrupamos los términos con \\(b\\):\n\\[ b \\left[ n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2 \\right] = n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i \\]\n\n\nPaso 3: Calcular \\(b\\)\nDespejamos \\(b\\):\n\\[ b = \\frac{n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} x_i \\sum_{i=1}^{n} y_i}{n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2} \\quad (4) \\]\n\n\nPaso 4: Calcular \\(a\\)\nSustituimos \\(b\\) de (4) en (3):\n\\[ a = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\]\nEstas expresiones para \\(a\\) y \\(b\\) son las fórmulas estándar de la regresión por mínimos cuadrados.",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-07.html#estimación-de-incertidumbres",
-    "href": "clases/clase-07.html#estimación-de-incertidumbres",
-    "title": "Clase 07",
-    "section": "Estimación de incertidumbres",
-    "text": "Estimación de incertidumbres\nEn el análisis de datos experimentales, es crucial evaluar las incertidumbres de los parámetros estimados. Suponemos que los errores en \\(y_i\\) son gaussianos y tienen la misma varianza \\(\\sigma^2\\) (homocedasticidad).\n\nVarianza de los parámetros\nLa varianza de \\(b\\) es:\n\\[ \\text{Var}(b) = \\frac{\\sigma^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\]\ndonde \\(\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\) es la media de los \\(x_i\\).\nLa varianza de \\(a\\) es:\n\\[ \\text{Var}(a) = \\sigma^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right] \\]\n\n\nEstimación de \\(\\sigma^2\\)\nEn la práctica, \\(\\sigma^2\\) no se conoce y se estima a partir de los residuos:\n\\[ s^2 = \\frac{\\sum_{i=1}^{n} [y_i - (a + b x_i)]^2}{n - 2} \\]\ndonde \\(n - 2\\) refleja los grados de libertad, ya que hemos estimado dos parámetros (\\(a\\) y \\(b\\)).\n\n\nIncertidumbres estándar\nLas incertidumbres estándar de \\(a\\) y \\(b\\) son las raíces cuadradas de sus varianzas, utilizando \\(s^2\\) como estimación de \\(\\sigma^2\\):\n\\[ \\sigma_b \\approx \\sqrt{\\frac{s^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}} \\]\n\\[ \\sigma_a \\approx \\sqrt{s^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right]} \\]",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-07.html#resumen",
-    "href": "clases/clase-07.html#resumen",
-    "title": "Clase 07",
-    "section": "Resumen",
-    "text": "Resumen\nLa regresión por mínimos cuadrados permite ajustar una línea recta a datos experimentales minimizando la suma de los cuadrados de los residuos. Las fórmulas clave son:\n\nPendiente \\(b\\):\n\n\\[ b = \\frac{n \\sum x_i y_i - \\sum x_i \\sum y_i}{n \\sum x_i^2 - (\\sum x_i)^2} \\]\n\nOrdenada al origen \\(a\\):\n\n\\[ a = \\frac{\\sum y_i - b \\sum x_i}{n} \\]\nAdemás, las incertidumbres de estos parámetros se estiman utilizando la varianza residual \\(s^2\\), lo que es esencial para evaluar la precisión del ajuste en contextos experimentales.\nEsta deducción sigue los métodos presentados en “Data Analysis for Physical Scientists” de L. Kirkup y proporciona una base sólida para el análisis de datos en física y otras ciencias. Si necesitas aplicar esto a un conjunto de datos específico, no dudes en pedírmelo. ¡Espero que esta explicación te sea útil!",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-05.html",
-    "href": "clases/clase-05.html",
-    "title": "Clase 05",
+    "objectID": "clases/clase-08.html",
+    "href": "clases/clase-08.html",
+    "title": "Clase 08",
     "section": "",
-    "text": "Las tablas son una forma de disposición de la información cuya justificación se basa en la naturaleza de los datos que contienen. No toda información se presenta bien en una tabla. En ocasiones la decisión sobre crear una tabla es obvia, como por ejemplo en los datos numéricos de una medición, pero en otras no lo es tanto: comparar resultados obtenidos a través de métodos diferentes o para resumir información dada previamente en el texto o en otras tablas.\n\n\nPara es aconsejable seguir algunos lineamientos para que las tablas en nuestros documentos sean un soporte y apoyo a la narrativa del mismo y no un obstáculo para el lector. Podemos ver en la siguiente imagen algunas ideas\n\n\n\nIdeas generales sobre tablas\n\n\nAlgunas guías generales para las tablas que contienen información científica:\n\nTítulos: Cortos y descriptivos en columnas o filas (abreviar si fuera necesario). Se recomienda usar negrita en títulos de columnas.\n\nSiempre inlcuir las unidades, incertidumbres, número de muestras u otroa información relevante para los datos que se muestran.\n\nTabla: Debe tener referencia numerada (o nombre) para su posterior mención en el texto.\n\n\n\n\nSimpliicar los estilos\n\n\n\n\n\nFormato general\n\n\n\nTipografía: Se recomienda usar tipografías sin serifs (sans-serif) para generar una lectura más ágil y diferenciarla del cuerpo del texto.\nLos valores calculados que dependen de valores de una columna es mejor colocarlos a la derecha del valor del cual dependen.\nAlineación del texto: Para primera columna o fila de descripción se prefiere la alineación izquierda.\n\n\n\n\nTablas largas y separación visual entre filas\n\n\n\nAlineación de los títulos: de las columnas debe concordar con el de los datos que esas columna contiene.\nPara datos numéricos, dependiendo de las posiciones decimales de los datos y su unidad de medida se aconsejan diferentes alineaciones según puede verse en la figura. La regla general es que debe permitir una rápida identificación del orden de magnitud del número.\nPosiciones decimales: restringirse a la cantidad de posiciones decimales significativas de la apreciación del origen de los datos reportados. Redondear a estos valores los datos calculados.\n\n\n\n\nAlineación de datos y columnas\n\n\n\nEspacio entre columnas: Debe ser el mínimo indispensable para permitir delimitación visual entre columnas sin necesidad de agregar lineas verticales.\nAlineación vertical del contenido de una celda: Depende de si el contenido entre columnas tiene una extensión similar o no. Si la extensión es similar, alinearlo al centro deja un mejor margen visual. En cambio, si la extensión varía entre columnas se prefiere una alineación que se ajuste a la última línea (para títulos) o a la primera (para datos).\n\n\n\n\nAlineación vertical\n\n\n\n\n\nTabla de datos y tabla resumen\n\n\n\n\n\nLas tablas en libre office writer son un poco más amigables que las de otros procesadores de texto aunque no son tan potentes como las que veremos en libre office calc (la planilla de cálculo). Aún así, cuando usemos datos que provengan de otros orígenes (sistemas de adquisición de datos como sensores o equipos de laboratorio) o una planilla de calc, deberemos saber como formatear la tabla para su posterior uso en un documento de texto.\n\n\n\nPara agregar una tabla:\n\nmenú Tabla &gt; Insertar &gt; Tabla.\nEspecifica el número de filas y columnas.\nAjusta las propiedades básicas (ej. nombre, bordes). clic en Aceptar.\n\nMétodo rápido:\nel atajo Ctrl + F12 o clic en el icono de tabla en la barra estándar.\n\n\n\n\n\n\nAñadir: Clic derecho en una celda &gt; Insertar &gt; Filas/Columnas.\nEliminar: Seleccionar las celdas &gt; clic derecho &gt; Eliminar celdas.\n\n\n\n\n\nSelecciona las celdas a combinar.\nClic derecho &gt; Combinar celdas.\n\n\n\n\nSi hacemos click derecho &gt; propiedades de tabla accedemos las propiedades generales de la tabla como su alineación en relación a la página, tamaño de filas y columnas, etc.\n\n\n\nOpciones generales\n\n\n\n\n\n\nEn writer contamos con diferentes tipos de estilos para tablas\n\nPredeterminados: Estilos como “Tabla Clásica” o “Tabla Sin Bordes”.\nPersonalizados: Estilos creados por el usuario.\n\nA diferencia de los estilos de página, párrafo, texto, etc. que vimos hasta ahora no es posible editar los estilos de tabla existentes desde la barra de estilo en las últimas versiones de libe office. El estilo de tabla académico es un buen punto de partida para personalizarlo según las necesidades de nuestros documentos. Para crear un estilo de tabla hacemos lo siguiente: tabla &gt; estilos de formato automático (con el cursor en una celda de la tabla). Allí podremos crear desde cero un estilo de tabla o modificar los existentes. Más detalles acá.\n\n\n\nAunque como vimos con los estilos de párrafo muchas veces es más comodo crear la tabla, formatearla como nos guste y luego crear el estilo a partir de la selecicón.\nHacemos una tabla y la formateamos como nos guste, por ejemplo la que se ve a continuación\n\n\n\nEjemplo de tabla en writer\n\n\nLa seleccionamos y vamos a tabla &gt; estilos de formato automático y luego hacemos añadir damos un nombre al estilo y ya podremos utilizarlo en nuestros documentos.\n\n\n\n\nAl usar datos de otro origen, como una planilla de cálculo es importante que se preserve tanto la integridad y legibilidad de los datos como que el formato de la tabla sea acorde y concuerde con el documento de destino.\nCopiar y pegar los datos desde una hoja de cáculo no es aconsejable salvo que no hayamos dado formato alguno a los datos en la planilla, en tal caso tendremos una tabla que podremos formatear a gusto o aplicar el estilo de nuestro interés.\nSi usamos las opciones de pegado especial tenemos\nHoja de cálculo: Inserta los datos como una planilla de calc que podremos editar con todas las funcione sde la planilla, pero también con las dificultades para formatearla que esto nos trae. No se aconseja salvo que no se puedan tener los datos en una planilla externa.\nMetarchivo (GDI): No permite opciones de formato. Es util sólo cuando tenemos una tabla cuyo tamaño, contenido y formato esté listo para ser incluido en nuestro documento.\nImagen mapa de bits: Mismo que el caso anterior pero con pérdida de calidad si se amplía la imagen.\nLenguaje HTML: Conserva propiedades del formato de origen pero permite su edición en writer y sólo pega los datos visibles (útil si tenemos una tabla con columnas ocultas en calc)\nIntercambio dinámico de datos: Crea un vínculo a la planilla y los cambios hechos ahí son reflejados en el documento de Writer. Pueden aplicársele los formatos de Writer pero incluye columnas ocultas si las hubiere.\nTexto sin formato: Copia el texto tabulado pero sin formar parte de una tabla\nFormato de texto enriquecido: Copia el contenido junto al formato numérico pero no el específico de la tabla y permite su posterior edición en Writer",
+    "text": "los datos obtenidos desde cualquier origen son discretos, es decir, representan el estado de un sistema (cualquiera sea) en algún instante, la relación entre dos variables para algunas condiciones, la cantidad de algún objeto,etc.\nPara representaciones de tipo estadístico donde se intenta contar o cuantificar la cantidad de eventos los gráficos más utilizados son los de barras, histogramas, de torta y sus variantes.\nPara representaciones dependientes del tiempo o que expresen la relación entre variables los gráficos más representativos son los de de dispersión en donde cada dato, si suponemos un arreglo bidimensional, posee dos coordenadas específicas, que usualmente representamos en el eje horizontal y vertical de una gráfica respectivamente.\nPara insertar un gráfico de disperisón en Libre Office Calc, hacemos lo siguiente\ninsertar &gt; gráfico&gt; tipo de gráfico &gt; xy dispersión\nInsertar gráfica",
     "crumbs": [
       "Clases",
-      "Clase 05"
+      "Clase 08"
     ]
   },
   {
-    "objectID": "clases/clase-05.html#tablas",
-    "href": "clases/clase-05.html#tablas",
-    "title": "Clase 05",
+    "objectID": "clases/clase-08.html#gráficas-en-calc",
+    "href": "clases/clase-08.html#gráficas-en-calc",
+    "title": "Clase 08",
     "section": "",
-    "text": "Las tablas son una forma de disposición de la información cuya justificación se basa en la naturaleza de los datos que contienen. No toda información se presenta bien en una tabla. En ocasiones la decisión sobre crear una tabla es obvia, como por ejemplo en los datos numéricos de una medición, pero en otras no lo es tanto: comparar resultados obtenidos a través de métodos diferentes o para resumir información dada previamente en el texto o en otras tablas.\n\n\nPara es aconsejable seguir algunos lineamientos para que las tablas en nuestros documentos sean un soporte y apoyo a la narrativa del mismo y no un obstáculo para el lector. Podemos ver en la siguiente imagen algunas ideas\n\n\n\nIdeas generales sobre tablas\n\n\nAlgunas guías generales para las tablas que contienen información científica:\n\nTítulos: Cortos y descriptivos en columnas o filas (abreviar si fuera necesario). Se recomienda usar negrita en títulos de columnas.\n\nSiempre inlcuir las unidades, incertidumbres, número de muestras u otroa información relevante para los datos que se muestran.\n\nTabla: Debe tener referencia numerada (o nombre) para su posterior mención en el texto.\n\n\n\n\nSimpliicar los estilos\n\n\n\n\n\nFormato general\n\n\n\nTipografía: Se recomienda usar tipografías sin serifs (sans-serif) para generar una lectura más ágil y diferenciarla del cuerpo del texto.\nLos valores calculados que dependen de valores de una columna es mejor colocarlos a la derecha del valor del cual dependen.\nAlineación del texto: Para primera columna o fila de descripción se prefiere la alineación izquierda.\n\n\n\n\nTablas largas y separación visual entre filas\n\n\n\nAlineación de los títulos: de las columnas debe concordar con el de los datos que esas columna contiene.\nPara datos numéricos, dependiendo de las posiciones decimales de los datos y su unidad de medida se aconsejan diferentes alineaciones según puede verse en la figura. La regla general es que debe permitir una rápida identificación del orden de magnitud del número.\nPosiciones decimales: restringirse a la cantidad de posiciones decimales significativas de la apreciación del origen de los datos reportados. Redondear a estos valores los datos calculados.\n\n\n\n\nAlineación de datos y columnas\n\n\n\nEspacio entre columnas: Debe ser el mínimo indispensable para permitir delimitación visual entre columnas sin necesidad de agregar lineas verticales.\nAlineación vertical del contenido de una celda: Depende de si el contenido entre columnas tiene una extensión similar o no. Si la extensión es similar, alinearlo al centro deja un mejor margen visual. En cambio, si la extensión varía entre columnas se prefiere una alineación que se ajuste a la última línea (para títulos) o a la primera (para datos).\n\n\n\n\nAlineación vertical\n\n\n\n\n\nTabla de datos y tabla resumen\n\n\n\n\n\nLas tablas en libre office writer son un poco más amigables que las de otros procesadores de texto aunque no son tan potentes como las que veremos en libre office calc (la planilla de cálculo). Aún así, cuando usemos datos que provengan de otros orígenes (sistemas de adquisición de datos como sensores o equipos de laboratorio) o una planilla de calc, deberemos saber como formatear la tabla para su posterior uso en un documento de texto.\n\n\n\nPara agregar una tabla:\n\nmenú Tabla &gt; Insertar &gt; Tabla.\nEspecifica el número de filas y columnas.\nAjusta las propiedades básicas (ej. nombre, bordes). clic en Aceptar.\n\nMétodo rápido:\nel atajo Ctrl + F12 o clic en el icono de tabla en la barra estándar.\n\n\n\n\n\n\nAñadir: Clic derecho en una celda &gt; Insertar &gt; Filas/Columnas.\nEliminar: Seleccionar las celdas &gt; clic derecho &gt; Eliminar celdas.\n\n\n\n\n\nSelecciona las celdas a combinar.\nClic derecho &gt; Combinar celdas.\n\n\n\n\nSi hacemos click derecho &gt; propiedades de tabla accedemos las propiedades generales de la tabla como su alineación en relación a la página, tamaño de filas y columnas, etc.\n\n\n\nOpciones generales\n\n\n\n\n\n\nEn writer contamos con diferentes tipos de estilos para tablas\n\nPredeterminados: Estilos como “Tabla Clásica” o “Tabla Sin Bordes”.\nPersonalizados: Estilos creados por el usuario.\n\nA diferencia de los estilos de página, párrafo, texto, etc. que vimos hasta ahora no es posible editar los estilos de tabla existentes desde la barra de estilo en las últimas versiones de libe office. El estilo de tabla académico es un buen punto de partida para personalizarlo según las necesidades de nuestros documentos. Para crear un estilo de tabla hacemos lo siguiente: tabla &gt; estilos de formato automático (con el cursor en una celda de la tabla). Allí podremos crear desde cero un estilo de tabla o modificar los existentes. Más detalles acá.\n\n\n\nAunque como vimos con los estilos de párrafo muchas veces es más comodo crear la tabla, formatearla como nos guste y luego crear el estilo a partir de la selecicón.\nHacemos una tabla y la formateamos como nos guste, por ejemplo la que se ve a continuación\n\n\n\nEjemplo de tabla en writer\n\n\nLa seleccionamos y vamos a tabla &gt; estilos de formato automático y luego hacemos añadir damos un nombre al estilo y ya podremos utilizarlo en nuestros documentos.\n\n\n\n\nAl usar datos de otro origen, como una planilla de cálculo es importante que se preserve tanto la integridad y legibilidad de los datos como que el formato de la tabla sea acorde y concuerde con el documento de destino.\nCopiar y pegar los datos desde una hoja de cáculo no es aconsejable salvo que no hayamos dado formato alguno a los datos en la planilla, en tal caso tendremos una tabla que podremos formatear a gusto o aplicar el estilo de nuestro interés.\nSi usamos las opciones de pegado especial tenemos\nHoja de cálculo: Inserta los datos como una planilla de calc que podremos editar con todas las funcione sde la planilla, pero también con las dificultades para formatearla que esto nos trae. No se aconseja salvo que no se puedan tener los datos en una planilla externa.\nMetarchivo (GDI): No permite opciones de formato. Es util sólo cuando tenemos una tabla cuyo tamaño, contenido y formato esté listo para ser incluido en nuestro documento.\nImagen mapa de bits: Mismo que el caso anterior pero con pérdida de calidad si se amplía la imagen.\nLenguaje HTML: Conserva propiedades del formato de origen pero permite su edición en writer y sólo pega los datos visibles (útil si tenemos una tabla con columnas ocultas en calc)\nIntercambio dinámico de datos: Crea un vínculo a la planilla y los cambios hechos ahí son reflejados en el documento de Writer. Pueden aplicársele los formatos de Writer pero incluye columnas ocultas si las hubiere.\nTexto sin formato: Copia el texto tabulado pero sin formar parte de una tabla\nFormato de texto enriquecido: Copia el contenido junto al formato numérico pero no el específico de la tabla y permite su posterior edición en Writer",
+    "text": "los datos obtenidos desde cualquier origen son discretos, es decir, representan el estado de un sistema (cualquiera sea) en algún instante, la relación entre dos variables para algunas condiciones, la cantidad de algún objeto,etc.\nPara representaciones de tipo estadístico donde se intenta contar o cuantificar la cantidad de eventos los gráficos más utilizados son los de barras, histogramas, de torta y sus variantes.\nPara representaciones dependientes del tiempo o que expresen la relación entre variables los gráficos más representativos son los de de dispersión en donde cada dato, si suponemos un arreglo bidimensional, posee dos coordenadas específicas, que usualmente representamos en el eje horizontal y vertical de una gráfica respectivamente.\nPara insertar un gráfico de disperisón en Libre Office Calc, hacemos lo siguiente\ninsertar &gt; gráfico&gt; tipo de gráfico &gt; xy dispersión\nInsertar gráfica",
     "crumbs": [
       "Clases",
-      "Clase 05"
+      "Clase 08"
     ]
   },
   {
-    "objectID": "clases/clase-05.html#sumarios-e-índices",
-    "href": "clases/clase-05.html#sumarios-e-índices",
-    "title": "Clase 05",
-    "section": "Sumarios e índices",
-    "text": "Sumarios e índices\nLos índices y sumarios permiten crear automáticamente listados a partir de contenido de cierta tipología dentro del documento:\n\nTítulos, subtítulos, etc: índice\nTablas\nFiguras\nEcuaciones (u otros objetos personalizados)\n\nPara crear uno vamos a insertar &gt; sumario e indice y veremos el siguiente menú\n\n\n\nMenú sumario e índices\n\n\nEste menú nos ofrece la opción para crear diferentes tipos de índices seleccionando desde tipo pudiendo cambiar el nombre en titulo\nSi elegimos como tipo índice de figuras podremos elegir qué tipo de elemento el índice colecciona para mostrar\n\n\n\nÍndices de figuras\n\n\n\níndice alfabético\nPara crear un índice alfabético debemos primero crear las entradas que indizaremos haciendo insertar &gt; sumario e índice &gt; entrada de índice\n\n\n\nMenú entrada de índice\n\n\nSi estamos incluyendo ítems debemos primero marcarlos como entrada princpal para que aparezcan al momento de generar el índice alfabético desde el menú indicado más arriba.",
+    "objectID": "clases/clase-08.html#series-de-datos",
+    "href": "clases/clase-08.html#series-de-datos",
+    "title": "Clase 08",
+    "section": "Series de datos",
+    "text": "Series de datos\nPara hacer más facil nuestro trabajo conviene que los datos deben estar estructurados en columnas donde la primera columna contiene los datos que irán al eje horizontal y la segunda los del eje vertical.\nEsto puede cambiarse luego desde el menú inserción de gráfico, pero es más sencillo tener los datos bien organizados desde el comienzo.\nSeries de datos",
     "crumbs": [
       "Clases",
-      "Clase 05"
+      "Clase 08"
     ]
   },
   {
-    "objectID": "clases/clase-05.html#referencias",
-    "href": "clases/clase-05.html#referencias",
-    "title": "Clase 05",
+    "objectID": "clases/clase-08.html#formato-del-gráfico",
+    "href": "clases/clase-08.html#formato-del-gráfico",
+    "title": "Clase 08",
+    "section": "Formato del gráfico",
+    "text": "Formato del gráfico\nLa correcta disposición de los elementos en el lienzo del gráfico no sólo hace posible una lectura más amena sino que pone en juego la comprensión misma de los datos indicados en la gráfica.\nSe deben colocar títulos, subtítulos y nombres de ejes indicando las unidades correctas, así tambien como respetar los estilos tipográficos del documento en el cual se va a insertar el gráfico. Se puede optar por un estilo que se integre o que se destaque dependiendo de los requerimientos específicos, pero esta decisión debe ser a conciencia.\n\nLíneas de cuadrícula\nSi se hace doble click en cualquiera de los dos ejes y luego click derecho se ofrece la posibilidad de agregar o quitar líneas de cuadrícula principal y secundarias. La cantidad de elementos entre la cuadrícula principal y la secundaria se encuentra manejado por la opción de\nEjes y cuadrículas\nTambién con el gráfico seleccionado a través del menú insertar &gt; cuadrículas\n\n\nEjes, leyendas y rótulos\nLa información contextual del gráfico: ejes y rótulos disponibles se pueden elegir al momento de crear la gráfica o haciendo doble click sobre la misma y eligiendo de la barra los elementos que necesitemos o con el grafico seleccionado a través del menú insertar\nElementos del gráfico\n\n\nBarras de error\nCon el gráfico seleccionado hacemos insertar &gt; barras de error ahi podremos elegir las diferentes variantes que contamos para las barras de error\nBarras de error",
+    "crumbs": [
+      "Clases",
+      "Clase 08"
+    ]
+  },
+  {
+    "objectID": "clases/clase-08.html#referencias",
+    "href": "clases/clase-08.html#referencias",
+    "title": "Clase 08",
     "section": "Referencias",
-    "text": "Referencias\n\nTablas según science editor\nResearcher’s Guide for the Preparation of Tables\nASA-CSSA-SSSA Style Manual",
+    "text": "Referencias\n:link: Ayuda oficial de Libre Office :movie_camera: Gráficas de dispersión :link: Barras de error en Libre Office",
     "crumbs": [
       "Clases",
-      "Clase 05"
+      "Clase 08"
+    ]
+  },
+  {
+    "objectID": "clases/clase-06.html",
+    "href": "clases/clase-06.html",
+    "title": "Clase 06",
+    "section": "",
+    "text": "Apunte en construcción",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
+    ]
+  },
+  {
+    "objectID": "clases/clase-06.html#integración-con-zotero",
+    "href": "clases/clase-06.html#integración-con-zotero",
+    "title": "Clase 06",
+    "section": "Integración con Zotero",
+    "text": "Integración con Zotero\n\nInstalación y uso básico de Zotero\n\nIr a zotero.org/download.\nDescargar el instalador para tu sistema operativo (Windows/macOS/Linux).\nEjecutar el instalador y sigue las instrucciones.\n\n\n\nExtensión para libre offie\n\nHabilitar la integración\n\nAbre Zotero.\nVe a Herramientas &gt; Complementos y asegúrate de que el complemento LibreOffice Integration esté instalado y activado.\nSi no está instalado:\n\nDescarga la extensión desde Zotero - LibreOffice.\nArrastra el archivo .xpi a la ventana de Zotero.\n\n\n\n\nConfigurar LibreOffice\n\nAbre LibreOffice Writer.\nVe a Herramientas &gt; Complementos &gt; Administrador de extensiones.\nConfirmar que Zotero LibreOffice Integration aparezca en la lista.",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
+    ]
+  },
+  {
+    "objectID": "clases/clase-06.html#uso-de-zotero-en-libre-office",
+    "href": "clases/clase-06.html#uso-de-zotero-en-libre-office",
+    "title": "Clase 06",
+    "section": "Uso de zotero en libre office",
+    "text": "Uso de zotero en libre office\n\n\nFormato de la bibliografía\n\n\nAgregar bibliografía de lo citado\n\n\nAgregar referencias no citadas",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
     ]
   },
   {
@@ -447,113 +414,190 @@
     ]
   },
   {
-    "objectID": "clases/clase-05-b.html",
-    "href": "clases/clase-05-b.html",
-    "title": "Clase 05-bis",
+    "objectID": "clases/clase-05.html",
+    "href": "clases/clase-05.html",
+    "title": "Clase 05",
     "section": "",
-    "text": "Para agregar la bibliografía a un documento de Writer debemos primero tener una base de datos de bibliografía creada\n\n\n\n\n\nIr a zotero.org/download.\nDescargar el instalador para tu sistema operativo (Windows/macOS/Linux).\nEjecutar el instalador y sigue las instrucciones.\n\n\n\n\n\n\n\nAbre Zotero.\nVe a Herramientas &gt; Complementos y asegúrate de que el complemento LibreOffice Integration esté instalado y activado.\nSi no está instalado:\n\nDescarga la extensión desde Zotero - LibreOffice.\nArrastra el archivo .xpi a la ventana de Zotero.\n\n\n\n\n\n\nAbre LibreOffice Writer.\nVe a Herramientas &gt; Complementos &gt; Administrador de extensiones.\nConfirma que Zotero LibreOffice Integration aparezca en la lista.",
+    "text": "Las tablas son una forma de disposición de la información cuya justificación se basa en la naturaleza de los datos que contienen. No toda información se presenta bien en una tabla. En ocasiones la decisión sobre crear una tabla es obvia, como por ejemplo en los datos numéricos de una medición, pero en otras no lo es tanto: comparar resultados obtenidos a través de métodos diferentes o para resumir información dada previamente en el texto o en otras tablas.\n\n\nPara es aconsejable seguir algunos lineamientos para que las tablas en nuestros documentos sean un soporte y apoyo a la narrativa del mismo y no un obstáculo para el lector. Podemos ver en la siguiente imagen algunas ideas\n\n\n\nIdeas generales sobre tablas\n\n\nAlgunas guías generales para las tablas que contienen información científica:\n\nTítulos: Cortos y descriptivos en columnas o filas (abreviar si fuera necesario). Se recomienda usar negrita en títulos de columnas.\n\nSiempre inlcuir las unidades, incertidumbres, número de muestras u otroa información relevante para los datos que se muestran.\n\nTabla: Debe tener referencia numerada (o nombre) para su posterior mención en el texto.\n\n\n\n\nSimpliicar los estilos\n\n\n\n\n\nFormato general\n\n\n\nTipografía: Se recomienda usar tipografías sin serifs (sans-serif) para generar una lectura más ágil y diferenciarla del cuerpo del texto.\nLos valores calculados que dependen de valores de una columna es mejor colocarlos a la derecha del valor del cual dependen.\nAlineación del texto: Para primera columna o fila de descripción se prefiere la alineación izquierda.\n\n\n\n\nTablas largas y separación visual entre filas\n\n\n\nAlineación de los títulos: de las columnas debe concordar con el de los datos que esas columna contiene.\nPara datos numéricos, dependiendo de las posiciones decimales de los datos y su unidad de medida se aconsejan diferentes alineaciones según puede verse en la figura. La regla general es que debe permitir una rápida identificación del orden de magnitud del número.\nPosiciones decimales: restringirse a la cantidad de posiciones decimales significativas de la apreciación del origen de los datos reportados. Redondear a estos valores los datos calculados.\n\n\n\n\nAlineación de datos y columnas\n\n\n\nEspacio entre columnas: Debe ser el mínimo indispensable para permitir delimitación visual entre columnas sin necesidad de agregar lineas verticales.\nAlineación vertical del contenido de una celda: Depende de si el contenido entre columnas tiene una extensión similar o no. Si la extensión es similar, alinearlo al centro deja un mejor margen visual. En cambio, si la extensión varía entre columnas se prefiere una alineación que se ajuste a la última línea (para títulos) o a la primera (para datos).\n\n\n\n\nAlineación vertical\n\n\n\n\n\nTabla de datos y tabla resumen\n\n\n\n\n\nLas tablas en libre office writer son un poco más amigables que las de otros procesadores de texto aunque no son tan potentes como las que veremos en libre office calc (la planilla de cálculo). Aún así, cuando usemos datos que provengan de otros orígenes (sistemas de adquisición de datos como sensores o equipos de laboratorio) o una planilla de calc, deberemos saber como formatear la tabla para su posterior uso en un documento de texto.\n\n\n\nPara agregar una tabla:\n\nmenú Tabla &gt; Insertar &gt; Tabla.\nEspecifica el número de filas y columnas.\nAjusta las propiedades básicas (ej. nombre, bordes). clic en Aceptar.\n\nMétodo rápido:\nel atajo Ctrl + F12 o clic en el icono de tabla en la barra estándar.\n\n\n\n\n\n\nAñadir: Clic derecho en una celda &gt; Insertar &gt; Filas/Columnas.\nEliminar: Seleccionar las celdas &gt; clic derecho &gt; Eliminar celdas.\n\n\n\n\n\nSelecciona las celdas a combinar.\nClic derecho &gt; Combinar celdas.\n\n\n\n\nSi hacemos click derecho &gt; propiedades de tabla accedemos las propiedades generales de la tabla como su alineación en relación a la página, tamaño de filas y columnas, etc.\n\n\n\nOpciones generales\n\n\n\n\n\n\nEn writer contamos con diferentes tipos de estilos para tablas\n\nPredeterminados: Estilos como “Tabla Clásica” o “Tabla Sin Bordes”.\nPersonalizados: Estilos creados por el usuario.\n\nA diferencia de los estilos de página, párrafo, texto, etc. que vimos hasta ahora no es posible editar los estilos de tabla existentes desde la barra de estilo en las últimas versiones de libe office. El estilo de tabla académico es un buen punto de partida para personalizarlo según las necesidades de nuestros documentos. Para crear un estilo de tabla hacemos lo siguiente: tabla &gt; estilos de formato automático (con el cursor en una celda de la tabla). Allí podremos crear desde cero un estilo de tabla o modificar los existentes. Más detalles acá.\n\n\n\nAunque como vimos con los estilos de párrafo muchas veces es más comodo crear la tabla, formatearla como nos guste y luego crear el estilo a partir de la selecicón.\nHacemos una tabla y la formateamos como nos guste, por ejemplo la que se ve a continuación\n\n\n\nEjemplo de tabla en writer\n\n\nLa seleccionamos y vamos a tabla &gt; estilos de formato automático y luego hacemos añadir damos un nombre al estilo y ya podremos utilizarlo en nuestros documentos.\n\n\n\n\nAl usar datos de otro origen, como una planilla de cálculo es importante que se preserve tanto la integridad y legibilidad de los datos como que el formato de la tabla sea acorde y concuerde con el documento de destino.\nCopiar y pegar los datos desde una hoja de cáculo no es aconsejable salvo que no hayamos dado formato alguno a los datos en la planilla, en tal caso tendremos una tabla que podremos formatear a gusto o aplicar el estilo de nuestro interés.\nSi usamos las opciones de pegado especial tenemos\nHoja de cálculo: Inserta los datos como una planilla de calc que podremos editar con todas las funcione sde la planilla, pero también con las dificultades para formatearla que esto nos trae. No se aconseja salvo que no se puedan tener los datos en una planilla externa.\nMetarchivo (GDI): No permite opciones de formato. Es util sólo cuando tenemos una tabla cuyo tamaño, contenido y formato esté listo para ser incluido en nuestro documento.\nImagen mapa de bits: Mismo que el caso anterior pero con pérdida de calidad si se amplía la imagen.\nLenguaje HTML: Conserva propiedades del formato de origen pero permite su edición en writer y sólo pega los datos visibles (útil si tenemos una tabla con columnas ocultas en calc)\nIntercambio dinámico de datos: Crea un vínculo a la planilla y los cambios hechos ahí son reflejados en el documento de Writer. Pueden aplicársele los formatos de Writer pero incluye columnas ocultas si las hubiere.\nTexto sin formato: Copia el texto tabulado pero sin formar parte de una tabla\nFormato de texto enriquecido: Copia el contenido junto al formato numérico pero no el específico de la tabla y permite su posterior edición en Writer",
     "crumbs": [
       "Clases",
-      "Clase 05-bis"
+      "Clase 05"
     ]
   },
   {
-    "objectID": "clases/clase-05-b.html#integración-con-zotero",
-    "href": "clases/clase-05-b.html#integración-con-zotero",
-    "title": "Clase 05-bis",
+    "objectID": "clases/clase-05.html#tablas",
+    "href": "clases/clase-05.html#tablas",
+    "title": "Clase 05",
     "section": "",
-    "text": "Ir a zotero.org/download.\nDescargar el instalador para tu sistema operativo (Windows/macOS/Linux).\nEjecutar el instalador y sigue las instrucciones.\n\n\n\n\n\n\n\nAbre Zotero.\nVe a Herramientas &gt; Complementos y asegúrate de que el complemento LibreOffice Integration esté instalado y activado.\nSi no está instalado:\n\nDescarga la extensión desde Zotero - LibreOffice.\nArrastra el archivo .xpi a la ventana de Zotero.\n\n\n\n\n\n\nAbre LibreOffice Writer.\nVe a Herramientas &gt; Complementos &gt; Administrador de extensiones.\nConfirma que Zotero LibreOffice Integration aparezca en la lista.",
+    "text": "Las tablas son una forma de disposición de la información cuya justificación se basa en la naturaleza de los datos que contienen. No toda información se presenta bien en una tabla. En ocasiones la decisión sobre crear una tabla es obvia, como por ejemplo en los datos numéricos de una medición, pero en otras no lo es tanto: comparar resultados obtenidos a través de métodos diferentes o para resumir información dada previamente en el texto o en otras tablas.\n\n\nPara es aconsejable seguir algunos lineamientos para que las tablas en nuestros documentos sean un soporte y apoyo a la narrativa del mismo y no un obstáculo para el lector. Podemos ver en la siguiente imagen algunas ideas\n\n\n\nIdeas generales sobre tablas\n\n\nAlgunas guías generales para las tablas que contienen información científica:\n\nTítulos: Cortos y descriptivos en columnas o filas (abreviar si fuera necesario). Se recomienda usar negrita en títulos de columnas.\n\nSiempre inlcuir las unidades, incertidumbres, número de muestras u otroa información relevante para los datos que se muestran.\n\nTabla: Debe tener referencia numerada (o nombre) para su posterior mención en el texto.\n\n\n\n\nSimpliicar los estilos\n\n\n\n\n\nFormato general\n\n\n\nTipografía: Se recomienda usar tipografías sin serifs (sans-serif) para generar una lectura más ágil y diferenciarla del cuerpo del texto.\nLos valores calculados que dependen de valores de una columna es mejor colocarlos a la derecha del valor del cual dependen.\nAlineación del texto: Para primera columna o fila de descripción se prefiere la alineación izquierda.\n\n\n\n\nTablas largas y separación visual entre filas\n\n\n\nAlineación de los títulos: de las columnas debe concordar con el de los datos que esas columna contiene.\nPara datos numéricos, dependiendo de las posiciones decimales de los datos y su unidad de medida se aconsejan diferentes alineaciones según puede verse en la figura. La regla general es que debe permitir una rápida identificación del orden de magnitud del número.\nPosiciones decimales: restringirse a la cantidad de posiciones decimales significativas de la apreciación del origen de los datos reportados. Redondear a estos valores los datos calculados.\n\n\n\n\nAlineación de datos y columnas\n\n\n\nEspacio entre columnas: Debe ser el mínimo indispensable para permitir delimitación visual entre columnas sin necesidad de agregar lineas verticales.\nAlineación vertical del contenido de una celda: Depende de si el contenido entre columnas tiene una extensión similar o no. Si la extensión es similar, alinearlo al centro deja un mejor margen visual. En cambio, si la extensión varía entre columnas se prefiere una alineación que se ajuste a la última línea (para títulos) o a la primera (para datos).\n\n\n\n\nAlineación vertical\n\n\n\n\n\nTabla de datos y tabla resumen\n\n\n\n\n\nLas tablas en libre office writer son un poco más amigables que las de otros procesadores de texto aunque no son tan potentes como las que veremos en libre office calc (la planilla de cálculo). Aún así, cuando usemos datos que provengan de otros orígenes (sistemas de adquisición de datos como sensores o equipos de laboratorio) o una planilla de calc, deberemos saber como formatear la tabla para su posterior uso en un documento de texto.\n\n\n\nPara agregar una tabla:\n\nmenú Tabla &gt; Insertar &gt; Tabla.\nEspecifica el número de filas y columnas.\nAjusta las propiedades básicas (ej. nombre, bordes). clic en Aceptar.\n\nMétodo rápido:\nel atajo Ctrl + F12 o clic en el icono de tabla en la barra estándar.\n\n\n\n\n\n\nAñadir: Clic derecho en una celda &gt; Insertar &gt; Filas/Columnas.\nEliminar: Seleccionar las celdas &gt; clic derecho &gt; Eliminar celdas.\n\n\n\n\n\nSelecciona las celdas a combinar.\nClic derecho &gt; Combinar celdas.\n\n\n\n\nSi hacemos click derecho &gt; propiedades de tabla accedemos las propiedades generales de la tabla como su alineación en relación a la página, tamaño de filas y columnas, etc.\n\n\n\nOpciones generales\n\n\n\n\n\n\nEn writer contamos con diferentes tipos de estilos para tablas\n\nPredeterminados: Estilos como “Tabla Clásica” o “Tabla Sin Bordes”.\nPersonalizados: Estilos creados por el usuario.\n\nA diferencia de los estilos de página, párrafo, texto, etc. que vimos hasta ahora no es posible editar los estilos de tabla existentes desde la barra de estilo en las últimas versiones de libe office. El estilo de tabla académico es un buen punto de partida para personalizarlo según las necesidades de nuestros documentos. Para crear un estilo de tabla hacemos lo siguiente: tabla &gt; estilos de formato automático (con el cursor en una celda de la tabla). Allí podremos crear desde cero un estilo de tabla o modificar los existentes. Más detalles acá.\n\n\n\nAunque como vimos con los estilos de párrafo muchas veces es más comodo crear la tabla, formatearla como nos guste y luego crear el estilo a partir de la selecicón.\nHacemos una tabla y la formateamos como nos guste, por ejemplo la que se ve a continuación\n\n\n\nEjemplo de tabla en writer\n\n\nLa seleccionamos y vamos a tabla &gt; estilos de formato automático y luego hacemos añadir damos un nombre al estilo y ya podremos utilizarlo en nuestros documentos.\n\n\n\n\nAl usar datos de otro origen, como una planilla de cálculo es importante que se preserve tanto la integridad y legibilidad de los datos como que el formato de la tabla sea acorde y concuerde con el documento de destino.\nCopiar y pegar los datos desde una hoja de cáculo no es aconsejable salvo que no hayamos dado formato alguno a los datos en la planilla, en tal caso tendremos una tabla que podremos formatear a gusto o aplicar el estilo de nuestro interés.\nSi usamos las opciones de pegado especial tenemos\nHoja de cálculo: Inserta los datos como una planilla de calc que podremos editar con todas las funcione sde la planilla, pero también con las dificultades para formatearla que esto nos trae. No se aconseja salvo que no se puedan tener los datos en una planilla externa.\nMetarchivo (GDI): No permite opciones de formato. Es util sólo cuando tenemos una tabla cuyo tamaño, contenido y formato esté listo para ser incluido en nuestro documento.\nImagen mapa de bits: Mismo que el caso anterior pero con pérdida de calidad si se amplía la imagen.\nLenguaje HTML: Conserva propiedades del formato de origen pero permite su edición en writer y sólo pega los datos visibles (útil si tenemos una tabla con columnas ocultas en calc)\nIntercambio dinámico de datos: Crea un vínculo a la planilla y los cambios hechos ahí son reflejados en el documento de Writer. Pueden aplicársele los formatos de Writer pero incluye columnas ocultas si las hubiere.\nTexto sin formato: Copia el texto tabulado pero sin formar parte de una tabla\nFormato de texto enriquecido: Copia el contenido junto al formato numérico pero no el específico de la tabla y permite su posterior edición en Writer",
     "crumbs": [
       "Clases",
-      "Clase 05-bis"
+      "Clase 05"
     ]
   },
   {
-    "objectID": "clases/clase-06.html",
-    "href": "clases/clase-06.html",
-    "title": "Clase 06",
+    "objectID": "clases/clase-05.html#sumarios-e-índices",
+    "href": "clases/clase-05.html#sumarios-e-índices",
+    "title": "Clase 05",
+    "section": "Sumarios e índices",
+    "text": "Sumarios e índices\nLos índices y sumarios permiten crear automáticamente listados a partir de contenido de cierta tipología dentro del documento:\n\nTítulos, subtítulos, etc: índice\nTablas\nFiguras\nEcuaciones (u otros objetos personalizados)\n\nPara crear uno vamos a insertar &gt; sumario e indice y veremos el siguiente menú\n\n\n\nMenú sumario e índices\n\n\nEste menú nos ofrece la opción para crear diferentes tipos de índices seleccionando desde tipo pudiendo cambiar el nombre en titulo\nSi elegimos como tipo índice de figuras podremos elegir qué tipo de elemento el índice colecciona para mostrar\n\n\n\nÍndices de figuras\n\n\n\níndice alfabético\nPara crear un índice alfabético debemos primero crear las entradas que indizaremos haciendo insertar &gt; sumario e índice &gt; entrada de índice\n\n\n\nMenú entrada de índice\n\n\nSi estamos incluyendo ítems debemos primero marcarlos como entrada princpal para que aparezcan al momento de generar el índice alfabético desde el menú indicado más arriba.",
+    "crumbs": [
+      "Clases",
+      "Clase 05"
+    ]
+  },
+  {
+    "objectID": "clases/clase-05.html#referencias",
+    "href": "clases/clase-05.html#referencias",
+    "title": "Clase 05",
+    "section": "Referencias",
+    "text": "Referencias\n\nTablas según science editor\nResearcher’s Guide for the Preparation of Tables\nASA-CSSA-SSSA Style Manual",
+    "crumbs": [
+      "Clases",
+      "Clase 05"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html",
+    "href": "clases/clase-07.html",
+    "title": "Clase 07",
     "section": "",
     "text": "Ayuda de libre office calc\nUna planilla de cálculo es una estructura reglada de celdas cuyo contenido puede ser o bien texto, o bien resultado de un cálculo. Los cálculos pueden ser los aritméticos usuales o resultado de la aplicación de una función o secuencia de comandos específica.\nDicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.",
     "crumbs": [
       "Clases",
-      "Clase 06"
+      "Clase 07"
     ]
   },
   {
-    "objectID": "clases/clase-06.html#introducción-a-calc",
-    "href": "clases/clase-06.html#introducción-a-calc",
-    "title": "Clase 06",
+    "objectID": "clases/clase-07.html#introducción-a-calc",
+    "href": "clases/clase-07.html#introducción-a-calc",
+    "title": "Clase 07",
     "section": "",
     "text": "Ayuda de libre office calc\nUna planilla de cálculo es una estructura reglada de celdas cuyo contenido puede ser o bien texto, o bien resultado de un cálculo. Los cálculos pueden ser los aritméticos usuales o resultado de la aplicación de una función o secuencia de comandos específica.\nDicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.",
     "crumbs": [
       "Clases",
-      "Clase 06"
+      "Clase 07"
     ]
   },
   {
-    "objectID": "clases/clase-06.html#lista-de-reproducción",
-    "href": "clases/clase-06.html#lista-de-reproducción",
-    "title": "Clase 06",
+    "objectID": "clases/clase-07.html#lista-de-reproducción",
+    "href": "clases/clase-07.html#lista-de-reproducción",
+    "title": "Clase 07",
     "section": " Lista de reproducción",
     "text": "Lista de reproducción\nEn este link accederán a una lista de reproducción de videos sobre Libre Office Calc\n\nCeldas\nLas celdas están referidas en un formato letra-número que indican su pertenencia a el par columna-fila. La celda A4 es la cuarta fila de la primera columna.\n\n\nReferencias\nLas celdas se pueden referir usando el par columna-fila y es posible “anclar” ya sea la fila o la columna usando el signo “\\(\" delante del a indicación. Ejemplo: \"\\)A$1” es una referncia absoluta a la celda A1 y no se verá modificada por acciones que hagamos al arrastrar selecciones. Volveremos sobre esto más adelante.",
     "crumbs": [
       "Clases",
-      "Clase 06"
+      "Clase 07"
     ]
   },
   {
-    "objectID": "clases/clase-06.html#funciones",
-    "href": "clases/clase-06.html#funciones",
-    "title": "Clase 06",
+    "objectID": "clases/clase-07.html#funciones",
+    "href": "clases/clase-07.html#funciones",
+    "title": "Clase 07",
     "section": "Funciones",
     "text": "Funciones\nLas funciones en una planilla de cálculo ejecutan tareas sobre una celda o un rango de celdas de acuerdo a la sintaxis de cada una. En analogía con funciones del ámbito matemático, a un valor (o varios) de entrada, ofrece un valor (o varios) de salida. Lo que llamamos valores de entrada, en Calc pueden ser ingresados manualmente o ser referencias a valores existentes en otras celdas.",
     "crumbs": [
       "Clases",
-      "Clase 06"
+      "Clase 07"
     ]
   },
   {
-    "objectID": "clases/clase-06.html#formato-de-número",
-    "href": "clases/clase-06.html#formato-de-número",
-    "title": "Clase 06",
+    "objectID": "clases/clase-07.html#formato-de-número",
+    "href": "clases/clase-07.html#formato-de-número",
+    "title": "Clase 07",
     "section": "Formato de número",
     "text": "Formato de número\n\nDecimales, redondeo y notación científica",
     "crumbs": [
       "Clases",
-      "Clase 06"
+      "Clase 07"
     ]
   },
   {
-    "objectID": "clases/clase-08.html#series-de-datos",
-    "href": "clases/clase-08.html#series-de-datos",
-    "title": "Clase 08",
-    "section": "Series de datos",
-    "text": "Series de datos",
+    "objectID": "clases/clase-09.html#desviación-estándar",
+    "href": "clases/clase-09.html#desviación-estándar",
+    "title": "Clase 09",
+    "section": "Desviación estándar",
+    "text": "Desviación estándar",
     "crumbs": [
       "Clases",
-      "Clase 08"
+      "Clase 09"
     ]
   },
   {
-    "objectID": "clases/clase-08.html#otras-gráficas",
-    "href": "clases/clase-08.html#otras-gráficas",
-    "title": "Clase 08",
-    "section": "Otras gráficas",
-    "text": "Otras gráficas",
+    "objectID": "clases/clase-09.html#cuadrados-mínimos",
+    "href": "clases/clase-09.html#cuadrados-mínimos",
+    "title": "Clase 09",
+    "section": "Cuadrados mínimos",
+    "text": "Cuadrados mínimos\nLa regresión por mínimos cuadrados es una técnica estadística utilizada para ajustar una línea recta a un conjunto de datos experimentales. Esta línea recta se define por la ecuación:\n\\[ y = a + b x \\]\ndonde \\(a\\) es la intersección con el eje \\(y\\) (ordenada al origen) y \\(b\\) es la pendiente de la línea. El objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen la suma de los cuadrados de las diferencias entre los valores observados \\(y_i\\) y los valores predichos por el modelo \\(a + b x_i\\). Estas diferencias se conocen como residuos.\nEn este documento, deduciremos las fórmulas para \\(a\\) y \\(b\\) y discutiremos cómo estimar sus incertidumbres, siguiendo los métodos presentados en “Data Analysis for Physical Scientists” de L. Kirkup.",
     "crumbs": [
       "Clases",
-      "Clase 08"
+      "Clase 09"
     ]
   },
   {
-    "objectID": "clases/clase-10.html#uso-de-solver",
-    "href": "clases/clase-10.html#uso-de-solver",
-    "title": "Clase 10",
+    "objectID": "clases/clase-09.html#planteamiento-del-problema",
+    "href": "clases/clase-09.html#planteamiento-del-problema",
+    "title": "Clase 09",
+    "section": "Planteamiento del problema",
+    "text": "Planteamiento del problema\nSupongamos que tenemos un conjunto de \\(n\\) puntos experimentales, cada uno con coordenadas \\((x_i, y_i)\\), donde \\(x_i\\) es la variable independiente y \\(y_i\\) es la variable dependiente. Queremos encontrar la línea recta que mejor se ajuste a estos datos en el sentido de mínimos cuadrados.\nLa suma de los cuadrados de los residuos, denotada como \\(S\\), se define como:\n\\[\nS = \\sum_{i=1}^{n} [y_i - (a + b x_i)]^2\n\\]\nNuestro objetivo es encontrar los valores de \\(a\\) y \\(b\\) que minimicen \\(S\\).",
+    "crumbs": [
+      "Clases",
+      "Clase 09"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#minimización-de-la-suma-de-cuadrados",
+    "href": "clases/clase-09.html#minimización-de-la-suma-de-cuadrados",
+    "title": "Clase 09",
+    "section": "Minimización de la suma de cuadrados",
+    "text": "Minimización de la suma de cuadrados\nPara minimizar \\(S\\), calculamos las derivadas parciales de \\(S\\) con respecto a \\(a\\) y \\(b\\), y las igualamos a cero.\n\nDerivada con respecto a \\(a\\):\n\n\\[\n\\frac{\\partial S}{\\partial a} = -2 \\sum_{i=1}^{n} [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} y_i - n a - b \\sum_{i=1}^{n} x_i = 0 \\quad (1)\n\\]\n\nDerivada con respecto a \\(b\\):\n\n\\[\n\\frac{\\partial S}{\\partial b} = -2 \\sum_{i=1}^{n} x_i [y_i - (a + b x_i)] = 0\n\\]\nSimplificando:\n\\[\n\\sum_{i=1}^{n} x_i y_i - a \\sum_{i=1}^{n} x_i - b \\sum_{i=1}^{n} x_i^2 = 0 \\quad (2)\n\\]\nLas ecuaciones (1) y (2) son conocidas como las ecuaciones normales de la regresión lineal.",
+    "crumbs": [
+      "Clases",
+      "Clase 09"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#resolución-de-las-ecuaciones-normales",
+    "href": "clases/clase-09.html#resolución-de-las-ecuaciones-normales",
+    "title": "Clase 09",
+    "section": "Resolución de las ecuaciones normales",
+    "text": "Resolución de las ecuaciones normales\nReorganizamos las ecuaciones (1) y (2) para resolver el sistema:\n\\[ n a + b \\sum_{i=1}^{n} x_i = \\sum_{i=1}^{n} y_i \\quad (1) \\]\n\\[ a \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\quad (2) \\]\n\nPaso 1: Resolver para \\(a\\) en función de \\(b\\)\nDe la ecuación (1):\n\\[ a = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\quad (3) \\]\n\n\nPaso 2: Sustituir \\(a\\) en la ecuación (2)\nSustituyendo (3) en (2):\n\\[ \\left( \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\right) \\sum_{i=1}^{n} x_i + b \\sum_{i=1}^{n} x_i^2 = \\sum_{i=1}^{n} x_i y_i \\]\nMultiplicamos ambos lados por \\(n\\) para eliminar el denominador:\n\\[ \\left( \\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i \\right) \\sum_{i=1}^{n} x_i + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i \\]\nExpandimos:\n\\[ \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i - b \\left( \\sum_{i=1}^{n} x_i \\right)^2 + b n \\sum_{i=1}^{n} x_i^2 = n \\sum_{i=1}^{n} x_i y_i \\]\nAgrupamos los términos con \\(b\\):\n\\[ b \\left[ n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2 \\right] = n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} y_i \\sum_{i=1}^{n} x_i \\]\n\n\nPaso 3: Calcular \\(b\\)\nDespejamos \\(b\\):\n\\[ b = \\frac{n \\sum_{i=1}^{n} x_i y_i - \\sum_{i=1}^{n} x_i \\sum_{i=1}^{n} y_i}{n \\sum_{i=1}^{n} x_i^2 - \\left( \\sum_{i=1}^{n} x_i \\right)^2} \\quad (4) \\]\n\n\nPaso 4: Calcular \\(a\\)\nSustituimos \\(b\\) de (4) en (3):\n\\[ a = \\frac{\\sum_{i=1}^{n} y_i - b \\sum_{i=1}^{n} x_i}{n} \\]\nEstas expresiones para \\(a\\) y \\(b\\) son las fórmulas estándar de la regresión por mínimos cuadrados.",
+    "crumbs": [
+      "Clases",
+      "Clase 09"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#estimación-de-incertidumbres",
+    "href": "clases/clase-09.html#estimación-de-incertidumbres",
+    "title": "Clase 09",
+    "section": "Estimación de incertidumbres",
+    "text": "Estimación de incertidumbres\nEn el análisis de datos experimentales, es crucial evaluar las incertidumbres de los parámetros estimados. Suponemos que los errores en \\(y_i\\) son gaussianos y tienen la misma varianza \\(\\sigma^2\\) (homocedasticidad).\n\nVarianza de los parámetros\nLa varianza de \\(b\\) es:\n\\[ \\text{Var}(b) = \\frac{\\sigma^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\]\ndonde \\(\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\) es la media de los \\(x_i\\).\nLa varianza de \\(a\\) es:\n\\[ \\text{Var}(a) = \\sigma^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right] \\]\n\n\nEstimación de \\(\\sigma^2\\)\nEn la práctica, \\(\\sigma^2\\) no se conoce y se estima a partir de los residuos:\n\\[ s^2 = \\frac{\\sum_{i=1}^{n} [y_i - (a + b x_i)]^2}{n - 2} \\]\ndonde \\(n - 2\\) refleja los grados de libertad, ya que hemos estimado dos parámetros (\\(a\\) y \\(b\\)).\n\n\nIncertidumbres estándar\nLas incertidumbres estándar de \\(a\\) y \\(b\\) son las raíces cuadradas de sus varianzas, utilizando \\(s^2\\) como estimación de \\(\\sigma^2\\):\n\\[ \\sigma_b \\approx \\sqrt{\\frac{s^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}} \\]\n\\[ \\sigma_a \\approx \\sqrt{s^2 \\left[ \\frac{1}{n} + \\frac{\\bar{x}^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2} \\right]} \\]",
+    "crumbs": [
+      "Clases",
+      "Clase 09"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#resumen",
+    "href": "clases/clase-09.html#resumen",
+    "title": "Clase 09",
+    "section": "Resumen",
+    "text": "Resumen\nLa regresión por mínimos cuadrados permite ajustar una línea recta a datos experimentales minimizando la suma de los cuadrados de los residuos. Las fórmulas clave son:\n\nPendiente \\(b\\):\n\n\\[ b = \\frac{n \\sum x_i y_i - \\sum x_i \\sum y_i}{n \\sum x_i^2 - (\\sum x_i)^2} \\]\n\nOrdenada al origen \\(a\\):\n\n\\[ a = \\frac{\\sum y_i - b \\sum x_i}{n} \\]\nAdemás, las incertidumbres de estos parámetros se estiman utilizando la varianza residual \\(s^2\\), lo que es esencial para evaluar la precisión del ajuste en contextos experimentales.\nEsta deducción sigue los métodos presentados en “Data Analysis for Physical Scientists” de L. Kirkup y proporciona una base sólida para el análisis de datos en física y otras ciencias. Si necesitas aplicar esto a un conjunto de datos específico, no dudes en pedírmelo. ¡Espero que esta explicación te sea útil!",
+    "crumbs": [
+      "Clases",
+      "Clase 09"
+    ]
+  },
+  {
+    "objectID": "clases/clase-11.html#uso-de-solver",
+    "href": "clases/clase-11.html#uso-de-solver",
+    "title": "Clase 11",
     "section": "Uso de solver",
     "text": "Uso de solver",
     "crumbs": [
       "Clases",
-      "Clase 10"
+      "Clase 11"
     ]
   },
   {
