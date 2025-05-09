@@ -81,7 +81,7 @@
     "href": "clases/clase-06.html#integración-con-zotero",
     "title": "Clase 06",
     "section": "Integración con Zotero",
-    "text": "Integración con Zotero\n\nInstalación y uso básico de Zotero\n\nIr a zotero.org/download.\nDescargar el instalador para tu sistema operativo (Windows/macOS/Linux).\nEjecutar el instalador y sigue las instrucciones.\n\n\n\nExtensión para libre offie\n\nHabilitar la integración\n\nAbre Zotero.\nVe a Herramientas &gt; Complementos y asegúrate de que el complemento LibreOffice Integration esté instalado y activado.\nSi no está instalado:\n\nDescarga la extensión desde Zotero - LibreOffice.\nArrastra el archivo .xpi a la ventana de Zotero.\n\n\n\n\nConfigurar LibreOffice\n\nAbre LibreOffice Writer.\nVe a Herramientas &gt; Complementos &gt; Administrador de extensiones.\nConfirmar que Zotero LibreOffice Integration aparezca en la lista.",
+    "text": "Integración con Zotero\n\nInstalación y uso básico de Zotero\n\nIr a zotero.org/download.\nDescargar el instalador para tu sistema operativo (Windows/macOS/Linux).\nEjecutar el instalador y sigue las instrucciones.\n\n\n\nExtensión para libre offie\n\nHabilitar la integración\n\nAbre Zotero.\nVe a Herramientas &gt; Complementos y asegúrate de que el complemento LibreOffice Integration esté instalado y activado.\nSi no está instalado:\n\nDescarga la extensión desde Zotero - LibreOffice.\nArrastra el archivo .xpi a la ventana de Zotero.\n\n\nEn algunas versiones de Zotero hay que ir primero a editar &gt; preferencias &gt; citar\nInstalar la extensión\n\n\n\nExtensión\n\n\nY luego habilitarla desde herramientas &gt; complementos como vimos arriba\n\n\n\nExtensión\n\n\n\n\nConfigurar LibreOffice\n\nAbre LibreOffice Writer.\nVe a Herramientas &gt; Complementos &gt; Administrador de extensiones.\nConfirmar que Zotero LibreOffice Integration aparezca en la lista.",
     "crumbs": [
       "Clases",
       "Clase 06"
@@ -92,7 +92,18 @@
     "href": "clases/clase-06.html#uso-de-zotero-en-libre-office",
     "title": "Clase 06",
     "section": "Uso de zotero en libre office",
-    "text": "Uso de zotero en libre office\n\n\nFormato de la bibliografía\n\n\nAgregar bibliografía de lo citado\n\n\nAgregar referencias no citadas",
+    "text": "Uso de zotero en libre office\nPara usar Zotero en libre Office debemos verificar que la extensión esté instalada correctamente y tener abierta la aplicación Zotero junto con Writer.\nUsando la barra de zotero debemos agregar al menos una cita para poder generar luego la bibliografía.\n\n\n\nBarra de la extensión de Writer: Cita / Nota / Bibliografía / Actualizar / Configurar / Desvincular\n\n\nCuando hacemos click por primera vez en la barra de zotero para agregar una cita nos pregunta sobre el estilo de cita que usaremos (y que será replicado al momento de generar la bibliografía).\nEn algunas versiones de Libre Office se debe guardar el documento antes de comenzar a usar la barra de zotero para evitar que el programa de un error y se cierre.\n\n\n\nIniciando Citas\n\n\n\n\n\nAgregar una cita en Witer desde Zotero\n\n\nLos títulos que se despliegan en el menú son los que tenemos guardados en la base de Zotero. Para tener Datos en ese menú debemos primero ingresarlos en zotero:\narchivo &gt; nuevo elemento\n\n\n\nIngresando una fuente en Zotero\n\n\n\nAgregar referencias no citadas\nEn algunos casos en los que estamos usando bibliografía de referencia pero no hacemos una cita textual, por ejemplo cuando referenciamos libros de texto sobre algunos de los temas que trata nuestro documento es útil poder ingresar una bibliografía sin necesdiad de tener citas.\n\n\n\nEditar Bibliografía\n\n\nPara ello insertamos una cita cualquiera y generamos la bibliografía, luego volvemos a apretar en el botón de agregar/editar bibliografía y desde el menú agregamos los títulos que necesitamos referenciar\n\n\n\nResultado",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
+    ]
+  },
+  {
+    "objectID": "clases/clase-06.html#referencias",
+    "href": "clases/clase-06.html#referencias",
+    "title": "Clase 06",
+    "section": "Referencias",
+    "text": "Referencias\n\nNormas y estilos",
     "crumbs": [
       "Clases",
       "Clase 06"
@@ -473,7 +484,7 @@
     "href": "clases/clase-07.html#lista-de-reproducción",
     "title": "Clase 07",
     "section": " Lista de reproducción",
-    "text": "Lista de reproducción\nEn este link accederán a una lista de reproducción de videos sobre Libre Office Calc\n\nCeldas\nLas celdas están referidas en un formato letra-número que indican su pertenencia a el par columna-fila. La celda A4 es la cuarta fila de la primera columna.\n\n\nReferencias\nLas celdas se pueden referir usando el par columna-fila y es posible “anclar” ya sea la fila o la columna usando el signo “\\(\" delante del a indicación. Ejemplo: \"\\)A$1” es una referncia absoluta a la celda A1 y no se verá modificada por acciones que hagamos al arrastrar selecciones. Volveremos sobre esto más adelante.",
+    "text": "Lista de reproducción\nEn este link accederán a una lista de reproducción de videos sobre Libre Office Calc\n\nCeldas\nLas celdas están referidas en un formato letra-número que indican su pertenencia a el par columna-fila. La celda A4 es la cuarta fila de la primera columna.\n\n\nReferencias\nLas celdas se pueden referir usando el par columna-fila y es posible “anclar” ya sea la fila o la columna usando el signo “$” delante del a indicación. Ejemplo: “$A$1” es una referncia absoluta a la celda A1 y no se verá modificada por acciones que hagamos al arrastrar selecciones. Volveremos sobre esto más adelante.",
     "crumbs": [
       "Clases",
       "Clase 07"
@@ -495,7 +506,7 @@
     "href": "clases/clase-07.html#formato-de-número",
     "title": "Clase 07",
     "section": "Formato de número",
-    "text": "Formato de número\n\nDecimales, redondeo y notación científica",
+    "text": "Formato de número\nMuchos de los errores más comunes a la hora de que fallen las fórmulas una una planilla de cálculo es el incorrecto formato de los números. Para ello debemos asegurarnos de que representan al tipo de de datos que estamos tratando, ya sean fechas, texto, números, etc.\n\nDecimales, redondeo y notación científica",
     "crumbs": [
       "Clases",
       "Clase 07"

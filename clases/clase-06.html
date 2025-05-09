@@ -283,10 +283,9 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#uso-de-zotero-en-libre-office" id="toc-uso-de-zotero-en-libre-office" class="nav-link" data-scroll-target="#uso-de-zotero-en-libre-office">Uso de zotero en libre office</a>
   <ul class="collapse">
-  <li><a href="#formato-de-la-bibliografía" id="toc-formato-de-la-bibliografía" class="nav-link" data-scroll-target="#formato-de-la-bibliografía">Formato de la bibliografía</a></li>
-  <li><a href="#agregar-bibliografía-de-lo-citado" id="toc-agregar-bibliografía-de-lo-citado" class="nav-link" data-scroll-target="#agregar-bibliografía-de-lo-citado">Agregar bibliografía de lo citado</a></li>
   <li><a href="#agregar-referencias-no-citadas" id="toc-agregar-referencias-no-citadas" class="nav-link" data-scroll-target="#agregar-referencias-no-citadas">Agregar referencias no citadas</a></li>
   </ul></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -341,6 +340,21 @@ ul.task-list li input[type="checkbox"] {
 <li>Arrastra el archivo <code>.xpi</code> a la ventana de Zotero.</li>
 </ul></li>
 </ol>
+<p>En algunas versiones de Zotero hay que ir primero a <code>editar</code> &gt; <code>preferencias</code> &gt; <code>citar</code></p>
+<p>Instalar la extensión</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/writer-zotero-preferencias-citar.png" class="img-fluid figure-img"></p>
+<figcaption>Extensión</figcaption>
+</figure>
+</div>
+<p>Y luego habilitarla desde <code>herramientas</code> &gt; <code>complementos</code> como vimos arriba</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/writer-zotero-extension.png" class="img-fluid figure-img"></p>
+<figcaption>Extensión</figcaption>
+</figure>
+</div>
 </section>
 <section id="configurar-libreoffice" class="level4">
 <h4 class="anchored" data-anchor-id="configurar-libreoffice">Configurar LibreOffice</h4>
@@ -354,18 +368,62 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="uso-de-zotero-en-libre-office" class="level2">
 <h2 class="anchored" data-anchor-id="uso-de-zotero-en-libre-office">Uso de zotero en libre office</h2>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tpyaCDC9Bcw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="formato-de-la-bibliografía" class="level3">
-<h3 class="anchored" data-anchor-id="formato-de-la-bibliografía">Formato de la bibliografía</h3>
-</section>
-<section id="agregar-bibliografía-de-lo-citado" class="level3">
-<h3 class="anchored" data-anchor-id="agregar-bibliografía-de-lo-citado">Agregar bibliografía de lo citado</h3>
-</section>
+<p>Para usar Zotero en libre Office debemos verificar que la extensión esté instalada correctamente y tener abierta la aplicación Zotero junto con Writer.</p>
+<p>Usando la barra de zotero debemos agregar al menos una cita para poder generar luego la bibliografía.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/writer-zotero.png" class="img-fluid figure-img"></p>
+<figcaption>Barra de la extensión de Writer: Cita / Nota / Bibliografía / Actualizar / Configurar / Desvincular</figcaption>
+</figure>
+</div>
+<p>Cuando hacemos click por primera vez en la barra de zotero para agregar una cita nos pregunta sobre el estilo de cita que usaremos (y que será replicado al momento de generar la bibliografía).</p>
+<p>En algunas versiones de Libre Office se debe guardar el documento antes de comenzar a usar la barra de zotero para evitar que el programa de un error y se cierre.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/writer-zotero-citas.png" class="img-fluid figure-img"></p>
+<figcaption>Iniciando Citas</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/writer-zotero-1.png" class="img-fluid figure-img"></p>
+<figcaption>Agregar una cita en Witer desde Zotero</figcaption>
+</figure>
+</div>
+<p>Los títulos que se despliegan en el menú son los que tenemos guardados en la base de Zotero. Para tener Datos en ese menú debemos primero ingresarlos en zotero:</p>
+<p><code>archivo</code> &gt; <code>nuevo elemento</code></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/writer-zotero-2.png" class="img-fluid figure-img"></p>
+<figcaption>Ingresando una fuente en Zotero</figcaption>
+</figure>
+</div>
 <section id="agregar-referencias-no-citadas" class="level3">
 <h3 class="anchored" data-anchor-id="agregar-referencias-no-citadas">Agregar referencias no citadas</h3>
-
-
+<p>En algunos casos en los que estamos usando bibliografía de referencia pero no hacemos una cita textual, por ejemplo cuando referenciamos libros de texto sobre algunos de los temas que trata nuestro documento es útil poder ingresar una bibliografía sin necesdiad de tener citas.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/writer-zotero-editar-biblio.png" class="img-fluid figure-img"></p>
+<figcaption>Editar Bibliografía</figcaption>
+</figure>
+</div>
+<p>Para ello insertamos una cita cualquiera y generamos la bibliografía, luego volvemos a apretar en el botón de agregar/editar bibliografía y desde el menú agregamos los títulos que necesitamos referenciar</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/writer-zotero-refes.png" class="img-fluid figure-img"></p>
+<figcaption>Resultado</figcaption>
+</figure>
+</div>
 </section>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<ul>
+<li><a href="https://upv-es.libguides.com/citas-bibliografia/normas-estilos">Normas y estilos</a></li>
+</ul>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tpyaCDC9Bcw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+
+
 </section>
 </section>
 
