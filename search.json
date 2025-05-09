@@ -26,18 +26,7 @@
     "href": "clases/clase-08.html",
     "title": "Clase 08",
     "section": "",
-    "text": "los datos obtenidos desde cualquier origen son discretos, es decir, representan el estado de un sistema (cualquiera sea) en algún instante, la relación entre dos variables para algunas condiciones, la cantidad de algún objeto,etc.\nPara representaciones de tipo estadístico donde se intenta contar o cuantificar la cantidad de eventos los gráficos más utilizados son los de barras, histogramas, de torta y sus variantes.\nPara representaciones dependientes del tiempo o que expresen la relación entre variables los gráficos más representativos son los de de dispersión en donde cada dato, si suponemos un arreglo bidimensional, posee dos coordenadas específicas, que usualmente representamos en el eje horizontal y vertical de una gráfica respectivamente.\nPara insertar un gráfico de disperisón en Libre Office Calc, hacemos lo siguiente\ninsertar &gt; gráfico&gt; tipo de gráfico &gt; xy dispersión\nInsertar gráfica",
-    "crumbs": [
-      "Clases",
-      "Clase 08"
-    ]
-  },
-  {
-    "objectID": "clases/clase-08.html#gráficas-en-calc",
-    "href": "clases/clase-08.html#gráficas-en-calc",
-    "title": "Clase 08",
-    "section": "",
-    "text": "los datos obtenidos desde cualquier origen son discretos, es decir, representan el estado de un sistema (cualquiera sea) en algún instante, la relación entre dos variables para algunas condiciones, la cantidad de algún objeto,etc.\nPara representaciones de tipo estadístico donde se intenta contar o cuantificar la cantidad de eventos los gráficos más utilizados son los de barras, histogramas, de torta y sus variantes.\nPara representaciones dependientes del tiempo o que expresen la relación entre variables los gráficos más representativos son los de de dispersión en donde cada dato, si suponemos un arreglo bidimensional, posee dos coordenadas específicas, que usualmente representamos en el eje horizontal y vertical de una gráfica respectivamente.\nPara insertar un gráfico de disperisón en Libre Office Calc, hacemos lo siguiente\ninsertar &gt; gráfico&gt; tipo de gráfico &gt; xy dispersión\nInsertar gráfica",
+    "text": "Los datos obtenidos desde cualquier origen son discretos, es decir, representan el estado de un sistema (cualquiera sea) en algún instante, la relación entre dos variables para algunas condiciones, la cantidad de algún objeto,etc.\nPara representaciones de tipo estadístico donde se intenta contar o cuantificar la cantidad de eventos los gráficos más utilizados son los de barras, histogramas, de torta y sus variantes.\nPara representaciones dependientes del tiempo o que expresen la relación entre variables los gráficos más representativos son los de de dispersión en donde cada dato, si suponemos un arreglo bidimensional, posee dos coordenadas específicas, que usualmente representamos en el eje horizontal y vertical de una gráfica respectivamente.\nPara insertar un gráfico de disperisón en Libre Office Calc, hacemos lo siguiente\ninsertar &gt; gráfico&gt; tipo de gráfico &gt; xy dispersión",
     "crumbs": [
       "Clases",
       "Clase 08"
@@ -48,7 +37,7 @@
     "href": "clases/clase-08.html#series-de-datos",
     "title": "Clase 08",
     "section": "Series de datos",
-    "text": "Series de datos\nPara hacer más facil nuestro trabajo conviene que los datos deben estar estructurados en columnas donde la primera columna contiene los datos que irán al eje horizontal y la segunda los del eje vertical.\nEsto puede cambiarse luego desde el menú inserción de gráfico, pero es más sencillo tener los datos bien organizados desde el comienzo.\nSeries de datos",
+    "text": "Series de datos\nPara hacer más facil nuestro trabajo conviene que los datos deben estar estructurados en columnas donde la primera columna contiene los datos que irán al eje horizontal y la segunda los del eje vertical.\nEsto puede cambiarse luego desde el menú inserción de gráfico, pero es más sencillo tener los datos bien organizados desde el comienzo.\n\n\n\nSeries de datos",
     "crumbs": [
       "Clases",
       "Clase 08"
@@ -59,7 +48,7 @@
     "href": "clases/clase-08.html#formato-del-gráfico",
     "title": "Clase 08",
     "section": "Formato del gráfico",
-    "text": "Formato del gráfico\nLa correcta disposición de los elementos en el lienzo del gráfico no sólo hace posible una lectura más amena sino que pone en juego la comprensión misma de los datos indicados en la gráfica.\nSe deben colocar títulos, subtítulos y nombres de ejes indicando las unidades correctas, así tambien como respetar los estilos tipográficos del documento en el cual se va a insertar el gráfico. Se puede optar por un estilo que se integre o que se destaque dependiendo de los requerimientos específicos, pero esta decisión debe ser a conciencia.\n\nLíneas de cuadrícula\nSi se hace doble click en cualquiera de los dos ejes y luego click derecho se ofrece la posibilidad de agregar o quitar líneas de cuadrícula principal y secundarias. La cantidad de elementos entre la cuadrícula principal y la secundaria se encuentra manejado por la opción de\nEjes y cuadrículas\nTambién con el gráfico seleccionado a través del menú insertar &gt; cuadrículas\n\n\nEjes, leyendas y rótulos\nLa información contextual del gráfico: ejes y rótulos disponibles se pueden elegir al momento de crear la gráfica o haciendo doble click sobre la misma y eligiendo de la barra los elementos que necesitemos o con el grafico seleccionado a través del menú insertar\nElementos del gráfico\n\n\nBarras de error\nCon el gráfico seleccionado hacemos insertar &gt; barras de error ahi podremos elegir las diferentes variantes que contamos para las barras de error\nBarras de error",
+    "text": "Formato del gráfico\nLa correcta disposición de los elementos en el lienzo del gráfico no sólo hace posible una lectura más amena sino que pone en juego la comprensión misma de los datos indicados en la gráfica.\nSe deben colocar títulos, subtítulos y nombres de ejes indicando las unidades correctas, así tambien como respetar los estilos tipográficos del documento en el cual se va a insertar el gráfico. Se puede optar por un estilo que se integre o que se destaque dependiendo de los requerimientos específicos, pero esta decisión debe ser a conciencia.\n\nLíneas de cuadrícula\nSi se hace doble click en cualquiera de los dos ejes y luego click derecho se ofrece la posibilidad de agregar o quitar líneas de cuadrícula principal y secundarias. La cantidad de elementos entre la cuadrícula principal y la secundaria se encuentra manejado por la opción de\n\n\n\nEjes y cuadrículas\n\n\nTambién con el gráfico seleccionado a través del menú insertar &gt; cuadrículas\n\n\nEjes, leyendas y rótulos\nLa información contextual del gráfico: ejes y rótulos disponibles se pueden elegir al momento de crear la gráfica o haciendo doble click sobre la misma y eligiendo de la barra los elementos que necesitemos o con el grafico seleccionado a través del menú insertar\n\n\n\nElementos del gráfico\n\n\n\n\nBarras de error\nCon el gráfico seleccionado hacemos insertar &gt; barras de error ahi podremos elegir las diferentes variantes que contamos para las barras de error\n\n\n\nBarras de error",
     "crumbs": [
       "Clases",
       "Clase 08"
@@ -70,7 +59,7 @@
     "href": "clases/clase-08.html#referencias",
     "title": "Clase 08",
     "section": "Referencias",
-    "text": "Referencias\n:link: Ayuda oficial de Libre Office :movie_camera: Gráficas de dispersión :link: Barras de error en Libre Office",
+    "text": "Referencias\n\n🔗 Ayuda oficial de Libre Office\n🎥 Gráficas de dispersión\n🔗 Barras de error en Libre Office",
     "crumbs": [
       "Clases",
       "Clase 08"
