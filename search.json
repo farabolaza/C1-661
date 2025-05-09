@@ -37,7 +37,7 @@
     "href": "clases/clase-08.html#series-de-datos",
     "title": "Clase 08",
     "section": "Series de datos",
-    "text": "Series de datos\nPara hacer más facil nuestro trabajo conviene que los datos deben estar estructurados en columnas donde la primera columna contiene los datos que irán al eje horizontal y la segunda los del eje vertical.\nEsto puede cambiarse luego desde el menú inserción de gráfico, pero es más sencillo tener los datos bien organizados desde el comienzo.\n\n\n\nSeries de datos",
+    "text": "Series de datos\nPara hacer más facil nuestro trabajo conviene que los datos deben estar estructurados en columnas donde la primera columna contiene los datos que irán al eje horizontal y la segunda los del eje vertical.\nEsto puede cambiarse luego desde el menú inserción de gráfico, pero es más sencillo tener los datos bien organizados desde el comienzo.\n\n\n\nElementos del gráfico",
     "crumbs": [
       "Clases",
       "Clase 08"
@@ -48,7 +48,7 @@
     "href": "clases/clase-08.html#formato-del-gráfico",
     "title": "Clase 08",
     "section": "Formato del gráfico",
-    "text": "Formato del gráfico\nLa correcta disposición de los elementos en el lienzo del gráfico no sólo hace posible una lectura más amena sino que pone en juego la comprensión misma de los datos indicados en la gráfica.\nSe deben colocar títulos, subtítulos y nombres de ejes indicando las unidades correctas, así tambien como respetar los estilos tipográficos del documento en el cual se va a insertar el gráfico. Se puede optar por un estilo que se integre o que se destaque dependiendo de los requerimientos específicos, pero esta decisión debe ser a conciencia.\n\nLíneas de cuadrícula\nSi se hace doble click en cualquiera de los dos ejes y luego click derecho se ofrece la posibilidad de agregar o quitar líneas de cuadrícula principal y secundarias. La cantidad de elementos entre la cuadrícula principal y la secundaria se encuentra manejado por la opción de\n\n\n\nEjes y cuadrículas\n\n\nTambién con el gráfico seleccionado a través del menú insertar &gt; cuadrículas\n\n\nEjes, leyendas y rótulos\nLa información contextual del gráfico: ejes y rótulos disponibles se pueden elegir al momento de crear la gráfica o haciendo doble click sobre la misma y eligiendo de la barra los elementos que necesitemos o con el grafico seleccionado a través del menú insertar\n\n\n\nElementos del gráfico\n\n\n\n\nBarras de error\nCon el gráfico seleccionado hacemos insertar &gt; barras de error ahi podremos elegir las diferentes variantes que contamos para las barras de error\n\n\n\nBarras de error",
+    "text": "Formato del gráfico\nLa correcta disposición de los elementos en el lienzo del gráfico no sólo hace posible una lectura más amena sino que pone en juego la comprensión misma de los datos indicados en la gráfica.\nSe deben colocar títulos, subtítulos y nombres de ejes indicando las unidades correctas, así tambien como respetar los estilos tipográficos del documento en el cual se va a insertar el gráfico. Se puede optar por un estilo que se integre o que se destaque dependiendo de los requerimientos específicos, pero esta decisión debe ser a conciencia.\nPara los títulos y subtitlos de figuras, es preferible usar tipografías sin serif ya que su legibilidad es mejor en tamaños pequeños.\n\n\n\nEjemplo de gráfico de dispersión\n\n\nMás allá de los estilos preferibles a nivel estético existen algunos principios generales que escapan a los alcances de este apunte pero el ejemplo de arriba vale como muestra de como una misma información se puede disponer de forma distinta y ayudar o entorpecer el entendimiento de aquello que se está queriendo comunicar.\n\n\n\nDos visualizaciones diferentes\n\n\n\nLíneas de cuadrícula\nSi se hace doble click en cualquiera de los dos ejes y luego click derecho se ofrece la posibilidad de agregar o quitar líneas de cuadrícula principal y secundarias. La cantidad de elementos entre la cuadrícula principal y la secundaria se encuentra manejado por la opción de\n\n\n\nEjes y cuadrículas\n\n\nTambién con el gráfico seleccionado a través del menú insertar &gt; cuadrículas\n\n\nEjes, leyendas y rótulos\nLa información contextual del gráfico: ejes y rótulos disponibles se pueden elegir al momento de crear la gráfica o haciendo doble click sobre la misma y eligiendo de la barra los elementos que necesitemos o con el grafico seleccionado a través del menú insertar\n\n\n\nSeries de datos\n\n\n\n\nBarras de error\nCon el gráfico seleccionado hacemos insertar &gt; barras de error ahi podremos elegir las diferentes variantes que contamos para las barras de error\n\n\n\nBarras de error",
     "crumbs": [
       "Clases",
       "Clase 08"
@@ -59,7 +59,7 @@
     "href": "clases/clase-08.html#referencias",
     "title": "Clase 08",
     "section": "Referencias",
-    "text": "Referencias\n\n🔗 Ayuda oficial de Libre Office\n🎥 Gráficas de dispersión\n🔗 Barras de error en Libre Office",
+    "text": "Referencias\n\n🔗 Ayuda oficial de Libre Office\n🎥 Gráficas de dispersión\n🔗 Barras de error en Libre Office\n🔗 Diseño de gráficos basados en el estilo de Edward Tufte\n🔗 Sitio de Edward Tufte\n🔗 Guía de Nature para figuras\n🔗 Guía de principios para visualización\n🔗 Apunte de la materia laboratorio 1 Sobre Gráficas en Exel",
     "crumbs": [
       "Clases",
       "Clase 08"
