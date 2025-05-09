@@ -274,8 +274,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#bibliografía-y-referencias-en-libre-office" id="toc-bibliografía-y-referencias-en-libre-office" class="nav-link active" data-scroll-target="#bibliografía-y-referencias-en-libre-office">Bibliografía y referencias en libre office</a>
-  <ul class="collapse">
+  <li><a href="#bibliografia-en-libre-office" id="toc-bibliografia-en-libre-office" class="nav-link active" data-scroll-target="#bibliografia-en-libre-office">Bibliografia en Libre Office</a></li>
   <li><a href="#integración-con-zotero" id="toc-integración-con-zotero" class="nav-link" data-scroll-target="#integración-con-zotero">Integración con Zotero</a>
   <ul class="collapse">
   <li><a href="#instalación-y-uso-básico-de-zotero" id="toc-instalación-y-uso-básico-de-zotero" class="nav-link" data-scroll-target="#instalación-y-uso-básico-de-zotero">Instalación y uso básico de Zotero</a></li>
@@ -285,8 +284,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#agregar-referencias-no-citadas" id="toc-agregar-referencias-no-citadas" class="nav-link" data-scroll-target="#agregar-referencias-no-citadas">Agregar referencias no citadas</a></li>
   </ul></li>
+  <li><a href="#caso-de-uso" id="toc-caso-de-uso" class="nav-link" data-scroll-target="#caso-de-uso">Caso de uso</a></li>
   <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -313,12 +312,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Apunte en construcción</p>
-<section id="bibliografía-y-referencias-en-libre-office" class="level1">
-<h1>Bibliografía y referencias en libre office</h1>
-<p>Para agregar la bibliografía a un documento de Writer debemos primero tener una base de datos de bibliografía creada en libre office. No prfundizaremos demasiado en la bibliografía nativa de libre office</p>
+<section id="bibliografia-en-libre-office" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia-en-libre-office">Bibliografia en Libre Office</h2>
+<p>Para agregar la bibliografía a un documento de Writer debemos primero tener una base de datos de bibliografía creada en libre office. No prfundizaremos demasiado en la bibliografía nativa de libre office pero para hacerlo debemos ir a:</p>
+<p><code>insertar</code> &gt; <code>indices y sumarios</code> &gt;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/writer-bibliografia.png" class="img-fluid figure-img"></p>
+<figcaption>Menú de bibliografía</figcaption>
+</figure>
+</div>
+<p>Dentro de la pestaña <code>Entradas</code> podremos configurar el orden en el que aparecen los campos de cada entrada bibliográfica para adaptarse al estilo que estemos siguiendo.</p>
+<p>Una de las dificultades para llevar la bibliografía desde Libre Office es que su base de datos además de ser local, sólo está disponible para la computadora en la que estemos trabajando, no permite incluir elementos bibliográficos no citados textualmente.</p>
+<p>Para poder cumplir con este requisito debemos <strong>no tildar</strong> la opción de “protegido contra cambios manuales” para poder agregar luego de forma manual los elementos que no hayamos citados textualmente.</p>
+</section>
 <section id="integración-con-zotero" class="level2">
 <h2 class="anchored" data-anchor-id="integración-con-zotero">Integración con Zotero</h2>
+<p>Zotero tiene algunas ventajas sobre la blbliografía de LO y una es que podemos crear un usuario gratis y tener nuestras referencias en línea para ser utilizadas en cualquier computadora. Además nos permite reformatear (cambiar entre diferentes estilo) las citas como veremos más adelante.</p>
 <section id="instalación-y-uso-básico-de-zotero" class="level3">
 <h3 class="anchored" data-anchor-id="instalación-y-uso-básico-de-zotero">Instalación y uso básico de Zotero</h3>
 <ol type="1">
@@ -416,15 +426,19 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 </section>
+<section id="caso-de-uso" class="level2">
+<h2 class="anchored" data-anchor-id="caso-de-uso">Caso de uso</h2>
+<p>Si sólo se van a citar unos pocos títulos, y de manera no textual, el tiempo que lleva escribir la cita es mucho menor al de configurar la información en Zotero y Libre office, sin embargo, en la medida que se trabaja con un mayor número de publicaciones y las citas aparecen en partes específicas del texto tener una forma de administrarlas es casi una necesidad.</p>
+</section>
 <section id="referencias" class="level2">
 <h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
 <ul>
 <li><a href="https://upv-es.libguides.com/citas-bibliografia/normas-estilos">Normas y estilos</a></li>
+<li><a href="https://help.libreoffice.org/latest/es/text/swriter/guide/indices_literature.html">Ayuda oficial de libre office</a></li>
 </ul>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tpyaCDC9Bcw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

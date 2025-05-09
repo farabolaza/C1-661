@@ -70,7 +70,18 @@
     "href": "clases/clase-06.html",
     "title": "Clase 06",
     "section": "",
-    "text": "Apunte en construcción",
+    "text": "Para agregar la bibliografía a un documento de Writer debemos primero tener una base de datos de bibliografía creada en libre office. No prfundizaremos demasiado en la bibliografía nativa de libre office pero para hacerlo debemos ir a:\ninsertar &gt; indices y sumarios &gt;\n\n\n\nMenú de bibliografía\n\n\nDentro de la pestaña Entradas podremos configurar el orden en el que aparecen los campos de cada entrada bibliográfica para adaptarse al estilo que estemos siguiendo.\nUna de las dificultades para llevar la bibliografía desde Libre Office es que su base de datos además de ser local, sólo está disponible para la computadora en la que estemos trabajando, no permite incluir elementos bibliográficos no citados textualmente.\nPara poder cumplir con este requisito debemos no tildar la opción de “protegido contra cambios manuales” para poder agregar luego de forma manual los elementos que no hayamos citados textualmente.",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
+    ]
+  },
+  {
+    "objectID": "clases/clase-06.html#bibliografia-en-libre-office",
+    "href": "clases/clase-06.html#bibliografia-en-libre-office",
+    "title": "Clase 06",
+    "section": "",
+    "text": "Para agregar la bibliografía a un documento de Writer debemos primero tener una base de datos de bibliografía creada en libre office. No prfundizaremos demasiado en la bibliografía nativa de libre office pero para hacerlo debemos ir a:\ninsertar &gt; indices y sumarios &gt;\n\n\n\nMenú de bibliografía\n\n\nDentro de la pestaña Entradas podremos configurar el orden en el que aparecen los campos de cada entrada bibliográfica para adaptarse al estilo que estemos siguiendo.\nUna de las dificultades para llevar la bibliografía desde Libre Office es que su base de datos además de ser local, sólo está disponible para la computadora en la que estemos trabajando, no permite incluir elementos bibliográficos no citados textualmente.\nPara poder cumplir con este requisito debemos no tildar la opción de “protegido contra cambios manuales” para poder agregar luego de forma manual los elementos que no hayamos citados textualmente.",
     "crumbs": [
       "Clases",
       "Clase 06"
@@ -81,7 +92,7 @@
     "href": "clases/clase-06.html#integración-con-zotero",
     "title": "Clase 06",
     "section": "Integración con Zotero",
-    "text": "Integración con Zotero\n\nInstalación y uso básico de Zotero\n\nIr a zotero.org/download.\nDescargar el instalador para tu sistema operativo (Windows/macOS/Linux).\nEjecutar el instalador y sigue las instrucciones.\n\n\n\nExtensión para libre offie\n\nHabilitar la integración\n\nAbre Zotero.\nVe a Herramientas &gt; Complementos y asegúrate de que el complemento LibreOffice Integration esté instalado y activado.\nSi no está instalado:\n\nDescarga la extensión desde Zotero - LibreOffice.\nArrastra el archivo .xpi a la ventana de Zotero.\n\n\nEn algunas versiones de Zotero hay que ir primero a editar &gt; preferencias &gt; citar\nInstalar la extensión\n\n\n\nExtensión\n\n\nY luego habilitarla desde herramientas &gt; complementos como vimos arriba\n\n\n\nExtensión\n\n\n\n\nConfigurar LibreOffice\n\nAbre LibreOffice Writer.\nVe a Herramientas &gt; Complementos &gt; Administrador de extensiones.\nConfirmar que Zotero LibreOffice Integration aparezca en la lista.",
+    "text": "Integración con Zotero\nZotero tiene algunas ventajas sobre la blbliografía de LO y una es que podemos crear un usuario gratis y tener nuestras referencias en línea para ser utilizadas en cualquier computadora. Además nos permite reformatear (cambiar entre diferentes estilo) las citas como veremos más adelante.\n\nInstalación y uso básico de Zotero\n\nIr a zotero.org/download.\nDescargar el instalador para tu sistema operativo (Windows/macOS/Linux).\nEjecutar el instalador y sigue las instrucciones.\n\n\n\nExtensión para libre offie\n\nHabilitar la integración\n\nAbre Zotero.\nVe a Herramientas &gt; Complementos y asegúrate de que el complemento LibreOffice Integration esté instalado y activado.\nSi no está instalado:\n\nDescarga la extensión desde Zotero - LibreOffice.\nArrastra el archivo .xpi a la ventana de Zotero.\n\n\nEn algunas versiones de Zotero hay que ir primero a editar &gt; preferencias &gt; citar\nInstalar la extensión\n\n\n\nExtensión\n\n\nY luego habilitarla desde herramientas &gt; complementos como vimos arriba\n\n\n\nExtensión\n\n\n\n\nConfigurar LibreOffice\n\nAbre LibreOffice Writer.\nVe a Herramientas &gt; Complementos &gt; Administrador de extensiones.\nConfirmar que Zotero LibreOffice Integration aparezca en la lista.",
     "crumbs": [
       "Clases",
       "Clase 06"
@@ -99,11 +110,22 @@
     ]
   },
   {
+    "objectID": "clases/clase-06.html#caso-de-uso",
+    "href": "clases/clase-06.html#caso-de-uso",
+    "title": "Clase 06",
+    "section": "Caso de uso",
+    "text": "Caso de uso\nSi sólo se van a citar unos pocos títulos, y de manera no textual, el tiempo que lleva escribir la cita es mucho menor al de configurar la información en Zotero y Libre office, sin embargo, en la medida que se trabaja con un mayor número de publicaciones y las citas aparecen en partes específicas del texto tener una forma de administrarlas es casi una necesidad.",
+    "crumbs": [
+      "Clases",
+      "Clase 06"
+    ]
+  },
+  {
     "objectID": "clases/clase-06.html#referencias",
     "href": "clases/clase-06.html#referencias",
     "title": "Clase 06",
     "section": "Referencias",
-    "text": "Referencias\n\nNormas y estilos",
+    "text": "Referencias\n\nNormas y estilos\nAyuda oficial de libre office",
     "crumbs": [
       "Clases",
       "Clase 06"
@@ -462,18 +484,7 @@
     "href": "clases/clase-07.html",
     "title": "Clase 07",
     "section": "",
-    "text": "Ayuda de libre office calc\nUna planilla de cálculo es una estructura reglada de celdas cuyo contenido puede ser o bien texto, o bien resultado de un cálculo. Los cálculos pueden ser los aritméticos usuales o resultado de la aplicación de una función o secuencia de comandos específica.\nDicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.",
-    "crumbs": [
-      "Clases",
-      "Clase 07"
-    ]
-  },
-  {
-    "objectID": "clases/clase-07.html#introducción-a-calc",
-    "href": "clases/clase-07.html#introducción-a-calc",
-    "title": "Clase 07",
-    "section": "",
-    "text": "Ayuda de libre office calc\nUna planilla de cálculo es una estructura reglada de celdas cuyo contenido puede ser o bien texto, o bien resultado de un cálculo. Los cálculos pueden ser los aritméticos usuales o resultado de la aplicación de una función o secuencia de comandos específica.\nDicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.",
+    "text": "Una planilla de cálculo es una estructura reglada de celdas cuyo contenido puede ser o bien texto, o bien resultado de un cálculo. Los cálculos pueden ser los aritméticos usuales o resultado de la aplicación de una función o secuencia de comandos específica.\n📗 Ayuda de libre office calc\nDicho de otro modo, en una celda podemos tener texto o cálculos. Es posible concatenar texto y cálculos en una misma celda, aunque de forma esquemática una celda contendrá un valor calcuado o uno ingresado manualmente.",
     "crumbs": [
       "Clases",
       "Clase 07"
@@ -483,8 +494,8 @@
     "objectID": "clases/clase-07.html#lista-de-reproducción",
     "href": "clases/clase-07.html#lista-de-reproducción",
     "title": "Clase 07",
-    "section": " Lista de reproducción",
-    "text": "Lista de reproducción\nEn este link accederán a una lista de reproducción de videos sobre Libre Office Calc\n\nCeldas\nLas celdas están referidas en un formato letra-número que indican su pertenencia a el par columna-fila. La celda A4 es la cuarta fila de la primera columna.\n\n\nReferencias\nLas celdas se pueden referir usando el par columna-fila y es posible “anclar” ya sea la fila o la columna usando el signo “$” delante del a indicación. Ejemplo: “$A$1” es una referncia absoluta a la celda A1 y no se verá modificada por acciones que hagamos al arrastrar selecciones. Volveremos sobre esto más adelante.",
+    "section": "📹 Lista de reproducción",
+    "text": "📹 Lista de reproducción\nEn este link accederán a una lista de reproducción de videos sobre Libre Office Calc\n\nCeldas\nLas celdas están referidas en un formato letra-número que indican su pertenencia a el par columna-fila. La celda A4 es la cuarta fila de la primera columna.\n\n\nReferencias\nLas celdas se pueden referir usando el par columna-fila y es posible “anclar” ya sea la fila o la columna usando el signo “$” delante del a indicación. Ejemplo: “$A$1” es una referncia absoluta a la celda A1 y no se verá modificada por acciones que hagamos al arrastrar selecciones. Volveremos sobre esto más adelante.",
     "crumbs": [
       "Clases",
       "Clase 07"
@@ -506,7 +517,7 @@
     "href": "clases/clase-07.html#formato-de-número",
     "title": "Clase 07",
     "section": "Formato de número",
-    "text": "Formato de número\nMuchos de los errores más comunes a la hora de que fallen las fórmulas una una planilla de cálculo es el incorrecto formato de los números. Para ello debemos asegurarnos de que representan al tipo de de datos que estamos tratando, ya sean fechas, texto, números, etc.\n\nDecimales, redondeo y notación científica",
+    "text": "Formato de número\nMuchos de los errores más comunes a la hora de que fallen las fórmulas una una planilla de cálculo es el incorrecto formato de los números. Para ello debemos asegurarnos de que representan al tipo de de datos que estamos tratando, ya sean fechas, texto, números, etc.\n\nDecimales, redondeo y notación científica\nEl atajo ctrl+1 nos lleva al menú de formato de celda donde podemos elegir como se visualizan los datos y que tipo de dato contienen las celdas seleccionadas\n\n\n\nFormato de número\n\n\nTambién puede accederse al formato desde la barra de herramientas correspondiente\n\n\n\nPosiciones decimales y formato de número",
     "crumbs": [
       "Clases",
       "Clase 07"
