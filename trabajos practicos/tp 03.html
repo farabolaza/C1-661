@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="TP 03 – C1-661 2025">
@@ -280,7 +309,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#celdas-y-operaciones" id="toc-celdas-y-operaciones" class="nav-link active" data-scroll-target="#celdas-y-operaciones"><span class="header-section-number">1</span> Celdas y operaciones</a></li>
+  <li><a href="#celdas-y-operaciones" id="toc-celdas-y-operaciones" class="nav-link active" data-scroll-target="#celdas-y-operaciones"><span class="header-section-number">1</span> Celdas y operaciones</a>
+  <ul class="collapse">
+  <li><a href="#ley-de-ohm" id="toc-ley-de-ohm" class="nav-link" data-scroll-target="#ley-de-ohm"><span class="header-section-number">1.1</span> Ley de Ohm</a></li>
+  <li><a href="#tiempo-de-caída-y-distancia-recorrida" id="toc-tiempo-de-caída-y-distancia-recorrida" class="nav-link" data-scroll-target="#tiempo-de-caída-y-distancia-recorrida"><span class="header-section-number">1.2</span> Tiempo de caída y distancia recorrida</a></li>
+  <li><a href="#emisión-de-un-cuerpo-negro" id="toc-emisión-de-un-cuerpo-negro" class="nav-link" data-scroll-target="#emisión-de-un-cuerpo-negro"><span class="header-section-number">1.3</span> Emisión de un cuerpo negro</a></li>
+  <li><a href="#resistencias-en-paralelo" id="toc-resistencias-en-paralelo" class="nav-link" data-scroll-target="#resistencias-en-paralelo"><span class="header-section-number">1.4</span> Resistencias en paralelo</a></li>
+  </ul></li>
   <li><a href="#funciones" id="toc-funciones" class="nav-link" data-scroll-target="#funciones"><span class="header-section-number">2</span> Funciones</a>
   <ul class="collapse">
   <li><a href="#funciones-trigonométricas" id="toc-funciones-trigonométricas" class="nav-link" data-scroll-target="#funciones-trigonométricas"><span class="header-section-number">2.1</span> Funciones trigonométricas</a></li>
@@ -316,6 +351,47 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="celdas-y-operaciones" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Celdas y operaciones</h1>
+<section id="ley-de-ohm" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="ley-de-ohm"><span class="header-section-number">1.1</span> Ley de Ohm</h2>
+<p>Si se tiene una resistencia <span class="math inline">\(R\)</span> de <span class="math inline">\(12 M \Omega\)</span> usando los datos de tensión en función del tiempo que se muestran en <a href="..\assets/Ohm.csv">este archivo</a></p>
+<ol type="1">
+<li>Complete la columna para la corriente <span class="math inline">\(I\)</span> (en amperes) en función del tiempo sabiendo que por la ley de Ohm: <span class="math display">\[
+\frac{V}{R}=I
+\]</span></li>
+</ol>
+<p>Exprese los valores en potencias de diez de la planilla de cálculo y represente las letras griegas y las fórmulas con los símbolos más adecuados</p>
+<ol start="2" type="1">
+<li>Complete la columna para la potencia (en watts) sabiendo que <span class="math inline">\(P=I^2 \cdot R\)</span></li>
+</ol>
+</section>
+<section id="tiempo-de-caída-y-distancia-recorrida" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="tiempo-de-caída-y-distancia-recorrida"><span class="header-section-number">1.2</span> Tiempo de caída y distancia recorrida</h2>
+<p>Para un cuerpo en caída libre sin velocidad inicial, donde sólo se tiene en cuenta la fuerza de gravedad, el tiempo de vuelo se relaciona con la distancia recorrida por la fórmula <span class="math display">\[
+t=\sqrt{\frac{2h}{g}}
+\]</span></p>
+<ol type="1">
+<li>Elabore una planilla donde tenga los datos de altura y tiempo. Considere <span class="math inline">\(g=9,81 \quad \frac{m}{s^2}\)</span></li>
+<li>Reutilice sus datos para obtener la altura y el tiempo para <span class="math inline">\(g=1,6 \quad \frac{m}{s^2}\)</span></li>
+</ol>
+</section>
+<section id="emisión-de-un-cuerpo-negro" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="emisión-de-un-cuerpo-negro"><span class="header-section-number">1.3</span> Emisión de un cuerpo negro</h2>
+<p>El calor emitido por segundo <span class="math inline">\(H\)</span> por un cuerpo negro de área <span class="math inline">\(A\)</span> a una temperatura <span class="math inline">\(T\)</span> se puede calcular usando:</p>
+<p><span class="math display">\[
+H=\sigma A T^4
+\]</span></p>
+<p>En donde <span class="math inline">\(\sigma\)</span> es la constante de Stefan-Boltzmann (<span class="math inline">\(5,67\cdot 10^{-8} \frac{W}{m^2 K^4}\)</span>). Si el área es <span class="math inline">\(A=0,062 \quad m^2\)</span></p>
+<p>1.Cree una tabla, nombre a la constante de Stefan-Boltzmann SIGMA, y al área <span class="math inline">\(A\)</span>. Calcule <span class="math inline">\(H\)</span> para <span class="math inline">\(T=1000 K\)</span> a <span class="math inline">\(T=6000 K\)</span></p>
+</section>
+<section id="resistencias-en-paralelo" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="resistencias-en-paralelo"><span class="header-section-number">1.4</span> Resistencias en paralelo</h2>
+<p>La resistencia equivalente de colocar dos resistencias en paralelo se puede calcular usando:</p>
+<p><span class="math display">\[
+\frac{R_1 R_2}{R_1+R_2}
+\]</span></p>
+<p>Si <span class="math inline">\(R_1= 4,7 \ k \Omega\)</span> y <span class="math inline">\(R_2= 6,8 \ k \Omega\)</span></p>
+<p>Cree una tabla para calcular la resistencia equivalente al colocar ambas en paralelo.</p>
+</section>
 </section>
 <section id="funciones" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Funciones</h1>
@@ -331,6 +407,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="modalidad-y-fecha-de-entrega" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Modalidad y fecha de entrega</h1>
+<p>Vía aula virtual <a href="https://inspt.cvg.utn.edu.ar/course/view.php?id=2202#section-1">acá</a> según fecha indicada en la tarea.</p>
 
 
 </section>

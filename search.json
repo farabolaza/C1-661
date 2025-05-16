@@ -1,5 +1,60 @@
 [
   {
+    "objectID": "trabajos practicos/tp 03.html",
+    "href": "trabajos practicos/tp 03.html",
+    "title": "TP 03",
+    "section": "",
+    "text": "Si se tiene una resistencia \\(R\\) de \\(12 M \\Omega\\) usando los datos de tensión en función del tiempo que se muestran en este archivo\n\nComplete la columna para la corriente \\(I\\) (en amperes) en función del tiempo sabiendo que por la ley de Ohm: \\[\n\\frac{V}{R}=I\n\\]\n\nExprese los valores en potencias de diez de la planilla de cálculo y represente las letras griegas y las fórmulas con los símbolos más adecuados\n\nComplete la columna para la potencia (en watts) sabiendo que \\(P=I^2 \\cdot R\\)\n\n\n\n\nPara un cuerpo en caída libre sin velocidad inicial, donde sólo se tiene en cuenta la fuerza de gravedad, el tiempo de vuelo se relaciona con la distancia recorrida por la fórmula \\[\nt=\\sqrt{\\frac{2h}{g}}\n\\]\n\nElabore una planilla donde tenga los datos de altura y tiempo. Considere \\(g=9,81 \\quad \\frac{m}{s^2}\\)\nReutilice sus datos para obtener la altura y el tiempo para \\(g=1,6 \\quad \\frac{m}{s^2}\\)\n\n\n\n\nEl calor emitido por segundo \\(H\\) por un cuerpo negro de área \\(A\\) a una temperatura \\(T\\) se puede calcular usando:\n\\[\nH=\\sigma A T^4\n\\]\nEn donde \\(\\sigma\\) es la constante de Stefan-Boltzmann (\\(5,67\\cdot 10^{-8} \\frac{W}{m^2 K^4}\\)). Si el área es \\(A=0,062 \\quad m^2\\)\n1.Cree una tabla, nombre a la constante de Stefan-Boltzmann SIGMA, y al área \\(A\\). Calcule \\(H\\) para \\(T=1000 K\\) a \\(T=6000 K\\)\n\n\n\nLa resistencia equivalente de colocar dos resistencias en paralelo se puede calcular usando:\n\\[\n\\frac{R_1 R_2}{R_1+R_2}\n\\]\nSi \\(R_1= 4,7 \\ k \\Omega\\) y \\(R_2= 6,8 \\ k \\Omega\\)\nCree una tabla para calcular la resistencia equivalente al colocar ambas en paralelo.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 03.html#ley-de-ohm",
+    "href": "trabajos practicos/tp 03.html#ley-de-ohm",
+    "title": "TP 03",
+    "section": "",
+    "text": "Si se tiene una resistencia \\(R\\) de \\(12 M \\Omega\\) usando los datos de tensión en función del tiempo que se muestran en este archivo\n\nComplete la columna para la corriente \\(I\\) (en amperes) en función del tiempo sabiendo que por la ley de Ohm: \\[\n\\frac{V}{R}=I\n\\]\n\nExprese los valores en potencias de diez de la planilla de cálculo y represente las letras griegas y las fórmulas con los símbolos más adecuados\n\nComplete la columna para la potencia (en watts) sabiendo que \\(P=I^2 \\cdot R\\)",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 03.html#tiempo-de-caída-y-distancia-recorrida",
+    "href": "trabajos practicos/tp 03.html#tiempo-de-caída-y-distancia-recorrida",
+    "title": "TP 03",
+    "section": "",
+    "text": "Para un cuerpo en caída libre sin velocidad inicial, donde sólo se tiene en cuenta la fuerza de gravedad, el tiempo de vuelo se relaciona con la distancia recorrida por la fórmula \\[\nt=\\sqrt{\\frac{2h}{g}}\n\\]\n\nElabore una planilla donde tenga los datos de altura y tiempo. Considere \\(g=9,81 \\quad \\frac{m}{s^2}\\)\nReutilice sus datos para obtener la altura y el tiempo para \\(g=1,6 \\quad \\frac{m}{s^2}\\)",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 03.html#emisión-de-un-cuerpo-negro",
+    "href": "trabajos practicos/tp 03.html#emisión-de-un-cuerpo-negro",
+    "title": "TP 03",
+    "section": "",
+    "text": "El calor emitido por segundo \\(H\\) por un cuerpo negro de área \\(A\\) a una temperatura \\(T\\) se puede calcular usando:\n\\[\nH=\\sigma A T^4\n\\]\nEn donde \\(\\sigma\\) es la constante de Stefan-Boltzmann (\\(5,67\\cdot 10^{-8} \\frac{W}{m^2 K^4}\\)). Si el área es \\(A=0,062 \\quad m^2\\)\n1.Cree una tabla, nombre a la constante de Stefan-Boltzmann SIGMA, y al área \\(A\\). Calcule \\(H\\) para \\(T=1000 K\\) a \\(T=6000 K\\)",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 03.html#resistencias-en-paralelo",
+    "href": "trabajos practicos/tp 03.html#resistencias-en-paralelo",
+    "title": "TP 03",
+    "section": "",
+    "text": "La resistencia equivalente de colocar dos resistencias en paralelo se puede calcular usando:\n\\[\n\\frac{R_1 R_2}{R_1+R_2}\n\\]\nSi \\(R_1= 4,7 \\ k \\Omega\\) y \\(R_2= 6,8 \\ k \\Omega\\)\nCree una tabla para calcular la resistencia equivalente al colocar ambas en paralelo.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
     "objectID": "trabajos practicos/tp 03.html#funciones-trigonométricas",
     "href": "trabajos practicos/tp 03.html#funciones-trigonométricas",
     "title": "TP 03",
@@ -66,7 +121,7 @@
     "href": "clases/clase-09.html",
     "title": "Clase 09",
     "section": "",
-    "text": "Dentro de los indicadores denominados medidas de tendencia central, que permiten cuantificar valores representativos de un conjunto encontramos al promedio, la moda y la mediana.\nEl cálculo matemático para cada uno de ellos es;\n\nPromedioModaMediana\n\n\nEl promedio representa la media aritmética de los valores de un conjunto \\[\n\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\n\\]\nEn calc la función PROMEDIO(datos) devuelve el promedio del conjunto de datos dado como argumento (las referencias pueden ser vectores o matrices, es decir conjuntos de filas, columnas o filas y columnas).\nPromedio no es representativo de un conjunto de datos cuando éstos poseen valores cuya distribución contiene extremos poco frecuentes pero muy alejados del resto de los demás.\nEl ejemplo típico: hay dos personas, una gana tiene diez millones de pesos, la otra tiene cero, pero en promedio, tienen ambos cinco millones. El valor 5 representa el “medio” entre ambos valores pero no es representativo del capital de ninguna de las dos personas: sobreestima en un caso y subestima en el otro.\n\n\nLa moda representa el valor que más se repite en un conjunto de datos\n\\[\n\\text{Moda} = \\{x_i \\mid \\max \\text{frecuencia}(x_i)\\}\n\\]\nEn calc, las funciones MODA.UNO() y MODA.VARIOS() nos dan en cada caso, el valor más repetido (UNO) o los valores más repetidos (VARIOS). La función MODA.VARIOS() es una función matricial y debe ser ingresada apretando ctrl+shift+enter al finalizar la escritura en la celda.\nPara más información acerca de las funciones matriciales podés ver la ayuda oficial sobre el tema. Para extender los resultados de una función matricial cuado ésta no se expande automáticamente se debe extender la selección desde la esquina inferior derercha de la celda de la fórmula.\nLa moda es representativa de un conjunto de datos cuando el criterio de igualdad es fácil de establecer, por ejemplo cuando se trata de variables ordinales o cuantitativas enteras, como los años o las posiciones ocupadas en un listado. Para variables que no son números enteros, la apreciación del instrumento usado para obtenerlas puede servir para igualar los valores antes de calcular la moda. Por ejemplo, si se mide con una regla que aprecia al milímetro, 23,2 y 23,1 pueden ser considerados el mismo valor ya que sus incertezas se solapan.\n\n\nLa mediana representa el valor centra de un conjunto de datos ordenado. \\[\n\\tilde{x} =\n\\begin{cases}\nx_{\\frac{n+1}{2}}, & \\text{si } n \\text{ es impar} \\\\\n\\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2}, & \\text{si } n \\text{ es par}\n\\end{cases}\n\\]",
+    "text": "Dentro de los indicadores denominados medidas de tendencia central, que permiten cuantificar valores representativos de un conjunto encontramos al promedio, la moda y la mediana.\nEl cálculo matemático para cada uno de ellos es;\n\nPromedioModaMediana\n\n\nEl promedio representa la media aritmética de los valores de un conjunto \\[\n\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\n\\]\nEn calc la función PROMEDIO(datos) devuelve el promedio del conjunto de datos dado como argumento (las referencias pueden ser vectores o matrices, es decir conjuntos de filas, columnas o filas y columnas).\nPromedio no es representativo de un conjunto de datos cuando éstos poseen valores cuya distribución contiene extremos poco frecuentes pero muy alejados del resto de los demás.\nEl ejemplo típico: hay dos personas, una gana tiene diez millones de pesos, la otra tiene cero, pero en promedio, tienen ambos cinco millones. El valor 5 representa el “medio” entre ambos valores pero no es representativo del capital de ninguna de las dos personas: sobreestima en un caso y subestima en el otro.\n\n\nLa moda representa el valor que más se repite en un conjunto de datos\n\\[\n\\text{Moda} = \\{x_i \\mid \\max \\text{frecuencia}(x_i)\\}\n\\]\nEn calc, las funciones MODA.UNO() y MODA.VARIOS() nos dan en cada caso, el valor más repetido (UNO) o los valores más repetidos (VARIOS). La función MODA.VARIOS() es una función matricial y debe ser ingresada apretando ctrl+shift+enter al finalizar la escritura en la celda.\nPara más información acerca de las funciones matriciales podés ver la ayuda oficial sobre el tema. Para extender los resultados de una función matricial cuado ésta no se expande automáticamente se debe extender la selección desde la esquina inferior derercha de la celda de la fórmula.\nLa moda es representativa de un conjunto de datos cuando el criterio de igualdad es fácil de establecer, por ejemplo cuando se trata de variables ordinales o cuantitativas enteras, como los años o las posiciones ocupadas en un listado. Para variables que no son números enteros, la apreciación del instrumento usado para obtenerlas puede servir para igualar los valores antes de calcular la moda. Por ejemplo, si se mide con una regla que aprecia al milímetro, 23,2 y 23,1 pueden ser considerados el mismo valor ya que sus incertezas se solapan.\n\n\nLa mediana representa el valor central de un conjunto de datos ordenado. \\[\n\\tilde{x} =\n\\begin{cases}\nx_{\\frac{n+1}{2}}, & \\text{si } n \\text{ es impar} \\\\\n\\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2}, & \\text{si } n \\text{ es par}\n\\end{cases}\n\\]\nEn LO la mediana se calcula con la función MEDIANA(datos). La mediana suele ser un dato representativo de un cojunto incluso cuando existen datos que ocupan los extremos por un margen considerable. Consideremos el conjunto: \\[\n\\left( -1000,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1000 \\right)\n\\]\nAquí la mediana da una información más representativa de los datos.",
     "crumbs": [
       "Clases",
       "Clase 09"
@@ -77,7 +132,7 @@
     "href": "clases/clase-09.html#promedio-moda-y-mediana",
     "title": "Clase 09",
     "section": "",
-    "text": "Dentro de los indicadores denominados medidas de tendencia central, que permiten cuantificar valores representativos de un conjunto encontramos al promedio, la moda y la mediana.\nEl cálculo matemático para cada uno de ellos es;\n\nPromedioModaMediana\n\n\nEl promedio representa la media aritmética de los valores de un conjunto \\[\n\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\n\\]\nEn calc la función PROMEDIO(datos) devuelve el promedio del conjunto de datos dado como argumento (las referencias pueden ser vectores o matrices, es decir conjuntos de filas, columnas o filas y columnas).\nPromedio no es representativo de un conjunto de datos cuando éstos poseen valores cuya distribución contiene extremos poco frecuentes pero muy alejados del resto de los demás.\nEl ejemplo típico: hay dos personas, una gana tiene diez millones de pesos, la otra tiene cero, pero en promedio, tienen ambos cinco millones. El valor 5 representa el “medio” entre ambos valores pero no es representativo del capital de ninguna de las dos personas: sobreestima en un caso y subestima en el otro.\n\n\nLa moda representa el valor que más se repite en un conjunto de datos\n\\[\n\\text{Moda} = \\{x_i \\mid \\max \\text{frecuencia}(x_i)\\}\n\\]\nEn calc, las funciones MODA.UNO() y MODA.VARIOS() nos dan en cada caso, el valor más repetido (UNO) o los valores más repetidos (VARIOS). La función MODA.VARIOS() es una función matricial y debe ser ingresada apretando ctrl+shift+enter al finalizar la escritura en la celda.\nPara más información acerca de las funciones matriciales podés ver la ayuda oficial sobre el tema. Para extender los resultados de una función matricial cuado ésta no se expande automáticamente se debe extender la selección desde la esquina inferior derercha de la celda de la fórmula.\nLa moda es representativa de un conjunto de datos cuando el criterio de igualdad es fácil de establecer, por ejemplo cuando se trata de variables ordinales o cuantitativas enteras, como los años o las posiciones ocupadas en un listado. Para variables que no son números enteros, la apreciación del instrumento usado para obtenerlas puede servir para igualar los valores antes de calcular la moda. Por ejemplo, si se mide con una regla que aprecia al milímetro, 23,2 y 23,1 pueden ser considerados el mismo valor ya que sus incertezas se solapan.\n\n\nLa mediana representa el valor centra de un conjunto de datos ordenado. \\[\n\\tilde{x} =\n\\begin{cases}\nx_{\\frac{n+1}{2}}, & \\text{si } n \\text{ es impar} \\\\\n\\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2}, & \\text{si } n \\text{ es par}\n\\end{cases}\n\\]",
+    "text": "Dentro de los indicadores denominados medidas de tendencia central, que permiten cuantificar valores representativos de un conjunto encontramos al promedio, la moda y la mediana.\nEl cálculo matemático para cada uno de ellos es;\n\nPromedioModaMediana\n\n\nEl promedio representa la media aritmética de los valores de un conjunto \\[\n\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\n\\]\nEn calc la función PROMEDIO(datos) devuelve el promedio del conjunto de datos dado como argumento (las referencias pueden ser vectores o matrices, es decir conjuntos de filas, columnas o filas y columnas).\nPromedio no es representativo de un conjunto de datos cuando éstos poseen valores cuya distribución contiene extremos poco frecuentes pero muy alejados del resto de los demás.\nEl ejemplo típico: hay dos personas, una gana tiene diez millones de pesos, la otra tiene cero, pero en promedio, tienen ambos cinco millones. El valor 5 representa el “medio” entre ambos valores pero no es representativo del capital de ninguna de las dos personas: sobreestima en un caso y subestima en el otro.\n\n\nLa moda representa el valor que más se repite en un conjunto de datos\n\\[\n\\text{Moda} = \\{x_i \\mid \\max \\text{frecuencia}(x_i)\\}\n\\]\nEn calc, las funciones MODA.UNO() y MODA.VARIOS() nos dan en cada caso, el valor más repetido (UNO) o los valores más repetidos (VARIOS). La función MODA.VARIOS() es una función matricial y debe ser ingresada apretando ctrl+shift+enter al finalizar la escritura en la celda.\nPara más información acerca de las funciones matriciales podés ver la ayuda oficial sobre el tema. Para extender los resultados de una función matricial cuado ésta no se expande automáticamente se debe extender la selección desde la esquina inferior derercha de la celda de la fórmula.\nLa moda es representativa de un conjunto de datos cuando el criterio de igualdad es fácil de establecer, por ejemplo cuando se trata de variables ordinales o cuantitativas enteras, como los años o las posiciones ocupadas en un listado. Para variables que no son números enteros, la apreciación del instrumento usado para obtenerlas puede servir para igualar los valores antes de calcular la moda. Por ejemplo, si se mide con una regla que aprecia al milímetro, 23,2 y 23,1 pueden ser considerados el mismo valor ya que sus incertezas se solapan.\n\n\nLa mediana representa el valor central de un conjunto de datos ordenado. \\[\n\\tilde{x} =\n\\begin{cases}\nx_{\\frac{n+1}{2}}, & \\text{si } n \\text{ es impar} \\\\\n\\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2}, & \\text{si } n \\text{ es par}\n\\end{cases}\n\\]\nEn LO la mediana se calcula con la función MEDIANA(datos). La mediana suele ser un dato representativo de un cojunto incluso cuando existen datos que ocupan los extremos por un margen considerable. Consideremos el conjunto: \\[\n\\left( -1000,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1000 \\right)\n\\]\nAquí la mediana da una información más representativa de los datos.",
     "crumbs": [
       "Clases",
       "Clase 09"
@@ -154,7 +209,7 @@
     "href": "clases/clase-07.html#formato-de-número",
     "title": "Clase 07",
     "section": "Formato de número",
-    "text": "Formato de número\nMuchos de los errores más comunes a la hora de que fallen las fórmulas una una planilla de cálculo es el incorrecto formato de los números. Para ello debemos asegurarnos de que representan al tipo de de datos que estamos tratando, ya sean fechas, texto, números, etc.\n\nDecimales, redondeo y notación científica\nEl atajo ctrl+1 nos lleva al menú de formato de celda donde podemos elegir como se visualizan los datos y que tipo de dato contienen las celdas seleccionadas\n\n\n\nFormato de número\n\n\nTambién puede accederse al formato desde la barra de herramientas correspondiente\n\n\n\nPosiciones decimales y formato de número\n\n\nPara ingresar valores con notación científica la letra mayúsucla E reemplaza a \\(\\times 10^{\\text{algo}}\\). Si escribimos 4E-2 estaremos escribiendo \\(4\\cdot 10^{-2}\\). Lo que resulta útil a la hora de ingresar valores de constantes físicas o valores que sean mejor expresados usando la notación científica. Si por error escribimos la letra minúscula e LO nos corregirá automáticamente.\n\n\nCorreción automática y reemplazos\nSi vamos a herramientas &gt; opciones de correción automática veremos los reemplazos automaticos que LO ofice ejecuta en calc. Estos reemplazos nos permiten escribir sin tener que usar menús específicos letras griegas, subíndices y superíndices comunes, emojis, flechas, etc. \nPara escribir \\(m_a\\) hacemos m:_a: y para esribir la letra \\(\\beta\\) :beta:. Los subíndices y superíndices numéricos se escriben con los símbolos _ y ^ a continuación de la letra o número al que refieren, por ejemplo \\(l_1\\) se escribe l_1 y \\(m^2\\) m^2.",
+    "text": "Formato de número\nMuchos de los errores más comunes a la hora de que fallen las fórmulas una una planilla de cálculo es el incorrecto formato de los números. Para ello debemos asegurarnos de que representan al tipo de de datos que estamos tratando, ya sean fechas, texto, números, etc.\n\nDecimales, redondeo y notación científica\nEl atajo ctrl+1 nos lleva al menú de formato de celda donde podemos elegir como se visualizan los datos y que tipo de dato contienen las celdas seleccionadas\n\n\n\nFormato de número\n\n\nTambién puede accederse al formato desde la barra de herramientas correspondiente\n\n\n\nPosiciones decimales y formato de número\n\n\nPara ingresar valores con notación científica la letra mayúsucla E reemplaza a \\(\\times 10^{\\text{algo}}\\). Si escribimos 4E-2 estaremos escribiendo \\(4\\cdot 10^{-2}\\). Lo que resulta útil a la hora de ingresar valores de constantes físicas o valores que sean mejor expresados usando la notación científica. Si por error escribimos la letra minúscula e LO nos corregirá automáticamente.\n\n\nCorreción automática y reemplazos\nSi vamos a herramientas &gt; opciones de correción automática veremos los reemplazos automaticos que LO ofice ejecuta en calc. Estos reemplazos nos permiten usar (sin tener que usar menús específicos) letras griegas, subíndices y superíndices comunes, emojis, flechas, etc.\n\n\n\nHerramientas de corrección automática\n\n\nPara escribir \\(m_a\\) hacemos m:_a: y para esribir la letra \\(\\beta\\) tipeamos :beta:. Los subíndices y superíndices numéricos se escriben con los símbolos _ y ^ a continuación de la letra o número al que refieren, por ejemplo \\(l_1\\) se escribe l_1 y \\(m^2\\) m^2.\n\n\nRangos con nombre\nCuando trabajamos con fórmulas, además de poder usar los caracteres que mejor las representen resulta útil poder referenciar a variables no sólo con la referencia a la celda que contiene su valor, sino mediante un nombre. Para ello, seleccionando la celda que contiene el valor que queremos nombre hacemos hoja &gt; intervalos y expresiones con nombre &gt; definir\n\n\n\ndefinir intervalo\n\n\nLuego, podemos referenciar a la variable usando el nombre que le hemos dado y no su ubicación en la planilla de cálculo.",
     "crumbs": [
       "Clases",
       "Clase 07"
@@ -172,11 +227,22 @@
     ]
   },
   {
-    "objectID": "clases/clase-07.html#ejercitación",
-    "href": "clases/clase-07.html#ejercitación",
+    "objectID": "clases/clase-07.html#importar-exportar-datos-externos-csvtsv",
+    "href": "clases/clase-07.html#importar-exportar-datos-externos-csvtsv",
     "title": "Clase 07",
-    "section": "Ejercitación",
-    "text": "Ejercitación",
+    "section": "Importar-exportar datos externos (csv,tsv)",
+    "text": "Importar-exportar datos externos (csv,tsv)\nUn formato de archivo que suele usarse para compartir datos tabulados es el csv y sus variantes como el tsv. El formato csv representa los datos de una tabla separando por coma u otro separador definido por el usuario los valores de una fila y las filas sucesivas con un salto de línea u otro separador que el usuario configure. En la variante tsv los datos están separado por tabulaciones pero siguiendo la misma lógica\n\n\n\nAbrir un csv\n\n\nPara importar o exportar datos en formato csv debemos seguir los pasos de archivo &gt; abrir\n\n\n\nGuardar csv\n\n\nMientras que para guardar en formato csv, hacemos archivo &gt; guardar como y elegimos la opción csv.",
+    "crumbs": [
+      "Clases",
+      "Clase 07"
+    ]
+  },
+  {
+    "objectID": "clases/clase-07.html#referencias-1",
+    "href": "clases/clase-07.html#referencias-1",
+    "title": "Clase 07",
+    "section": "Referencias",
+    "text": "Referencias\n🔗 Rangos con nombe",
     "crumbs": [
       "Clases",
       "Clase 07"

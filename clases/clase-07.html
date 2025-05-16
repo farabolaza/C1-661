@@ -319,9 +319,11 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#decimales-redondeo-y-notación-científica" id="toc-decimales-redondeo-y-notación-científica" class="nav-link" data-scroll-target="#decimales-redondeo-y-notación-científica">Decimales, redondeo y notación científica</a></li>
   <li><a href="#correción-automática-y-reemplazos" id="toc-correción-automática-y-reemplazos" class="nav-link" data-scroll-target="#correción-automática-y-reemplazos">Correción automática y reemplazos</a></li>
+  <li><a href="#rangos-con-nombre" id="toc-rangos-con-nombre" class="nav-link" data-scroll-target="#rangos-con-nombre">Rangos con nombre</a></li>
   </ul></li>
   <li><a href="#operaciones-y-precedencia" id="toc-operaciones-y-precedencia" class="nav-link" data-scroll-target="#operaciones-y-precedencia">Operaciones y precedencia</a></li>
-  <li><a href="#ejercitación" id="toc-ejercitación" class="nav-link" data-scroll-target="#ejercitación">Ejercitación</a></li>
+  <li><a href="#importar-exportar-datos-externos-csvtsv" id="toc-importar-exportar-datos-externos-csvtsv" class="nav-link" data-scroll-target="#importar-exportar-datos-externos-csvtsv">Importar-exportar datos externos (csv,tsv)</a></li>
+  <li><a href="#referencias-1" id="toc-referencias-1" class="nav-link" data-scroll-target="#referencias-1">Referencias</a></li>
   </ul>
 </nav>
     </div>
@@ -392,8 +394,25 @@ window.Quarto = {
 </section>
 <section id="correción-automática-y-reemplazos" class="level3">
 <h3 class="anchored" data-anchor-id="correción-automática-y-reemplazos">Correción automática y reemplazos</h3>
-<p>Si vamos a <code>herramientas</code> &gt; <code>opciones de correción automática</code> veremos los reemplazos automaticos que LO ofice ejecuta en calc. Estos reemplazos nos permiten escribir sin tener que usar menús específicos letras griegas, subíndices y superíndices comunes, emojis, flechas, etc. <img src="..\assets/writer-correccion-auto.png" class="img-fluid" alt="Herramientas de corrección automática"></p>
-<p>Para escribir <span class="math inline">\(m_a\)</span> hacemos <code>m:_a:</code> y para esribir la letra <span class="math inline">\(\beta\)</span> :beta:. Los subíndices y superíndices numéricos se escriben con los símbolos <code>_</code> y <code>^</code> a continuación de la letra o número al que refieren, por ejemplo <span class="math inline">\(l_1\)</span> se escribe <code>l_1</code> y <span class="math inline">\(m^2\)</span> <code>m^2</code>.</p>
+<p>Si vamos a <code>herramientas</code> &gt; <code>opciones de correción automática</code> veremos los reemplazos automaticos que LO ofice ejecuta en calc. Estos reemplazos nos permiten usar (sin tener que usar menús específicos) letras griegas, subíndices y superíndices comunes, emojis, flechas, etc.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/writer-correccion-auto.png" class="img-fluid figure-img"></p>
+<figcaption>Herramientas de corrección automática</figcaption>
+</figure>
+</div>
+<p>Para escribir <span class="math inline">\(m_a\)</span> hacemos <code>m:_a:</code> y para esribir la letra <span class="math inline">\(\beta\)</span> tipeamos <code>:beta:</code>. Los subíndices y superíndices numéricos se escriben con los símbolos <code>_</code> y <code>^</code> a continuación de la letra o número al que refieren, por ejemplo <span class="math inline">\(l_1\)</span> se escribe <code>l_1</code> y <span class="math inline">\(m^2\)</span> <code>m^2</code>.</p>
+</section>
+<section id="rangos-con-nombre" class="level3">
+<h3 class="anchored" data-anchor-id="rangos-con-nombre">Rangos con nombre</h3>
+<p>Cuando trabajamos con fórmulas, además de poder usar los caracteres que mejor las representen resulta útil poder referenciar a variables no sólo con la referencia a la celda que contiene su valor, sino mediante un nombre. Para ello, seleccionando la celda que contiene el valor que queremos nombre hacemos <code>hoja</code> &gt; <code>intervalos y expresiones con nombre</code> &gt; <code>definir</code></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-nombre-rango.png" class="img-fluid figure-img"></p>
+<figcaption>definir intervalo</figcaption>
+</figure>
+</div>
+<p>Luego, podemos referenciar a la variable usando el nombre que le hemos dado y no su ubicación en la planilla de cálculo.</p>
 </section>
 </section>
 <section id="operaciones-y-precedencia" class="level2">
@@ -402,8 +421,27 @@ window.Quarto = {
 y por último sumas y restas.</p>
 <p>Hay que tener en cuenta esto a la hora de ingresar las fórmulas y usar paréntesis cada vez que queramos indicar un orden de operación en particular.</p>
 </section>
-<section id="ejercitación" class="level2">
-<h2 class="anchored" data-anchor-id="ejercitación">Ejercitación</h2>
+<section id="importar-exportar-datos-externos-csvtsv" class="level2">
+<h2 class="anchored" data-anchor-id="importar-exportar-datos-externos-csvtsv">Importar-exportar datos externos (csv,tsv)</h2>
+<p>Un formato de archivo que suele usarse para compartir datos tabulados es el csv y sus variantes como el tsv. El formato <code>csv</code> representa los datos de una tabla separando por coma u otro separador definido por el usuario los valores de una fila y las filas sucesivas con un salto de línea u otro separador que el usuario configure. En la variante <code>tsv</code> los datos están separado por tabulaciones pero siguiendo la misma lógica</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-importar-csv.png" class="img-fluid figure-img"></p>
+<figcaption>Abrir un csv</figcaption>
+</figure>
+</div>
+<p>Para importar o exportar datos en formato csv debemos seguir los pasos de <code>archivo</code> &gt; <code>abrir</code></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-guardar-csv.png" class="img-fluid figure-img"></p>
+<figcaption>Guardar csv</figcaption>
+</figure>
+</div>
+<p>Mientras que para guardar en formato csv, hacemos <code>archivo</code> &gt; <code>guardar como</code> y elegimos la opción csv.</p>
+</section>
+<section id="referencias-1" class="level2">
+<h2 class="anchored" data-anchor-id="referencias-1">Referencias</h2>
+<p><a href="https://help.libreoffice.org/latest/en-GB/text/scalc/guide/value_with_name.html"><span class="emoji" data-emoji="link">🔗</span> Rangos con nombe</a></p>
 
 
 </section>

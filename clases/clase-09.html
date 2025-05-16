@@ -375,13 +375,17 @@ window.Quarto = {
 <p>La moda es representativa de un conjunto de datos cuando el criterio de igualdad es fácil de establecer, por ejemplo cuando se trata de variables ordinales o cuantitativas enteras, como los años o las posiciones ocupadas en un listado. Para variables que no son números enteros, la apreciación del instrumento usado para obtenerlas puede servir para igualar los valores antes de calcular la moda. Por ejemplo, si se mide con una regla que aprecia al milímetro, 23,2 y 23,1 pueden ser considerados el mismo valor ya que sus incertezas se solapan.</p>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>La mediana representa el valor centra de un conjunto de datos ordenado. <span class="math display">\[
+<p>La mediana representa el valor central de un conjunto de datos ordenado. <span class="math display">\[
 \tilde{x} =
 \begin{cases}
 x_{\frac{n+1}{2}}, &amp; \text{si } n \text{ es impar} \\
 \frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}, &amp; \text{si } n \text{ es par}
 \end{cases}
 \]</span></p>
+<p>En LO la mediana se calcula con la función <code>MEDIANA(datos)</code>. La mediana suele ser un dato representativo de un cojunto incluso cuando existen datos que ocupan los extremos por un margen considerable. Consideremos el conjunto: <span class="math display">\[
+\left( -1000,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1000 \right)
+\]</span></p>
+<p>Aquí la mediana da una información más representativa de los datos.</p>
 </div>
 </div>
 </div>
