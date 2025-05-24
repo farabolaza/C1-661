@@ -120,8 +120,8 @@ window.Quarto = {
       </button>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="5a65f1e555763c43faec1f8352285a9f" class="alert alert-success hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>El día de hoy 07-05 No asistiré al instituto</p>
+  <div id="quarto-announcement" data-announcement-id="e5569ca07306d907ca1d95e87130b777" class="alert alert-success hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>SEMANA VIRTUAL 26/05 al 30/05</strong> Ver Calendario para más info</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
@@ -297,6 +297,24 @@ window.Quarto = {
  <span class="menu-text">TP 03</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../trabajos practicos/tp 04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TP 04</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../trabajos practicos/tp 05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TP 05</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../trabajos practicos/tp 06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TP 06</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -315,15 +333,11 @@ window.Quarto = {
   <li><a href="#deducción" id="toc-deducción" class="nav-link" data-scroll-target="#deducción">Deducción</a></li>
   <li><a href="#interpretación" id="toc-interpretación" class="nav-link" data-scroll-target="#interpretación">Interpretación</a></li>
   </ul></li>
-  <li><a href="#cuadrados-mínimos" id="toc-cuadrados-mínimos" class="nav-link" data-scroll-target="#cuadrados-mínimos">Cuadrados mínimos</a>
+  <li><a href="#histogramas" id="toc-histogramas" class="nav-link" data-scroll-target="#histogramas">Histogramas</a>
   <ul class="collapse">
-  <li><a href="#planteo" id="toc-planteo" class="nav-link" data-scroll-target="#planteo">Planteo</a></li>
-  <li><a href="#minimización-de-la-suma-de-cuadrados" id="toc-minimización-de-la-suma-de-cuadrados" class="nav-link" data-scroll-target="#minimización-de-la-suma-de-cuadrados">Minimización de la suma de cuadrados</a></li>
-  <li><a href="#resolución-de-las-ecuaciones-normales" id="toc-resolución-de-las-ecuaciones-normales" class="nav-link" data-scroll-target="#resolución-de-las-ecuaciones-normales">Resolución de las ecuaciones normales</a></li>
-  <li><a href="#estimación-de-incertidumbres" id="toc-estimación-de-incertidumbres" class="nav-link" data-scroll-target="#estimación-de-incertidumbres">Estimación de incertidumbres</a></li>
-  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen">Resumen</a></li>
+  <li><a href="#funcion-frecuencia-y-funciones-matriciales" id="toc-funcion-frecuencia-y-funciones-matriciales" class="nav-link" data-scroll-target="#funcion-frecuencia-y-funciones-matriciales">Funcion FRECUENCIA() y funciones matriciales</a></li>
   </ul></li>
-  <li><a href="#histogramas" id="toc-histogramas" class="nav-link" data-scroll-target="#histogramas">Histogramas</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
 </nav>
     </div>
@@ -420,138 +434,41 @@ d_i = x_i - \bar{x}
 \]</span></p>
 </section>
 </section>
-<section id="cuadrados-mínimos" class="level2">
-<h2 class="anchored" data-anchor-id="cuadrados-mínimos">Cuadrados mínimos</h2>
-<p>La regresión por mínimos cuadrados es una técnica estadística utilizada para ajustar una línea recta a un conjunto de datos experimentales. Esta línea recta se define por la ecuación:</p>
-<p><span class="math display">\[
-y = a + b x
-\]</span></p>
-<p>donde <span class="math inline">\(a\)</span> es la intersección con el eje <span class="math inline">\(y\)</span> (ordenada al origen) y <span class="math inline">\(b\)</span> es la pendiente de la línea. El objetivo es encontrar los valores de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> que minimicen la suma de los cuadrados de las diferencias entre los valores observados <span class="math inline">\(y_i\)</span> y los valores predichos por el modelo <span class="math inline">\(a + b x_i\)</span>. Estas diferencias se conocen como residuos.</p>
-<section id="planteo" class="level3">
-<h3 class="anchored" data-anchor-id="planteo">Planteo</h3>
-<p>Supongamos que tenemos un conjunto de <span class="math inline">\(n\)</span> puntos experimentales, cada uno con coordenadas <span class="math inline">\((x_i, y_i)\)</span>, donde <span class="math inline">\(x_i\)</span> es la variable independiente y <span class="math inline">\(y_i\)</span> es la variable dependiente. Queremos encontrar la línea recta que mejor se ajuste a estos datos en el sentido de mínimos cuadrados.</p>
-<p>La suma de los cuadrados de los residuos, denotada como <span class="math inline">\(S\)</span>, se define como:</p>
-<p><span class="math display">\[
-S = \sum_{i=1}^{n} [y_i - (a + b x_i)]^2
-\]</span></p>
-<p>Nuestro objetivo es encontrar los valores de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> que minimicen <span class="math inline">\(S\)</span>.</p>
-</section>
-<section id="minimización-de-la-suma-de-cuadrados" class="level3">
-<h3 class="anchored" data-anchor-id="minimización-de-la-suma-de-cuadrados">Minimización de la suma de cuadrados</h3>
-<p>Para minimizar <span class="math inline">\(S\)</span>, calculamos las derivadas parciales de <span class="math inline">\(S\)</span> con respecto a <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, y las igualamos a cero.</p>
-<ol type="1">
-<li><strong>Derivada con respecto a <span class="math inline">\(a\)</span></strong>:</li>
-</ol>
-<p><span class="math display">\[
-\frac{\partial S}{\partial a} = -2 \sum_{i=1}^{n} [y_i - (a + b x_i)] = 0
-\]</span></p>
-<p>Simplificando:</p>
-<p><span class="math display">\[
-\sum_{i=1}^{n} y_i - n a - b \sum_{i=1}^{n} x_i = 0 \quad (1)
-\]</span></p>
-<ol start="2" type="1">
-<li><strong>Derivada con respecto a <span class="math inline">\(b\)</span></strong>:</li>
-</ol>
-<p><span class="math display">\[
-\frac{\partial S}{\partial b} = -2 \sum_{i=1}^{n} x_i [y_i - (a + b x_i)] = 0
-\]</span></p>
-<p>Simplificando:</p>
-<p><span class="math display">\[
-\sum_{i=1}^{n} x_i y_i - a \sum_{i=1}^{n} x_i - b \sum_{i=1}^{n} x_i^2 = 0 \quad (2)
-\]</span></p>
-<p>Las ecuaciones (1) y (2) son conocidas como las <strong>ecuaciones normales</strong> de la regresión lineal.</p>
-</section>
-<section id="resolución-de-las-ecuaciones-normales" class="level3">
-<h3 class="anchored" data-anchor-id="resolución-de-las-ecuaciones-normales">Resolución de las ecuaciones normales</h3>
-<p>Reorganizamos las ecuaciones (1) y (2) para resolver el sistema:</p>
-<p><span class="math display">\[
-n a + b \sum_{i=1}^{n} x_i = \sum_{i=1}^{n} y_i \quad (1)
-\]</span></p>
-<p><span class="math display">\[
-a \sum_{i=1}^{n} x_i + b \sum_{i=1}^{n} x_i^2 = \sum_{i=1}^{n} x_i y_i \quad (2)
-\]</span></p>
-<section id="paso-1-resolver-para-a-en-función-de-b" class="level4">
-<h4 class="anchored" data-anchor-id="paso-1-resolver-para-a-en-función-de-b">Paso 1: Resolver para <span class="math inline">\(a\)</span> en función de <span class="math inline">\(b\)</span></h4>
-<p>De la ecuación (1):</p>
-<p><span class="math display">\[
-a = \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n} \quad (3)
-\]</span></p>
-</section>
-<section id="paso-2-sustituir-a-en-la-ecuación-2" class="level4">
-<h4 class="anchored" data-anchor-id="paso-2-sustituir-a-en-la-ecuación-2">Paso 2: Sustituir <span class="math inline">\(a\)</span> en la ecuación (2)</h4>
-<p>Sustituyendo (3) en (2):</p>
-<p><span class="math display">\[
-\left( \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n} \right) \sum_{i=1}^{n} x_i + b \sum_{i=1}^{n} x_i^2 = \sum_{i=1}^{n} x_i y_i
-\]</span></p>
-<p>Multiplicamos ambos lados por <span class="math inline">\(n\)</span> para eliminar el denominador:</p>
-<p><span class="math display">\[
-\left( \sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i \right) \sum_{i=1}^{n} x_i + b n \sum_{i=1}^{n} x_i^2 = n \sum_{i=1}^{n} x_i y_i
-\]</span></p>
-<p>Expandimos:</p>
-<p><span class="math display">\[
-\sum_{i=1}^{n} y_i \sum_{i=1}^{n} x_i - b \left( \sum_{i=1}^{n} x_i \right)^2 + b n \sum_{i=1}^{n} x_i^2 = n \sum_{i=1}^{n} x_i y_i
-\]</span></p>
-<p>Agrupamos los términos con <span class="math inline">\(b\)</span>:</p>
-<p><span class="math display">\[
-b \left[ n \sum_{i=1}^{n} x_i^2 - \left( \sum_{i=1}^{n} x_i \right)^2 \right] = n \sum_{i=1}^{n} x_i y_i - \sum_{i=1}^{n} y_i \sum_{i=1}^{n} x_i
-\]</span></p>
-</section>
-<section id="paso-3-calcular-b" class="level4">
-<h4 class="anchored" data-anchor-id="paso-3-calcular-b">Paso 3: Calcular <span class="math inline">\(b\)</span></h4>
-<p>Despejamos <span class="math inline">\(b\)</span>:</p>
-<p><span class="math display">\[
-b = \frac{n \sum_{i=1}^{n} x_i y_i - \sum_{i=1}^{n} x_i \sum_{i=1}^{n} y_i}{n \sum_{i=1}^{n} x_i^2 - \left( \sum_{i=1}^{n} x_i \right)^2} \quad (4)
-\]</span></p>
-</section>
-<section id="paso-4-calcular-a" class="level4">
-<h4 class="anchored" data-anchor-id="paso-4-calcular-a">Paso 4: Calcular <span class="math inline">\(a\)</span></h4>
-<p>Sustituimos <span class="math inline">\(b\)</span> de (4) en (3):</p>
-<p><span class="math display">\[
-a = \frac{\sum_{i=1}^{n} y_i - b \sum_{i=1}^{n} x_i}{n}
-\]</span></p>
-<p>Estas expresiones para <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> son las fórmulas estándar de la regresión por mínimos cuadrados.</p>
-</section>
-</section>
-<section id="estimación-de-incertidumbres" class="level3">
-<h3 class="anchored" data-anchor-id="estimación-de-incertidumbres">Estimación de incertidumbres</h3>
-<p>En el análisis de datos experimentales, es crucial evaluar las incertidumbres de los parámetros estimados. Suponemos que los errores en <span class="math inline">\(y_i\)</span> son gaussianos y tienen la misma varianza <span class="math inline">\(\sigma^2\)</span> (homocedasticidad).</p>
-<section id="varianza-de-los-parámetros" class="level4">
-<h4 class="anchored" data-anchor-id="varianza-de-los-parámetros">Varianza de los parámetros</h4>
-<p>La varianza de <span class="math inline">\(b\)</span> es:</p>
-<p><span class="math display">\[ \text{Var}(b) = \frac{\sigma^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2} \]</span></p>
-<p>donde <span class="math inline">\(\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}\)</span> es la media de los <span class="math inline">\(x_i\)</span>.</p>
-<p>La varianza de <span class="math inline">\(a\)</span> es:</p>
-<p><span class="math display">\[ \text{Var}(a) = \sigma^2 \left[ \frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2} \right] \]</span></p>
-</section>
-<section id="estimación-de-sigma2" class="level4">
-<h4 class="anchored" data-anchor-id="estimación-de-sigma2">Estimación de <span class="math inline">\(\sigma^2\)</span></h4>
-<p>En la práctica, <span class="math inline">\(\sigma^2\)</span> no se conoce y se estima a partir de los residuos:</p>
-<p><span class="math display">\[ s^2 = \frac{\sum_{i=1}^{n} [y_i - (a + b x_i)]^2}{n - 2} \]</span></p>
-<p>donde <span class="math inline">\(n - 2\)</span> refleja los grados de libertad, ya que hemos estimado dos parámetros (<span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>).</p>
-</section>
-<section id="incertidumbres-estándar" class="level4">
-<h4 class="anchored" data-anchor-id="incertidumbres-estándar">Incertidumbres estándar</h4>
-<p>Las incertidumbres estándar de <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> son las raíces cuadradas de sus varianzas, utilizando <span class="math inline">\(s^2\)</span> como estimación de <span class="math inline">\(\sigma^2\)</span>:</p>
-<p><span class="math display">\[ \sigma_b \approx \sqrt{\frac{s^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2}} \]</span></p>
-<p><span class="math display">\[ \sigma_a \approx \sqrt{s^2 \left[ \frac{1}{n} + \frac{\bar{x}^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2} \right]} \]</span></p>
-</section>
-</section>
-<section id="resumen" class="level3">
-<h3 class="anchored" data-anchor-id="resumen">Resumen</h3>
-<p>La regresión por mínimos cuadrados permite ajustar una línea recta a datos experimentales minimizando la suma de los cuadrados de los residuos. Las fórmulas clave son:</p>
-<ul>
-<li>Pendiente <span class="math inline">\(b\)</span>:</li>
-</ul>
-<p><span class="math display">\[ b = \frac{n \sum x_i y_i - \sum x_i \sum y_i}{n \sum x_i^2 - (\sum x_i)^2} \]</span></p>
-<ul>
-<li>Ordenada al origen <span class="math inline">\(a\)</span>:</li>
-</ul>
-<p><span class="math display">\[ a = \frac{\sum y_i - b \sum x_i}{n} \]</span></p>
-<p>Además, las incertidumbres de estos parámetros se estiman utilizando la varianza residual <span class="math inline">\(s^2\)</span>, lo que es esencial para evaluar la precisión del ajuste en contextos experimentales.</p>
-</section>
-</section>
 <section id="histogramas" class="level2">
 <h2 class="anchored" data-anchor-id="histogramas">Histogramas</h2>
+<p>Usualmente cuando se tienen datos a tratarse de forma estadística, resulta útil usar hitogramas para representarlos. Por ejemplo, si se efectúan <code>n</code> mediciones para obtener un valor para la constante gravitatoria en la tierra (<span class="math inline">\(9,8 \dfrac{m}{s^2}\)</span>) y si se han tomando los recaudos necesarios para llevar adelante el experimento es de esperar que la gran mayoría de los valores obtenidos se agrupen cerca del valor más probable, que dependiendo de la incerteza del método o los experimentadores, podrá ser más o menos cercano al “verdadero”, que es aquél contra el cual comparamos nuestros resultados.</p>
+<p>En este caso, si graficamos “cuantas veces obutvimos” valores para cierto intervalo o clase, obtendremos algo similar a esto:</p>
+<div id="16651ce0" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="clase-09_files/figure-html/cell-2-output-1.png" width="575" height="411" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Si por el contrario, tiramos un dado <code>n</code> veces (y lo hacemos muuuuchas veces) veremos que la distribución de “cuantas veces salió el uno”, “cuantas veces salió el dos”, etc. tiene esta pinta:</p>
+<div id="21b88580" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="clase-09_files/figure-html/cell-3-output-1.png" width="566" height="411" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>En ambos casos estamos viendo un gráfico de clase vs frecuencia, las clases pueden ser intervalos de alguna magnitud medida: lluvias de entre 3 y 5 mm, alturas entre 1.6 y 1.8 m, etc y la frecuencia la cantidad de elementos que pertenecen a esa clase o intervalo.</p>
+<p>Una regla útil para saber en cuantos intervalos debemos “seccionar” nuestros datos es usar <span class="math inline">\(N=\sqrt{n}\)</span> en donde <span class="math inline">\(N\)</span> es la cantidad de intervalos y <span class="math inline">\(n\)</span> la cantidad de datos. El ancho del intervalo, luego de reondear <span class="math inline">\(N\)</span> a un entero sera <span class="math inline">\(\frac{\text{rango}}{N}\)</span> en donde el rango es <span class="math inline">\(\text{valor máximo} - \text{valor minimo}\)</span>.</p>
+<section id="funcion-frecuencia-y-funciones-matriciales" class="level3">
+<h3 class="anchored" data-anchor-id="funcion-frecuencia-y-funciones-matriciales">Funcion FRECUENCIA() y funciones matriciales</h3>
+<p>Las funciones matriciales son aquellas cuyo resultado no ocupa una única celda y se extiende por lo tanto, como una matriz o vector dependiendo de la función. Las funciones matriciales se ven encerradas entre llaves si se mira la barra de fórmulas, pero estas llaves no se ingresan manualmente sino usando la combinación de teclas <code>ctrl</code> + <code>shift</code> + <code>enter</code> al momento de ejecutar la función.</p>
+<p>La función <code>FRECUENCIA(DATOS,CLASES)</code> es una función matricial y como indica su sintaxis tiene dos argumentos, los datos que usará y los intervalos en los que ubicará a los datos. Freuencia devuelve una matriz donde indica cuántos elementos hay en cada intervalo indicado.</p>
+<p>Con los datos de frecuencia y los intervalos (clases) se construye un gráfico de barras, con ambas columnas (o filas) seleccionando “etiquetas en primera columna (o fila)”.</p>
+</section>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p><a href="https://indico.cern.ch/event/977476/contributions/4204938/attachments/2191304/3703672/ES-Graficando-un-histograma-en-libreoffice.pdf">:link: Histogramas en LO</a> <a href="https://opendata.cern.ch/record/545">:link: Datasets CERN</a> <a href="https://matplotlib.org/stable/gallery/statistics/histogram_histtypes.html#sphx-glr-gallery-statistics-histogram-histtypes-py">:link: Distribución normal en matplotlib</a> <a href="https://matplotlib.org/stable/gallery/statistics/histogram_normalization.html#sphx-glr-gallery-statistics-histogram-normalization-py">:link: Histogramas en matplotlib</a></p>
 
 
 </section>
