@@ -332,11 +332,15 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#deducción" id="toc-deducción" class="nav-link" data-scroll-target="#deducción">Deducción</a></li>
   <li><a href="#interpretación" id="toc-interpretación" class="nav-link" data-scroll-target="#interpretación">Interpretación</a></li>
+  <li><a href="#desviación-para-una-muestra-o-una-población" id="toc-desviación-para-una-muestra-o-una-población" class="nav-link" data-scroll-target="#desviación-para-una-muestra-o-una-población">Desviación para una muestra o una población</a></li>
   </ul></li>
+  <li><a href="#resumen-estadístico" id="toc-resumen-estadístico" class="nav-link" data-scroll-target="#resumen-estadístico">Resumen estadístico</a></li>
   <li><a href="#histogramas" id="toc-histogramas" class="nav-link" data-scroll-target="#histogramas">Histogramas</a>
   <ul class="collapse">
   <li><a href="#funcion-frecuencia-y-funciones-matriciales" id="toc-funcion-frecuencia-y-funciones-matriciales" class="nav-link" data-scroll-target="#funcion-frecuencia-y-funciones-matriciales">Funcion FRECUENCIA() y funciones matriciales</a></li>
+  <li><a href="#crear-un-histograma" id="toc-crear-un-histograma" class="nav-link" data-scroll-target="#crear-un-histograma">Crear un histograma</a></li>
   </ul></li>
+  <li><a href="#ejercitación" id="toc-ejercitación" class="nav-link" data-scroll-target="#ejercitación">Ejercitación</a></li>
   <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
 </nav>
@@ -433,12 +437,26 @@ d_i = x_i - \bar{x}
 \sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n}}
 \]</span></p>
 </section>
+<section id="desviación-para-una-muestra-o-una-población" class="level3">
+<h3 class="anchored" data-anchor-id="desviación-para-una-muestra-o-una-población">Desviación para una muestra o una población</h3>
+<p>Cuando consideramos el promedio <span class="math inline">\(\bar{x}\)</span> para una muestra, no estamos accediendo a los posibles infinitos valores que pudiera tener la población en estudio, por ejemplo, no podemos medir la carga de todos los electrones del universo para luego promediarlas, por lo que nuestras medidas están restringidas no a la población, sino a una muestra de ella.</p>
+<p>Para calcular la desviación estándar para una muestra (y no para una población) debemos primero usar los datos de la muestra para obtener <span class="math inline">\(\bar{x}\)</span>, al hacer esto, por la definición de media, existen sólo <span class="math inline">\(n-1\)</span> valores realimente “libres” en cuanto a la diferencia que pueden tener con la media, el último valor que intentemos calcular necesariamente deberá ser tal que la suma nos de cero.</p>
+<p>Por eso se dice que el sistema tiene “un grado menos de libertad” y siempre que calculemos la varianza o la desviación estándar para una muestra, la fórmula se ajusta de la siguiente forma:</p>
+<p><span class="math display">\[
+\sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}}
+\]</span></p>
+<p>Si el número de muestras <span class="math inline">\(n\)</span> es suficientemente grande, <span class="math inline">\(\bar{x} \to \mu\)</span> (la media de la muestra tiene a la media de la población) y por lo tanto, el ajuste no representa una gran cambio en resultado.</p>
+</section>
+</section>
+<section id="resumen-estadístico" class="level2">
+<h2 class="anchored" data-anchor-id="resumen-estadístico">Resumen estadístico</h2>
+<p>Si hacemos <code>datos</code>&gt; <code>estadísticas</code> &gt; <code>estadíticas descriptivas</code> podremos obtener los parámetros estadísticos mencionados arriba (junto a otros que no trabajaremos) para un intervalo de celdas de la planilla.</p>
 </section>
 <section id="histogramas" class="level2">
 <h2 class="anchored" data-anchor-id="histogramas">Histogramas</h2>
 <p>Usualmente cuando se tienen datos a tratarse de forma estadística, resulta útil usar hitogramas para representarlos. Por ejemplo, si se efectúan <code>n</code> mediciones para obtener un valor para la constante gravitatoria en la tierra (<span class="math inline">\(9,8 \dfrac{m}{s^2}\)</span>) y si se han tomando los recaudos necesarios para llevar adelante el experimento es de esperar que la gran mayoría de los valores obtenidos se agrupen cerca del valor más probable, que dependiendo de la incerteza del método o los experimentadores, podrá ser más o menos cercano al “verdadero”, que es aquél contra el cual comparamos nuestros resultados.</p>
 <p>En este caso, si graficamos “cuantas veces obutvimos” valores para cierto intervalo o clase, obtendremos algo similar a esto:</p>
-<div id="d484bb41" class="cell" data-execution_count="1">
+<div id="4a6d751a" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -455,7 +473,7 @@ d_i = x_i - \bar{x}
 </figure>
 </div>
 <p>Si por el contrario, tiramos un dado <code>n</code> veces (y lo hacemos muuuuchas veces) veremos que la distribución de “cuantas veces salió el uno”, “cuantas veces salió el dos”, etc. tiene esta pinta:</p>
-<div id="705bc315" class="cell" data-execution_count="2">
+<div id="cb2f3801" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -468,10 +486,21 @@ d_i = x_i - \bar{x}
 <p>Una regla útil para saber en cuantos intervalos debemos “seccionar” nuestros datos es usar <span class="math inline">\(N=\sqrt{n}\)</span> en donde <span class="math inline">\(N\)</span> es la cantidad de intervalos y <span class="math inline">\(n\)</span> la cantidad de datos. El ancho del intervalo, luego de reondear <span class="math inline">\(N\)</span> a un entero sera <span class="math inline">\(\frac{\text{rango}}{N}\)</span> en donde el rango es <span class="math inline">\(\text{valor máximo} - \text{valor minimo}\)</span>.</p>
 <section id="funcion-frecuencia-y-funciones-matriciales" class="level3">
 <h3 class="anchored" data-anchor-id="funcion-frecuencia-y-funciones-matriciales">Funcion FRECUENCIA() y funciones matriciales</h3>
-<p>Las funciones matriciales son aquellas cuyo resultado no ocupa una única celda y se extiende por lo tanto, como una matriz o vector dependiendo de la función. Las funciones matriciales se ven encerradas entre llaves si se mira la barra de fórmulas, pero estas llaves no se ingresan manualmente sino usando la combinación de teclas <code>ctrl</code> + <code>shift</code> + <code>enter</code> al momento de ejecutar la función.</p>
+<p>Las funciones matriciales son aquellas cuyo resultado no ocupa una única celda y se extiende por lo tanto, como una matriz o vector sobre la planilla dependiendo de la función. Las funciones matriciales se ven encerradas entre llaves si se mira la barra de fórmulas, pero estas llaves no se ingresan manualmente sino usando la combinación de teclas <code>ctrl</code> + <code>shift</code> + <code>enter</code> al momento de ejecutar la función.</p>
 <p>La función <code>FRECUENCIA(DATOS,CLASES)</code> es una función matricial y como indica su sintaxis tiene dos argumentos, los datos que usará y los intervalos en los que ubicará a los datos. Freuencia devuelve una matriz donde indica cuántos elementos hay en cada intervalo indicado.</p>
-<p>Con los datos de frecuencia y los intervalos (clases) se construye un gráfico de barras, con ambas columnas (o filas) seleccionando “etiquetas en primera columna (o fila)”.</p>
 </section>
+<section id="crear-un-histograma" class="level3">
+<h3 class="anchored" data-anchor-id="crear-un-histograma">Crear un histograma</h3>
+<ol type="1">
+<li><p>Una vez que tenemos nuestro datos en la planilla debemos decidicir cuántos intervalos o clases construiremos a partir de ellos, una vez hecho eso, creamos una celda qe contenga como valor el extremo superior del intervalo (podemos desplegarlos en columnas o en filas).</p></li>
+<li><p>En Otra celda, llamamos a la función <code>FRECUENCIA</code> y seleccionamos los datos y nuestras clases. No olvidar de apretar <code>ctrl</code> + <code>shift</code> + <code>enter</code> al finalizar.</p></li>
+<li><p>Con los datos de frecuencia y los intervalos (clases) se construye un gráfico de barras, con ambas columnas (o filas) seleccionando “etiquetas en primera columna (o fila)”.</p></li>
+</ol>
+</section>
+</section>
+<section id="ejercitación" class="level2">
+<h2 class="anchored" data-anchor-id="ejercitación">Ejercitación</h2>
+<p>Usando <a href="..\assets/histogramas.ods">este archivo</a> como base, crear un histograma para la la hoja <code>masas</code>.</p>
 </section>
 <section id="referencias" class="level2">
 <h2 class="anchored" data-anchor-id="referencias">Referencias</h2>

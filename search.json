@@ -15,40 +15,62 @@
     "href": "trabajos practicos/tp 04.html",
     "title": "TP 04",
     "section": "",
-    "text": "t(s)\nV(volts)\n\n\n\n\n0\n0\n3.9800\n\n\n1\n5\n1.5800\n\n\n2\n10\n0.6100\n\n\n3\n15\n0.2400\n\n\n4\n20\n0.0940\n\n\n5\n25\n0.0350\n\n\n6\n30\n0.0160\n\n\n7\n35\n0.0063\n\n\n8\n40\n0.0031\n\n\n9\n45\n0.0017\n\n\n10\n50\n0.0011\n\n\n11\n55\n0.0007\n\n\n12\n60\n0.0006",
+    "text": "La siguiente tabla muestra la frecuencia de resonancia medida para un circuito de corriente alterna\n\nresonancia de circuito ac\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrequency (Hz)\n2150\n2120\n2134\n2270\n2144\n2156\n2139\n2122\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos\n\n\n\n\nLa siguiente tabla muestra los valores de capacitancia medidos para un capacitor:\n\nTabla de capacitancia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapacitance (pF)\n103.7\n100.3\n98.4\n99.3\n101.0\n106.1\n103.9\n101.5\n100.9\n105.3\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
     "crumbs": [
       "trabajos practicos",
       "TP 04"
     ]
   },
   {
-    "objectID": "trabajos practicos/tp 04.html#test-de-tabla",
-    "href": "trabajos practicos/tp 04.html#test-de-tabla",
+    "objectID": "trabajos practicos/tp 04.html#frecuencia-de-resonancia",
+    "href": "trabajos practicos/tp 04.html#frecuencia-de-resonancia",
     "title": "TP 04",
     "section": "",
-    "text": "t(s)\nV(volts)\n\n\n\n\n0\n0\n3.9800\n\n\n1\n5\n1.5800\n\n\n2\n10\n0.6100\n\n\n3\n15\n0.2400\n\n\n4\n20\n0.0940\n\n\n5\n25\n0.0350\n\n\n6\n30\n0.0160\n\n\n7\n35\n0.0063\n\n\n8\n40\n0.0031\n\n\n9\n45\n0.0017\n\n\n10\n50\n0.0011\n\n\n11\n55\n0.0007\n\n\n12\n60\n0.0006",
+    "text": "La siguiente tabla muestra la frecuencia de resonancia medida para un circuito de corriente alterna\n\nresonancia de circuito ac\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrequency (Hz)\n2150\n2120\n2134\n2270\n2144\n2156\n2139\n2122\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
     "crumbs": [
       "trabajos practicos",
       "TP 04"
     ]
   },
   {
-    "objectID": "trabajos practicos/tp 04.html#to-markdown",
-    "href": "trabajos practicos/tp 04.html#to-markdown",
+    "objectID": "trabajos practicos/tp 04.html#capacitancia",
+    "href": "trabajos practicos/tp 04.html#capacitancia",
     "title": "TP 04",
-    "section": "0.2 To markdown",
-    "text": "0.2 To markdown\n\n\n\n\nt(s)\nV(volts)\n\n\n\n\n0\n0\n3,98\n\n\n1\n5\n1,58\n\n\n2\n10\n0,61\n\n\n3\n15\n0,24\n\n\n4\n20\n0,094\n\n\n5\n25\n0,035\n\n\n6\n30\n0,016\n\n\n7\n35\n0,0063\n\n\n8\n40\n0,0031\n\n\n9\n45\n0,0017\n\n\n10\n50\n0,0011\n\n\n11\n55\n0,0007\n\n\n12\n60\n0,0006\n\n\n\nver",
+    "section": "",
+    "text": "La siguiente tabla muestra los valores de capacitancia medidos para un capacitor:\n\nTabla de capacitancia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapacitance (pF)\n103.7\n100.3\n98.4\n99.3\n101.0\n106.1\n103.9\n101.5\n100.9\n105.3\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
     "crumbs": [
       "trabajos practicos",
       "TP 04"
     ]
   },
   {
-    "objectID": "trabajos practicos/tp 04.html#to-latex",
-    "href": "trabajos practicos/tp 04.html#to-latex",
+    "objectID": "trabajos practicos/tp 04.html#ganancia-de-masa",
+    "href": "trabajos practicos/tp 04.html#ganancia-de-masa",
     "title": "TP 04",
-    "section": "0.3 to latex",
-    "text": "0.3 to latex\nVer",
+    "section": "2.1 Ganancia de masa",
+    "text": "2.1 Ganancia de masa\nUn óxido de tierras raras gana oxígeno cuando se calienta a alta temperatura en una atmósfera rica en oxígeno. La Tabla muestra el aumento de masa de doce muestras del óxido, las cuales fueron mantenidas a 600 °C durante 10 horas.\n\nTabla ganancia de masa para 12 muestras\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGanancia de masa (mg)\n6.4\n6.3\n5.6\n6.8\n5.5\n5.0\n6.2\n6.1\n5.5\n5.0\n6.2\n6.3\n\n\n\n\n\nCalcular:\n\nla media 2.la desviación estándar 3.la varianza de los valores",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 04.html#capilaridad",
+    "href": "trabajos practicos/tp 04.html#capilaridad",
+    "title": "TP 04",
+    "section": "2.2 Capilaridad",
+    "text": "2.2 Capilaridad\nLa siguiente tabla muesra la altura a la que asciende una columna de agua en un tubo debido al efecito de capilaridad:\n\nAltura del ascenso por capilaridad en un tubo\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAltura (cm)\n4.15\n4.10\n4.12\n4.12\n4.32\n4.20\n4.18\n4.13\n4.15\n\n\n\n\n\nCalcular:\n\nMedia\nMediana\nRango\nVarianza\nDesviación estándar",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/tp 04.html#plomo-en-agua",
+    "href": "trabajos practicos/tp 04.html#plomo-en-agua",
+    "title": "TP 04",
+    "section": "3.1 Plomo en agua",
+    "text": "3.1 Plomo en agua\nLa siguiente tabla muestra el contenido de plomo en partes por mil millon en el agua de un río.\n\n\n\n43\n57\n40\n42\n46\n56\n64\n54\n43\n52\n\n\n\n\n58\n35\n52\n41\n40\n57\n56\n54\n46\n53\n\n\n53\n51\n53\n53\n57\n45\n49\n50\n57\n46\n\n\n49\n67\n70\n56\n57\n42\n54\n56\n51\n53\n\n\n60\n49\n48\n40\n47\n54\n66\n51\n46\n44\n\n\n48\n51\n51\n42\n54\n56\n45\n49\n68\n36\n\n\n48\n59\n44\n47\n48\n66\n63\n51\n58\n54\n\n\n49\n55\n51\n54\n61\n48\n49\n46\n69\n60\n\n\n49\n62\n46\n54\n51\n48\n65\n52\n52\n61\n\n\n45\n59\n47\n56\n56\n52\n40\n41\n49\n67\n\n\n\n\nConstruya un histograma con clases comenzando en 30 ppmm hasta 70 ppmm a intervalos de 5 ppmm.\nCalcule la media\nCalcule la mediana\nCalcule la moda\n\nSi prefiere, se puede acceder al .csv de los datos acá",
     "crumbs": [
       "trabajos practicos",
       "TP 04"
@@ -422,7 +444,7 @@
     "href": "calendario.html#calendario-de-clases",
     "title": "Calendario de clases",
     "section": "Calendario de clases",
-    "text": "Calendario de clases\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n26/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n\nMiércoles\n02/04/25\nDía del Veterano y de los Caídos en la Guerra de Malvinas\n\n\n✏️\n\n\n\n\n2\nMiércoles\n09/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n📓\n🎥\n\n\n\n\n\n3\nMiércoles\n16/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n23/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n30/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝\n\n\n\n6\nMiércoles\n07/05/25\nLibre Office Writer. Bibliografía. Integración con Zotero\n📓\n🎥\n\n\n\n\n\n7\nMiércoles\n14/05/25\nLibre Office Calc. Funciones elementales\n\n\n\n📝\n\n\n\n8\nMiércoles\n21/05/25\nLibre Office Calc. Funciones de estadística\n\n\n\n\n\n\n\n9\nMiércoles\n28/05/25\nLibre Office Calc. Gráficas VIRTUAL\n\n\n\n\n\n\n\n10\nMiércoles\n04/06/25\nLibre Office Calc. Gráficas: Linealización de datos\n\n\n\n📝\n\n\n\n11\nMiércoles\n11/06/25\nLibre Office Calc. Solver\n\n\n\n\n\n\n\n12\nMiércoles\n18/06/25\nLibre Office Calc + Writer. Integración\n\n\n\n📝\n\n\n\n13\nMiércoles\n25/06/25\nCONSULTAS PRIMER PARCIAL\n\n\n\n\nC1P\n\n\n14\nMiércoles\n02/07/25\nPRIMER PARCIAL\n\n\n\n\n1P\n\n\n\nMiércoles\n09/07/25\nDía de la Independencia\n\n\n\n\n\n\n\n15\nMiércoles\n16/07/25\nRECUPERATORIO PRIMER PARCIAL\n\n\n\n\nR1P\n\n\n16\nMiércoles\n13/08/25\nUNIDAD 5\n\n\n\n\n\n\n\n17\nMiércoles\n20/08/25\nUNIDAD 5\n\n\n\n\n\n\n\n18\nMiércoles\n27/08/25\nUNIDAD 5\n\n\n\n\n\n\n\n19\nMiércoles\n03/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n20\nMiércoles\n10/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n21\nMiércoles\n17/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n22\nMiércoles\n24/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n\nMiércoles\n01/10/25\nLlamado a finales (sin clases)\n\n\n\n\n\n\n\n23\nMiércoles\n08/10/25\nUNIDAD 5\n\n\n\n\n\n\n\n24\nMiércoles\n15/10/25\nUNIDAD 5\n\n\n\n\n\n\n\n25\nMiércoles\n22/10/25\nUNIDAD 5\n\n\n\n\n\n\n\n26\nMiércoles\n29/10/25\nCONSULTAS SEGUNDO PARCIAL\n\n\n\n\nC2P\n\n\n27\nMiércoles\n05/11/25\nSEGUNDO PARCIAL\n\n\n\n\n2P\n\n\n28\nMiércoles\n12/11/25\nRECUPERATORIO SEGUNDO PARCIAL\n\n\n\n\nR2P\n\n\n29\nMiércoles\n19/11/25\nRECUPERATORIOS Y CONSULTAS PARA FINAL\n\n\n\n\nRCF",
+    "text": "Calendario de clases\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\n\n\n\n\n1\nMiércoles\n26/03/25\nLibre Office. Instalación e introdución a Writer. Estilos\n📓\n\n\n📝\n\n\n\n\nMiércoles\n02/04/25\nDía del Veterano y de los Caídos en la Guerra de Malvinas\n\n\n✏️\n\n\n\n\n2\nMiércoles\n09/04/25\nLibre Office Writer. Figuras, leyendas y remisiones\n📓\n🎥\n\n\n\n\n\n3\nMiércoles\n16/04/25\nLibre Office Writer. Latex vía TexMaths.\n📓\n\n\n\n\n\n\n4\nMiércoles\n23/04/25\nLibre Office Writer. Personalización de página\n📓\n\n\n\n\n\n\n5\nMiércoles\n30/04/25\nLibre Office Writer. Tablas, sumarios e índices\n📓\n\n\n📝\n\n\n\n6\nMiércoles\n07/05/25\nAUSENTE POR ENFERMEDAD\n\n\n\n\n\n\n\n7\nMiércoles\n14/05/25\nLibre Office Writer. Bibliografía. Integración con Zotero\n\n\n\n📝\n\n\n\n8\nMiércoles\n21/05/25\nLibre Office Calc. Funciones Elementales\n\n\n\n\n\n\n\n9\nMiércoles\n28/05/25\nLibre Office Calc. Gráficas VIRTUAL\n\n\n\n\n\n\n\n10\nMiércoles\n04/06/25\nLibre Office Calc. Histogramas y funciones de estadística\n\n\n\n📝\n\n\n\n11\nMiércoles\n11/06/25\nLibre Office Calc. Gráficas: Linealización de datos\n\n\n\n\n\n\n\n12\nMiércoles\n18/06/25\nLibre Office Calc. Solver\n\n\n\n📝\n\n\n\n13\nMiércoles\n25/06/25\nCONSULTAS PRIMER PARCIAL\n\n\n\n\nC1P\n\n\n14\nMiércoles\n02/07/25\nPRIMER PARCIAL\n\n\n\n\n1P\n\n\n\nMiércoles\n09/07/25\nDía de la Independencia\n\n\n\n\n\n\n\n15\nMiércoles\n16/07/25\nRECUPERATORIO PRIMER PARCIAL\n\n\n\n\nR1P\n\n\n16\nMiércoles\n13/08/25\nUNIDAD 5\n\n\n\n\n\n\n\n17\nMiércoles\n20/08/25\nUNIDAD 5\n\n\n\n\n\n\n\n18\nMiércoles\n27/08/25\nUNIDAD 5\n\n\n\n\n\n\n\n19\nMiércoles\n03/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n20\nMiércoles\n10/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n21\nMiércoles\n17/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n22\nMiércoles\n24/09/25\nUNIDAD 5\n\n\n\n\n\n\n\n\nMiércoles\n01/10/25\nLlamado a finales (sin clases)\n\n\n\n\n\n\n\n23\nMiércoles\n08/10/25\nUNIDAD 5\n\n\n\n\n\n\n\n24\nMiércoles\n15/10/25\nUNIDAD 5\n\n\n\n\n\n\n\n25\nMiércoles\n22/10/25\nUNIDAD 5\n\n\n\n\n\n\n\n26\nMiércoles\n29/10/25\nCONSULTAS SEGUNDO PARCIAL\n\n\n\n\nC2P\n\n\n27\nMiércoles\n05/11/25\nSEGUNDO PARCIAL\n\n\n\n\n2P\n\n\n28\nMiércoles\n12/11/25\nRECUPERATORIO SEGUNDO PARCIAL\n\n\n\n\nR2P\n\n\n29\nMiércoles\n19/11/25\nRECUPERATORIOS Y CONSULTAS PARA FINAL\n\n\n\n\nRCF",
     "crumbs": [
       "Info Cursada",
       "Calendario de clases"
@@ -715,7 +737,18 @@
     "href": "clases/clase-09.html#varianza-y-desviación-estándar",
     "title": "Clase 09",
     "section": "Varianza y Desviación Estándar",
-    "text": "Varianza y Desviación Estándar\nLa varianza y la desviación estándar son medidas de dispersión que nos indican cuán dispersos están los datos respecto a la media.\nLa varianza (\\(\\sigma^2\\)) se define como el promedio de los cuadrados de las diferencias entre cada dato y la media:\n\\[\\sigma^2 = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}\\]\nLa desviación estándar (\\(\\sigma\\)) es simplemente la raíz cuadrada de la varianza:\n\\[\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}}\\]\n\nDeducción\nLa varianza surge al considerar cómo se dispersan los datos alrededor de la media. Primero, calculamos la distancia de cada dato respecto a la media \\(\\bar{x}\\):\n\\[\nd_i = x_i - \\bar{x}\n\\]\nSi sumamos estas distancias, obtenemos cero (ya que la media balancea los datos). Para evitar esto, usamos los cuadrados de las diferencias:\n\\[\n\\sum_{i=1}^{n} (x_i - \\bar{x})^2\n\\]\nDividiendo por \\(n\\), obtenemos la varianza, que mide la dispersión promedio de los datos. La desviación estándar es su raíz cuadrada, proporcionando una medida en las mismas unidades que los datos originales.\n\n\nInterpretación\n\nValores pequeños de \\(\\sigma\\) indican poca variabilidad en los datos.\nValores grandes de \\(\\sigma\\) muestran que los datos están más dispersos respecto a la media.\n\n\\[\n\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}}\n\\]",
+    "text": "Varianza y Desviación Estándar\nLa varianza y la desviación estándar son medidas de dispersión que nos indican cuán dispersos están los datos respecto a la media.\nLa varianza (\\(\\sigma^2\\)) se define como el promedio de los cuadrados de las diferencias entre cada dato y la media:\n\\[\\sigma^2 = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}\\]\nLa desviación estándar (\\(\\sigma\\)) es simplemente la raíz cuadrada de la varianza:\n\\[\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}}\\]\n\nDeducción\nLa varianza surge al considerar cómo se dispersan los datos alrededor de la media. Primero, calculamos la distancia de cada dato respecto a la media \\(\\bar{x}\\):\n\\[\nd_i = x_i - \\bar{x}\n\\]\nSi sumamos estas distancias, obtenemos cero (ya que la media balancea los datos). Para evitar esto, usamos los cuadrados de las diferencias:\n\\[\n\\sum_{i=1}^{n} (x_i - \\bar{x})^2\n\\]\nDividiendo por \\(n\\), obtenemos la varianza, que mide la dispersión promedio de los datos. La desviación estándar es su raíz cuadrada, proporcionando una medida en las mismas unidades que los datos originales.\n\n\nInterpretación\n\nValores pequeños de \\(\\sigma\\) indican poca variabilidad en los datos.\nValores grandes de \\(\\sigma\\) muestran que los datos están más dispersos respecto a la media.\n\n\\[\n\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n}}\n\\]\n\n\nDesviación para una muestra o una población\nCuando consideramos el promedio \\(\\bar{x}\\) para una muestra, no estamos accediendo a los posibles infinitos valores que pudiera tener la población en estudio, por ejemplo, no podemos medir la carga de todos los electrones del universo para luego promediarlas, por lo que nuestras medidas están restringidas no a la población, sino a una muestra de ella.\nPara calcular la desviación estándar para una muestra (y no para una población) debemos primero usar los datos de la muestra para obtener \\(\\bar{x}\\), al hacer esto, por la definición de media, existen sólo \\(n-1\\) valores realimente “libres” en cuanto a la diferencia que pueden tener con la media, el último valor que intentemos calcular necesariamente deberá ser tal que la suma nos de cero.\nPor eso se dice que el sistema tiene “un grado menos de libertad” y siempre que calculemos la varianza o la desviación estándar para una muestra, la fórmula se ajusta de la siguiente forma:\n\\[\n\\sigma = \\sqrt{\\sigma^2} = \\sqrt{\\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n-1}}\n\\]\nSi el número de muestras \\(n\\) es suficientemente grande, \\(\\bar{x} \\to \\mu\\) (la media de la muestra tiene a la media de la población) y por lo tanto, el ajuste no representa una gran cambio en resultado.",
+    "crumbs": [
+      "Clases",
+      "Clase 09"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#resumen-estadístico",
+    "href": "clases/clase-09.html#resumen-estadístico",
+    "title": "Clase 09",
+    "section": "Resumen estadístico",
+    "text": "Resumen estadístico\nSi hacemos datos&gt; estadísticas &gt; estadíticas descriptivas podremos obtener los parámetros estadísticos mencionados arriba (junto a otros que no trabajaremos) para un intervalo de celdas de la planilla.",
     "crumbs": [
       "Clases",
       "Clase 09"
@@ -726,7 +759,18 @@
     "href": "clases/clase-09.html#histogramas",
     "title": "Clase 09",
     "section": "Histogramas",
-    "text": "Histogramas\nUsualmente cuando se tienen datos a tratarse de forma estadística, resulta útil usar hitogramas para representarlos. Por ejemplo, si se efectúan n mediciones para obtener un valor para la constante gravitatoria en la tierra (\\(9,8 \\dfrac{m}{s^2}\\)) y si se han tomando los recaudos necesarios para llevar adelante el experimento es de esperar que la gran mayoría de los valores obtenidos se agrupen cerca del valor más probable, que dependiendo de la incerteza del método o los experimentadores, podrá ser más o menos cercano al “verdadero”, que es aquél contra el cual comparamos nuestros resultados.\nEn este caso, si graficamos “cuantas veces obutvimos” valores para cierto intervalo o clase, obtendremos algo similar a esto:\n\n\n\n\n\n\n\n\n\nDonde se observa una distribución de datos normal como se ve en la siguiente figura:\n\n\n\nDistribución normal y porcentaje del área bajo la curva\n\n\nSi por el contrario, tiramos un dado n veces (y lo hacemos muuuuchas veces) veremos que la distribución de “cuantas veces salió el uno”, “cuantas veces salió el dos”, etc. tiene esta pinta:\n\n\n\n\n\n\n\n\n\nEn ambos casos estamos viendo un gráfico de clase vs frecuencia, las clases pueden ser intervalos de alguna magnitud medida: lluvias de entre 3 y 5 mm, alturas entre 1.6 y 1.8 m, etc y la frecuencia la cantidad de elementos que pertenecen a esa clase o intervalo.\nUna regla útil para saber en cuantos intervalos debemos “seccionar” nuestros datos es usar \\(N=\\sqrt{n}\\) en donde \\(N\\) es la cantidad de intervalos y \\(n\\) la cantidad de datos. El ancho del intervalo, luego de reondear \\(N\\) a un entero sera \\(\\frac{\\text{rango}}{N}\\) en donde el rango es \\(\\text{valor máximo} - \\text{valor minimo}\\).\n\nFuncion FRECUENCIA() y funciones matriciales\nLas funciones matriciales son aquellas cuyo resultado no ocupa una única celda y se extiende por lo tanto, como una matriz o vector dependiendo de la función. Las funciones matriciales se ven encerradas entre llaves si se mira la barra de fórmulas, pero estas llaves no se ingresan manualmente sino usando la combinación de teclas ctrl + shift + enter al momento de ejecutar la función.\nLa función FRECUENCIA(DATOS,CLASES) es una función matricial y como indica su sintaxis tiene dos argumentos, los datos que usará y los intervalos en los que ubicará a los datos. Freuencia devuelve una matriz donde indica cuántos elementos hay en cada intervalo indicado.\nCon los datos de frecuencia y los intervalos (clases) se construye un gráfico de barras, con ambas columnas (o filas) seleccionando “etiquetas en primera columna (o fila)”.",
+    "text": "Histogramas\nUsualmente cuando se tienen datos a tratarse de forma estadística, resulta útil usar hitogramas para representarlos. Por ejemplo, si se efectúan n mediciones para obtener un valor para la constante gravitatoria en la tierra (\\(9,8 \\dfrac{m}{s^2}\\)) y si se han tomando los recaudos necesarios para llevar adelante el experimento es de esperar que la gran mayoría de los valores obtenidos se agrupen cerca del valor más probable, que dependiendo de la incerteza del método o los experimentadores, podrá ser más o menos cercano al “verdadero”, que es aquél contra el cual comparamos nuestros resultados.\nEn este caso, si graficamos “cuantas veces obutvimos” valores para cierto intervalo o clase, obtendremos algo similar a esto:\n\n\n\n\n\n\n\n\n\nDonde se observa una distribución de datos normal como se ve en la siguiente figura:\n\n\n\nDistribución normal y porcentaje del área bajo la curva\n\n\nSi por el contrario, tiramos un dado n veces (y lo hacemos muuuuchas veces) veremos que la distribución de “cuantas veces salió el uno”, “cuantas veces salió el dos”, etc. tiene esta pinta:\n\n\n\n\n\n\n\n\n\nEn ambos casos estamos viendo un gráfico de clase vs frecuencia, las clases pueden ser intervalos de alguna magnitud medida: lluvias de entre 3 y 5 mm, alturas entre 1.6 y 1.8 m, etc y la frecuencia la cantidad de elementos que pertenecen a esa clase o intervalo.\nUna regla útil para saber en cuantos intervalos debemos “seccionar” nuestros datos es usar \\(N=\\sqrt{n}\\) en donde \\(N\\) es la cantidad de intervalos y \\(n\\) la cantidad de datos. El ancho del intervalo, luego de reondear \\(N\\) a un entero sera \\(\\frac{\\text{rango}}{N}\\) en donde el rango es \\(\\text{valor máximo} - \\text{valor minimo}\\).\n\nFuncion FRECUENCIA() y funciones matriciales\nLas funciones matriciales son aquellas cuyo resultado no ocupa una única celda y se extiende por lo tanto, como una matriz o vector sobre la planilla dependiendo de la función. Las funciones matriciales se ven encerradas entre llaves si se mira la barra de fórmulas, pero estas llaves no se ingresan manualmente sino usando la combinación de teclas ctrl + shift + enter al momento de ejecutar la función.\nLa función FRECUENCIA(DATOS,CLASES) es una función matricial y como indica su sintaxis tiene dos argumentos, los datos que usará y los intervalos en los que ubicará a los datos. Freuencia devuelve una matriz donde indica cuántos elementos hay en cada intervalo indicado.\n\n\nCrear un histograma\n\nUna vez que tenemos nuestro datos en la planilla debemos decidicir cuántos intervalos o clases construiremos a partir de ellos, una vez hecho eso, creamos una celda qe contenga como valor el extremo superior del intervalo (podemos desplegarlos en columnas o en filas).\nEn Otra celda, llamamos a la función FRECUENCIA y seleccionamos los datos y nuestras clases. No olvidar de apretar ctrl + shift + enter al finalizar.\nCon los datos de frecuencia y los intervalos (clases) se construye un gráfico de barras, con ambas columnas (o filas) seleccionando “etiquetas en primera columna (o fila)”.",
+    "crumbs": [
+      "Clases",
+      "Clase 09"
+    ]
+  },
+  {
+    "objectID": "clases/clase-09.html#ejercitación",
+    "href": "clases/clase-09.html#ejercitación",
+    "title": "Clase 09",
+    "section": "Ejercitación",
+    "text": "Ejercitación\nUsando este archivo como base, crear un histograma para la la hoja masas.",
     "crumbs": [
       "Clases",
       "Clase 09"
