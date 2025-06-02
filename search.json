@@ -15,7 +15,7 @@
     "href": "trabajos practicos/tp 04.html",
     "title": "TP 04",
     "section": "",
-    "text": "La siguiente tabla muestra la frecuencia de resonancia medida para un circuito de corriente alterna\n\nresonancia de circuito ac\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrequency (Hz)\n2150\n2120\n2134\n2270\n2144\n2156\n2139\n2122\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos\n\n\n\n\nLa siguiente tabla muestra los valores de capacitancia medidos para un capacitor:\n\nTabla de capacitancia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapacitance (pF)\n103.7\n100.3\n98.4\n99.3\n101.0\n106.1\n103.9\n101.5\n100.9\n105.3\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
+    "text": "La siguiente tabla muestra la frecuencia de resonancia medida para un circuito de corriente alterna\n\nresonancia de circuito ac\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrequencia (Hz)\n2150\n2120\n2134\n2270\n2144\n2156\n2139\n2122\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos\n\n\n\n\nLa siguiente tabla muestra los valores de capacitancia medidos para un capacitor:\n\nTabla de capacitancia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapacitancia(pF)\n103.7\n100.3\n98.4\n99.3\n101.0\n106.1\n103.9\n101.5\n100.9\n105.3\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
     "crumbs": [
       "trabajos practicos",
       "TP 04"
@@ -26,7 +26,7 @@
     "href": "trabajos practicos/tp 04.html#frecuencia-de-resonancia",
     "title": "TP 04",
     "section": "",
-    "text": "La siguiente tabla muestra la frecuencia de resonancia medida para un circuito de corriente alterna\n\nresonancia de circuito ac\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrequency (Hz)\n2150\n2120\n2134\n2270\n2144\n2156\n2139\n2122\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
+    "text": "La siguiente tabla muestra la frecuencia de resonancia medida para un circuito de corriente alterna\n\nresonancia de circuito ac\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrequencia (Hz)\n2150\n2120\n2134\n2270\n2144\n2156\n2139\n2122\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
     "crumbs": [
       "trabajos practicos",
       "TP 04"
@@ -37,7 +37,7 @@
     "href": "trabajos practicos/tp 04.html#capacitancia",
     "title": "TP 04",
     "section": "",
-    "text": "La siguiente tabla muestra los valores de capacitancia medidos para un capacitor:\n\nTabla de capacitancia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapacitance (pF)\n103.7\n100.3\n98.4\n99.3\n101.0\n106.1\n103.9\n101.5\n100.9\n105.3\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
+    "text": "La siguiente tabla muestra los valores de capacitancia medidos para un capacitor:\n\nTabla de capacitancia\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapacitancia(pF)\n103.7\n100.3\n98.4\n99.3\n101.0\n106.1\n103.9\n101.5\n100.9\n105.3\n\n\n\n\n\n\nCalcule el promedio y la mediana para los valores medidos",
     "crumbs": [
       "trabajos practicos",
       "TP 04"
@@ -48,7 +48,7 @@
     "href": "trabajos practicos/tp 04.html#ganancia-de-masa",
     "title": "TP 04",
     "section": "2.1 Ganancia de masa",
-    "text": "2.1 Ganancia de masa\nUn óxido de tierras raras gana oxígeno cuando se calienta a alta temperatura en una atmósfera rica en oxígeno. La Tabla muestra el aumento de masa de doce muestras del óxido, las cuales fueron mantenidas a 600 °C durante 10 horas.\n\nTabla ganancia de masa para 12 muestras\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGanancia de masa (mg)\n6.4\n6.3\n5.6\n6.8\n5.5\n5.0\n6.2\n6.1\n5.5\n5.0\n6.2\n6.3\n\n\n\n\n\nCalcular:\n\nla media 2.la desviación estándar 3.la varianza de los valores",
+    "text": "2.1 Ganancia de masa\nUn óxido de tierras raras gana oxígeno cuando se calienta a alta temperatura en una atmósfera rica en oxígeno. La Tabla muestra el aumento de masa de doce muestras del óxido, las cuales fueron mantenidas a 600 °C durante 10 horas.\n\nTabla ganancia de masa para 12 muestras\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGanancia de masa (mg)\n6.4\n6.3\n5.6\n6.8\n5.5\n5.0\n6.2\n6.1\n5.5\n5.0\n6.2\n6.3\n\n\n\n\n\nCalcular:\n\nla media\nla desviación estándar\nla varianza de los valores",
     "crumbs": [
       "trabajos practicos",
       "TP 04"
@@ -781,7 +781,7 @@
     "href": "clases/clase-09.html#referencias",
     "title": "Clase 09",
     "section": "Referencias",
-    "text": "Referencias\n\n:link: Histogramas en LO\n:link: Datasets CERN\n:link: Distribución normal en matplotlib\n:link: Histogramas en matplotlib",
+    "text": "Referencias\n\n🔗 Histogramas en LO\n🔗 Datasets CERN\n🔗 Distribución normal en matplotlib\n🔗 Histogramas en matplotlib",
     "crumbs": [
       "Clases",
       "Clase 09"
