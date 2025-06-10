@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Clase 11 – C1-661 2025">
@@ -280,12 +309,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">TP 05</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../trabajos practicos/tp 06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TP 06</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -300,6 +323,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#fundamientación-del-solver" id="toc-fundamientación-del-solver" class="nav-link active" data-scroll-target="#fundamientación-del-solver">Fundamientación del solver</a></li>
   <li><a href="#uso-de-solver" id="toc-uso-de-solver" class="nav-link" data-scroll-target="#uso-de-solver">Uso de solver</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
 </nav>
     </div>
@@ -328,9 +352,36 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="fundamientación-del-solver" class="level2">
 <h2 class="anchored" data-anchor-id="fundamientación-del-solver">Fundamientación del solver</h2>
+<p>Si suponemos que los datos que se han obtenido de un experimento no pueden ser linealizados para su análisis, o si el modelo matemático al que deseamos ajustarlos no es ninguna de las funciones que la planilla de cálculo ofrece como línea de tendencia, no está todo perdido: podemos utilizar la herramienta solver para ajustar nuestros datos a un modelo matemático de <span class="math inline">\(n\)</span> parámetros que podremos obtener de los datos.</p>
+<p>El planteo teórico se establece de la misma forma que para los cuadrados mínimos</p>
+<p><span class="math display">\[
+\sum_i (f(x_i,\beta) - y_i)^2
+\]</span></p>
+<p>en donde <span class="math inline">\(\beta\)</span> son los parámetros que podemos variar, y <span class="math inline">\(x_i\)</span> y <span class="math inline">\(y_i\)</span> conforman los pares de valores obtenidos experimentalmente (suponemos el caso de una variable de entrada y una de salida por simplicidad en la notación).</p>
+<p>El principio de funcionamiento de Solver, aunque no profundizaremos en ello, se basa en minimizar las diferencias entre el modelo propuesto y los datos al iterar sobre los valores de los parámetros (en lugar de encontrar el mínimo de forma analítica como haríamos en lápiz y papel) hasta que dichas diferencias alcancen un mínimo cuya magnitud puede establecerse de antemano.</p>
 </section>
 <section id="uso-de-solver" class="level2">
 <h2 class="anchored" data-anchor-id="uso-de-solver">Uso de solver</h2>
+<div id="a111e3b7" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="clase-11_files/figure-html/cell-2-output-1.png" width="582" height="411" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<ol type="1">
+<li><a href="http://www.sc.ehu.es/sbweb/fisica3/datos/ajuste/nolineal.html"><span class="emoji" data-emoji="link">🔗</span> Ajuste no lineal</a></li>
+<li><a href="https://cidta.usal.es/cursos/simulacion/practicas/Practica7/ajustecurvas.pdf"><span class="emoji" data-emoji="link">🔗</span> Ajustes de ecuaciones a curvas</a></li>
+<li><a href="https://materias.df.uba.ar/l1b2023c2/files/2012/07/Clase-09-Labo-1-Ajustes-no-lineales.pdf"><span class="emoji" data-emoji="link">🔗</span> Ajustes no lineales UBA</a></li>
+<li><a href="https://matesup.cl/cursos/modelos/08-ajustes-no-lineales/regresion-no-lin.pdf"><span class="emoji" data-emoji="link">🔗</span> Ajustes para otras formas funcionales</a></li>
+<li><a href="https://materias.df.uba.ar/f1qa2020c2/files/2020/10/guia_colab_06_no_lineal.ipynb-Colaboratory.pdf"><span class="emoji" data-emoji="link">🔗</span> Ajustes no lineales 2</a></li>
+<li><a href="https://proglinealtemas.blogspot.com/2024/11/utilizando-solver-en-libre-office.html"><span class="emoji" data-emoji="link">🔗</span> Solver en libre office</a></li>
+</ol>
 
 
 </section>

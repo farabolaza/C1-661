@@ -67,10 +67,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="TP 05 – C1-661 2025">
-<meta property="og:description" content="Gráficas en Calc">
+<meta property="og:description" content="Linealización de datos, Solver y gráficas.">
 <meta property="og:site_name" content="C1-661 2025">
 </head>
 
@@ -280,12 +309,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">TP 05</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../trabajos practicos/tp 06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TP 06</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -298,7 +321,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#modalidad-y-fecha-de-entrega" id="toc-modalidad-y-fecha-de-entrega" class="nav-link active" data-scroll-target="#modalidad-y-fecha-de-entrega"><span class="header-section-number">1</span> Modalidad y fecha de entrega</a></li>
+  <li><a href="#linealización-de-datos" id="toc-linealización-de-datos" class="nav-link active" data-scroll-target="#linealización-de-datos"><span class="header-section-number">1</span> Linealización de datos</a>
+  <ul class="collapse">
+  <li><a href="#caída-libre-con-resistencia" id="toc-caída-libre-con-resistencia" class="nav-link" data-scroll-target="#caída-libre-con-resistencia"><span class="header-section-number">1.1</span> Caída libre con resistencia</a></li>
+  <li><a href="#ley-de-enfriamiento-de-newton" id="toc-ley-de-enfriamiento-de-newton" class="nav-link" data-scroll-target="#ley-de-enfriamiento-de-newton"><span class="header-section-number">1.2</span> Ley de enfriamiento de Newton</a></li>
+  <li><a href="#posición-de-un-cuerpo-con-rozamiento-viscoso" id="toc-posición-de-un-cuerpo-con-rozamiento-viscoso" class="nav-link" data-scroll-target="#posición-de-un-cuerpo-con-rozamiento-viscoso"><span class="header-section-number">1.3</span> Posición de un cuerpo con rozamiento viscoso</a></li>
+  <li><a href="#decaimiento-radioactivo" id="toc-decaimiento-radioactivo" class="nav-link" data-scroll-target="#decaimiento-radioactivo"><span class="header-section-number">1.4</span> Decaimiento Radioactivo</a></li>
+  </ul></li>
+  <li><a href="#solver" id="toc-solver" class="nav-link" data-scroll-target="#solver"><span class="header-section-number">2</span> Solver</a></li>
+  <li><a href="#gráficas" id="toc-gráficas" class="nav-link" data-scroll-target="#gráficas"><span class="header-section-number">3</span> Gráficas</a></li>
+  <li><a href="#modalidad-y-fecha-de-entrega" id="toc-modalidad-y-fecha-de-entrega" class="nav-link" data-scroll-target="#modalidad-y-fecha-de-entrega"><span class="header-section-number">4</span> Modalidad y fecha de entrega</a></li>
   </ul>
 </nav>
     </div>
@@ -308,7 +340,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/tp 05.html">TP 05</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">TP 05</h1>
-<p class="subtitle lead">Gráficas en Calc</p>
+<p class="subtitle lead">Linealización de datos, Solver y gráficas.</p>
 </div>
 
 
@@ -325,8 +357,95 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="modalidad-y-fecha-de-entrega" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Modalidad y fecha de entrega</h1>
+<section id="linealización-de-datos" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Linealización de datos</h1>
+<section id="caída-libre-con-resistencia" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="caída-libre-con-resistencia"><span class="header-section-number">1.1</span> Caída libre con resistencia</h2>
+<p>Un modelo posible para la velocidad de caída de un cuerpo que experimenta resistencia con el aire puede ser :</p>
+<p><span class="math display">\[
+v(t)=v_t \left(1-e^{kt} \right)
+\]</span></p>
+<p>Donde <span class="math inline">\(v_t\)</span> es la velocidad terminal del cuerpo (sumna de fuerzas igual a cero)</p>
+<div id="0e567b8d" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="tp 05_files/figure-html/cell-2-output-1.png" width="566" height="411" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol type="1">
+<li>Importar los datos de <a href="..\assets/datos_caida_libre.csv">este archivo</a> a calc</li>
+<li>Graficar los datos originales</li>
+<li>Linealizar el modelo</li>
+<li>Obtener el valor de <span class="math inline">\(k\)</span> y el modelo físico resultante.</li>
+</ol>
+<p>RTA: <span class="math inline">\(k=0,2\)</span>, <span class="math inline">\(v(t)=50\cdot (1-e^{-0,2t})\)</span></p>
+</section>
+<section id="ley-de-enfriamiento-de-newton" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="ley-de-enfriamiento-de-newton"><span class="header-section-number">1.2</span> Ley de enfriamiento de Newton</h2>
+<p>Según la ley de enfriamiento de un cuerpo de Newton, la temperatura de un cuerpo en un entorno viene dada por el siguiente modelo: <span class="math display">\[
+T(t) = T_{\text{amb}} + (T_0 - T_{\text{amb}}) e^{-kt}
+\]</span></p>
+<p>Aplique los conceptos de linealización para ajustar los datos que se le proveen.</p>
+<div id="02f3bb41" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="tp 05_files/figure-html/cell-3-output-1.png" width="566" height="411" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol type="1">
+<li>Importar los datos de <a href="..\assets/datos_enfriamiento.csv.csv">este archivo</a> a calc.</li>
+<li>Grafique los datos. Encuentre <span class="math inline">\(T_0\)</span> y <span class="math inline">\(T_{\text{amb}}\)</span></li>
+<li>Graficar ln(T - T_amb) vs.&nbsp;tiempo.</li>
+<li>Realizar regresión lineal para obtener <span class="math inline">\(k\)</span>.</li>
+</ol>
+<p>RTA: <span class="math inline">\(T_0=80\)</span>, <span class="math inline">\(T_{\text{amb}}=20\)</span>, <span class="math inline">\(K=0,1\)</span></p>
+</section>
+<section id="posición-de-un-cuerpo-con-rozamiento-viscoso" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="posición-de-un-cuerpo-con-rozamiento-viscoso"><span class="header-section-number">1.3</span> Posición de un cuerpo con rozamiento viscoso</h2>
+<p>Para determinado movimiento, se supone que el modelo que lo representa esta dado por: <span class="math display">\[
+x(t)=x_0 \cdot e^{-bt}
+\]</span></p>
+<p>LibreOffice Calc:</p>
+<ol type="1">
+<li>Importar los datos de <a href="..\assets/datos_rozamiento.csv">este archivo</a> a calc</li>
+<li>Grafique los datos</li>
+<li>Linealizar le modelo</li>
+<li>Graficar y realizar regresión lineal para obtener <span class="math inline">\(b\)</span>.</li>
+<li>Escriba la ecuación con los parámetros de los datos</li>
+</ol>
+<p>RTA: <span class="math inline">\(x_0=10\)</span>, <span class="math inline">\(b=0,3\)</span></p>
+</section>
+<section id="decaimiento-radioactivo" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="decaimiento-radioactivo"><span class="header-section-number">1.4</span> Decaimiento Radioactivo</h2>
+<p>El número de partículas de cierto isótopo que se desintegra por emisión radioactiva se supone modelado por la siguiente expesión:</p>
+<p><span class="math display">\[
+N(t) = N_0 e^{-\lambda t}
+\]</span></p>
+<p>Donde <span class="math inline">\(N_0\)</span> es la cantidad de particulas iniciales y <span class="math inline">\(\lambda\)</span> la constante de desintegración.</p>
+<ol type="1">
+<li>Importar los datos de <a href="..\assets/datos_desintegracion.csv.csv">este archivo</a> a calc</li>
+<li>Graficar los datos.</li>
+<li>Linealizar el modelo.</li>
+<li>Graficar los datos linealizados</li>
+<li>Encuentre <span class="math inline">\(\lambda\)</span> y escriba la ecuación para los datos.</li>
+</ol>
+<p>RTA: <span class="math inline">\(N_0=500\)</span>, <span class="math inline">\(\lambda = 0,05\)</span></p>
+</section>
+</section>
+<section id="solver" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Solver</h1>
+</section>
+<section id="gráficas" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Gráficas</h1>
+</section>
+<section id="modalidad-y-fecha-de-entrega" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Modalidad y fecha de entrega</h1>
 <p>Cada ejercicio deberá estar en una hoja diferente de un mismo libro de Libre Office Calc.</p>
 <p>Vía aula virtual <a href="https://inspt.cvg.utn.edu.ar/course/view.php?id=2201#section-1">acá</a> según fecha indicada en la tarea.</p>
 
