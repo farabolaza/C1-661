@@ -329,8 +329,7 @@ window.Quarto = {
   <li><a href="#decaimiento-radioactivo" id="toc-decaimiento-radioactivo" class="nav-link" data-scroll-target="#decaimiento-radioactivo"><span class="header-section-number">1.4</span> Decaimiento Radioactivo</a></li>
   </ul></li>
   <li><a href="#solver" id="toc-solver" class="nav-link" data-scroll-target="#solver"><span class="header-section-number">2</span> Solver</a></li>
-  <li><a href="#gráficas" id="toc-gráficas" class="nav-link" data-scroll-target="#gráficas"><span class="header-section-number">3</span> Gráficas</a></li>
-  <li><a href="#modalidad-y-fecha-de-entrega" id="toc-modalidad-y-fecha-de-entrega" class="nav-link" data-scroll-target="#modalidad-y-fecha-de-entrega"><span class="header-section-number">4</span> Modalidad y fecha de entrega</a></li>
+  <li><a href="#modalidad-y-fecha-de-entrega" id="toc-modalidad-y-fecha-de-entrega" class="nav-link" data-scroll-target="#modalidad-y-fecha-de-entrega"><span class="header-section-number">3</span> Modalidad y fecha de entrega</a></li>
   </ul>
 </nav>
     </div>
@@ -366,7 +365,7 @@ window.Quarto = {
 v(t)=v_t \left(1-e^{kt} \right)
 \]</span></p>
 <p>Donde <span class="math inline">\(v_t\)</span> es la velocidad terminal del cuerpo (sumna de fuerzas igual a cero)</p>
-<div id="0e567b8d" class="cell" data-execution_count="1">
+<div id="718c9f52" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -389,7 +388,7 @@ v(t)=v_t \left(1-e^{kt} \right)
 T(t) = T_{\text{amb}} + (T_0 - T_{\text{amb}}) e^{-kt}
 \]</span></p>
 <p>Aplique los conceptos de linealización para ajustar los datos que se le proveen.</p>
-<div id="02f3bb41" class="cell" data-execution_count="2">
+<div id="1f11e99c" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -399,7 +398,7 @@ T(t) = T_{\text{amb}} + (T_0 - T_{\text{amb}}) e^{-kt}
 </div>
 </div>
 <ol type="1">
-<li>Importar los datos de <a href="..\assets/datos_enfriamiento.csv.csv">este archivo</a> a calc.</li>
+<li>Importar los datos de <a href="..\assets/datos_enfriamiento.csv">este archivo</a> a calc.</li>
 <li>Grafique los datos. Encuentre <span class="math inline">\(T_0\)</span> y <span class="math inline">\(T_{\text{amb}}\)</span></li>
 <li>Graficar ln(T - T_amb) vs.&nbsp;tiempo.</li>
 <li>Realizar regresión lineal para obtener <span class="math inline">\(k\)</span>.</li>
@@ -429,7 +428,7 @@ N(t) = N_0 e^{-\lambda t}
 \]</span></p>
 <p>Donde <span class="math inline">\(N_0\)</span> es la cantidad de particulas iniciales y <span class="math inline">\(\lambda\)</span> la constante de desintegración.</p>
 <ol type="1">
-<li>Importar los datos de <a href="..\assets/datos_desintegracion.csv.csv">este archivo</a> a calc</li>
+<li>Importar los datos de <a href="..\assets/datos_desintegracion.csv">este archivo</a> a calc</li>
 <li>Graficar los datos.</li>
 <li>Linealizar el modelo.</li>
 <li>Graficar los datos linealizados</li>
@@ -440,12 +439,13 @@ N(t) = N_0 e^{-\lambda t}
 </section>
 <section id="solver" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Solver</h1>
+<ol type="1">
+<li>Usar los archivos del punto anterior y obtener el la ecuación ajustando con <em>solver</em></li>
+<li>Graficar en un mismo lienzo (gráfico) los datos experimentales y la ecuación del ajuste</li>
+</ol>
 </section>
-<section id="gráficas" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Gráficas</h1>
-</section>
-<section id="modalidad-y-fecha-de-entrega" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Modalidad y fecha de entrega</h1>
+<section id="modalidad-y-fecha-de-entrega" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Modalidad y fecha de entrega</h1>
 <p>Cada ejercicio deberá estar en una hoja diferente de un mismo libro de Libre Office Calc.</p>
 <p>Vía aula virtual <a href="https://inspt.cvg.utn.edu.ar/course/view.php?id=2201#section-1">acá</a> según fecha indicada en la tarea.</p>
 

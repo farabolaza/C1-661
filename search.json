@@ -176,7 +176,7 @@
     "href": "clases/clase-11.html#uso-de-solver",
     "title": "Clase 11",
     "section": "Uso de solver",
-    "text": "Uso de solver",
+    "text": "Uso de solver\nNos guiaremos con este archivo de ejemplo\nPara aplicar solver a un conjunto de datos debemos hacer lo siguiente:\n\nTener nuestros datos experimentales en la planilla de cáculo\nCrear el modelo al cual ajustaremos nuestros datos en una celda 2.1 Usar una celda para cada parámetro que deseemos encontrar (dar un valo estimado)\nCrear una columna con las diferencias cuadráticas entre el modelo calculado y el medido\nCrear una celda con la sumatoria de las diferencias cuadráticas\nir a herramientas &gt; solver. Tener seleccionada la celda de la sumatoria de las diferencias cuadráticas.\nSeguir los pasos del menu de solver como se muestra en las imágenes.\n\n\n\n\nMenú de solver\n\n\n\nElegiremos minimizar los valores y luego pondremos las restriccione que consideremos a los signos o intervalos que pueden tener.\nEn opciones seleccionaremos algunas de las opciones no lineales\n\n\n\n\nElección de algoritmo\n\n\n\n\n\nFinalización\n\n\nUna vez ejecutado veremos como los resultados de nuestras columnas variables han cambiado. Si graficamos los valores del modelo junto a los experimentales podremos tener una visualización de que tan “bueno” es el ajuste. Podemos agregar mas puntos para graficar al crear una nueva tabla a partir de nuestro modelo con un intervalo menor entre valores sucesivos.",
     "crumbs": [
       "Clases",
       "Clase 11"

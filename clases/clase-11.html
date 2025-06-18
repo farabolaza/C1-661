@@ -362,15 +362,39 @@ window.Quarto = {
 </section>
 <section id="uso-de-solver" class="level2">
 <h2 class="anchored" data-anchor-id="uso-de-solver">Uso de solver</h2>
-<div id="a111e3b7" class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display">
-<div>
+<p>Nos guiaremos con <a href="..\assets/solver.ods">este archivo de ejemplo</a></p>
+<p>Para aplicar <em>solver</em> a un conjunto de datos debemos hacer lo siguiente:</p>
+<ol type="1">
+<li>Tener nuestros datos experimentales en la planilla de cáculo</li>
+<li>Crear el modelo al cual ajustaremos nuestros datos en una celda 2.1 Usar una celda para cada parámetro que deseemos encontrar (dar un valo estimado)</li>
+<li>Crear una columna con las diferencias cuadráticas entre el modelo calculado y el medido</li>
+<li>Crear una celda con la sumatoria de las diferencias cuadráticas</li>
+<li>ir a <code>herramientas &gt; solver</code>. Tener seleccionada la celda de la sumatoria de las diferencias cuadráticas.</li>
+<li>Seguir los pasos del menu de solver como se muestra en las imágenes.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="clase-11_files/figure-html/cell-2-output-1.png" width="582" height="411" class="figure-img"></p>
+<p><img src="..\assets/calc-solver-01.png" class="img-fluid figure-img"></p>
+<figcaption>Menú de solver</figcaption>
 </figure>
 </div>
+<ol type="1">
+<li>Elegiremos minimizar los valores y luego pondremos las restriccione que consideremos a los signos o intervalos que pueden tener.</li>
+<li>En <code>opciones</code> seleccionaremos algunas de las opciones <code>no lineales</code></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-solver-algoritmo.png" class="img-fluid figure-img"></p>
+<figcaption>Elección de algoritmo</figcaption>
+</figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/calc-solver-fin.png" class="img-fluid figure-img"></p>
+<figcaption>Finalización</figcaption>
+</figure>
 </div>
+<p>Una vez ejecutado veremos como los resultados de nuestras columnas variables han cambiado. Si graficamos los valores del modelo junto a los experimentales podremos tener una visualización de que tan “bueno” es el ajuste. Podemos agregar mas puntos para graficar al crear una nueva tabla a partir de nuestro modelo con un intervalo menor entre valores sucesivos.</p>
 </section>
 <section id="referencias" class="level2">
 <h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
