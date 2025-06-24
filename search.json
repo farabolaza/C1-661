@@ -927,6 +927,28 @@
     ]
   },
   {
+    "objectID": "clases/clase-12.html",
+    "href": "clases/clase-12.html",
+    "title": "Clase 12",
+    "section": "",
+    "text": "La temperatura \\(T\\) a la profundidad \\(x\\) dentro un sólido puede ser modelada mediante la siguiente expresión: \\[\nT(x) = T_0 e^{-kx}\n\\]\nUtilice las herramientas vistas hasta el momento de la siguiente forma\n\n\n\nImportar a calc los datos\nLinealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos\nGraficar en un mismo linezo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica\n\n\n\n\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Difusión térmica en un sólido”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\n\n\n\n\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
+    "crumbs": [
+      "Clases",
+      "Clase 12"
+    ]
+  },
+  {
+    "objectID": "clases/clase-12.html#difusión-térmica-en-un-sólido",
+    "href": "clases/clase-12.html#difusión-térmica-en-un-sólido",
+    "title": "Clase 12",
+    "section": "",
+    "text": "La temperatura \\(T\\) a la profundidad \\(x\\) dentro un sólido puede ser modelada mediante la siguiente expresión: \\[\nT(x) = T_0 e^{-kx}\n\\]\nUtilice las herramientas vistas hasta el momento de la siguiente forma\n\n\n\nImportar a calc los datos\nLinealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos\nGraficar en un mismo linezo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica\n\n\n\n\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Difusión térmica en un sólido”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\n\n\n\n\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
+    "crumbs": [
+      "Clases",
+      "Clase 12"
+    ]
+  },
+  {
     "objectID": "trabajos practicos/tp 02.html",
     "href": "trabajos practicos/tp 02.html",
     "title": "TP 02",

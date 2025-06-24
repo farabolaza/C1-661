@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Clase 12 – C1-661 2025">
@@ -287,8 +316,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#simulacro-de-parcial" id="toc-simulacro-de-parcial" class="nav-link active" data-scroll-target="#simulacro-de-parcial">Simulacro de parcial</a>
+  <ul class="collapse">
+  <li><a href="#difusión-térmica-en-un-sólido" id="toc-difusión-térmica-en-un-sólido" class="nav-link" data-scroll-target="#difusión-térmica-en-un-sólido">Difusión térmica en un sólido</a>
+  <ul class="collapse">
+  <li><a href="#libre-office-calc" id="toc-libre-office-calc" class="nav-link" data-scroll-target="#libre-office-calc">Libre Office Calc</a></li>
+  <li><a href="#libre-offie-writer" id="toc-libre-offie-writer" class="nav-link" data-scroll-target="#libre-offie-writer">Libre Offie Writer</a></li>
+  <li><a href="#modalidad-de-entrega" id="toc-modalidad-de-entrega" class="nav-link" data-scroll-target="#modalidad-de-entrega">Modalidad de entrega</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -313,8 +356,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="simulacro-de-parcial" class="level1">
+<h1>Simulacro de parcial</h1>
+<section id="difusión-térmica-en-un-sólido" class="level2">
+<h2 class="anchored" data-anchor-id="difusión-térmica-en-un-sólido">Difusión térmica en un sólido</h2>
+<p>La temperatura <span class="math inline">\(T\)</span> a la profundidad <span class="math inline">\(x\)</span> dentro un sólido puede ser modelada mediante la siguiente expresión: <span class="math display">\[
+T(x) = T_0 e^{-kx}
+\]</span></p>
+<p>Utilice las herramientas vistas hasta el momento de la siguiente forma</p>
+<section id="libre-office-calc" class="level3">
+<h3 class="anchored" data-anchor-id="libre-office-calc">Libre Office Calc</h3>
+<ul>
+<li>Importar a calc <a href="..\assets/datos_difusion.csv">los datos</a></li>
+<li>Linealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos</li>
+<li>Graficar en un mismo linezo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica</li>
+</ul>
+</section>
+<section id="libre-offie-writer" class="level3">
+<h3 class="anchored" data-anchor-id="libre-offie-writer">Libre Offie Writer</h3>
+<p>En un documento de Writer</p>
+<ul>
+<li>Cree un encabezado “Datos experimentales”</li>
+<li>Inserte una tabla con los datos experimentales (incluya una leyenda)</li>
+<li>Cree un encabezado “Difusión térmica en un sólido”</li>
+<li>Agregue en calc el contenido del apartado de igual nombre de esta página</li>
+<li>Coloque la gráfica creada en calc. (incluya una leyenda)</li>
+</ul>
+</section>
+<section id="modalidad-de-entrega" class="level3">
+<h3 class="anchored" data-anchor-id="modalidad-de-entrega">Modalidad de entrega</h3>
+<ul>
+<li>Hoja de cálculo de Calc</li>
+<li>Documento de Writer</li>
+<li>Documento pdf de lo producido en Writer</li>
+</ul>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
