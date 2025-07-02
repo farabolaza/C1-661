@@ -150,6 +150,50 @@
     "text": "Profesor\n\n Prof. Federico Arabolaza\n federico.arabolaza@inspt.utn.edu.ar\n INSPT UTN\n\n\n\nCursada\n\n Triunvirato 3174\n Miércoles de 21:10 a 22:30\n\n\n\nSecciones\n\n Programa de la materia\n Calendario de clases\n Trabajos prácticos\n Clases\n Bibliografía\n Descargas"
   },
   {
+    "objectID": "clases/clase-13-14.html",
+    "href": "clases/clase-13-14.html",
+    "title": "Clase 13",
+    "section": "",
+    "text": "El siguiente listado corresponde a los estudiantes regulares que pueden rendir el examen.\n\n\n\n\n\n\n\n\n\nLegajo\nAlumno\nAsist.\nPuede Ap.Di.\n\n\n\n\n0\n156444\nAYACHE DOMINGUEZ, Mara Jazmin\nRegular\nS\n\n\n1\n156120\nD'ESPOSITO, Nicolas Andres\nRegular\nS\n\n\n2\n156142\nDALI, Fidel\nRegular\nS\n\n\n3\n155613\nLoleo Saigos, Federico Luis\nRegular\nS\n\n\n4\n156425\nMANCINO CABUS, Tiziano\nRegular\nS\n\n\n5\n156176\nMANSOREITCH GREGORIO, Gabriel\nRegular\nS\n\n\n6\n911484\nMARTINEZ, Franco Maximiliano\nRegular\nS\n\n\n7\n154508\nMARTINEZ, Nicolás Darío\nRegular\nS\n\n\n8\n156146\nMARTINEZ, Sebastián Matías\nRegular\nS\n\n\n9\n156156\nMEMBRANA, Franco Nicolás\nRegular\nS\n\n\n10\n156158\nPAREDES ROSERO, Renato Alejandro\nRegular\nS\n\n\n11\n156211\nPASSENNHEIM, Mathias Agustín\nRegular\nS\n\n\n12\n156129\nPEDRONI, Francisco Jose\nRegular\nS\n\n\n13\n155624\nPEREYRA, Román\nRegular\nS\n\n\n14\n156131\nPERNICE, Dante Augusto\nRegular\nS\n\n\n15\n910986\nRIVAS, Marcela Romina\nRegular\nS\n\n\n16\n156115\nRIVOIRA, Dylan Ezequiel\nRegular\nS\n\n\n17\n155621\nSánchez, Tomás\nRegular\nS\n\n\n18\n156134\nVERON,Thiago Nahuel\nRegular\nS\n\n\n19\n156178\nVILLALBA, Fabricio Manuel Antonio\nRegular\nS\n\n\n20\n156117\nZARATE SILVA, Jeremy Ignacio\nRegular\nS",
+    "crumbs": [
+      "Clases",
+      "Clase 13"
+    ]
+  },
+  {
+    "objectID": "clases/clase-13-14.html#libre-office-calc",
+    "href": "clases/clase-13-14.html#libre-office-calc",
+    "title": "Clase 13",
+    "section": "Libre Office Calc",
+    "text": "Libre Office Calc\n\nImportar a calc los datos\nLinealizar el modelo o usar Solver para encontrar los valores para la constante \\(a\\) y para el exponente \\(b\\) y luego encuentre ecuación que mejor se ajusta a los datos.\nSabiendo \\(a\\) calcule el valor de \\(g\\).\nGraficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación del ajuste en la gráfica.",
+    "crumbs": [
+      "Clases",
+      "Clase 13"
+    ]
+  },
+  {
+    "objectID": "clases/clase-13-14.html#libre-offie-writer",
+    "href": "clases/clase-13-14.html#libre-offie-writer",
+    "title": "Clase 13",
+    "section": "Libre Offie Writer",
+    "text": "Libre Offie Writer\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Período de un péndulo simple”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\nIncluya los resultados para \\(a\\) y \\(b\\) y el valor de \\(g\\) obtenido previamente.\nJustifique en cuanto a ventajas/desventajas o conveniencia la elección del método utilizado (solver, linealización) para la resolución del problema.",
+    "crumbs": [
+      "Clases",
+      "Clase 13"
+    ]
+  },
+  {
+    "objectID": "clases/clase-13-14.html#modalidad-de-entrega",
+    "href": "clases/clase-13-14.html#modalidad-de-entrega",
+    "title": "Clase 13",
+    "section": "Modalidad de entrega",
+    "text": "Modalidad de entrega\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
+    "crumbs": [
+      "Clases",
+      "Clase 13"
+    ]
+  },
+  {
     "objectID": "clases/clase-11.html",
     "href": "clases/clase-11.html",
     "title": "Clase 11",
@@ -931,7 +975,7 @@
     "href": "clases/clase-12.html",
     "title": "Clase 12",
     "section": "",
-    "text": "La temperatura \\(T\\) a la profundidad \\(x\\) dentro un sólido puede ser modelada mediante la siguiente expresión: \\[\nT(x) = T_0 e^{-kx}\n\\]\nUtilice las herramientas vistas hasta el momento de la siguiente forma\n\n\n\nImportar a calc los datos\nLinealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos\nGraficar en un mismo linezo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica\n\n\n\n\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Difusión térmica en un sólido”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\n\n\n\n\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
+    "text": "La temperatura \\(T\\) a la profundidad \\(x\\) dentro un sólido puede ser modelada mediante la siguiente expresión: \\[\nT(x) = T_0 e^{-kx}\n\\]\nUtilice las herramientas vistas hasta el momento de la siguiente forma\n\n\n\nImportar a calc los datos\nLinealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos\nGraficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica\n\n\n\n\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Difusión térmica en un sólido”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\n\n\n\n\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
     "crumbs": [
       "Clases",
       "Clase 12"
@@ -942,7 +986,7 @@
     "href": "clases/clase-12.html#difusión-térmica-en-un-sólido",
     "title": "Clase 12",
     "section": "",
-    "text": "La temperatura \\(T\\) a la profundidad \\(x\\) dentro un sólido puede ser modelada mediante la siguiente expresión: \\[\nT(x) = T_0 e^{-kx}\n\\]\nUtilice las herramientas vistas hasta el momento de la siguiente forma\n\n\n\nImportar a calc los datos\nLinealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos\nGraficar en un mismo linezo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica\n\n\n\n\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Difusión térmica en un sólido”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\n\n\n\n\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
+    "text": "La temperatura \\(T\\) a la profundidad \\(x\\) dentro un sólido puede ser modelada mediante la siguiente expresión: \\[\nT(x) = T_0 e^{-kx}\n\\]\nUtilice las herramientas vistas hasta el momento de la siguiente forma\n\n\n\nImportar a calc los datos\nLinealice el modelo o use Solver para encontrar le ecuación que mejor se ajusta a los datos\nGraficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación en la gráfica\n\n\n\n\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Difusión térmica en un sólido”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\n\n\n\n\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
     "crumbs": [
       "Clases",
       "Clase 12"

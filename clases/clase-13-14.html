@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -66,11 +66,43 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Clase 13 – C1-661 2025">
-<meta property="og:description" content="Parcial">
+<meta property="og:description" content="Primer Parcial">
 <meta property="og:site_name" content="C1-661 2025">
 </head>
 
@@ -287,8 +319,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#listado-de-estudiantes" id="toc-listado-de-estudiantes" class="nav-link active" data-scroll-target="#listado-de-estudiantes">Listado de estudiantes</a></li>
+  <li><a href="#período-de-un-péndulo-simple" id="toc-período-de-un-péndulo-simple" class="nav-link" data-scroll-target="#período-de-un-péndulo-simple">Período de un péndulo simple</a></li>
+  <li><a href="#desarrollo" id="toc-desarrollo" class="nav-link" data-scroll-target="#desarrollo">Desarrollo</a>
+  <ul class="collapse">
+  <li><a href="#libre-office-calc" id="toc-libre-office-calc" class="nav-link" data-scroll-target="#libre-office-calc">Libre Office Calc</a></li>
+  <li><a href="#libre-offie-writer" id="toc-libre-offie-writer" class="nav-link" data-scroll-target="#libre-offie-writer">Libre Offie Writer</a></li>
+  <li><a href="#modalidad-de-entrega" id="toc-modalidad-de-entrega" class="nav-link" data-scroll-target="#modalidad-de-entrega">Modalidad de entrega</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -296,7 +341,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-13-14.html">Clase 13</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Clase 13</h1>
-<p class="subtitle lead">Parcial</p>
+<p class="subtitle lead">Primer Parcial</p>
 </div>
 
 
@@ -313,8 +358,229 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="listado-de-estudiantes" class="level1">
+<h1>Listado de estudiantes</h1>
+<p>El siguiente listado corresponde a los estudiantes regulares que pueden rendir el examen.</p>
+<div id="3f2f397f" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
+<div>
 
 
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Legajo</th>
+<th data-quarto-table-cell-role="th">Alumno</th>
+<th data-quarto-table-cell-role="th">Asist.</th>
+<th data-quarto-table-cell-role="th">Puede Ap.Di.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>156444</td>
+<td>AYACHE DOMINGUEZ, Mara Jazmin</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>156120</td>
+<td>D'ESPOSITO, Nicolas Andres</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>156142</td>
+<td>DALI, Fidel</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>155613</td>
+<td>Loleo Saigos, Federico Luis</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>156425</td>
+<td>MANCINO CABUS, Tiziano</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>156176</td>
+<td>MANSOREITCH GREGORIO, Gabriel</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>911484</td>
+<td>MARTINEZ, Franco Maximiliano</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>154508</td>
+<td>MARTINEZ, Nicolás Darío</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>156146</td>
+<td>MARTINEZ, Sebastián Matías</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>156156</td>
+<td>MEMBRANA, Franco Nicolás</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>156158</td>
+<td>PAREDES ROSERO, Renato Alejandro</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>156211</td>
+<td>PASSENNHEIM, Mathias Agustín</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>156129</td>
+<td>PEDRONI, Francisco Jose</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>155624</td>
+<td>PEREYRA, Román</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>156131</td>
+<td>PERNICE, Dante Augusto</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">15</td>
+<td>910986</td>
+<td>RIVAS, Marcela Romina</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">16</td>
+<td>156115</td>
+<td>RIVOIRA, Dylan Ezequiel</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">17</td>
+<td>155621</td>
+<td>Sánchez, Tomás</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">18</td>
+<td>156134</td>
+<td>VERON,Thiago Nahuel</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">19</td>
+<td>156178</td>
+<td>VILLALBA, Fabricio Manuel Antonio</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">20</td>
+<td>156117</td>
+<td>ZARATE SILVA, Jeremy Ignacio</td>
+<td>Regular</td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="período-de-un-péndulo-simple" class="level1">
+<h1>Período de un péndulo simple</h1>
+<p>Se sabe que el período de un péndulo simple está determinado por la siguiente expresión:</p>
+<p><span class="math display">\[
+T = 2\pi \sqrt{\frac{L}{g}} \quad \Rightarrow \quad T = a L^b
+\]</span></p>
+<ul>
+<li><span class="math inline">\(T\)</span>: Periodo (s)</li>
+<li><span class="math inline">\(L\)</span>: Longitud del péndulo (m)</li>
+<li><span class="math inline">\(b\)</span>: Exponente teórico (0.5)</li>
+</ul>
+<p>Es decir, sigue una ley de potencia con valor <span class="math inline">\(0,5\)</span>. Los datos de un experimento que desea corroborar el valor de de dicha constante se han registrado los tiempos para el período de pendulos de diferentes longitudes.</p>
+</section>
+<section id="desarrollo" class="level1">
+<h1>Desarrollo</h1>
+<p>Según lo expuesto previamente la relación entre la longitud y el período es del tipo <span class="math inline">\(T = aL^b\)</span> donde <span class="math inline">\(b=0,5\)</span> y <span class="math inline">\(a=\frac{2 \pi}{\sqrt{g}}\)</span></p>
+<p>Suponga que sólo dispone de los datos experimentales (no sabemos cuanto valen <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>) pero que intuimos que la relación entre la longitud del péndulo y su perído sigue una relación potencial de la forma <span class="math inline">\(T = aL^b\)</span> pero desconocemos tanto el valor de <span class="math inline">\(a\)</span> como de <span class="math inline">\(b\)</span>.</p>
+<section id="libre-office-calc" class="level2">
+<h2 class="anchored" data-anchor-id="libre-office-calc">Libre Office Calc</h2>
+<ul>
+<li>Importar a calc <a href="..\assets/datos_pendulo-parcial.csv">los datos</a></li>
+<li>Linealizar el modelo o usar Solver para encontrar los valores para la constante <span class="math inline">\(a\)</span> y para el exponente <span class="math inline">\(b\)</span> y luego encuentre ecuación que mejor se ajusta a los datos.</li>
+<li>Sabiendo <span class="math inline">\(a\)</span> calcule el valor de <span class="math inline">\(g\)</span>.</li>
+<li>Graficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación del ajuste en la gráfica.</li>
+</ul>
+</section>
+<section id="libre-offie-writer" class="level2">
+<h2 class="anchored" data-anchor-id="libre-offie-writer">Libre Offie Writer</h2>
+<p>En un documento de Writer</p>
+<ul>
+<li>Cree un encabezado “Datos experimentales”</li>
+<li>Inserte una tabla con los datos experimentales (incluya una leyenda)</li>
+<li>Cree un encabezado “Período de un péndulo simple”</li>
+<li>Agregue en calc el contenido del apartado de igual nombre de esta página</li>
+<li>Coloque la gráfica creada en calc. (incluya una leyenda)</li>
+<li>Incluya los resultados para <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> y el valor de <span class="math inline">\(g\)</span> obtenido previamente.</li>
+<li>Justifique en cuanto a ventajas/desventajas o conveniencia la elección del método utilizado (solver, linealización) para la resolución del problema.</li>
+</ul>
+</section>
+<section id="modalidad-de-entrega" class="level2">
+<h2 class="anchored" data-anchor-id="modalidad-de-entrega">Modalidad de entrega</h2>
+<ul>
+<li>Hoja de cálculo de Calc</li>
+<li>Documento de Writer</li>
+<li>Documento pdf de lo producido en Writer</li>
+</ul>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
