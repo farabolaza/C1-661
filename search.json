@@ -176,7 +176,7 @@
     "href": "clases/clase-13-14.html#libre-offie-writer",
     "title": "Clase 13",
     "section": "Libre Offie Writer",
-    "text": "Libre Offie Writer\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Período de un péndulo simple”\nAgregue en calc el contenido del apartado de igual nombre de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\nIncluya los resultados para \\(a\\) y \\(b\\) y el valor de \\(g\\) obtenido previamente.\nJustifique en cuanto a ventajas/desventajas o conveniencia la elección del método utilizado (solver, linealización) para la resolución del problema.",
+    "text": "Libre Offie Writer\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”\nInserte una tabla con los datos experimentales (incluya una leyenda)\nCree un encabezado “Período de un péndulo simple”\nAgregue a continuación el contenido del apartado de Período de un péndulo simple de esta página\nColoque la gráfica creada en calc. (incluya una leyenda)\nIncluya los resultados para \\(a\\) y \\(b\\) y el valor de \\(g\\) obtenido previamente.\nJustifique en cuanto a ventajas/desventajas o conveniencia la elección del método utilizado (solver, linealización) para la resolución del problema.",
     "crumbs": [
       "Clases",
       "Clase 13"
@@ -188,6 +188,28 @@
     "title": "Clase 13",
     "section": "Modalidad de entrega",
     "text": "Modalidad de entrega\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
+    "crumbs": [
+      "Clases",
+      "Clase 13"
+    ]
+  },
+  {
+    "objectID": "clases/clase-13-14.html#enfriamiento-de-newton",
+    "href": "clases/clase-13-14.html#enfriamiento-de-newton",
+    "title": "Clase 13",
+    "section": "Enfriamiento de Newton",
+    "text": "Enfriamiento de Newton\nSegún la ley de enfriamiento de Newton, la temperatura de un cuerpo en un entorno viene dada por el siguiente modelo: \\[\nT(t) = T_{\\text{amb}} + (T_0 - T_{\\text{amb}}) e^{-kt}\n\\]\n\n\\(T_0\\): Temperatura incial del objeto (ºC)\n\\(T_{\\text{amb}}\\): Temperatura ambiente (ºC)\n\\(k\\): Constante de enfriamiento (\\(\\text{min}^{-1}\\))",
+    "crumbs": [
+      "Clases",
+      "Clase 13"
+    ]
+  },
+  {
+    "objectID": "clases/clase-13-14.html#desarrollo-1",
+    "href": "clases/clase-13-14.html#desarrollo-1",
+    "title": "Clase 13",
+    "section": "Desarrollo",
+    "text": "Desarrollo\nSuponga que sólo dispone de los datos experimentales (no sabe cuanto valen \\(T_0\\) y \\(T_{\\text{amb}}\\) ni \\(k\\) )\n\nLibre Office Calc\n\nImportar a calc los datos.\nGrafique los datos experimentales y estime valores para \\(T_0\\) y \\(T_{\\text{amb}}\\)\nLinealizar el modelo o usar Solver para encontrar los valores para los parámetros del problema\nEncuentre la ecuación que mejor se ajusta a los datos.\nGraficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación del ajuste en la misma gráfica.\n\n\n\nLibre Offie Writer\nEn un documento de Writer\n\nCree un encabezado “Datos experimentales”.\nInserte una tabla con los datos experimentales (incluya una leyenda).\nCree un encabezado “Período de un péndulo simple”.\nAgregue a continuación el contenido del apartado de Enfriamiento de Newton de esta página.\nColoque la gráfica creada en calc (modelo vs datos experimentales) e incluya una leyenda.\nIncluya los resultados para \\(T_0\\) y \\(T_{\\text{amb}}\\) y \\(k\\) obtenidos previamente.\nJustifique en cuanto a ventajas/desventajas o conveniencia la elección del método utilizado (solver, linealización) para la resolución del problema.\n\n\n\nModalidad de entrega\n\nHoja de cálculo de Calc\nDocumento de Writer\nDocumento pdf de lo producido en Writer",
     "crumbs": [
       "Clases",
       "Clase 13"

@@ -332,6 +332,16 @@ window.Quarto = {
   <li><a href="#libre-offie-writer" id="toc-libre-offie-writer" class="nav-link" data-scroll-target="#libre-offie-writer">Libre Offie Writer</a></li>
   <li><a href="#modalidad-de-entrega" id="toc-modalidad-de-entrega" class="nav-link" data-scroll-target="#modalidad-de-entrega">Modalidad de entrega</a></li>
   </ul></li>
+  <li><a href="#recuperatorio" id="toc-recuperatorio" class="nav-link" data-scroll-target="#recuperatorio">Recuperatorio</a>
+  <ul class="collapse">
+  <li><a href="#enfriamiento-de-newton" id="toc-enfriamiento-de-newton" class="nav-link" data-scroll-target="#enfriamiento-de-newton">Enfriamiento de Newton</a></li>
+  <li><a href="#desarrollo-1" id="toc-desarrollo-1" class="nav-link" data-scroll-target="#desarrollo-1">Desarrollo</a>
+  <ul class="collapse">
+  <li><a href="#libre-office-calc-1" id="toc-libre-office-calc-1" class="nav-link" data-scroll-target="#libre-office-calc-1">Libre Office Calc</a></li>
+  <li><a href="#libre-offie-writer-1" id="toc-libre-offie-writer-1" class="nav-link" data-scroll-target="#libre-offie-writer-1">Libre Offie Writer</a></li>
+  <li><a href="#modalidad-de-entrega-1" id="toc-modalidad-de-entrega-1" class="nav-link" data-scroll-target="#modalidad-de-entrega-1">Modalidad de entrega</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -361,7 +371,7 @@ window.Quarto = {
 <section id="listado-de-estudiantes" class="level1">
 <h1>Listado de estudiantes</h1>
 <p>El siguiente listado corresponde a los estudiantes regulares que pueden rendir el examen.</p>
-<div id="3f2f397f" class="cell" data-execution_count="1">
+<div id="77f3109f" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display" data-execution_count="1">
 <div>
 
@@ -564,7 +574,7 @@ T = 2\pi \sqrt{\frac{L}{g}} \quad \Rightarrow \quad T = a L^b
 <li>Cree un encabezado “Datos experimentales”</li>
 <li>Inserte una tabla con los datos experimentales (incluya una leyenda)</li>
 <li>Cree un encabezado “Período de un péndulo simple”</li>
-<li>Agregue en calc el contenido del apartado de igual nombre de esta página</li>
+<li>Agregue a continuación el contenido del apartado de <strong>Período de un péndulo simple</strong> de esta página</li>
 <li>Coloque la gráfica creada en calc. (incluya una leyenda)</li>
 <li>Incluya los resultados para <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> y el valor de <span class="math inline">\(g\)</span> obtenido previamente.</li>
 <li>Justifique en cuanto a ventajas/desventajas o conveniencia la elección del método utilizado (solver, linealización) para la resolución del problema.</li>
@@ -577,8 +587,66 @@ T = 2\pi \sqrt{\frac{L}{g}} \quad \Rightarrow \quad T = a L^b
 <li>Documento de Writer</li>
 <li>Documento pdf de lo producido en Writer</li>
 </ul>
+</section>
+</section>
+<section id="recuperatorio" class="level1">
+<h1>Recuperatorio</h1>
+<section id="enfriamiento-de-newton" class="level2">
+<h2 class="anchored" data-anchor-id="enfriamiento-de-newton">Enfriamiento de Newton</h2>
+<p>Según la ley de enfriamiento de Newton, la temperatura de un cuerpo en un entorno viene dada por el siguiente modelo: <span class="math display">\[
+T(t) = T_{\text{amb}} + (T_0 - T_{\text{amb}}) e^{-kt}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(T_0\)</span>: Temperatura incial del objeto (ºC)</li>
+<li><span class="math inline">\(T_{\text{amb}}\)</span>: Temperatura ambiente (ºC)</li>
+<li><span class="math inline">\(k\)</span>: Constante de enfriamiento (<span class="math inline">\(\text{min}^{-1}\)</span>)</li>
+</ul>
+</section>
+<section id="desarrollo-1" class="level2">
+<h2 class="anchored" data-anchor-id="desarrollo-1">Desarrollo</h2>
+<p>Suponga que sólo dispone de los datos experimentales (no sabe cuanto valen <span class="math inline">\(T_0\)</span> y <span class="math inline">\(T_{\text{amb}}\)</span> ni <span class="math inline">\(k\)</span> )</p>
+<section id="libre-office-calc-1" class="level3">
+<h3 class="anchored" data-anchor-id="libre-office-calc-1">Libre Office Calc</h3>
+<ul>
+<li>Importar a calc <a href="..\assets/datos_enfriamiento_recu.csv">los datos</a>.</li>
+<li>Grafique los datos experimentales y estime valores para <span class="math inline">\(T_0\)</span> y <span class="math inline">\(T_{\text{amb}}\)</span></li>
+<li>Linealizar el modelo o usar Solver para encontrar los valores para los parámetros del problema</li>
+<li>Encuentre la ecuación que mejor se ajusta a los datos.</li>
+<li>Graficar en un mismo lienzo tanto los datos experimentales como la expresión matemática encontrada para el modelo. Icluya leyendas y la ecuación del ajuste en la misma gráfica.</li>
+</ul>
+</section>
+<section id="libre-offie-writer-1" class="level3">
+<h3 class="anchored" data-anchor-id="libre-offie-writer-1">Libre Offie Writer</h3>
+<p>En un documento de Writer</p>
+<ul>
+<li>Cree un encabezado “Datos experimentales”.</li>
+<li>Inserte una tabla con los datos experimentales (incluya una leyenda).</li>
+<li>Cree un encabezado “Período de un péndulo simple”.</li>
+<li>Agregue a continuación el contenido del apartado de <strong>Enfriamiento de Newton</strong> de esta página.</li>
+<li>Coloque la gráfica creada en calc (modelo vs datos experimentales) e incluya una leyenda.</li>
+<li>Incluya los resultados para <span class="math inline">\(T_0\)</span> y <span class="math inline">\(T_{\text{amb}}\)</span> y <span class="math inline">\(k\)</span> obtenidos previamente.</li>
+<li>Justifique en cuanto a ventajas/desventajas o conveniencia la elección del método utilizado (solver, linealización) para la resolución del problema.</li>
+</ul>
+</section>
+<section id="modalidad-de-entrega-1" class="level3">
+<h3 class="anchored" data-anchor-id="modalidad-de-entrega-1">Modalidad de entrega</h3>
+<ul>
+<li>Hoja de cálculo de Calc</li>
+<li>Documento de Writer</li>
+<li>Documento pdf de lo producido en Writer</li>
+</ul>
+<div id="63a54a81" class="cell" data-layout-valign="center" data-layout-align="center" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="clase-13-14_files/figure-html/cell-4-output-1.png" width="585" height="454" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
+</section>
 </section>
 </section>
 
