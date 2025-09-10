@@ -150,6 +150,50 @@
     "text": "Profesor\n\n Prof. Federico Arabolaza\n federico.arabolaza@inspt.utn.edu.ar\n INSPT UTN\n\n\n\nCursada\n\n Triunvirato 3174\n Miércoles de 21:10 a 22:30\n\n\n\nSecciones\n\n Programa de la materia\n Calendario de clases\n Trabajos prácticos\n Clases\n Bibliografía\n Descargas"
   },
   {
+    "objectID": "clases/clase-18.html",
+    "href": "clases/clase-18.html",
+    "title": "Tracker 03",
+    "section": "",
+    "text": "En tracker podemos ingresar información externa además de las estrictamente necesarias para calbirar distancias, tales como masa de los objetos involucrados, relaciones entre variables, (energía cinética o potencial por ejemplo) condiciones inciales, fuerzas, etc.\nCuando lo que hacemos es definir funciones que relacionan variables y no sólo parámetros, tracker llama a esto modelos, estos modelos pueden ser a base de funciones de posicion respecto al tiempo, en tal caso los llama modelos analíticos, mientras que si definimos funciones de fuerza, ecuaciones diferenciales o condiciones inciales entre variables los llama modelos dinámicos.",
+    "crumbs": [
+      "Clases",
+      "Tracker 03"
+    ]
+  },
+  {
+    "objectID": "clases/clase-18.html#como-crear-un-modelo-analítico",
+    "href": "clases/clase-18.html#como-crear-un-modelo-analítico",
+    "title": "Tracker 03",
+    "section": "Como crear un modelo analítico",
+    "text": "Como crear un modelo analítico\nPara crear un modelo analítico vamos a al menu trayectoria &gt; nuevo &gt; modelo  analítico de partícula allí podremos introducir parámetros, valores iniciales y las ecuaciones de movimiento.\n\n\n\nMenú modelo analítico",
+    "crumbs": [
+      "Clases",
+      "Tracker 03"
+    ]
+  },
+  {
+    "objectID": "clases/clase-18.html#expresiones-condicionales",
+    "href": "clases/clase-18.html#expresiones-condicionales",
+    "title": "Tracker 03",
+    "section": "Expresiones condicionales",
+    "text": "Expresiones condicionales\nLas expresiones funcionales y parámetros que ingresamos tanto en los modelos analíticos como dinámicos (por simplicidad los podemos llamar cinemáticos y dinamicos) pueden estar acompañados de expresiones condicionales con la siguiente sintaxis if(expresión,if-verdadero,if-falso).\n\nActividad\n\nCrear un modelo analítico (sin video) de una caída libre sin rozamiento.\n¿Cómo Tratar las posicicioes una vez que \\(y \\leq 0\\)? (consejo: usar una expresión condicional)",
+    "crumbs": [
+      "Clases",
+      "Tracker 03"
+    ]
+  },
+  {
+    "objectID": "clases/clase-18.html#importar-un-modelo-externo",
+    "href": "clases/clase-18.html#importar-un-modelo-externo",
+    "title": "Tracker 03",
+    "section": "Importar un modelo externo",
+    "text": "Importar un modelo externo\nPara importar un modelo de datos externo, lo podemos hacer usando un archivo de texto que contenga las posiciones y tiempos correspondientes. La delimitación entre campos puede ser cualquiera de las compatibles en un csv, pero debemos necesariamente tener una variable \\(x\\) y otra \\(y\\) en nuestros datos. Si tuviéramos datos unidimensionales, debemos de todas maneras tener una columna con la coordenada no utilizada con en un valor constante para todos los datos (cero o un valor que consideremos apropiado).\n\nActividad\nCrear un modelo de partícula desde datos externos usando este archivo y obtener un ajuste para los datos \\(y(t)\\)",
+    "crumbs": [
+      "Clases",
+      "Tracker 03"
+    ]
+  },
+  {
     "objectID": "clases/clase-16.html",
     "href": "clases/clase-16.html",
     "title": "Tracker 01",

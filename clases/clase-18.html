@@ -67,10 +67,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Tracker 03 – C1-661 2025">
-<meta property="og:description" content="Modelos analíticos y dinámicos">
+<meta property="og:description" content="Modelos en tracker 01">
 <meta property="og:site_name" content="C1-661 2025">
 </head>
 
@@ -311,8 +340,27 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#parámetros-externos-en-tracker" id="toc-parámetros-externos-en-tracker" class="nav-link active" data-scroll-target="#parámetros-externos-en-tracker">Parámetros externos en tracker</a></li>
+  <li><a href="#modelos-analíticos" id="toc-modelos-analíticos" class="nav-link" data-scroll-target="#modelos-analíticos">Modelos analíticos</a>
+  <ul class="collapse">
+  <li><a href="#como-crear-un-modelo-analítico" id="toc-como-crear-un-modelo-analítico" class="nav-link" data-scroll-target="#como-crear-un-modelo-analítico">Como crear un modelo analítico</a></li>
+  <li><a href="#expresiones-condicionales" id="toc-expresiones-condicionales" class="nav-link" data-scroll-target="#expresiones-condicionales">Expresiones condicionales</a>
+  <ul class="collapse">
+  <li><a href="#actividad" id="toc-actividad" class="nav-link" data-scroll-target="#actividad">Actividad</a></li>
+  </ul></li>
+  <li><a href="#importar-un-modelo-externo" id="toc-importar-un-modelo-externo" class="nav-link" data-scroll-target="#importar-un-modelo-externo">Importar un modelo externo</a>
+  <ul class="collapse">
+  <li><a href="#actividad-1" id="toc-actividad-1" class="nav-link" data-scroll-target="#actividad-1">Actividad</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -320,7 +368,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-18.html">Tracker 03</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Tracker 03</h1>
-<p class="subtitle lead">Modelos analíticos y dinámicos</p>
+<p class="subtitle lead">Modelos en tracker 01</p>
 </div>
 
 
@@ -337,8 +385,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="parámetros-externos-en-tracker" class="level1">
+<h1>Parámetros externos en tracker</h1>
+<p>En tracker podemos ingresar información externa además de las estrictamente necesarias para calbirar distancias, tales como masa de los objetos involucrados, relaciones entre variables, (energía cinética o potencial por ejemplo) condiciones inciales, fuerzas, etc.</p>
+<p>Cuando lo que hacemos es definir funciones que relacionan variables y no sólo parámetros, tracker llama a esto <em>modelos</em>, estos modelos pueden ser a base de <strong>funciones de posicion respecto al tiempo</strong>, en tal caso los llama <strong>modelos analíticos</strong>, mientras que si definimos <strong>funciones de fuerza</strong>, ecuaciones diferenciales o condiciones inciales entre variables los llama <strong>modelos dinámicos</strong>.</p>
+</section>
+<section id="modelos-analíticos" class="level1">
+<h1>Modelos analíticos</h1>
+<p>Como los modelos analíticos representan, aunque no se restringen a, las ecuaciones de la cinemática, es decir, de las posiciones, velocidades y aceleraciones en función del tiempo podemos usar los modelos analíticos como simuladores sin necesdidad de hacer uso de un video externo, superponer el modelo analítico a el rastreo conseguido de un video o crear una animación de los datos que se obtuvieron de forma experimental.</p>
+<section id="como-crear-un-modelo-analítico" class="level2">
+<h2 class="anchored" data-anchor-id="como-crear-un-modelo-analítico">Como crear un modelo analítico</h2>
+<p>Para crear un modelo analítico vamos a al menu <code>trayectoria &gt; nuevo &gt; modelo  analítico de partícula</code> allí podremos introducir parámetros, valores iniciales y las ecuaciones de movimiento.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/tracker-modelo-analitico-01.png" class="img-fluid figure-img"></p>
+<figcaption>Menú modelo analítico</figcaption>
+</figure>
+</div>
+</section>
+<section id="expresiones-condicionales" class="level2">
+<h2 class="anchored" data-anchor-id="expresiones-condicionales">Expresiones condicionales</h2>
+<p>Las expresiones funcionales y parámetros que ingresamos tanto en los modelos analíticos como dinámicos (por simplicidad los podemos llamar cinemáticos y dinamicos) pueden estar acompañados de expresiones condicionales con la siguiente sintaxis <code>if(expresión,if-verdadero,if-falso)</code>.</p>
+<section id="actividad" class="level3">
+<h3 class="anchored" data-anchor-id="actividad">Actividad</h3>
+<ol type="1">
+<li>Crear un modelo analítico (sin video) de una caída libre sin rozamiento.</li>
+<li>¿Cómo Tratar las posicicioes una vez que <span class="math inline">\(y \leq 0\)</span>? (consejo: usar una expresión condicional)</li>
+</ol>
+</section>
+</section>
+<section id="importar-un-modelo-externo" class="level2">
+<h2 class="anchored" data-anchor-id="importar-un-modelo-externo">Importar un modelo externo</h2>
+<p>Para importar un modelo de datos externo, lo podemos hacer usando un archivo de texto que contenga las posiciones y tiempos correspondientes. La delimitación entre campos puede ser cualquiera de las compatibles en un csv, pero debemos necesariamente tener una variable <span class="math inline">\(x\)</span> y otra <span class="math inline">\(y\)</span> en nuestros datos. Si tuviéramos datos unidimensionales, debemos de todas maneras tener una columna con la coordenada no utilizada con en un valor constante para todos los datos (cero o un valor que consideremos apropiado).</p>
+<section id="actividad-1" class="level3">
+<h3 class="anchored" data-anchor-id="actividad-1">Actividad</h3>
+<p>Crear un modelo de partícula desde datos externos usando este <a href="..\assets/caida-libre.csv">archivo</a> y obtener un ajuste para los datos <span class="math inline">\(y(t)\)</span></p>
+</section>
+</section>
+</section>
+<section id="referencias" class="level1">
+<h1>Referencias</h1>
+<ul>
+<li><a href="https://physlets.org/tracker/tracker_help.pdf">Manual de Tracker</a></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
