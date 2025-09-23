@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Calc 02 – C1-661 2025</title>
+<title>Tracker 04 – C1-661 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,10 +67,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Calc 02 – C1-661 2025">
-<meta property="og:description" content="Gráficas en Calc">
+<meta property="og:title" content="Tracker 04 – C1-661 2025">
+<meta property="og:description" content="Modelos en tracker 02">
 <meta property="og:site_name" content="C1-661 2025">
 </head>
 
@@ -83,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-08.html">Calc 02</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-19.html">Tracker 04</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -205,7 +234,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-08.html" class="sidebar-item-text sidebar-link active">
+  <a href="../clases/clase-08.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Calc 02</span></a>
   </div>
 </li>
@@ -265,7 +294,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-19.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-19.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Tracker 04</span></a>
   </div>
 </li>
@@ -322,16 +351,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#series-de-datos" id="toc-series-de-datos" class="nav-link active" data-scroll-target="#series-de-datos">Series de datos</a></li>
-  <li><a href="#formato-del-gráfico" id="toc-formato-del-gráfico" class="nav-link" data-scroll-target="#formato-del-gráfico">Formato del gráfico</a>
+  <li><a href="#modelos-dinámicos" id="toc-modelos-dinámicos" class="nav-link active" data-scroll-target="#modelos-dinámicos">Modelos dinámicos</a>
   <ul class="collapse">
-  <li><a href="#líneas-de-cuadrícula" id="toc-líneas-de-cuadrícula" class="nav-link" data-scroll-target="#líneas-de-cuadrícula">Líneas de cuadrícula</a></li>
-  <li><a href="#ejes-leyendas-y-rótulos" id="toc-ejes-leyendas-y-rótulos" class="nav-link" data-scroll-target="#ejes-leyendas-y-rótulos">Ejes, leyendas y rótulos</a></li>
-  <li><a href="#barras-de-error" id="toc-barras-de-error" class="nav-link" data-scroll-target="#barras-de-error">Barras de error</a></li>
-  </ul></li>
-  <li><a href="#ejercitación" id="toc-ejercitación" class="nav-link" data-scroll-target="#ejercitación">Ejercitación</a>
-  <ul class="collapse">
-  <li><a href="#graficar-una-función" id="toc-graficar-una-función" class="nav-link" data-scroll-target="#graficar-una-función">Graficar una función</a></li>
+  <li><a href="#como-crear-un-modelo-dinámico" id="toc-como-crear-un-modelo-dinámico" class="nav-link" data-scroll-target="#como-crear-un-modelo-dinámico">Como crear un modelo dinámico</a></li>
+  <li><a href="#expresiones-condicionales" id="toc-expresiones-condicionales" class="nav-link" data-scroll-target="#expresiones-condicionales">Expresiones condicionales</a></li>
+  <li><a href="#parámetros-sincronizados" id="toc-parámetros-sincronizados" class="nav-link" data-scroll-target="#parámetros-sincronizados">Parámetros sincronizados</a></li>
+  <li><a href="#lanzadores" id="toc-lanzadores" class="nav-link" data-scroll-target="#lanzadores">Lanzadores</a></li>
+  <li><a href="#actividad" id="toc-actividad" class="nav-link" data-scroll-target="#actividad">Actividad</a></li>
   </ul></li>
   <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
@@ -340,10 +366,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-08.html">Calc 02</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-19.html">Tracker 04</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Calc 02</h1>
-<p class="subtitle lead">Gráficas en Calc</p>
+<h1 class="title">Tracker 04</h1>
+<p class="subtitle lead">Modelos en tracker 02</p>
 </div>
 
 
@@ -360,121 +386,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Los datos obtenidos desde cualquier origen son discretos, es decir, representan el estado de un sistema (cualquiera sea) en algún instante, la relación entre dos variables para algunas condiciones, la cantidad de algún objeto,etc.</p>
-<p>Para representaciones de tipo estadístico donde se intenta contar o cuantificar la cantidad de eventos los gráficos más utilizados son los de barras, histogramas, de torta y sus variantes.</p>
-<p>Para representaciones dependientes del tiempo o que expresen la relación entre variables los gráficos más representativos son los de de dispersión en donde cada dato, si suponemos un arreglo bidimensional, posee dos coordenadas específicas, que usualmente representamos en el eje horizontal y vertical de una gráfica respectivamente.</p>
-<p>Para insertar un gráfico de disperisón en Libre Office Calc, hacemos lo siguiente</p>
-<p><code>insertar</code> &gt; <code>gráfico</code>&gt; <code>tipo de gráfico</code> &gt; <code>xy dispersión</code></p>
+<section id="modelos-dinámicos" class="level1">
+<h1>Modelos dinámicos</h1>
+<p>Los modelos dinámicos representan las condiciones iniciales (posiciones, velocidades) y las fuerzas que actúan sobre una partícula. El modelo puede estar en coordenadas cartesianas o polares y también es posible crear un modelo de dos cuerpos (aunque no profundizaremos en ello en esta clase).</p>
+<section id="como-crear-un-modelo-dinámico" class="level2">
+<h2 class="anchored" data-anchor-id="como-crear-un-modelo-dinámico">Como crear un modelo dinámico</h2>
+<p>Para crear un modelo analítico vamos a al menu <code>trayectoria &gt; nuevo &gt; modelo dinámico de partícula</code> y seleccionamos el sistema de coordenadas que deseamos (cartesiano o polar).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\assets/calc-grafica-dispersion.png" class="img-fluid figure-img"></p>
-<figcaption>Insertar gráfica</figcaption>
+<p><img src="..\assets/tracker-modelo-dinamico-00.png" class="img-fluid figure-img"></p>
+<figcaption>Seleccionar modelo dinámico</figcaption>
 </figure>
 </div>
-<section id="series-de-datos" class="level2">
-<h2 class="anchored" data-anchor-id="series-de-datos">Series de datos</h2>
-<p>Para hacer más facil nuestro trabajo conviene que los datos deben estar estructurados en columnas donde la primera columna contiene los datos que irán al eje horizontal y la segunda los del eje vertical.</p>
-<p>Esto puede cambiarse luego desde el menú inserción de gráfico, pero es más sencillo tener los datos bien organizados desde el comienzo.</p>
+<p>En el menú que aparece a continuación podremos introducir parámetros, valores iniciales y las ecuaciones de fuerza para cada eje.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\assets/calc-elementos-grafico.png" class="img-fluid figure-img"></p>
-<figcaption>Elementos del gráfico</figcaption>
-</figure>
-</div>
-</section>
-<section id="formato-del-gráfico" class="level2">
-<h2 class="anchored" data-anchor-id="formato-del-gráfico">Formato del gráfico</h2>
-<p>La correcta disposición de los elementos en el lienzo del gráfico no sólo hace posible una lectura más amena sino que pone en juego la comprensión misma de los datos indicados en la gráfica.</p>
-<p>Se deben colocar títulos, subtítulos y nombres de ejes indicando las unidades correctas, así tambien como respetar los estilos tipográficos del documento en el cual se va a insertar el gráfico. Se puede optar por un estilo que se integre o que se destaque dependiendo de los requerimientos específicos, pero esta decisión debe ser a conciencia.</p>
-<p>Para los títulos y subtitlos de figuras, es preferible usar tipografías sin serif ya que su legibilidad es mejor en tamaños pequeños.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/calc-scatter-2.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de gráfico de dispersión</figcaption>
-</figure>
-</div>
-<p>Más allá de los estilos preferibles a nivel estético existen algunos principios generales que escapan a los alcances de este apunte pero el ejemplo de arriba vale como muestra de como una misma información se puede disponer de forma distinta y ayudar o entorpecer el entendimiento de aquello que se está queriendo comunicar.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/calc-figura-bien-mal.png" class="img-fluid figure-img"></p>
-<figcaption>Dos visualizaciones diferentes</figcaption>
-</figure>
-</div>
-<section id="líneas-de-cuadrícula" class="level3">
-<h3 class="anchored" data-anchor-id="líneas-de-cuadrícula">Líneas de cuadrícula</h3>
-<p>Si se hace doble click en cualquiera de los dos ejes y luego click derecho se ofrece la posibilidad de agregar o quitar líneas de cuadrícula principal y secundarias. La cantidad de elementos entre la cuadrícula principal y la secundaria se encuentra manejado por la opción de</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/calc-cuadricula.png" class="img-fluid figure-img"></p>
-<figcaption>Ejes y cuadrículas</figcaption>
-</figure>
-</div>
-<p>También con el gráfico seleccionado a través del menú <code>insertar</code> &gt; <code>cuadrículas</code></p>
-</section>
-<section id="ejes-leyendas-y-rótulos" class="level3">
-<h3 class="anchored" data-anchor-id="ejes-leyendas-y-rótulos">Ejes, leyendas y rótulos</h3>
-<p>La información contextual del gráfico: ejes y rótulos disponibles se pueden elegir al momento de crear la gráfica o haciendo doble click sobre la misma y eligiendo de la barra los elementos que necesitemos o con el grafico seleccionado a través del menú <code>insertar</code></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/calc-serie-datos.png" class="img-fluid figure-img"></p>
-<figcaption>Series de datos</figcaption>
+<p><img src="..\assets/tracker-modelo-dinamico-01.png" class="img-fluid figure-img"></p>
+<figcaption>Menú modelo dinámico</figcaption>
 </figure>
 </div>
 </section>
-<section id="barras-de-error" class="level3">
-<h3 class="anchored" data-anchor-id="barras-de-error">Barras de error</h3>
-<p>Con el gráfico seleccionado hacemos <code>insertar</code> &gt; <code>barras de error</code> ahi podremos elegir las diferentes variantes que contamos para las barras de error</p>
+<section id="expresiones-condicionales" class="level2">
+<h2 class="anchored" data-anchor-id="expresiones-condicionales">Expresiones condicionales</h2>
+<p>Como vimos en la clase anterior las expresiones funcionales y parámetros que ingresamos tanto en los modelos analíticos como dinámicos pueden estar acompañados de expresiones condicionales con la siguiente sintaxis <code>if(expresión,if-verdadero,if-falso)</code>.</p>
+</section>
+<section id="parámetros-sincronizados" class="level2">
+<h2 class="anchored" data-anchor-id="parámetros-sincronizados">Parámetros sincronizados</h2>
+<p>Es posible vincular parámetros entre diferentes modelos de partícula en una misma sesión de tracker si seleccionamos el parámetro y luego clickeamos en sincronizar (debemos tener el parámetro en más de un modelo dinámico y con idéntico nombre)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\assets/calc-barras-error.png" class="img-fluid figure-img"></p>
-<figcaption>Barras de error</figcaption>
+<p><img src="..\assets/tracker-modelo-dinamico-03.png" class="img-fluid figure-img"></p>
+<figcaption>Tabla</figcaption>
 </figure>
 </div>
 </section>
+<section id="lanzadores" class="level2">
+<h2 class="anchored" data-anchor-id="lanzadores">Lanzadores</h2>
+<p>Es posible vincular partículas entre sí a través de <em>lanzadores</em> que permiten asociar las condiciones inciales de una partícula con aquellas que otra tiene en un instante (frame) dado. Para eso, seleccionamos el lanzador (launcher) en la pestaña del modelo dinámico para que corresponda con el de la partícula que deseamos usar a tal fin, la elección del fotograma de inicio y fin de cada partícula es clave a la hora de vincularlas. Más adelante veremos un ejemplo de las librerías de tracker para comprenderlo mejor.</p>
 </section>
-<section id="ejercitación" class="level2">
-<h2 class="anchored" data-anchor-id="ejercitación">Ejercitación</h2>
-<section id="graficar-una-función" class="level3">
-<h3 class="anchored" data-anchor-id="graficar-una-función">Graficar una función</h3>
-<p>Grafique las funciones que se mencionan en el <a href="../trabajos practicos/tp 03.html#funciones-elementales">punto 2 del TP3</a>. Agrupe las funciones de la siguiente forma</p>
+<section id="actividad" class="level2">
+<h2 class="anchored" data-anchor-id="actividad">Actividad</h2>
 <ol type="1">
-<li>Funciones trigonométrias</li>
-<li>Funciones trigonométricas inversas</li>
-<li>Catenaria</li>
-<li>Funciones exponenciales</li>
-<li>Funciones logarítmicas</li>
+<li>Crear un modelo dinámico (sin video) de una caída libre sin rozamiento.</li>
+<li>¿Cómo Tratar las posicicioes una vez que <span class="math inline">\(y \leq 0\)</span>? (consejo: usar una expresión condicional)</li>
+<li>Buscar las ecuaciones para una caída con rozamiento del aire (link en las referencias) y crear modelos dinámicos para
+<ul>
+<li>Una gota de lluvia</li>
+<li>Granizo</li>
+<li>Un ser humano</li>
+</ul></li>
 </ol>
-<p>Cada grupo de funciones deberá estar en una sola gráfica y contener:</p>
-<ul>
-<li>Nombres en los ejes (x,y)</li>
-<li>Título y subtítulo</li>
-<li>Leyenda</li>
-</ul>
-<p>Pruebe utilizar:</p>
-<ul>
-<li>Gáficos de dispersión</li>
-<li>Gráficos de barras (use primera columna como etiquetas)</li>
-</ul>
-<p>Como ejemplo de usar un gráfico de barras, debería ver algo como esto:</p>
+<p>Usar <span class="math inline">\(C_d=0.5\)</span>,<span class="math inline">\(\rho=1.2 \ kg\cdot m^{-3}\)</span> y comparar los resultados con los mostrados en la tabla siguiente para la velocidad terminal:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\assets/calc-grafica-barras-seno-coseno.png" class="img-fluid figure-img"></p>
-<figcaption>gráficas trigonométricas</figcaption>
+<p><img src="..\assets/tracker-modelo-dinamico-02.png" class="img-fluid figure-img"></p>
+<figcaption>Tabla</figcaption>
 </figure>
 </div>
 </section>
 </section>
-<section id="referencias" class="level2">
-<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<section id="referencias" class="level1">
+<h1>Referencias</h1>
 <ul>
-<li><a href="https://documentation.libreoffice.org/assets/Uploads/Documentation/es/CG62/PDF/CG6205-UsarGraficosEnCalc.pdf"><span class="emoji" data-emoji="link">🔗</span> Ayuda oficial de Libre Office</a></li>
-<li><a href="https://www.youtube.com/watch?v=z-9B0ce9vqU"><span class="emoji" data-emoji="movie_camera">🎥</span> Gráficas de dispersión</a></li>
-<li><a href="https://help.libreoffice.org/latest/es/text/schart/01/04050000.html"><span class="emoji" data-emoji="link">🔗</span> Barras de error en Libre Office</a></li>
-<li><a href="http://www.andreacirillo.com/2018/02/10/summarising-tufte-theory-of-graphics-and-integrity-principles/"><span class="emoji" data-emoji="link">🔗</span> Diseño de gráficos basados en el estilo de Edward Tufte</a></li>
-<li><a href="https://www.edwardtufte.com/"><span class="emoji" data-emoji="link">🔗</span> Sitio de Edward Tufte</a></li>
-<li><a href="https://www.nature.com/documents/natrev-artworkguide.pdf"><span class="emoji" data-emoji="link">🔗</span> Guía de Nature para figuras</a></li>
-<li><a href="https://kevinlanning.github.io/DataSciLibArts/principles-of-data-visualization.html"><span class="emoji" data-emoji="link">🔗</span> Guía de principios para visualización</a></li>
-<li><a href="..\assets/Guia para la construcción de gráficos con Excel.pdf"><span class="emoji" data-emoji="link">🔗</span> Apunte de la materia laboratorio 1 Sobre Gráficas en Excel</a></li>
+<li><a href="https://physlets.org/tracker/tracker_help.pdf">Manual de Tracker</a></li>
+<li><a href="https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/531705cd7545572e0babbdaf04bbec86_MIT8_01F16_example8.12.pdf">Caída con rozamiento</a></li>
+<li><a href="..\assets/Modelos Dinámicos.trz">Archivo de Tracker con modelos</a></li>
 </ul>
 
 

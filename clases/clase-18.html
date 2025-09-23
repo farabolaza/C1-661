@@ -292,6 +292,12 @@ window.Quarto = {
  <span class="menu-text">Tracker 03</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/clase-19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tracker 04</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -346,6 +352,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#parámetros-externos-en-tracker" id="toc-parámetros-externos-en-tracker" class="nav-link active" data-scroll-target="#parámetros-externos-en-tracker">Parámetros externos en tracker</a></li>
+  <li><a href="#constructor-de-datos" id="toc-constructor-de-datos" class="nav-link" data-scroll-target="#constructor-de-datos">Constructor de datos</a></li>
   <li><a href="#modelos-analíticos" id="toc-modelos-analíticos" class="nav-link" data-scroll-target="#modelos-analíticos">Modelos analíticos</a>
   <ul class="collapse">
   <li><a href="#como-crear-un-modelo-analítico" id="toc-como-crear-un-modelo-analítico" class="nav-link" data-scroll-target="#como-crear-un-modelo-analítico">Como crear un modelo analítico</a></li>
@@ -389,6 +396,18 @@ window.Quarto = {
 <h1>Parámetros externos en tracker</h1>
 <p>En tracker podemos ingresar información externa además de las estrictamente necesarias para calbirar distancias, tales como masa de los objetos involucrados, relaciones entre variables, (energía cinética o potencial por ejemplo) condiciones inciales, fuerzas, etc.</p>
 <p>Cuando lo que hacemos es definir funciones que relacionan variables y no sólo parámetros, tracker llama a esto <em>modelos</em>, estos modelos pueden ser a base de <strong>funciones de posicion respecto al tiempo</strong>, en tal caso los llama <strong>modelos analíticos</strong>, mientras que si definimos <strong>funciones de fuerza</strong>, ecuaciones diferenciales o condiciones inciales entre variables los llama <strong>modelos dinámicos</strong>.</p>
+<p>Si lo que <strong>definimos</strong> son expresiones de otro tipo, estaremos usando el constructor de datos</p>
+</section>
+<section id="constructor-de-datos" class="level1">
+<h1>Constructor de datos</h1>
+<p>Si una vez que hemos creado una traza para una partícula vamos a <code>trayectoria &gt; masa N &gt; definir</code> (donde masa N es la masa que hemos trackeado) allí podremos crear expresiones con parámetros externos, constantes y las variables de estado del sistema como puede verse en la imagen.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/tracker-modelo-analitico-00.png" class="img-fluid figure-img"></p>
+<figcaption>Definir expresiones</figcaption>
+</figure>
+</div>
+<p>En este campo podremos definir energías cinéticas, potenciales, mecánicas, etc. en base a las variables de nuestro rastreo. Es posible accedera este menú si hacemos click derecho sobre la vista de tabla de datos y seleccionamos definir.</p>
 </section>
 <section id="modelos-analíticos" class="level1">
 <h1>Modelos analíticos</h1>
@@ -411,6 +430,7 @@ window.Quarto = {
 <ol type="1">
 <li>Crear un modelo analítico (sin video) de una caída libre sin rozamiento.</li>
 <li>¿Cómo Tratar las posicicioes una vez que <span class="math inline">\(y \leq 0\)</span>? (consejo: usar una expresión condicional)</li>
+<li>Dar una masa de 0,1 kg a la partícula y crear expresiones para la energía cinética, potencial y mecánica.</li>
 </ol>
 </section>
 </section>
