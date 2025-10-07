@@ -67,10 +67,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="TP 06 – C1-661 2025">
-<meta property="og:description" content="Linealización de datos y Solver">
+<meta property="og:description" content="Coeficiente de restitución en Tracker">
 <meta property="og:site_name" content="C1-661 2025">
 </head>
 
@@ -91,9 +120,6 @@ ul.task-list li input[type="checkbox"] {
       </button>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="8b9ef296b65e9ab3c1fb6ee88e872d66" class="alert alert-success hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><strong>208-05 Clase Vritual Link</strong> https://utn.zoom.us/j/9573772731?omn=94187577065</p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
@@ -164,79 +190,109 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 01</span></a>
+ <span class="menu-text">Libre Office</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 02</span></a>
+ <span class="menu-text">Writer 02</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 03</span></a>
+ <span class="menu-text">Writer 03</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 04</span></a>
+ <span class="menu-text">Writer 04</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 05</span></a>
+ <span class="menu-text">Writer 05</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 06</span></a>
+ <span class="menu-text">Writer 06</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 07</span></a>
+ <span class="menu-text">Calc 01</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 08</span></a>
+ <span class="menu-text">Calc 02</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 09</span></a>
+ <span class="menu-text">Calc 03</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 10</span></a>
+ <span class="menu-text">Linealización</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 11</span></a>
+ <span class="menu-text">Solver en Calc</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 12</span></a>
+ <span class="menu-text">Práctica Parcial</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/clase-13-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clase 13</span></a>
+ <span class="menu-text">Primer Parcial</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/clase-15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Otras Herramientas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/clase-16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tracker 01</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/clase-17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tracker 02</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/clase-18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tracker 03</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/clase-19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tracker 04</span></a>
   </div>
 </li>
       </ul>
@@ -298,7 +354,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#modalidad-y-fecha-de-entrega" id="toc-modalidad-y-fecha-de-entrega" class="nav-link active" data-scroll-target="#modalidad-y-fecha-de-entrega"><span class="header-section-number">1</span> Modalidad y fecha de entrega</a></li>
+  <li><a href="#objetivos" id="toc-objetivos" class="nav-link active" data-scroll-target="#objetivos"><span class="header-section-number">1</span> Objetivos</a></li>
+  <li><a href="#descripción-teórica" id="toc-descripción-teórica" class="nav-link" data-scroll-target="#descripción-teórica"><span class="header-section-number">2</span> Descripción teórica</a>
+  <ul class="collapse">
+  <li><a href="#usando-las-velocidades" id="toc-usando-las-velocidades" class="nav-link" data-scroll-target="#usando-las-velocidades"><span class="header-section-number">2.1</span> Usando las velocidades</a></li>
+  <li><a href="#usando-las-alturas" id="toc-usando-las-alturas" class="nav-link" data-scroll-target="#usando-las-alturas"><span class="header-section-number">2.2</span> Usando las alturas</a></li>
+  <li><a href="#usando-los-tiempos" id="toc-usando-los-tiempos" class="nav-link" data-scroll-target="#usando-los-tiempos"><span class="header-section-number">2.3</span> Usando los tiempos</a></li>
+  <li><a href="#la-naturaleza-exponencial-del-proceso" id="toc-la-naturaleza-exponencial-del-proceso" class="nav-link" data-scroll-target="#la-naturaleza-exponencial-del-proceso"><span class="header-section-number">2.4</span> La naturaleza exponencial del proceso</a></li>
+  <li><a href="#linealización-y-variables" id="toc-linealización-y-variables" class="nav-link" data-scroll-target="#linealización-y-variables"><span class="header-section-number">2.5</span> Linealización y variables</a></li>
+  </ul></li>
+  <li><a href="#consignas" id="toc-consignas" class="nav-link" data-scroll-target="#consignas"><span class="header-section-number">3</span> Consignas</a>
+  <ul class="collapse">
+  <li><a href="#trackeo" id="toc-trackeo" class="nav-link" data-scroll-target="#trackeo"><span class="header-section-number">3.1</span> Trackeo</a></li>
+  <li><a href="#modelos-cinemáticos" id="toc-modelos-cinemáticos" class="nav-link" data-scroll-target="#modelos-cinemáticos"><span class="header-section-number">3.2</span> Modelos cinemáticos</a>
+  <ul class="collapse">
+  <li><a href="#preguntas-de-análisis-y-ayuda-encubierta" id="toc-preguntas-de-análisis-y-ayuda-encubierta" class="nav-link" data-scroll-target="#preguntas-de-análisis-y-ayuda-encubierta"><span class="header-section-number">3.2.1</span> Preguntas de análisis (y ayuda encubierta)</a></li>
+  </ul></li>
+  <li><a href="#tratamiento-de-datos" id="toc-tratamiento-de-datos" class="nav-link" data-scroll-target="#tratamiento-de-datos"><span class="header-section-number">3.3</span> Tratamiento de Datos</a>
+  <ul class="collapse">
+  <li><a href="#preguntas-de-análisis" id="toc-preguntas-de-análisis" class="nav-link" data-scroll-target="#preguntas-de-análisis"><span class="header-section-number">3.3.1</span> Preguntas de análisis</a></li>
+  </ul></li>
+  <li><a href="#linea-de-tedencia-y-modelo-exponencial" id="toc-linea-de-tedencia-y-modelo-exponencial" class="nav-link" data-scroll-target="#linea-de-tedencia-y-modelo-exponencial"><span class="header-section-number">3.4</span> Linea de tedencia y modelo exponencial</a></li>
+  </ul></li>
+  <li><a href="#modalidad-y-fecha-de-entrega" id="toc-modalidad-y-fecha-de-entrega" class="nav-link" data-scroll-target="#modalidad-y-fecha-de-entrega"><span class="header-section-number">4</span> Modalidad y fecha de entrega</a></li>
   </ul>
 </nav>
     </div>
@@ -308,7 +386,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/tp 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/tp 06.html">TP 06</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">TP 06</h1>
-<p class="subtitle lead">Linealización de datos y Solver</p>
+<p class="subtitle lead">Coeficiente de restitución en Tracker</p>
 </div>
 
 
@@ -325,10 +403,265 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="modalidad-y-fecha-de-entrega" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Modalidad y fecha de entrega</h1>
-<p>Cada ejercicio deberá estar en una hoja diferente de un mismo libro de Libre Office Calc.</p>
+<section id="objetivos" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Objetivos</h1>
+<ol type="1">
+<li><p>Aplicar Tracker para determinar el coeficiente de restitución en un choque inelástico.</p>
+<ol type="a">
+<li>Aplicar un modelo cinético para comparar con los resultados</li>
+<li>Determinar el coef. mediante la comparación de sucesivas velocidades, tiempos o alturas</li>
+<li>Determinar el coef. linealizando datos experimentales en planilla de cálculo</li>
+<li>Utilizar herramientas de analisis de datos integradas en tracker</li>
+</ol></li>
+<li><p>Comparar y evaluar los diferentes métodos utilizados</p></li>
+</ol>
+</section>
+<section id="descripción-teórica" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Descripción teórica</h1>
+<p>En un choque entre dos objetos si asumimos la conservación de la energía y combinamos esta información con la combinación de la cantidad de movimiento (o momento lineal) podemos obtener una expresión para las velocidades relativas de ambos objetos involocrados antes y después del choque.</p>
+<p>Si llamamos <em>a</em> y <em>b</em> a estos objetos y llamamos inicial (i) y final (f) a ambas velocidades tenemos que para sus energías cinéticas se cumple que:</p>
+<p><span id="eq-conservacion-energia"><span class="math display">\[
+\frac{1}{2}m_a \cdot {v_a^i}^2 + \frac{1}{2}m_b \cdot {v_b^i}^2
+= \frac{1}{2}m_a \cdot {v_a^f}^2 + \frac{1}{2}m_b \cdot {v_b^f}^2
+\tag{1}\]</span></span></p>
+<p>En tanto que para la cantidad de movimiento</p>
+<p><span id="eq-cantidad-movimiento"><span class="math display">\[
+m_a \cdot {v_a^i} + m_b \cdot {v_b^i}
+= m_a \cdot {v_a^f} + m_b \cdot {v_b^f}
+\tag{2}\]</span></span></p>
+<p>Si combinamos <a href="#eq-conservacion-energia" class="quarto-xref">Ecuación&nbsp;1</a> con <a href="#eq-conservacion-energia" class="quarto-xref">Ecuación&nbsp;1</a> y operamos, llegamos a que:</p>
+<p><span class="math display">\[
+{v_a^i} + {v_b^i}
+={v_a^f} + {v_b^f}
+\]</span></p>
+<p>Si quieren reproducir el desarrollo matemático que acá omití los pasos son:</p>
+<ol type="a">
+<li><p>en <a href="#eq-cantidad-movimiento" class="quarto-xref">Ecuación&nbsp;2</a> separar en la igualdad por un lado los términos del objeto <em>a</em> y por el otro los del objeto <em>b</em>.</p></li>
+<li><p>Hacer lo mismo en <a href="#eq-conservacion-energia" class="quarto-xref">Ecuación&nbsp;1</a></p></li>
+<li><p>Dividir las 2 expresiones resultantes entre sí.</p></li>
+<li><p>Usar la <em>diferencia de cuadrados</em> para reescribir los términos que estén al cuadrado como un producto de términos lineales.</p></li>
+<li><p>Eliminar factores redundantes (simplificar) y reordenar</p></li>
+</ol>
+<p><span class="math display">\[
+{v_a^i} - {v_b^i} = -({v_a^f} - {v_b^f})
+\]</span></p>
+<p>Si en el choque hay una pérdida de energía cinética, lo que en efecto siempre sucede, podemos cuantificar esta pérdida mediante un coeficiente adimensional que usualmente se denomina con la letra <em>e</em> de la siguiente forma:</p>
+<p><span class="math display">\[
+e\cdot ({v_a^i} - {v_b^i}) = -({v_a^f} - {v_b^f})
+\]</span></p>
+<p>Lo aislamos en esta expresión y reordenamos para tener lo siguiente:</p>
+<p><span class="math display">\[
+e = \frac{{v_a^f} - {v_b^f}}{{v_b^i}- {v_a^i}}
+\]</span></p>
+<p>Si consideramos el caso de un objeto (<em>a</em>) rebotando contra el piso, (<em>b</em>) la velocidad inicial y final del piso es cero y por lo tanto la ecuación se reduce a :</p>
+<p><span class="math display">\[
+e = -\frac{{v_a^f}}{{v_a^i}}
+\]</span></p>
+<p>En esta situación tenemos una cadena de equivalencias: la pérdida de energía cinética lleva a una diminución de la velocidad luego del choque, lo que lleva a una menor altura final luego y a una reducción del tiempo entre rebotes sucesivos por lo que para acercarnos al coeficiente de restitución podemos medir:</p>
+<ol type="1">
+<li>Velocidades sucesivas entre rebotes</li>
+<li>Alturas sucesivas entre rebotes</li>
+<li>Tiempos sucesivos entre rebotes</li>
+</ol>
+<section id="usando-las-velocidades" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="usando-las-velocidades"><span class="header-section-number">2.1</span> Usando las velocidades</h2>
+<p>En general es lo menos apropiado cuando no se dispone de sensores o dispositivos que puedan medir con precisión velocidades en intervalos de tiempo pequeños. Podemos intentar usar Tracker para ello. Al habilitar la velocidad en la dirección vertical en la vista de tabla como campo disponible podremos mediante visualizar las velocidades antes y despues del impacto obtener un estimación para el coeficiente de restitución al aplicar directamente</p>
+<p><span class="math display">\[
+e = \frac{{v_f}}{{v_i}}
+\]</span></p>
+</section>
+<section id="usando-las-alturas" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="usando-las-alturas"><span class="header-section-number">2.2</span> Usando las alturas</h2>
+<p>Si el objeto que rebota ha caído desde una altura <span class="math inline">\(h_0\)</span> antes del impacto toda la energía potencial se convirtió en cinética, por lo que:</p>
+<p><span class="math display">\[
+v_a = \sqrt{2gh_0}
+\]</span></p>
+<p>luego de rebotar el objeto sale hacia arriba con una velocidad diferente <span class="math inline">\(v_b\)</span> y alcanzará una altura menor <span class="math inline">\(h_1\)</span> donde la conversión de energía se da en sentido inverso (cinética a potencial)</p>
+<p><span class="math display">\[
+v_b = \sqrt{2gh_1}
+\]</span></p>
+<p>Según como hemos definido el coeficiente de restitución tenemos que:</p>
+<p><span class="math display">\[
+e = \frac{v_b}{v_a} = \frac{\sqrt{2gh_1}}{\sqrt{2gh_0}} = \sqrt{\frac{h_1}{h_0}}
+\]</span></p>
+</section>
+<section id="usando-los-tiempos" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="usando-los-tiempos"><span class="header-section-number">2.3</span> Usando los tiempos</h2>
+<p>Si un objeto sale despedido del suelo con una velocidad inicial <span class="math inline">\(v_a\)</span> y suponemos nula la resistancia del aire, su tiempo de vuelo hasta volver a la altura inicial, planteando que <span class="math inline">\(h(t)=v_a\cdot t -\frac{g}{2}t^2\)</span> haciendo <span class="math inline">\(h(t)=0\)</span> queda de la siguient forma:</p>
+<p><span class="math display">\[
+\frac{2v_a}{g}=t_a
+\]</span></p>
+<p>Para el próximo rebote, donde parte con velocidad <span class="math inline">\(v_b\)</span> se da que</p>
+<p><span class="math display">\[
+\frac{2v_b}{g}=t_b
+\]</span></p>
+<p>Usando otra vez la definición del coeficiente de restitución tenemos que:</p>
+<p><span class="math display">\[
+e = \frac{\frac{2v_b}{g}}{\frac{2v_a}{g}}= \frac{v_b}{v_a} = \frac{t_b}{t_a}
+\]</span></p>
+<p>Por lo que midiendo tiempos sucesivos de rebote podemos acceder al coeficiente de restitución</p>
+</section>
+<section id="la-naturaleza-exponencial-del-proceso" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="la-naturaleza-exponencial-del-proceso"><span class="header-section-number">2.4</span> La naturaleza exponencial del proceso</h2>
+<p>Si el objeto va perdiendo energía y por lo tanto velocidad, altura máxima y acortando su tiempo de vuelo en cada rebote, lo hace siempre en una proporción constante que es justamente el coeficiente de restitución. Si numeramos los rebotes, podemos escribir lo siguiente</p>
+<p><span id="eq-exponencial-1"><span class="math display">\[
+\begin{align*}
+v_1 &amp;= e\cdot v_0  \\
+v_2 &amp;= e\cdot v_1 \\
+v_2 &amp;= e\cdot e\cdot v_0  \\
+v_2 &amp;= e^2\cdot v_0 \dots \\
+v_n &amp;= e^n \cdot v_0
+\end{align*}
+\tag{3}\]</span></span></p>
+<p>Podemos aprovechar esto como modelo para a través de la “enésima” velocidad, altura o tiempo obtener el coeficiente de restitición.</p>
+<p>Como vimos que <span class="math inline">\(e = \frac{v_b}{v_a} = \frac{t_b}{t_a}\)</span> en <a href="#eq-exponencial-1" class="quarto-xref">Ecuación&nbsp;3</a> podemos intercambiar tiempos y velocidades para obtener</p>
+<p><span class="math display">\[
+t_n = e^n \cdot t_0
+\]</span></p>
+<p>Si decidimos usar las alturas, como partimos de que <span class="math inline">\(e=\sqrt{\frac{h_1}{h_0}}\)</span> tenemos que <span class="math inline">\(e^2=\frac{h_1}{h_0}\)</span> y la secuencia anterior queda como:</p>
+<p><span class="math display">\[
+\begin{align*}
+h_1 &amp;= e^2\cdot h_0  \\
+h_2 &amp;= e^2\cdot h_1 \\
+h_2 &amp;= e\cdot e^2\cdot h_0  \\
+h_2 &amp;= e^3\cdot h_0 \dots \\
+h_n &amp;= e^{n+1} \cdot h_0
+\end{align*}
+\]</span></p>
+<p>El hecho de que obtengamos en todos los casos expresiones exponenciales se debe en todo a la propia naturaleza de la situación: si una variable aumenta o disminuye en una misma proporción linealmente tendremos una situación de crecimiento o decrecimiento exponencial.</p>
+</section>
+<section id="linealización-y-variables" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="linealización-y-variables"><span class="header-section-number">2.5</span> Linealización y variables</h2>
+<p>En los casos en que intentemos usar el número de rebote, este número se convertirá en nuestra variable independiente, por lo que nuestras expresiones quedarían de la siguiente forma:</p>
+<p><span class="math display">\[
+t(n) = e^n \cdot t_0
+\]</span></p>
+<p>Si linealizamos obtenemos:</p>
+<p><span class="math display">\[
+\ln{t(n)} = n\ln{e} + \ln{t_0}
+\]</span> <strong>Cuidado de no confundir el coeficiente de restitución <em>e</em> con el número de Euler en esta epresion</strong></p>
+<p>Por lo que necesitaríamos calcular el logartimo de los tiempos de vuelo y eso nos daría una expresión lineal donde la variable independiente es el número de rebote, la pendiente el logartimo del coef. de restitución y la ordenada al origen el logaritmo del tiempo de caida inicial.</p>
+</section>
+</section>
+<section id="consignas" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Consignas</h1>
+<p>Deberán trabajar con el proyecto disponible en las librerías en línea de Tracker llamado “Bouncing-Ball” (ver imagen debajo)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/tracker-bouncing-ball.png" class="img-fluid figure-img"></p>
+<figcaption>archivo</figcaption>
+</figure>
+</div>
+<p>Este archivo tiene cargado un modelo dinámico para la partícula. Deben borrarlo junto a las Masas B y C que no tienen información alguna.</p>
+<section id="trackeo" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="trackeo"><span class="header-section-number">3.1</span> Trackeo</h2>
+<p>Pueden usar el trackeo y sistema de rererencia que trae el video o pueden hacer uds. de nuevo la medición. Tengan en cuenta no eliminar ni modificar la calibración. Si por error lo hacen, según el video hay 1 metro entre el punto naranja en la pantalla y la llave metálica que está en la pared.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/tracker-bouncing-ball-calibracion.png" class="img-fluid figure-img"></p>
+<figcaption>escala</figcaption>
+</figure>
+</div>
+</section>
+<section id="modelos-cinemáticos" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="modelos-cinemáticos"><span class="header-section-number">3.2</span> Modelos cinemáticos</h2>
+<p>Van a crear un modelo cinemático para cada uno de los rebotes comenzando por el instante del lanzamiento.</p>
+<p>Crear un modelo cinemático para la partícula y colocarlo en el origen junto a la pelota. Debe extenderse desde el comienzo del video hasta el primer rebote (aproximadamente hasta el fotograma 17).</p>
+<p>Luego, hacer lo mismo pero comenzando en el fotograma 18 hasta el 37 (tomen estos valores como referencia pero revisen por su cuente)</p>
+<p>Repetir esto hasta el final del video.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/tracker-bouncing-ball-modelo-cinemático-vista.png" class="img-fluid figure-img"></p>
+<figcaption>modelos cinemáticos</figcaption>
+</figure>
+</div>
+<p>Deberán tener 5 modelos analíticos 1 para la caída y 4 para los rebotes.</p>
+<section id="preguntas-de-análisis-y-ayuda-encubierta" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="preguntas-de-análisis-y-ayuda-encubierta"><span class="header-section-number">3.2.1</span> Preguntas de análisis (y ayuda encubierta)</h3>
+<ol type="1">
+<li><p>Consideraste la existencia de velocidad inicial en la componente horizontal? A. ¿Por qué si o por qué no?</p></li>
+<li><p>En la caída inicial ¿Cómo podemos justificar que es razonable despreciar la resistencia del aire?</p></li>
+<li><p>¿Cómo justificarías que el tiempo de vuelo del primer rebote es mayor al de la caída inicial?</p>
+<ol type="a">
+<li>¿Afecta esto en tener en cuenta o no al tiempo de vuelo de la caída inicial?</li>
+<li>¿Por qué si o por qué no?</li>
+<li>¿Sería correcto incluir en el análisis el tiepmo de caída inicial? ¿Por qué?</li>
+</ol></li>
+<li><p>¿Que valores inciales de velocidad y posición consideraste al crear los modelos analíticos? ¿Los del frame actual? ¿El anterior? ¿El siguiente? ¿Un promedio?</p>
+<ol type="a">
+<li>¿Intentaste variar esta elección para hacer coincidir el modelo con el video? (si la posición vertical de tu modelo no coincide con la de la partícula en el video es hora de intentarlo)</li>
+</ol></li>
+<li><p>¿Utilizaste en la vista de tabla de datos el número de frame para pode guiarte?</p></li>
+</ol>
+</section>
+</section>
+<section id="tratamiento-de-datos" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="tratamiento-de-datos"><span class="header-section-number">3.3</span> Tratamiento de Datos</h2>
+<p>Eportar los datos a una planilla de cáculo y obtener un valor para el coeficiente de restitución a partir de:</p>
+<ol type="1">
+<li>Comparación de alturas máximas sucesivas</li>
+<li>Comparación de tiempos de vuelo sucesivos</li>
+<li>Comparación de velocidades entre rebotes</li>
+</ol>
+<p>Usando las fórmulas para cada situación</p>
+<div class="columns">
+<div class="column">
+<p><span class="math display">\[
+e=\frac{v_2}{v_1}
+\]</span></p>
+</div><div class="column">
+<p><span class="math display">\[
+e=\frac{t_2}{t_1}
+\]</span></p>
+</div><div class="column">
+<p><span class="math display">\[
+e=\sqrt{\frac{h_2}{h_1}}
+\]</span></p>
+</div>
+</div>
+<p><strong>PISTA:</strong>Para ello deberán encontrar en los datos los correspondientes a las alturas máximas y mínimas e identificar cuándo suceden los rebotes. Les conviene seleccionar el frame como un campo a exportar y primero mirar en tracker cuales frames tienen la información que requerimos.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/tracker-bouncing-ball-frames.png" class="img-fluid figure-img"></p>
+<figcaption>número de frame en la tabla</figcaption>
+</figure>
+</div>
+<p>Para estos cálculos no es estrictamente necesario usar la planilla de cálculo pero si para los siguientes puntos.</p>
+<p>Puede resultar útil abrir la pestaña de análisis de datos en tracker y observar la gráfica de <span class="math inline">\(v_y(t)\)</span>, de ella se puede obtene un análisis de regresión lineal de a “tramos” seleccionando los frames de interés.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\assets/tracker-bouncing-ball-analisis-datos.png" class="img-fluid figure-img"></p>
+<figcaption>Análisis por tramos</figcaption>
+</figure>
+</div>
+<p>Esto puede servir para darnos una idea de la aceleración en cada rebote y por lo tanto pensar en si hay otras fuerzas actuando que deberían tenerse en cuenta para en análisis llegado el caso.</p>
+<section id="preguntas-de-análisis" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="preguntas-de-análisis"><span class="header-section-number">3.3.1</span> Preguntas de análisis</h3>
+<ol type="1">
+<li>¿Los valores encontrados son similares entre sí? ¿Podemos conocer la incertidumbre en cada medición (alturas, tiempos, etc.) para poder compararlas?</li>
+<li>Describir como se podría hacer para incluir la incertidumbre en cada ecuación y como comparar sus resultados. (sólo describirlo)</li>
+</ol>
+</section>
+</section>
+<section id="linea-de-tedencia-y-modelo-exponencial" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="linea-de-tedencia-y-modelo-exponencial"><span class="header-section-number">3.4</span> Linea de tedencia y modelo exponencial</h2>
+<p>Con lo datos en una planila de cálculo:</p>
+<ol type="1">
+<li>Obtener un valor para el coeficiente de restitución <em>e</em> a partir de linealizar los datos exportados.</li>
+</ol>
+<p>Podrán hacerlo a partir de los tiempos de vuelo, las alturas o las velocidades como se detalló en la descripción teórica</p>
+<p><strong>NOTA:</strong> Para eso deberán seleccionar las filas corespondientes a los frames de interés de acuerdo a la variable que hubieran elegido.</p>
+</section>
+</section>
+<section id="modalidad-y-fecha-de-entrega" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Modalidad y fecha de entrega</h1>
 <p>Vía aula virtual <a href="https://inspt.cvg.utn.edu.ar/course/view.php?id=2201#section-1">acá</a> según fecha indicada en la tarea.</p>
+<p>La entrega deberá contar de:</p>
+<ol type="1">
+<li>Archivo de proyecto de tracker (*.trz)</li>
+<li>Planilla de cálculo (<em>.ods, </em>.xlsx, etc) (pueden incluir la respuestas a las preguntas en una solapa del libro de cálculo)</li>
+<li><strong>opcional</strong> Archivo de texto (<em>.odt, </em>.docx) con las respuestas a las preguntas.</li>
+</ol>
 
 
 </section>
@@ -426,7 +759,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/farabolaza\.github\.io\/C1-661-2025\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
