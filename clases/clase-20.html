@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tracker 02 – C1-661 2025</title>
+<title>Práctica Primer Parcial – C1-661 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,10 +67,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Tracker 02 – C1-661 2025">
-<meta property="og:description" content="Autotracking">
+<meta property="og:title" content="Práctica Primer Parcial – C1-661 2025">
+<meta property="og:description" content="Consultas pre-parcial">
 <meta property="og:site_name" content="C1-661 2025">
 </head>
 
@@ -83,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-17.html">Tracker 02</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-20.html">Práctica Primer Parcial</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -250,7 +279,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-17.html" class="sidebar-item-text sidebar-link active">
+  <a href="../clases/clase-17.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tracker 02</span></a>
   </div>
 </li>
@@ -268,7 +297,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/clase-20.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/clase-20.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Práctica Primer Parcial</span></a>
   </div>
 </li>
@@ -331,28 +360,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#usando-el-trackeo-automático" id="toc-usando-el-trackeo-automático" class="nav-link active" data-scroll-target="#usando-el-trackeo-automático">Usando el trackeo automático</a>
+  <li><a href="#simulacro-de-parcial" id="toc-simulacro-de-parcial" class="nav-link active" data-scroll-target="#simulacro-de-parcial">Simulacro de Parcial</a>
   <ul class="collapse">
-  <li><a href="#como-inciar-el-auto-rastreo" id="toc-como-inciar-el-auto-rastreo" class="nav-link" data-scroll-target="#como-inciar-el-auto-rastreo">Como inciar el auto-rastreo</a>
+  <li><a href="#análisis-de-video-en-tracker" id="toc-análisis-de-video-en-tracker" class="nav-link" data-scroll-target="#análisis-de-video-en-tracker">Análisis de video en Tracker</a>
   <ul class="collapse">
-  <li><a href="#keyframe" id="toc-keyframe" class="nav-link" data-scroll-target="#keyframe">KeyFrame</a></li>
-  <li><a href="#elementos-del-auto-rastreo" id="toc-elementos-del-auto-rastreo" class="nav-link" data-scroll-target="#elementos-del-auto-rastreo">Elementos del auto-rastreo</a></li>
+  <li><a href="#datos" id="toc-datos" class="nav-link" data-scroll-target="#datos">Datos</a></li>
+  <li><a href="#modelo-dinámico" id="toc-modelo-dinámico" class="nav-link" data-scroll-target="#modelo-dinámico">Modelo dinámico</a></li>
   </ul></li>
-  <li><a href="#buenas-prácticas" id="toc-buenas-prácticas" class="nav-link" data-scroll-target="#buenas-prácticas">Buenas prácticas</a></li>
-  <li><a href="#intervención-manual" id="toc-intervención-manual" class="nav-link" data-scroll-target="#intervención-manual">Intervención manual</a></li>
+  <li><a href="#análisis-de-resultados-tracker" id="toc-análisis-de-resultados-tracker" class="nav-link" data-scroll-target="#análisis-de-resultados-tracker">Análisis de resultados (tracker)</a></li>
+  <li><a href="#preguntas-de-análisis" id="toc-preguntas-de-análisis" class="nav-link" data-scroll-target="#preguntas-de-análisis">Preguntas de análisis</a></li>
   </ul></li>
-  <li><a href="#actividad" id="toc-actividad" class="nav-link" data-scroll-target="#actividad">Actividad</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-17.html">Tracker 02</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/clase-20.html">Práctica Primer Parcial</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Tracker 02</h1>
-<p class="subtitle lead">Autotracking</p>
+<h1 class="title">Práctica Primer Parcial</h1>
+<p class="subtitle lead">Consultas pre-parcial</p>
 </div>
 
 
@@ -369,106 +396,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="usando-el-trackeo-automático" class="level1">
-<h1>Usando el trackeo automático</h1>
-<p>Una funcionalidad útil en tracker es lo que se denomina <em>autotracking</em> o trayectoria automática.</p>
-<p>Lo que el auto-rastreo permite es a partir de un cuadro en donde se observa al cuerpo que se desea seguir, dejar que el software intente hacerlo por su cuenta.</p>
-<p>Parece tentador entonces, abandonar el aburrido rastreo manual y entregarse de lleno al autotrackeo. Sin embargo, como veremos, el autotrackeo necesita, para funcionar correctamente, de bastante asistencia manual tanto en su configuración inicial, como ajustes durante su ejecución dependiendo de las características del objeto a seguir y las condiciones de luz, constrate, fondo y otros elementos del video.</p>
-<section id="como-inciar-el-auto-rastreo" class="level2">
-<h2 class="anchored" data-anchor-id="como-inciar-el-auto-rastreo">Como inciar el auto-rastreo</h2>
-<p>Una vez que tenemos nuestro video calibrado (sistema de referencia, vara de calibración, etc.) debemos crear primero un objeto a seguir.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/tracker-autotracking-01.png" class="img-fluid figure-img"></p>
-<figcaption>auto rastreo</figcaption>
-</figure>
-</div>
-<p>Como ejemplo, supongamos una <em>masa puntual</em> que creamos haciendo <code>trayectorias &gt; nuevo &gt; masa puntual</code> o haciendo click en el ícono del rastreo y siguiendo idénticos pasos.</p>
-<p>Una vez que tenemos nuestra masa puntual, podemos hacer:</p>
-<ul>
-<li>Click en el ícono de la masa que hemos creado y seleccionar “Trayectoria automática”</li>
-<li>Click en el ícono de autro-rastreo (está junto al de Rastreo) y seleccionar la masa que queremos trackear.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/tracker-autotracking-02.png" class="img-fluid figure-img"></p>
-<figcaption>auto rastreo</figcaption>
-</figure>
-</div>
-<section id="keyframe" class="level3">
-<h3 class="anchored" data-anchor-id="keyframe">KeyFrame</h3>
-<p>Al software debemos decir “que es lo que debe seguir” eso implica seleccionar visualmente una parte de nuestro video que contenga al objeto de interés.</p>
-<p>Una vez que abrimos la pestaña de trayectoria automática presionamos <code>ctrl + shift</code> (veremos como el cursor cambia de forma) y clickeamos sobre el objeto a rastrear.</p>
-<ul>
-<li>El área de búsueda es el rectángulo de líneas</li>
-<li>El fotograma clave es lo que encierra dentro de la forma</li>
-<li>La posición que marcará corresponde a la cruz</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/tracker-autotracking-03.png" class="img-fluid figure-img"></p>
-<figcaption>Pantalla de trayectoria automática</figcaption>
-</figure>
-</div>
-<p>Luego, apretamos en <code>buscar</code> y el software debería seguir la trayectoria de nuestra plantilla.</p>
-</section>
-<section id="elementos-del-auto-rastreo" class="level3">
-<h3 class="anchored" data-anchor-id="elementos-del-auto-rastreo">Elementos del auto-rastreo</h3>
-<p>En la ventana de Trayectoria automática vemos lo siguiente:</p>
-<p>Plantitlla: Muestra una imagen que compara nuestra plantilla con el posible match. Una plantilla grande en tamaño puede hacer lento el software (además de que no aporta información correcta).</p>
-<p>Tasa de evolución: Que porcentaje del match anterior intenta mezclar con el actual (asumiendo que la plantilla puede ir cambiando durante el proceso). Un valor muy bajo hace que casi no obtengamos coincidencias, uno muy alto puede dar coincidencias no útiles.</p>
-<p>Atadura: Parámetro que controla la proximidad-atadura esperada entre sucesivos cuadros (parámetro asociado a la tasa de evolución).</p>
-<p>Automarca: Puntuación (score) mínimo para que el software haga un match automático antes de pedir verificación al usuario.</p>
-<p>Forma (Shape): Forma de la plantilla.</p>
-<p>Buscar: Parámetro que modifica la forma en que la ventana de búsqueda evoluciona en el tiempo. (estática, intenta predecir el movimiento, etc.)</p>
-<p>Stop: Condicones para que el autotrackeo se detenga.</p>
-<p>Objetivo: Elemento que estamos intentando rastrear</p>
-</section>
-</section>
-<section id="buenas-prácticas" class="level2">
-<h2 class="anchored" data-anchor-id="buenas-prácticas">Buenas prácticas</h2>
-<p>Para que un auto-rastreo tenga éxito debemos tener en cuenta algunas cosas. Dese el punto de vista de la grabación en video, un fondo de color uniforme y que no cambie, es ideal. Pensemos en como se aplican en las producciones audivisuales los efectos de chroma-filter en donde un fondo uniforme es reemplazado por lo que se desee. En el caso de los videos para análisis las considereaciones son las mismas. Evitar inclinaciones de la cámara y efectos de perspectiva (ya que las distancias se distorsionarían) y harían más dificil el rastreo (ésto aplica a un rastreo manual también).</p>
-<p>En cuanto al objeto a seguir muchas veces conviene no centrarse tanto en la forma del objeto, sino en partes que contrasten bien con el fondo, como esquinas, bordes, etc. cuya forma sea invariante y ayude al algoritmo de detección a dar una buena puntuación.</p>
-</section>
-<section id="intervención-manual" class="level2">
-<h2 class="anchored" data-anchor-id="intervención-manual">Intervención manual</h2>
-<p>Cuando el auto rastreo no puede dar con una coincidencia que supere el umbral establecido, pedirá aistencia al usuario. En estos casos vemos esta imagen (o una similar dependiendo de si encontró una coincidencia dudosa o ninguna):</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/tracker-autotracking-04.png" class="img-fluid figure-img"></p>
-<figcaption>Intervención manual</figcaption>
-</figure>
-</div>
-<p>Allí, lo que podemos hacer es</p>
+<section id="simulacro-de-parcial" class="level1">
+<h1>Simulacro de Parcial</h1>
+<section id="análisis-de-video-en-tracker" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-de-video-en-tracker">Análisis de video en Tracker</h2>
+<p>Al momento resolver los siguientes puntos del examen deberá decidir sobre las unidades usadas (m, cm), las ubicación y orientación de los ejes coordenados, la posición inicial de sus sistema, como variables a controlar que harán que su trabajo posterior sea más sencillo y fácil de interpretar o que le evite complicaciones a la hora de interpretar sus resultados.</p>
 <ol type="1">
-<li>Hacer un match manual: <code>shift + click</code></li>
-<li>Mover el área de búsqueda (el cuadro en donde intentará buscar)</li>
-<li>Aceptar la coincidencia propuesta (si es que ofrece alguna)</li>
-<li>Ir a un paso atrás y cambiar alguno de los parámetros</li>
-<li>Cear un nuevo fotograma clave <code>ctrl + shift + click</code></li>
+<li>Importar a tracker <a href="..\assets/videos/Spring and mass.mp4">este video</a></li>
+<li>Establecer un sistema de referencia</li>
+<li>Establecer una escala</li>
+<li>Crear una vara de calibración</li>
+<li>Elegir la partícula (sistema) a seguir y crear un modelo de masa puntual</li>
+<li>Trackear la trayectoria <span class="math inline">\(y(t)\)</span></li>
 </ol>
-<p>Que hacer dependerá del caso: si tenemos un fotograma esquivo, pero el resto de la trayectoria se auto marca bien, marcar manualmente resuelve el tema.</p>
-<p>Si el fondo o la imagen han cambiado, podemos intentar tocar los parámetros del menú de búsqueda en el cuadro previo o bien intentar crear un nuevo fotograma clave si es que visualmente nuestro objetivo o el fondo ahora son diferentes.</p>
-</section>
-</section>
-<section id="actividad" class="level1">
-<h1>Actividad</h1>
+<section id="datos" class="level3">
+<h3 class="anchored" data-anchor-id="datos">Datos</h3>
 <ol type="1">
-<li>Aplicar el auto rastreo al video de la clase anterior</li>
-<li>Aplicar el auto rastreo al video “bouncing cart” (dentro de la librería tracker sampler/Studen Modelling Projects)</li>
+<li>En la vista de tabla haga visible la columna de energía cinética <span class="math inline">\(K\)</span></li>
+<li>Defina una columna para la energía potencial de su sistema</li>
 </ol>
-<p>(borren el trackeo existente: seleccionan la masa, y “borrar”)</p>
 </section>
-<section id="referencias" class="level1">
-<h1>Referencias</h1>
+<section id="modelo-dinámico" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-dinámico">Modelo dinámico</h3>
+<p>Para una masa colgada de un resorte se tiene que la fuerza neta, y por lo tanto la aceleración es directamente proporcional a la elongación del resorte desde su posición de equilibrio</p>
+<p><span class="math display">\[
+-\frac{k}{m}(\Delta x-l_0)-g=\ddot{x}
+\]</span></p>
+<p>Si reescribimos la relacíón anterior para la segunda ley de Newton para una masa tal como la del video tenemos que:</p>
+<p><span class="math display">\[
+-k y-m g=m a
+\]</span></p>
 <ol type="1">
-<li><a href="https://www.youtube.com/watch?v=Dn0Zz7rtkZw">Tutorial en video de auto rastreo</a></li>
-<li><a href="https://www.physlets.org/tracker/help/autotracker.html">Tutorial de la web oficial de traker</a></li>
-<li><a href="https://physlets.org/tracker/library/workshop_examples/4.%20Data%20analysis%20in%20Tracker/tracker_analysis.pdf">Links a ayuda de tracker</a></li>
-<li><a href="https://physlets.org/tracker/library/workshop_examples/5.%20Particle%20models/tracker_models.pdf">Modelos de partículas en traker</a></li>
+<li>Cree un modelo dinámico basado en el oscilador armónico simple.</li>
+<li>Pruebe con valores para <span class="math inline">\(k\)</span> y <span class="math inline">\(m\)</span> hasta obtener un modelo que se asemeje a la trayectoria grabada.</li>
+</ol>
+</section>
+</section>
+<section id="análisis-de-resultados-tracker" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-de-resultados-tracker">Análisis de resultados (tracker)</h2>
+<p>Con los datos de la trayectoria:</p>
+<ol type="1">
+<li>Analizar los datos en tracker</li>
+<li>Obtener una curva que ajuste a los datos obtenidos</li>
+<li>Calcular el período de una oscilación</li>
+</ol>
+</section>
+<section id="preguntas-de-análisis" class="level2">
+<h2 class="anchored" data-anchor-id="preguntas-de-análisis">Preguntas de análisis</h2>
+<ol type="1">
+<li>¿Que unidad elegiste para las distancias? ¿m, cm, km?</li>
+<li>¿Altera la elección de unidades la forma de la trayectoria?</li>
+<li>En el modelo dinámico ¿Las unidades de fuerza son consistentes?</li>
 </ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
