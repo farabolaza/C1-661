@@ -301,6 +301,12 @@ window.Quarto = {
  <span class="menu-text">Práctica Segundo Parcial</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../clases/clase-21.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Segundo Parcial</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -362,12 +368,12 @@ window.Quarto = {
   <ul>
   <li><a href="#simulacro-de-parcial" id="toc-simulacro-de-parcial" class="nav-link active" data-scroll-target="#simulacro-de-parcial">Simulacro de Parcial</a>
   <ul class="collapse">
-  <li><a href="#análisis-de-video-en-tracker" id="toc-análisis-de-video-en-tracker" class="nav-link" data-scroll-target="#análisis-de-video-en-tracker">Análisis de video en Tracker</a>
+  <li><a href="#análisis-de-video-en-tracker" id="toc-análisis-de-video-en-tracker" class="nav-link" data-scroll-target="#análisis-de-video-en-tracker">Análisis de video en Tracker</a></li>
+  <li><a href="#análisis-de-resultados" id="toc-análisis-de-resultados" class="nav-link" data-scroll-target="#análisis-de-resultados">Análisis de resultados</a>
   <ul class="collapse">
   <li><a href="#datos" id="toc-datos" class="nav-link" data-scroll-target="#datos">Datos</a></li>
-  <li><a href="#modelo-dinámico" id="toc-modelo-dinámico" class="nav-link" data-scroll-target="#modelo-dinámico">Modelo dinámico</a></li>
   </ul></li>
-  <li><a href="#análisis-de-resultados-tracker" id="toc-análisis-de-resultados-tracker" class="nav-link" data-scroll-target="#análisis-de-resultados-tracker">Análisis de resultados (tracker)</a></li>
+  <li><a href="#modelo-dinámico" id="toc-modelo-dinámico" class="nav-link" data-scroll-target="#modelo-dinámico">Modelo dinámico</a></li>
   <li><a href="#preguntas-de-análisis" id="toc-preguntas-de-análisis" class="nav-link" data-scroll-target="#preguntas-de-análisis">Preguntas de análisis</a></li>
   </ul></li>
   </ul>
@@ -409,6 +415,15 @@ window.Quarto = {
 <li>Elegir la partícula (sistema) a seguir y crear un modelo de masa puntual</li>
 <li>Trackear la trayectoria <span class="math inline">\(y(t)\)</span></li>
 </ol>
+</section>
+<section id="análisis-de-resultados" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-de-resultados">Análisis de resultados</h2>
+<p>Con los datos de la trayectoria:</p>
+<ol type="1">
+<li>Analizar los datos en tracker</li>
+<li>Obtener una curva que ajuste a los datos obtenidos</li>
+<li>Calcular el período de una oscilación</li>
+</ol>
 <section id="datos" class="level3">
 <h3 class="anchored" data-anchor-id="datos">Datos</h3>
 <ol type="1">
@@ -416,29 +431,16 @@ window.Quarto = {
 <li>Defina una columna para la energía potencial de su sistema</li>
 </ol>
 </section>
-<section id="modelo-dinámico" class="level3">
-<h3 class="anchored" data-anchor-id="modelo-dinámico">Modelo dinámico</h3>
+</section>
+<section id="modelo-dinámico" class="level2">
+<h2 class="anchored" data-anchor-id="modelo-dinámico">Modelo dinámico</h2>
 <p>Para una masa colgada de un resorte se tiene que la fuerza neta, y por lo tanto la aceleración es directamente proporcional a la elongación del resorte desde su posición de equilibrio</p>
-<p><span class="math display">\[
--\frac{k}{m}(\Delta x-l_0)-g=\ddot{x}
-\]</span></p>
-<p>Si reescribimos la relacíón anterior para la segunda ley de Newton para una masa tal como la del video tenemos que:</p>
 <p><span class="math display">\[
 -k y-m g=m a
 \]</span></p>
 <ol type="1">
-<li>Cree un modelo dinámico basado en el oscilador armónico simple.</li>
+<li>Cree un modelo dinámico basado en lo dicho más arriba.</li>
 <li>Pruebe con valores para <span class="math inline">\(k\)</span> y <span class="math inline">\(m\)</span> hasta obtener un modelo que se asemeje a la trayectoria grabada.</li>
-</ol>
-</section>
-</section>
-<section id="análisis-de-resultados-tracker" class="level2">
-<h2 class="anchored" data-anchor-id="análisis-de-resultados-tracker">Análisis de resultados (tracker)</h2>
-<p>Con los datos de la trayectoria:</p>
-<ol type="1">
-<li>Analizar los datos en tracker</li>
-<li>Obtener una curva que ajuste a los datos obtenidos</li>
-<li>Calcular el período de una oscilación</li>
 </ol>
 </section>
 <section id="preguntas-de-análisis" class="level2">
@@ -447,6 +449,10 @@ window.Quarto = {
 <li>¿Que unidad elegiste para las distancias? ¿m, cm, km?</li>
 <li>En el modelo dinámico ¿Las unidades de fuerza son consistentes?</li>
 <li>¿Altera la elección de unidades la forma de la trayectoria?</li>
+<li>Cambiar la posición del origen ¿Cambia sus resultados?</li>
+<li>¿Es realmente la ecuación <span class="math inline">\(-k y-m g=m a\)</span> correcta para este caso?</li>
+<li>¿Parece amortiguarse el modelo?¿Es consistente eso con un movimiento armónico simple?</li>
+<li>Ensayar una explicación o hipótesis de por qué sucede esto.</li>
 </ol>
 
 
