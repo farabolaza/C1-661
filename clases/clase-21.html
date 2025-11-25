@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -66,6 +66,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -368,6 +371,10 @@ window.Quarto = {
   <ul>
   <li><a href="#análisis-de-video-en-tracker" id="toc-análisis-de-video-en-tracker" class="nav-link active" data-scroll-target="#análisis-de-video-en-tracker">Análisis de video en Tracker</a></li>
   <li><a href="#datos" id="toc-datos" class="nav-link" data-scroll-target="#datos">Datos</a></li>
+  <li><a href="#consignas" id="toc-consignas" class="nav-link" data-scroll-target="#consignas">Consignas</a></li>
+  <li><a href="#ayuda-deducción-del-modelo-dinámico" id="toc-ayuda-deducción-del-modelo-dinámico" class="nav-link" data-scroll-target="#ayuda-deducción-del-modelo-dinámico">Ayuda: Deducción del modelo dinámico</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  <li><a href="#resultados" id="toc-resultados" class="nav-link" data-scroll-target="#resultados">Resultados</a></li>
   </ul>
 </nav>
     </div>
@@ -420,7 +427,10 @@ window.Quarto = {
 <figcaption>frame-rate</figcaption>
 </figure>
 </div>
-</div><p>:::: <!-- end columns --></p><section id="consignas" class="level2">
+</div>
+</div>
+</section>
+<section id="consignas" class="level2">
 <h2 class="anchored" data-anchor-id="consignas">Consignas</h2>
 <ol type="1">
 <li>Importar a tracker <a href="..\assets/videos/tracker-parcial-Harmonic_100g.mp4">este video</a></li>
@@ -434,22 +444,23 @@ window.Quarto = {
 </ol>
 <p>Guardar proyecto de tracker y subirlo como entrega de la tarea “Segundo parcial” en el <a href="https://inspt.cvg.utn.edu.ar/mod/assign/view.php?id=61476">campus</a></p>
 <p>Tenga en cuenta de guardar su progreso periódicamente mientras trabaja y dedicar los últimos minutos que tenga disponibles para realizar la entrega de su examen.</p>
-</section><section id="ayuda-deducción-del-modelo-dinámico" class="level2">
+</section>
+<section id="ayuda-deducción-del-modelo-dinámico" class="level2">
 <h2 class="anchored" data-anchor-id="ayuda-deducción-del-modelo-dinámico">Ayuda: Deducción del modelo dinámico</h2>
-<p>Para una masa colgada de un resorte se tiene que la fuerza neta, y por lo tanto la aceleración es directamente proporcional a la elongación del resorte desde su posición de equilibrio, sin embargo se debe tener especial atención a que llamamos posición de equilibrio. Si tenemos un sistema compuesto sólo del resorte colgando, éste tendrá su elongación incial provocada por la fuerza peso actuando sobre él. Llamemos a esa elongación <span class="math inline">\(y_0\)</span>. Si escribimos la segunda ley de Newton para el resorte en reposo, tenemos que:</p>
+<p>Para una masa colgada de un resorte se tiene que la fuerza neta, y por lo tanto la aceleración es directamente proporcional a la elongación del resorte desde su posición de equilibrio, sin embargo se debe tener especial atención a que llamamos posición de equilibrio. Si tenemos un sistema está compuesto sólo del resorte colgando, éste tendrá su elongación incial provocada por la fuerza peso actuando sobre él. Llamemos a esa elongación <span class="math inline">\(y_0\)</span>. Si escribimos la segunda ley de Newton para el resorte en reposo, tenemos que:</p>
 <p><span class="math display">\[
 -k y_0-m_r g=0
 \]</span></p>
 <p>En donde el signo “-” delante de <span class="math inline">\(k\)</span> denota que la fuerza restauradora tiene el sentido contrario al desplazamiento y el signo menos delante de la fuerza peso hace las veces de “versor” que nos indica que ésta fuerza actua hacia el “abajo” de nuestro sistema y por lo tanto para <span class="math inline">\(g\)</span> se usa su valor absoluto. Se debe tener el cuidado en ser consistente siempre al momento de asumir sentidos y signos en un desarrollo</p>
 <p>Si consideramos la posición de equilibrio</p>
-<p><span class="math display">\[
+<p><span id="eq-equilibrio"><span class="math display">\[
 -k y_0=m_r g
-\]</span></p>
+\tag{1}\]</span></span></p>
 <p>Ahora si se aleja al resorte de su posición de equilibrio una distancia <span class="math inline">\(y\)</span> tenemos:</p>
 <p><span class="math display">\[
 -k (y_0+y)-m_r g=m_r a
 \]</span></p>
-<p>Si reemplazamos la fuerza peso en términos de lo que obtuvimos investigando la posición de equilibrio:</p>
+<p>Si reemplazamos la fuerza peso en términos de lo que obtuvimos investigando la posición de equilibrio en <a href="#eq-equilibrio" class="quarto-xref">Ecuación&nbsp;1</a>:</p>
 <p><span class="math display">\[
 \begin{aligned}
 -k (y_0+y)+k y_0 &amp;=m_r a \\
@@ -474,16 +485,112 @@ window.Quarto = {
 \end{aligned}
 \]</span></p>
 <p>Otra vez llegamos a que nuestro sistema oscilará con un movimiento armónico simple. Es ahora cuando entendemos que dependiendo de la relación entre las masas del resorte y la que cuelga de él obtendremos una descripción del movimiento para cosas diferentes: sólo la masa colgante, la masa y el resorte o sólo el resorte.</p>
-</section><section id="referencias" class="level2">
+</section>
+<section id="referencias" class="level2">
 <h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
 <ul>
 <li><a href="https://phys.libretexts.org/Bookshelves/University_Physics/Book%3A_Introductory_Physics_-_Building_Models_to_Describe_Our_World_(Martin_Neary_Rinaldo_and_Woodman)/13%3A_Simple_Harmonic_Motion/13.02%3A_Vertical_spring-mass_system">Sistema masa-resorte vertical</a></li>
 <li><a href="https://pace-phys-labs.weebly.com/uploads/8/2/8/0/82802076/mass_spring_system.pdf">Sistema masa-resorte vertical 2</a></li>
 </ul>
-
-
 </section>
+<section id="resultados" class="level2">
+<h2 class="anchored" data-anchor-id="resultados">Resultados</h2>
+<div id="94ed6f3a" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Descripción</th>
+<th data-quarto-table-cell-role="th">Calificación</th>
+<th data-quarto-table-cell-role="th">Resultado cursada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Dali, Fidel</td>
+<td>9</td>
+<td>promociona</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Loleo, Federico</td>
+<td>10</td>
+<td>promociona</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Mancino, Tiziano</td>
+<td>8</td>
+<td>final</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Mansoreitch, Gregorio</td>
+<td>2</td>
+<td>recupera 2 parcial</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Martinez, Sebastián</td>
+<td>6</td>
+<td>recupera 1 parcial</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>Membrana, Franco</td>
+<td>8</td>
+<td>promociona</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>Paredes, Renato</td>
+<td>5</td>
+<td>recupera 2 parcial</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>Pernice, Dante</td>
+<td>4</td>
+<td>recupera 2 parcial</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>Rivoira, Dylan</td>
+<td>ausente</td>
+<td>recursa</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>Zárate, Jeremy</td>
+<td>8</td>
+<td>promociona</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>Ayache, Mara</td>
+<td>2</td>
+<td>recursa</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>Pereyra, Román</td>
+<td>ausente</td>
+<td>recupera 2 parcial</td>
+</tr>
+</tbody>
+</table>
+
 </div>
+</div>
+</div>
+<p><strong>Recuperatorios 25/11/25 a las 21:10 (Laboratorio de física)</strong></p>
+
+
 </section>
 
 </main> <!-- /main -->
